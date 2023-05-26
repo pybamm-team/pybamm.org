@@ -9,7 +9,7 @@ Source code for [pybamm.org](https://www.pybamm.org), released under the BSD-3-C
 3. Clone your forked repository and add the theme repository as a submodule, from https://github.com/scientific-python/scientific-python-hugo-theme.
 
 ```bash
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 4. Create pages and run the server locally with
