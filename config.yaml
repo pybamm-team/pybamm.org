@@ -3,6 +3,7 @@ languageCode: "en-us"
 title: "PyBaMM"
 theme: scientific-python-hugo-theme
 relativeURLs: true
+DefaultContentLanguage: en
 disableKinds: ["term", "taxonomy"]
 
 markup:
@@ -11,15 +12,25 @@ markup:
 
 params:
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
+  
   images:
-    pybamm_logo.png
+    - /images/pybamm_icon.png
+  
   font:
     name: "Lato"
     # sizes: [400, 900]
 
+  # plausible: analytics (TODO)
+
+  style:
+    vars:
+      highlightColor: "#004811"
+      menuHighlightColor: "#5CA038"
+
   navbarlogo:
-    image: pybamm_logo.png
+    image: pybamm_icon.png
     altText: The PyBaMM logo, with a battery of cells with the electrodes stacked in the standard Python blue and yellow colours
+    text: PyBaMM
     link: /
 
   hero:
@@ -46,7 +57,7 @@ params:
       url: /contact/
 
     - title: Examples
-      url: /examples/
+      url: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
       is_external: true
 
     - title: Documentation
@@ -91,7 +102,7 @@ params:
 
       - link: https://www.youtube.com/@pybamm_/
         icon: youtube
-        
+
       - link: https://github.com/pybamm-team/
         icon: github
 
@@ -106,7 +117,7 @@ params:
             link: https://github.com/pybamm-team/PyBaMM/
 
           - text: Learn with examples
-            link: /examples/
+            link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
 
           - text: Documentation
             link: https://pybamm.readthedocs.io/
@@ -135,5 +146,5 @@ params:
           # - text: Privacy
           #   link: /privacy/
 
-      column3:
-        links:
+      # column3:
+      #   links:
