@@ -1,0 +1,4 @@
+# Markdown lint rules to ignore
+
+MD029: false # Ordered list item prefix
+MD041: false # First line in file should be a top level header

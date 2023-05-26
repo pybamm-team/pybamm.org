@@ -1,6 +1,7 @@
 # pybamm.org
 
 [![Links](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml/badge.svg)](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml)
+[![pre-commit.ci](https://results.pre-commit.ci/badge/github/pybamm-team/pybamm.org/main.svg)](https://results.pre-commit.ci/latest/github/pybamm-team/pybamm.org/main)
 
 Source code for [pybamm.org](https://www.pybamm.org), released under the
 BSD-3-Clause License. Currently under active development.
@@ -28,14 +29,16 @@ make serve
 update the hooks, and run with
 
 ```bash
+pip install pre-commit
 pre-commit install
-pre-commit autoupdate
-pre-commit run --all-files
 ```
 
 to ensure that there are no style errors before committing your changes. The
 current hooks provide support for checking spelling errors and typos, Markdown
 style, and common file-based issues.
+
+Rather than just the files changed due to a commit, you may run the hooks on
+all files using the `pre-commit run --all-files` command.
 
 ## Deployment
 
