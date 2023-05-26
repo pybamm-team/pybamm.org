@@ -8,3 +8,6 @@
 # Pages
 public/
 resources/
+
+# OS attributes
+.DS_Store

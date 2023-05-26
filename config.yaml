@@ -1,6 +1,6 @@
-baseURL: "https://theme.scientific-python.org/"
+baseURL: "https://www.pybamm.org"
 languageCode: "en-us"
-title: "Scientific Python Hugo Theme documentation"
+title: "PyBaMM"
 theme: scientific-python-hugo-theme
 relativeURLs: true
 disableKinds: ["term", "taxonomy"]
@@ -10,56 +10,130 @@ markup:
     noClasses: false
 
 params:
-  description: "Documentation & template site for the Scientific Python Hugo Theme."
+  description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
   images:
-    - /images/logo.svg
+    pybamm_logo.png
+  font:
+    name: "Lato"
+    # sizes: [400, 900]
+
   navbarlogo:
-    image: logo.svg
-    text: Scientific Python Hugo Theme
+    image: pybamm_logo.png
+    altText: The PyBaMM logo, with a battery of cells with the electrodes stacked in the standard Python blue and yellow colours
     link: /
+
   hero:
-    title: Scientific Python Theme
-    image: logo.svg
+  #  Needs a logo without the text
+    title: PyBaMM
+    image: pybamm_logo.png
+    subtitle: Fast and flexible physics-based battery models in Python
+    buttontext: View releases
+    buttonlink: https://github.com/pybamm-team/PyBaMM/releases
+
   navbar:
-    - title: Get started
-      url: /getstarted/
-    - title: Features
-      url: /features/
+    - title: Home
+      url: /
+
+    - title: News
+      url: /news/
+
+    - title: Training
+      url: /training/
+
+    - title: Getting started
+      url: /getting-started/
+
+    - title: Contact
+      url: /contact/
+
+    - title: Examples
+      url: /examples/
       is_external: true
+
+    - title: Documentation
+      url: https://pybamm.readthedocs.io/ 
+      # To be configured to https://docs.pybamm.org/
+      is_external: true
+
+    - title: Source code
+      url: https://www.github.com/pybamm-team/PyBaMM/
+      is_external: true
+
+    - title: Publications
+      url: /publications/
+
+    # TODO: remove after all links work
     - title: Shortcodes
       url: /shortcodes/
+
+  # Grid of features
   keyfeatures:
     features:
+
       - title: Documented
         text: The theme is documented at https://theme.scientific-python.org.
+
       - title: Reusable
         text: "The theme is being used by
           [scientific-python.org](https://github.com/scientific-python/scientific-python.org),
           [numpy.org](https://github.com/numpy/numpy.org), and
           [scipy.org](https://github.com/scipy/scipy.org)."
+
       - title: Community Maintained
         text: The theme is maintained by the [Theme Team](/about/).
+
   footer:
-    logo: logo.svg
+    # Visibility is low with the current font and background colours
+    logo: pybamm_logo.png
     socialmediatitle: ""
     socialmedia:
-      - link: https://scientific-python.org/
-        icon: scientific-python
-      - link: https://discuss.scientific-python.org/
-        icon: discourse
-      - link: https://github.com/scientific-python/
+
+      - link: https://twitter.com/pybamm_/
+        icon: twitter
+
+      - link: https://github.com/pybamm-team/
         icon: github
+
     quicklinks:
+
       column1:
         title: ""
         links:
-          - text: About
-            link: /about/
-          - text: Theme GitHub
-            link: https://github.com/scientific-python/scientific-python-hugo-theme
+          - text: Install PyBaMM
+            link: https://pybamm.readthedocs.io/en/latest/source/user_guide/installation/index.html/
+
+          - text: Getting started
+            link: https://github.com/pybamm-team/PyBaMM/
+
+          - text: Learn with examples
+            link: /examples/
+
+          - text: Documentation
+            link: https://pybamm.readthedocs.io/
+
+          - text: Citing PyBaMM
+            link: /publications/
+
       column2:
+        title: ""
         links:
-          - text: Scientific Python Forum
-            link: https://discuss.scientific-python.org
+          - text: Contact
+            link: /contact/
+
+          - text: Get involved
+            link: https://github.com/pybamm-team/PyBaMM/blob/develop/CONTRIBUTING.md/
+
+          - text: Training
+            link: /training/
+
+          - text: News
+            link: /news/
+
+          - text: Roadmap
+            link: # TODO
+
+          # - text: Privacy
+          #   link: /privacy/
+
       column3:
         links:
