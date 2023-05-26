@@ -28,14 +28,16 @@ make serve
 update the hooks, and run with
 
 ```bash
+pip install pre-commit
 pre-commit install
-pre-commit autoupdate
-pre-commit run --all-files
 ```
 
 to ensure that there are no style errors before committing your changes. The
 current hooks provide support for checking spelling errors and typos, Markdown
 style, and common file-based issues.
+
+Rather than just the files changed due to a commit, you may run the hooks on
+all files using the `pre-commit run --all-files` command.
 
 ## Deployment
 
