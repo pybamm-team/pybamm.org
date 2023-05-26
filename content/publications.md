@@ -2,7 +2,6 @@
 
 If you use PyBaMM in your work, please cite our JORS paper:
 
----
 Sulzer, V., Marquis, S. G., Timms, R., Robinson, M., & Chapman, S. J. (2021).  “Python Battery Mathematical Modelling (PyBaMM)”. Journal of Open Research Software,9 (1), 14. [ [DOI](https://doi.org/10.5334/jors.309) | [preprint](https://ecsarxiv.org/67ckj/) ]
 
 ---
@@ -11,9 +10,7 @@ We would be grateful if you could also cite the relevant papers. These will chan
 papers you should cite, add the line `pybamm.print_citations()` to the end of your script. This will print BibTex information to the terminal; passing 
 a filename to `print_citations` will print the BibTex information to the specified file instead. A list of all citations can also be found in the [citations file](https://github.com/pybamm-team/PyBaMM/blob/develop/pybamm/CITATIONS.txt).
 
-&nbsp;
-
-# Contributions
+## Contributions
 
 The following papers have contributed directly to the development of PyBaMM.
 
@@ -27,8 +24,6 @@ The following papers have contributed directly to the development of PyBaMM.
 
 [5] Marquis, S. G., Timms, R., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).  “A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society. [ [preprint](https://arxiv.org/abs/2008.03691) | [DOI](https://doi.org/10.1149/1945-7111/abbce4) ]
 
-&nbsp;
-
-# Citations
+## Citations
 
 A list of papers that use or reference PyBaMM can be found on [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=798200737450391820).
