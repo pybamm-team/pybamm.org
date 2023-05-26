@@ -23,9 +23,8 @@ params:
     link: /
 
   hero:
-  #  Needs a logo without the text
     title: PyBaMM
-    image: pybamm_logo.png
+    image: pybamm_icon.png
     subtitle: Fast and flexible physics-based battery models in Python
     buttontext: View releases
     buttonlink: https://github.com/pybamm-team/PyBaMM/releases
@@ -87,15 +86,16 @@ params:
     logo: pybamm_logo.png
     socialmediatitle: ""
     socialmedia:
-
       - link: https://twitter.com/pybamm_/
         icon: twitter
 
+      - link: https://www.youtube.com/@pybamm_/
+        icon: youtube
+        
       - link: https://github.com/pybamm-team/
         icon: github
 
     quicklinks:
-
       column1:
         title: ""
         links:
