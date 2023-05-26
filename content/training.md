@@ -52,7 +52,7 @@ This video showcases some advanced examples using PyBaMM.
 {{< youtube id="FA7s-Zx6O2I" 
     class="talk" 
     title="Open-source battery modelling"
-    venue="Early Career Researcher Day, Faraday Institution Conference, 2020 (https://www.faraday2020.org.uk/)"
+    venue="Early Career Researcher Day, Faraday Institution Conference, 2020"
     author="Robert Timms" levelOffset=4 >}}
 {{< /youtube >}}
 This video gives an overview of PyBaMM, and showcases some of the research it has enabled. 
