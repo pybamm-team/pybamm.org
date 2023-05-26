@@ -30,14 +30,17 @@ jobs:
           args: |
             --cache
             --max-cache-age 3d .
+            --verbose
+            --no-progress
             --timeout 10
             --max-retries 5
             --skip-missing
             --exclude-loopback
-            --exclude https://twitter.com/pybamm_
+            --exclude https://twitter.com/pybamm_/
             --exclude "https://doi\.org|www.sciencedirect\.com/*"
             --accept 200,429
-            
+          format: markdown
+          jobSummary: true
           fail: true
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
