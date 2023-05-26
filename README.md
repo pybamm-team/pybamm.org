@@ -1,5 +1,7 @@
 # pybamm.org
 
+[![Links](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml/badge.svg)](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml)
+
 Source code for [pybamm.org](https://www.pybamm.org), released under the BSD-3-Clause License. Currently under active development
 
 ## Steps to contribute
