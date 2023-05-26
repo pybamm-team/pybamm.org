@@ -51,7 +51,7 @@ params:
       url: /training/
 
     - title: Getting started
-      url: /getting-started/
+      url: /get-started/
 
     - title: Contact
       url: /contact/
@@ -114,7 +114,7 @@ params:
             link: https://pybamm.readthedocs.io/en/latest/source/user_guide/installation/index.html/
 
           - text: Getting started
-            link: https://github.com/pybamm-team/PyBaMM/
+            link: /get-started/
 
           - text: Learn with examples
             link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/

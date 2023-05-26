@@ -11,7 +11,7 @@ training material for use by the PyBaMM community of researchers, developers, an
     class="workshop" 
     title="Getting Started"
     venue="PybaMM Training Workshop 2021"
-    author="Robert Timms" levelOffset=3 >}}
+    author="Robert Timms" levelOffset=4 >}}
 {{< /youtube >}}
 This video explains what PyBaMM is and takes you through the basics of setting up and running simulations.
 
@@ -19,7 +19,7 @@ This video explains what PyBaMM is and takes you through the basics of setting u
     class="workshop" 
     title="Plug & Play Physics"
     venue="PybaMM Training Workshop 2021"
-    author="Robert Timms, Ferran Brosa Planella" levelOffset=3 >}}
+    author="Robert Timms, Ferran Brosa Planella" levelOffset=4 >}}
 {{< /youtube >}}
 This video shows how submodels enable "plug and play" physics PyBaMM, and showcases submodels for lithium plating and multi-particle 
 models (particle size distributions).
@@ -28,7 +28,7 @@ models (particle size distributions).
     class="workshop" 
     title="Parameterisation"
     venue="PybaMM Training Workshop 2021"
-    author="Robert Timms" levelOffset=3 >}}
+    author="Robert Timms" levelOffset=4 >}}
 {{< /youtube >}}
 This video shows different features related to parameterisation, including how to add new parameter sets, optimise the parameter values 
 and calculate the sensitivity of the solutions with respect to certain parameters.
@@ -37,7 +37,7 @@ and calculate the sensitivity of the solutions with respect to certain parameter
     class="tutorial" 
     title="Experiments"
     venue="PybaMM Training Workshop 2021"
-    author="Valentin Sulzer" levelOffset=3 >}}
+    author="Valentin Sulzer" levelOffset=4 >}}
 {{< /youtube >}}
 This video shows how to simulate experiments in PyBaMM and interact with their solutions.
 
@@ -45,7 +45,7 @@ This video shows how to simulate experiments in PyBaMM and interact with their s
     class="tutorial" 
     title="Advanced Examples"
     venue="PybaMM Training Workshop 2021"
-    author="Tom Tranter" levelOffset=3 >}}
+    author="Tom Tranter" levelOffset=4 >}}
 {{< /youtube >}}
 This video showcases some advanced examples using PyBaMM. 
 
@@ -53,6 +53,6 @@ This video showcases some advanced examples using PyBaMM.
     class="talk" 
     title="Open-source battery modelling"
     venue="Early Career Researcher Day, Faraday Institution Conference, 2020 (https://www.faraday2020.org.uk/)"
-    author="Robert Timms" levelOffset=3 >}}
+    author="Robert Timms" levelOffset=4 >}}
 {{< /youtube >}}
 This video gives an overview of PyBaMM, and showcases some of the research it has enabled. 
