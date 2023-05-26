@@ -7,8 +7,8 @@ Sulzer, V., Marquis, S. G., Timms, R., Robinson, M., & Chapman, S. J. (2021).  â
 
 ---
 
-We would be grateful if you could also cite the relevant papers. These will change depending on what models and solvers you use. To find out which 
-papers you should cite, add the line `pybamm.print_citations()` to the end of your script. This will print BibTex information to the terminal; passing 
+We would be grateful if you could also cite the relevant papers. These will change depending on what models and solvers you use. To find out which
+papers you should cite, add the line `pybamm.print_citations()` to the end of your script. This will print BibTex information to the terminal; passing
 a filename to `print_citations` will print the BibTex information to the specified file instead. A list of all citations can also be found in the [citations file](https://github.com/pybamm-team/PyBaMM/blob/develop/pybamm/CITATIONS.txt).
 
 ## Contributions
