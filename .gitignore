@@ -1,0 +1,6 @@
+# Hugo lockfile
+/.hugo_build.lock
+
+# Text editor configs
+.vscode/
+.idea/*
