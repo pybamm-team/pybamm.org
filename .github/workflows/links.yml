@@ -15,7 +15,7 @@ jobs:
 
       - name: Restore Lychee cache
         uses: actions/cache@v3
-        with: 
+        with:
           path: .lycheecache
           key: cache-lychee-${{ github.sha }}
           restore-keys: cache-lychee-
@@ -42,7 +42,7 @@ jobs:
           format: markdown
           jobSummary: true
           fail: true
-        env: 
+        env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       # TBD: automatically open an issue if any links fail

@@ -12,10 +12,10 @@ markup:
 
 params:
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
-  
+
   images:
     - /images/pybamm_icon.png
-  
+
   font:
     name: "Lato"
     # sizes: [400, 900]
@@ -61,7 +61,7 @@ params:
       is_external: true
 
     - title: Documentation
-      url: https://pybamm.readthedocs.io/ 
+      url: https://pybamm.readthedocs.io/
       # To be configured to https://docs.pybamm.org/
       is_external: true
 
