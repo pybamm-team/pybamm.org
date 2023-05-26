@@ -11,3 +11,6 @@ resources/
 
 # OS attributes
 .DS_Store
+
+# Stub files
+*.stub
