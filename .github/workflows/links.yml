@@ -1,0 +1,45 @@
+name: Check URLs with Lychee
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+    - cron: "0 3 * * *"
+
+jobs:
+  urls:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Restore Lychee cache
+        uses: actions/cache@v3
+        with: 
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - uses: actions/checkout@v3
+
+      - name: Link checker
+        id: lychee
+        uses: lycheeverse/lychee-action@ec7614d7605b47efb08dc370f6d0a71884cba944
+        with:
+          # Same as those in the PyBaMM repository
+          args: |
+            --cache
+            --max-cache-age 3d .
+            --timeout 10
+            --max-retries 5
+            --skip-missing
+            --exclude-loopback
+            --exclude https://twitter.com/pybamm_
+            --exclude "https://doi\.org|www.sciencedirect\.com/*"
+            --accept 200,429
+            
+          fail: true
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      # TBD: automatically open an issue if any links fail
