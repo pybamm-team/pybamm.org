@@ -1,7 +1,8 @@
-# Contact PyBaMM
+---
+title: Contact PyBaMM
+---
 
-There are a few ways to get in touch, whether it is through reporting bugs, requesting features, asking for help,
-or just saying hello!
+There are a few ways to get in touch, whether it is through reporting bugs, requesting features, asking for help, or just saying hello!
 
 ## GitHub
 

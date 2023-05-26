@@ -1,5 +1,6 @@
-# Publications
-
+---
+title: Publications
+---
 If you use PyBaMM in your work, please cite our JORS paper:
 
 Sulzer, V., Marquis, S. G., Timms, R., Robinson, M., & Chapman, S. J. (2021).  “Python Battery Mathematical Modelling (PyBaMM)”. Journal of Open Research Software,9 (1), 14. [ [DOI](https://doi.org/10.5334/jors.309) | [preprint](https://ecsarxiv.org/67ckj/) ]
