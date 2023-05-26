@@ -20,3 +20,9 @@ repos:
     rev: v0.0.270
     hooks:
     -   id: ruff
+
+# Spelling errors and typos
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.2.4
+    hooks:
+    -   id: codespell
