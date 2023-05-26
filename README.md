@@ -6,7 +6,7 @@ Source code for [pybamm.org](https://www.pybamm.org), released under the BSD-3-C
 
 1. Fork this repository
 2. Install the extended version of Hugo from https://gohugo.io/installation/ and add it to your PATH
-3. Clone your forked repository and add the theme repository as a submodule
+3. Clone your forked repository and add the theme repository as a submodule, from https://github.com/scientific-python/scientific-python-hugo-theme.
 
 ```bash
 git submodule update --init
