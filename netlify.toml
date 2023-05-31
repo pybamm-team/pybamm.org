@@ -6,7 +6,8 @@
   ignore = "false"
 
 [[plugins]]
-  package = "netlify-plugin-checklinks"
+  # We use Lychee
+  # package = "netlify-plugin-checklinks"
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
