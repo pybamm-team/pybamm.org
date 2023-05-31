@@ -72,10 +72,6 @@ params:
     - title: Publications
       url: /publications/
 
-    # TODO: remove after all links work
-    - title: Shortcodes
-      url: /shortcodes/
-
   # Grid of features
   keyfeatures:
     features:
