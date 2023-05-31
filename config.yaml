@@ -56,6 +56,9 @@ params:
     - title: Contact
       url: /contact/
 
+    - title: Wiki
+      url: /wiki/
+
     - title: Examples
       url: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
       is_external: true
@@ -137,7 +140,7 @@ params:
             link: /news/
 
           - text: Roadmap
-            link: # TODO
+            link: https://github.com/pybamm-team/PyBaMM/wiki/Roadmap/
 
           # - text: Privacy
           #   link: /privacy/
