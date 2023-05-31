@@ -1,7 +1,0 @@
-# Ignore pages with large-length links
-content/publications.md
-content/get-started.md
-
-# Ignore template pages
-content/features.md
-content/getstarted.md
