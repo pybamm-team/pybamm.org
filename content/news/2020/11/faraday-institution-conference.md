@@ -5,7 +5,7 @@ date: 2020-11-24
 summary: PyBaMM was presented with an introduction of its framework and its case studies viz. mechanical, thermal and degradation effects.
 ---
 
-Robert Timms (University of Oxford) presented PyBaMM today in the [Faraday Institution Annual Conference](https://www.faraday2020.org.uk/) that took place online.
+Robert Timms (University of Oxford) presented PyBaMM today in the Faraday Institution Annual Conference that took place online.
 
 The talk introduced the main features of PyBaMM's framework and then presented different real case studies. These case studies showcased how PyBaMM can be used to simulate mechanical, thermal and degradation effects.
 
