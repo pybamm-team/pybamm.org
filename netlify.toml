@@ -6,10 +6,6 @@
   ignore = "false"
 
 [[plugins]]
-  # We use Lychee
-  # package = "netlify-plugin-checklinks"
-
-[[plugins]]
   package = "@netlify/plugin-lighthouse"
 
   # optional, fails build when a category is below a threshold
