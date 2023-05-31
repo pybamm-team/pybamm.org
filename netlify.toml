@@ -21,6 +21,6 @@
     output_path = "reports/lighthouse.html"
 
 [[redirects]]
-  status = 404
   from = "/*"
   to = "/404/"
+  status = 404
