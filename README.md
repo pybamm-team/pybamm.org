@@ -43,7 +43,8 @@ all files using the `pre-commit run --all-files` command.
 
 ## Deployment
 
-TODO: Netlify
+The website is built using the [Hugo](https://gohugo.io) static site generator
+and is hosted on [Netlify](https://pybamm-developer-preview.netlify.app/).
 
 ## Analytics
 
