@@ -1,5 +1,6 @@
 # pybamm.org
 
+[![Netlify](https://api.netlify.com/api/v1/badges/c4c60d47-1de1-4d0a-8a25-726d3cf100c8/deploy-status)](https://app.netlify.com/sites/pybamm-developer-preview/deploys)
 [![Links](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml/badge.svg)](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml)
 [![pre-commit.ci](https://results.pre-commit.ci/badge/github/pybamm-team/pybamm.org/main.svg)](https://results.pre-commit.ci/latest/github/pybamm-team/pybamm.org/main)
 
@@ -42,7 +43,8 @@ all files using the `pre-commit run --all-files` command.
 
 ## Deployment
 
-TODO: Netlify
+The website is built using the [Hugo](https://gohugo.io) static site generator
+and is hosted on [Netlify](https://pybamm-developer-preview.netlify.app/).
 
 ## Analytics
 
