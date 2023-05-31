@@ -79,17 +79,16 @@ params:
   keyfeatures:
     features:
 
-      - title: Documented
-        text: The theme is documented at https://theme.scientific-python.org.
+      - title: Extensive
+        text: PyBaMM comes with a comprehensive library of battery models, including the Doyle-Fuller-Newman model
+              and the Single Particle Model.
 
-      - title: Reusable
-        text: "The theme is being used by
-          [scientific-python.org](https://github.com/scientific-python/scientific-python.org),
-          [numpy.org](https://github.com/numpy/numpy.org), and
-          [scipy.org](https://github.com/scipy/scipy.org)."
+      - title: State-of-the-art
+        text: PyBaMM provides efficient, robust, and accurate simulations of battery behaviour, including demanding
+          drive cycles.
 
-      - title: Community Maintained
-        text: The theme is maintained by the [Theme Team](/about/).
+      - title: Open-source
+        text: Community-driven model development ensures PyBaMM remains at the cutting edge of battery modelling.
 
   footer:
     # Visibility is low with the current font and background colours
