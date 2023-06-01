@@ -22,11 +22,11 @@ content/shortcodes.md:
 themes: themes/scientific-python-hugo-theme
 
 html: ## Build site in `./public`
-html: themes content/
+html: themes content/shortcodes.md
 	hugo
 
 serve: ## Serve site, typically on http://localhost:1313
-serve: themes content/
+serve: themes content/shortcodes.md
 	@hugo --printI18nWarnings server
 
 clean: ## Remove built files
