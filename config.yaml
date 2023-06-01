@@ -5,6 +5,7 @@ theme: scientific-python-hugo-theme
 relativeURLs: true
 DefaultContentLanguage: en
 disableKinds: ["term", "taxonomy"]
+enableEmoji: true
 
 markup:
   highlight:
@@ -35,10 +36,10 @@ params:
 
   hero:
     title: PyBaMM
-    image: pybamm_icon.svg
-    subtitle: Fast and flexible physics-based battery models in Python
+    subtitle: Fast and flexible physics-based battery models in Python for open science
     buttontext: View releases
     buttonlink: https://github.com/pybamm-team/PyBaMM/releases
+    image: pybamm_icon.svg
 
   navbar:
     - title: Home
