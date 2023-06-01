@@ -75,6 +75,9 @@ params:
     - title: Publications
       url: /publications/
 
+    - title: Donate
+      url: /donate/
+
   # Grid of features
   keyfeatures:
     features:
