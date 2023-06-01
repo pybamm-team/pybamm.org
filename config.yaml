@@ -1,6 +1,6 @@
 baseURL: "https://www.pybamm.org"
 languageCode: "en-us"
-title: "PyBaMM"
+title: "PyBaMM" # site title
 theme: scientific-python-hugo-theme
 relativeURLs: true
 DefaultContentLanguage: en
@@ -12,6 +12,7 @@ markup:
     noClasses: false
 
 params:
+  title: PyBaMM Team # for copyright
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
 
   images:
