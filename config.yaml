@@ -28,14 +28,14 @@ params:
       menuHighlightColor: "#5CA038"
 
   navbarlogo:
-    image: pybamm_icon.png
+    image: pybamm_icon.svg
     altText: The PyBaMM logo, with a battery of cells with the electrodes stacked in the standard Python blue and yellow colours
     text: PyBaMM
     link: /
 
   hero:
     title: PyBaMM
-    image: pybamm_icon.png
+    image: pybamm_icon.svg
     subtitle: Fast and flexible physics-based battery models in Python
     buttontext: View releases
     buttonlink: https://github.com/pybamm-team/PyBaMM/releases
