@@ -1,10 +1,12 @@
 ---
 title: Donate to PyBaMM 🔋
 summary: Donations, grants, and sponsorships are essential to the development of PyBaMM. If you would like to support PyBaMM, please consider donating to the project.
-shortcutDepth: 3
+shortcutDepth: 2
 ---
 
-PyBaMM has been a NumFOCUS Sponsored Project since 2022 and has a multitude of researchers through academia and industry collaborations at numerous companies and research institutions, including the University of Oxford, Carnegie Mellon University, University of Warwick, Imperial College London, National Physical Laboratory, Deutsches Zentrum für Luft- und Raumfahrt, and The Faraday Institution.
+{{< github-sponsor >}} {{< opencollective-sponsor >}}
+
+PyBaMM has been a NumFOCUS Sponsored Project since 2022 and has been used by a multitude of researchers through academia and industry collaborations at numerous companies and research institutions, some of which include the University of Oxford, Carnegie Mellon University, University of Warwick, Imperial College London, National Physical Laboratory, Deutsches Zentrum für Luft- und Raumfahrt, and The Faraday Institution.
 
 If you would like to support the project, please consider donating to PyBaMM to bring forth advancements to a multi-dimensional, interdisciplinary area of battery modelling and simulation combined with fast numerical computing.
 
