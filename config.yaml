@@ -1,16 +1,22 @@
 baseURL: "https://www.pybamm.org"
 languageCode: "en-us"
-title: "PyBaMM"
+title: "PyBaMM" # site title
 theme: scientific-python-hugo-theme
 relativeURLs: true
 DefaultContentLanguage: en
 disableKinds: ["term", "taxonomy"]
+enableEmoji: true
+enableInlineShortcodes: true
 
 markup:
   highlight:
     noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
 
 params:
+  title: PyBaMM Team # for copyright
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
 
   images:
@@ -28,17 +34,17 @@ params:
       menuHighlightColor: "#5CA038"
 
   navbarlogo:
-    image: pybamm_icon.png
+    image: pybamm_icon.svg
     altText: The PyBaMM logo, with a battery of cells with the electrodes stacked in the standard Python blue and yellow colours
     text: PyBaMM
     link: /
 
   hero:
     title: PyBaMM
-    image: pybamm_icon.png
-    subtitle: Fast and flexible physics-based battery models in Python
+    subtitle: Fast and flexible physics-based battery models in Python for open science
     buttontext: View releases
     buttonlink: https://github.com/pybamm-team/PyBaMM/releases
+    image: pybamm_icon.svg
 
   navbar:
     - title: Home
