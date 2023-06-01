@@ -15,7 +15,7 @@ The sponsorship funds will be utilised to support mini-projects revolving around
 We accept donations through a variety of platforms. Please choose the one that is most convenient for you.
 
 ### GitHub
-You may {{< include-html "static/github-sponsor.html" >}} the project on [GitHub](https://github.com/sponsors/pybamm-team).
+You may sponsor the project on [GitHub](https://github.com/sponsors/pybamm-team).
 
 ### NumFOCUS
 Make a one-time payment through [NumFOCUS](https://numfocus.org/donate-for-pybamm) (or make it recurring monthly!)
