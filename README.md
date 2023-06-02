@@ -13,7 +13,8 @@ BSD-3-Clause License. Currently under active development.
 2. Install the extended version of Hugo from <https://gohugo.io/installation/>
 and add it to your `PATH`
 3. Clone your forked repository and add the theme repository as a submodule,
-from <https://github.com/scientific-python/scientific-python-hugo-theme>.
+from <https://github.com/scientific-python/scientific-python-hugo-theme>. You
+may update the submodule and pull the latest changes with
 
 ```bash
 git submodule update --init --recursive
@@ -25,6 +26,15 @@ git submodule update --init --recursive
 make html
 make serve
 ```
+
+In development mode, run the server with
+
+```bash
+make html
+make serve-dev
+```
+
+You may use `make clean` to clean up build artefacts.
 
 5. Before committing your changes, install [`pre-commit`](https://pre-commit.com/),
 update the hooks, and run with
