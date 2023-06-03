@@ -1,0 +1,94 @@
+/* Overrides for the PyBaMM hero on the homepage */
+
+/* We use these styles to provide precedence over submodule theme changes to come close
+to near-parity with NumPy and SciPy websites (which use older versions of the theme) */
+
+
+/* Make PyBaMM logo smaller */
+.hero-logo {
+    max-height: 75px;
+    padding: 0px 0 0 15px;
+}
+
+/* Hero button should be left aligned */
+.hero-cta {
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: normal;
+}
+
+/* Add space between navbar and hero, reduce distance between title and subtitle */
+.hero-title-content {
+    margin: 6vh auto;
+    max-width: 1200px;
+}
+
+/* Move PyBaMM logo in hero to text superscript */
+.hero-title {
+    align-content: auto;
+    align-items: normal;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--fontFamily), sans-serif;
+    font-weight: 900;
+    font-size: 6em;
+    color: var(--colorPrimaryDark);
+}
+
+/* Removes padding between hero title and subtitle */
+.hero-title {
+    padding: 0 0 0 0;
+}
+
+/* General improvements */
+
+/* Do not induce padding on code blocks */
+.highlight {
+    padding: 10px 0px;
+}
+
+/* Media settings for narrower screens */
+
+@media only screen and (max-width: 1090px) {
+    .hero-content {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero-title-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-column {
+        margin: 0 30px;
+    }
+
+    .hero-title {
+        font-size: 4em;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+    }
+
+    .hero-cta {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-title {
+        flex-direction: column;
+    }
+
+    .hero-logo {
+        align-self: center;
+        max-width: 80%;
+        padding-bottom: 20px
+    }
+}

@@ -1,4 +1,4 @@
-.PHONY: help themes html serve clean
+.PHONY: help themes html serve serve-dev clean
 .DEFAULT_GOAL := help
 
 help:
@@ -16,18 +16,19 @@ themes/scientific-python-hugo-theme:
 	  exit 1; \
 	fi
 
-content/shortcodes.md:
-	cp content/shortcodes.md.stub content/shortcodes.md
-
 themes: themes/scientific-python-hugo-theme
 
 html: ## Build site in `./public`
-html: themes content/shortcodes.md
+html: themes
 	hugo
 
 serve: ## Serve site, typically on http://localhost:1313
-serve: themes content/shortcodes.md
+serve: themes
 	@hugo --printI18nWarnings server
+
+serve-dev: ## Serve site during development, typically on http://localhost:1313
+serve-dev: themes
+	@hugo --printI18nWarnings server --disableFastRender
 
 clean: ## Remove built files
 clean:

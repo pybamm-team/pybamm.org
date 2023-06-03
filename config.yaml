@@ -41,7 +41,7 @@ params:
 
   hero:
     title: PyBaMM
-    subtitle: Fast and flexible physics-based battery models in Python for open science
+    subtitle: Fast and flexible physics-based battery models in Python
     buttontext: View releases
     buttonlink: https://github.com/pybamm-team/PyBaMM/releases
     image: pybamm_icon.svg
