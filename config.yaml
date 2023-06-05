@@ -10,7 +10,8 @@ enableInlineShortcodes: true
 
 markup:
   highlight:
-    noClasses: false
+    noClasses: true
+    style: github-dark
   goldmark:
     renderer:
       unsafe: true
@@ -98,7 +99,7 @@ params:
 
   footer:
     # Visibility is low with the current font and background colours
-    logo: pybamm_logo.png
+    logo: pybamm_logo_whitetext.svg
     socialmediatitle: ""
     socialmedia:
       - link: https://twitter.com/pybamm_/
