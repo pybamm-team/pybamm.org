@@ -51,7 +51,10 @@ params:
     - title: Home
       url: /
 
-    - title: News
+    - title: About
+      url: /about/
+
+    - title: Newsroom
       url: /news/
 
     - title: Training
