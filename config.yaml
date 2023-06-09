@@ -91,17 +91,25 @@ params:
   # Grid of features
   keyfeatures:
     features:
+      
+      - title: Enhanced Simulation Performance
+        text: PyBaMM enables efficient simulations of battery performance and aging, accelerating battery design and innovation.
 
-      - title: Extensive
-        text: PyBaMM comes with a comprehensive library of battery models, including the Doyle-Fuller-Newman model
-              and the Single Particle Model.
+      - title: Modular Framework
+        text: The flexible nature of PyBaMM allows for quick model interchangeability, making it useful in different stages of battery R&D.
+        
+      - title: Open Source
+        text: PyBaMM is open source, which means anyone can use, modify, and distribute the software. This makes it accessible to researchers worldwide,
+        enhancing global battery technology research.
 
-      - title: State-of-the-art
-        text: PyBaMM provides efficient, robust, and accurate simulations of battery behaviour, including demanding
-          drive cycles.
+      - title: Comprehensive
+        text: PyBaMM's model library includes a wide range of physics-based models, making it a vital tool in diverse battery research.
 
-      - title: Open-source
-        text: Community-driven model development ensures PyBaMM remains at the cutting edge of battery modelling.
+      - title: Detailed Visualization Tools
+        text: PyBaMM includes data visualization tools that enable researchers to better interpret their simulation results, facilitating the identification of trends and potential improvements.
+
+      - title: Python Ecosystem
+        text: PyBaMM can be combined with any of the advanced data science and machine learning tools in Python's extensive ecosystem.
 
   footer:
     # Visibility is low with the current font and background colours
