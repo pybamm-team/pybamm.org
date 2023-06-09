@@ -91,13 +91,13 @@ params:
   # Grid of features
   keyfeatures:
     features:
-      
+
       - title: Enhanced Simulation Performance
         text: PyBaMM enables efficient simulations of battery performance and aging, accelerating battery design and innovation.
 
       - title: Modular Framework
         text: The flexible nature of PyBaMM allows for quick model interchangeability, making it useful in different stages of battery R&D.
-        
+
       - title: Open Source
         text: PyBaMM is open source, which means anyone can use, modify, and distribute the software. This makes it accessible to researchers worldwide,
         enhancing global battery technology research.
