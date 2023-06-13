@@ -102,7 +102,7 @@ params:
         text: PyBaMM is open source, which means anyone can use, modify, and distribute the software. This makes it accessible to researchers worldwide,
           enhancing global battery technology research.
 
-      - title: Comprehensive
+      - title: Comprehensive Model Library
         text: PyBaMM's model library includes a wide range of physics-based models, making it a vital tool in diverse battery research.
 
       - title: Detailed Visualization Tools
