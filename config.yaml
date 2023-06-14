@@ -74,8 +74,7 @@ params:
       is_external: true
 
     - title: Documentation
-      url: https://pybamm.readthedocs.io/
-      # To be configured to https://docs.pybamm.org/
+      url: https://docs.pybamm.org/
       is_external: true
 
     - title: Source code
@@ -129,7 +128,7 @@ params:
         title: ""
         links:
           - text: Install PyBaMM
-            link: https://pybamm.readthedocs.io/en/latest/source/user_guide/installation/index.html/
+            link: https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html
 
           - text: Getting started
             link: /get-started/
@@ -138,7 +137,7 @@ params:
             link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
 
           - text: Documentation
-            link: https://pybamm.readthedocs.io/
+            link: https://docs.pybamm.org/
 
           - text: Citing PyBaMM
             link: /publications/
