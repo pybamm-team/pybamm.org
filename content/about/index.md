@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About PyBaMM"
 shortcutDepth: 3
 ---
 {{< buttons/github-star >}}{{< buttons/github-fork >}}
@@ -41,3 +41,15 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 <p>
 &nbsp;
 {{< pybamm-twitter >}}
+
+## Current PyBaMM Steering Council
+
+The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up of the following members:
+
+- [Ferran Brosa Planella](https://www.brosaplanella.xyz)
+- [Saransh Chopra](https://saransh-cpp.github.io)
+- Scott Marquis
+- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer)
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+
+For more details, see the [PyBaMM Governance](/governance) page.
