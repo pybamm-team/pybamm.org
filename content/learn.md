@@ -1,5 +1,5 @@
 ---
-title: Getting started with PyBaMM
+title: Get started with PyBaMM
 ---
 
 ## Installation instructions
@@ -28,7 +28,7 @@ If you would like to get started with PyBaMM, you may go through the [Getting St
 
 ## Supporting materials
 
-We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings below, or on the [Training](/training/) page of the PyBaMM website.
+We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings below.
 
 <!-- Shortcode for rendering the Training markdown page, change it to edit this section -->
 {{< include-md "./training.md" >}}
