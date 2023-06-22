@@ -14,7 +14,8 @@ Broadly, PyBaMM consists of
 
 Together, these enable flexible model definitions and fast battery simulations, allowing users to explore the effect of different battery designs and modeling assumptions under a variety of operating scenarios.
 
-If you like PyBaMM, please consider starring us on GitHub and spreading the word! You can also fork the repository to add your own models.
+If you like PyBaMM, please consider starring us on GitHub and spreading the word! You can also fork the repository to add your own models. For information about
+donations and how you can support, please see the [Donate](/donate/) page.
 
 ## Institutional Partners
 
