@@ -8,7 +8,7 @@ We communicate what we are working on in two different ways:
 The roadmap is a static document indicating the broad directions in which we intend to develop the project.
 
 The roadmap is reviewed and updated once every four months, at the same time as new releases are made. Following every release, we hold a public event where we go
-over what changes have been made in that release, as well as updates to the roadmap.
+over what changes have been made in that release, as well as updates to the roadmap. For more details, see the [Roadmap](roadmap.md) page.
 
 ## Issue priority and assignment
 
