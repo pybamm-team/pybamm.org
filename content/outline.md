@@ -70,6 +70,12 @@ If you work for a company that uses PyBaMM and would like to sponsor the project
 
 Recurring donations without a specific deliverable. Donations are acknowledged on public project pages, and opportunities for interaction with the core development team. See our GitHub sponsor page for details.
 
+&nbsp;
+
+{{< notice tip >}}
+Check out our [Donate](/donate/) page for more details about sponsorship and payment options.
+{{< /notice >}}
+
 #### Community work orders
 
 While the roadmap is mainly decided by the core team (maintainers and steering council), you can donate to have issues moved up in priority via Community Work Orders. The price depends on issue difficulty and current priority. Get in touch to find out more.
