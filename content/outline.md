@@ -62,7 +62,7 @@ Look for unassigned issues labelled “priority:high” or “priority:medium”
 
 Look for unassigned issues labelled “difficulty:easy” and volunteer to take them on. Come to the monthly newcomers meeting to discuss issues or for help getting started.
 
-### For sponsors (community work orders)
+### For sponsors
 
 If you work for a company that uses PyBaMM and would like to sponsor the project to ensure its continuing development, there are several ways you can help:
 
@@ -74,7 +74,7 @@ Recurring donations without a specific deliverable. Donations are acknowledged o
 
 While the roadmap is mainly decided by the core team (maintainers and steering council), you can donate to have issues moved up in priority via Community Work Orders. The price depends on issue difficulty and current priority. Get in touch to find out more.
 
-#### Feedback
+### Feedback
 
 We are experimenting with this process and always looking for ways to improve our workflow. If you have any feedback on this process or ideas for how we can improve, please get in touch either by opening a discussion on GitHub or emailing us at [pybamm@gmail.com](mailto:pybamm@gmail.com).
 
