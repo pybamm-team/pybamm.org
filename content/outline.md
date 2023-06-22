@@ -80,5 +80,5 @@ We are experimenting with this process and always looking for ways to improve ou
 
 ### Meeting links
 
-- Monthly community meeting:
-- Monthly developer meeting:
+- Monthly community meeting: TBA
+- Monthly developer meeting: [Google Calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGtxNnExZWc4ZzFiOGVuOXB0c2ZtdnZ2aTlfMjAyMzA2MTJUMTUwMDAwWiBjXzE1Nzc5MGZhNTQ0Y2JmN2UzZjViNjQ5YzcwMGJhNDA0MDRhZDA0NjM0ZjkzNDBlMjU1ZTZkZWY5OWE4OWVkZGFAZw&tmsrc=c_157790fa544cbf7e3f5b649c700ba40404ad04634f9340e255e6def99a89edda%40group.calendar.google.com&scp=ALL) | [Zoom](https://numfocus-org.zoom.us/j/89866852955?pwd=dWVzQnpHbXpaTEZCQS9hMU54ZUxodz09)
