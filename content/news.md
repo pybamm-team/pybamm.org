@@ -1,12 +1,16 @@
 ---
 title: PyBaMM Newsroom
 shortcutDepth: 2
+newsHeader: "Battery Modelling Webinar Series 2021"
+date: 2021-07-06
 ---
 
 <!-- Format for adding news is: -->
 <!-- ## Title -->
 <!-- ###### Date -->
 <!-- Text -->
+
+<!-- Change date and heading in YAML frontmatter for homepage -->
 
 <!-- Note: follow reverse order while updating, sort in descending order of recency -->
 
