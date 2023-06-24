@@ -48,44 +48,30 @@ params:
     image: pybamm_icon.svg
 
   navbar:
-    - title: Home
-      url: /
-
-    - title: About
-      url: /about/
-
-    - title: Newsroom
-      url: /news/
-
-    - title: Training
-      url: /training/
-
-    - title: Getting started
-      url: /get-started/
-
-    - title: Contact
-      url: /contact/
-
-    - title: Wiki
-      url: /wiki/
-
-    - title: Examples
-      url: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
+    - title: Install
+      # TODO: update to /install/ when we have a dedicated page
+      url: https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html
       is_external: true
 
     - title: Documentation
       url: https://docs.pybamm.org/
       is_external: true
 
-    - title: Source code
-      url: https://www.github.com/pybamm-team/PyBaMM/
-      is_external: true
+    - title: Learn
+      url: /learn/
+      # Should link to training and getting started pages
 
-    - title: Publications
-      url: /publications/
+    - title: Community
+      url: /community/
 
-    - title: Donate
-      url: /donate/
+    - title: About Us
+      url: /about/
+
+    - title: News
+      url: /news/
+
+    - title: Contribute
+      url: /contribute/
 
   # Grid of features
   keyfeatures:
