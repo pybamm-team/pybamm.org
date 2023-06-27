@@ -15,13 +15,16 @@ discussions, please use the [GitHub discussions](https://github.com/pybamm-team/
 ### Slack
 
 For development discussions and to get help using PyBaMM, head over to our
-[Slack workspace](https://pybamm.slack.com/). You may email us at
-[pybamm@gmail.com](mailto:pybamm@gmail.com) for an invitation.
+[Slack workspace](https://join.slack.com/t/pybamm/shared_invite/zt-1xwnvkqrb-6ZKgB8yBU3zuzH91USdv_A).
+If the link doesn't work, you can email us at [pybamm@gmail.com](mailto:pybamm@gmail.com) for an invitation.
 
-### Collaborations
+### General inquiries
 
-If you are interested in collaborations, either in an academic or industrial
-setting, you can contact us by emailing [pybamm@gmail.com](mailto:pybamm@gmail.com).
-Academic collaborations take the form of co-authorship of a journal paper,
-while industrial collaborations can be either consultancy or funding of a
-research project.
+For general inquiries, you can contact us by emailing [pybamm@gmail.com](mailto:pybamm@gmail.com).
+
+### Get help
+
+[Ionworks](https://ion-works.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ion-works.com/blog/our-relationship-with-pybamm).
+Ionworks provides support and custom feature development for PyBaMM, as well as software to make modeling easier and faster.
+For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
+[Contact Ionworks](https://ion-works.com/contact) to find out more.
