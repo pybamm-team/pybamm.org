@@ -50,7 +50,7 @@ their solutions.
     class="tutorial"
     title="Advanced Examples"
     venue="PybaMM Training Workshop 2021"
-    author="Tom Tranter" levelOffset=4 >}}
+    author="Tom Tranter, Priyanshu Agarwal, Saransh Chopra" levelOffset=4 >}}
 {{< /youtube >}}
 This video showcases some advanced examples using PyBaMM.
 

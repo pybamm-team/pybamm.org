@@ -56,7 +56,7 @@ There are many ways to contribute to setting the direction of the project, beyon
 
 ### For experienced contributors/maintainers
 
-Look for unassigned issues labelled “priority:high” or “priority:medium”, and volunteer to take them on (either synchronously at the meeting or asynchronously before)
+Look for unassigned issues labelled “priority:high” or “priority:medium”, and volunteer to take them on (either synchronously at the meeting or asynchronously before).
 
 ### For first-time contributors
 
