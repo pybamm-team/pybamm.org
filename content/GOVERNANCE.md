@@ -1,3 +1,7 @@
+---
+title: PyBaMM Governance
+---
+
 # PyBaMM Governance
 
 The following contains the formal governance structure of the PyBaMM
@@ -18,11 +22,11 @@ handled on a case-by-case basis.
 
 ## Current Steering Council
 
-- [Ferran Brosa Planella](https://www.brosaplanella.xyz)
-- [Saransh Chopra](https://saransh-cpp.github.io)
-- Scott Marquis
-- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer)
-- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
+- [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
+- Scott Marquis - Northvolt
+- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 
 ## Advisory Committee
 
