@@ -7,7 +7,7 @@ shortcutDepth: 2
 
 {{< include-md "contact.md" >}}
 
-## PyBaMM Governance
+## Governance
 
 You may view the PyBaMM governance document on the [Governance](/governance/) page.
 

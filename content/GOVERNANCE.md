@@ -2,8 +2,6 @@
 title: PyBaMM Governance
 ---
 
-# PyBaMM Governance
-
 The following contains the formal governance structure of the PyBaMM
 project. This document clarifies how decisions are made with respect
 to community interactions, including the relationship between
