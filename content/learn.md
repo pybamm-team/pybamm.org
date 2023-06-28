@@ -2,6 +2,10 @@
 title: Get started with PyBaMM
 ---
 
+{{< notice tip >}}
+For the official PyBaMM documentation visit https://docs.pybamm.org/en/latest/
+{{< /notice >}}
+
 ## Installation instructions
 
 PyBaMM is available on the `pip` package manager for Windows, macOS, and Linux; and can be installed with
@@ -26,9 +30,14 @@ If you would like to get started with PyBaMM, you may go through the [Getting St
 - [Tutorial 8: Solver options](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%208%20-%20Solver%20options.ipynb)
 - [Tutorial 9: Changing the mesh](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%209%20-%20Changing%20the%20mesh.ipynb)
 
-## Supporting materials
+## Video tutorials
 
 We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings below.
 
 <!-- Shortcode for rendering the Training markdown page, change it to edit this section -->
+
 {{< include-md "./training.md" >}}
+
+## Get help
+
+You can get help by posting questions on the PyBaMM Slack page or in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ion-works.com/services).

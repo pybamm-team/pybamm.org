@@ -2,6 +2,7 @@
 title: "About PyBaMM"
 shortcutDepth: 3
 ---
+
 {{< buttons/github-star >}}{{< buttons/github-fork >}}
 
 PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python. Our mission is to accelerate battery modelling research by providing open-source tools for multi-institutional, interdisciplinary collaboration.
@@ -19,10 +20,21 @@ donations and how you can support, please see the [Donate](/donate/) page.
 
 ## Institutional Partners
 
-Institutional Partners are organizations that support the project by employing PyBaMM contributors, with contributing to the project as part of their official duties. Current Institutional Partners include The Faraday Institution and NumFOCUS.
+### Ionworks
+
+[Ionworks](https://ion-works.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ion-works.com/blog/our-relationship-with-pybamm).
+Ionworks provides support and custom feature development for PyBaMM, as well as software to make modeling easier and faster.
+For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
+[Contact Ionworks](https://ion-works.com/contact) to find out more.
+<br>
+
+{{< figure src="/images/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
+
+<p>
 
 ### The Faraday Institution
 
+The Faraday Institution supports many PyBaMM contributors, who contribute to the project as part of their official duties at universities across the UK.
 <br>
 
 {{< figure src="/images/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
@@ -47,10 +59,10 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 
 The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up of the following members:
 
-- [Ferran Brosa Planella](https://www.brosaplanella.xyz)
-- [Saransh Chopra](https://saransh-cpp.github.io)
-- Scott Marquis
-- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer)
-- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
+- [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
+- Scott Marquis - Northvolt
+- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 
 For more details, see the [PyBaMM Governance](/governance) page.
