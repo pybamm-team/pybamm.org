@@ -24,3 +24,8 @@
   from = "/*"
   to = "/404/"
   status = 404
+
+[[redirects]]
+  from = "/benchmarks"
+  to = "https://pybamm-team.github.io/pybamm-bench"
+  status = 301
