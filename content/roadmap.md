@@ -34,7 +34,7 @@ We would like to improve the content, structure and presentation of the document
 
 We aim to continuously improve PyBaMM's performance. Performance is monitored via [airspeed velocity](https://asv.readthedocs.io/en/stable/). The work on this area has two main fronts:
 
-1. Improving the benchmark suite to monitor the code better.
+1. Improving the benchmark suite (available at https://pybamm.org/benchmarks) to monitor the code better.
 2. Reformat the backend of the code to make it more efficient.
 
 ## Suggestions
