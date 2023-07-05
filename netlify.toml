@@ -27,5 +27,5 @@
 
 [[redirects]]
   from = "/benchmarks"
-  to = "https://pybamm-team.github.io/pybamm-bench"
+  to = "https://pybamm-team.github.io/pybamm-bench/"
   status = 301
