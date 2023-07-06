@@ -7,17 +7,22 @@
 import requests
 import string
 
-# Current maintainers and maintainer trainees, hard-coded in alphabetical order
+# A list of emeritus maintainers, current maintainers, and maintainer trainees
+# hard-coded in alphabetical order
+
 PYBAMM_MAINTAINERS = [
     "brosaplanella",
     "martinjrobins",
     "priyanshuone6",
     "rtimms",
     "Saransh-cpp",
-    "Scottmar93",
     "tinosulzer",
-    "tlestang",
     "TomTranter",
+]
+
+PYBAMM_EMERITUS_MAINTAINERS = [
+    "Scottmar93",
+    "tlestang",
 ]
 
 PYBAMM_MAINTAINER_TRAINEES = [
@@ -46,6 +51,7 @@ def get_contributors():
         for contributor in PYBAMM_CONTRIBUTORS
         # Exclude maintainers and maintainer trainees
         if contributor["login"] not in PYBAMM_MAINTAINERS
+        and contributor["login"] not in PYBAMM_EMERITUS_MAINTAINERS
         and contributor["login"] not in PYBAMM_MAINTAINER_TRAINEES
         # Exclude the pre-commit-ci and allcontributors bots
         and contributor["login"] != "pre-commit-ci[bot]"
@@ -66,8 +72,23 @@ def get_maintainers():
         }
         for maintainer in PYBAMM_CONTRIBUTORS
         if maintainer["login"] in PYBAMM_MAINTAINERS
+        if maintainer["login"] not in PYBAMM_EMERITUS_MAINTAINERS
     ]
 
+def get_emeritus_maintainers():
+    """
+    Get the "login", "html_url", and "avatar_url" fields for each emeritus maintainer
+    from the list of emeritus maintainers.
+    """
+    return [
+        {
+        "login": emeritus_maintainer["login"],
+        "html_url": emeritus_maintainer["html_url"],
+        "avatar_url": emeritus_maintainer["avatar_url"],
+        }
+        for emeritus_maintainer in PYBAMM_CONTRIBUTORS
+        if emeritus_maintainer["login"] in PYBAMM_EMERITUS_MAINTAINERS
+    ]
 
 def get_maintainer_trainees():
     """
@@ -92,7 +113,7 @@ def get_maintainer_trainees():
     ]
 
 # The team name can be either of the following:
-# maintainers, maintainer trainees, or contributors
+# emeritus maintainers, maintainers, maintainer trainees, or contributors
 team_template = string.Template(
 """
 <div class="team">
@@ -129,7 +150,7 @@ print("Generating maintainers...")
 with open("static/teams/maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
-            team_name="Maintainers (current and emeritus)",
+            team_name="Maintainers",
             members="\n".join(
                 [
                     member_template.substitute(
@@ -138,6 +159,25 @@ with open("static/teams/maintainers.html", "w") as file:
                         name=maintainer["login"],
                     )
                     for maintainer in get_maintainers()
+                ]
+            ),
+        )
+    )
+
+# Generate the HTML in static/teams/emeritus-maintainers.html, overwriting as necessary
+print("Generating emeritus maintainers...")
+with open("static/teams/emeritus-maintainers.html", "w") as file:
+    file.write(
+        team_template.substitute(
+            team_name="Emeritus Maintainers",
+            members="\n".join(
+                [
+                    member_template.substitute(
+                        url=emeritus_maintainer["html_url"],
+                        avatarUrl=emeritus_maintainer["avatar_url"],
+                        name=emeritus_maintainer["login"],
+                    )
+                    for emeritus_maintainer in get_emeritus_maintainers()
                 ]
             ),
         )
