@@ -16,6 +16,7 @@ PYBAMM_MAINTAINERS = [
     "Saransh-cpp",
     "Scottmar93",
     "tinosulzer",
+    "tlestang",
     "TomTranter",
 ]
 
@@ -128,7 +129,7 @@ print("Generating maintainers...")
 with open("static/teams/maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
-            team_name="Maintainers",
+            team_name="Maintainers (current and emeritus)",
             members="\n".join(
                 [
                     member_template.substitute(
