@@ -32,9 +32,25 @@ PYBAMM_MAINTAINER_TRAINEES = [
     "smitasahu2",
 ]
 
-PYBAMM_CONTRIBUTORS = requests.get(
-    "https://api.github.com/repos/pybamm-team/pybamm/contributors"
-    ).json()
+
+def query_contributors():
+    # Get the list of contributors from the endpoint iteratively until we get
+    # an empty response
+    contributors_list = []
+    page = 1
+    while True:
+        contributors = requests.get(
+            f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
+        ).json()
+        if contributors == []:
+            break
+        else:
+            contributors_list += contributors
+            page += 1
+    return contributors_list
+
+
+PYBAMM_CONTRIBUTORS = query_contributors()
 
 
 def get_contributors():
