@@ -117,7 +117,7 @@ params:
             link: https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html
 
           - text: Getting started
-            link: /get-started/
+            link: /learn/
 
           - text: Learn with examples
             link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
