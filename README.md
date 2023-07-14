@@ -61,6 +61,8 @@ It is recommended to verify the changes to the teams page before committing. The
 
 **Warning**: The `make teams` command will overwrite the `static/teams/` files.
 
+Alternatively, the teams page can be generated in a pull request by manually triggering the `teams.yml` workflow.
+
 ## Deployment
 
 The website is built using the [Hugo](https://gohugo.io) static site generator
