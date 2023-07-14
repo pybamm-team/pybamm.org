@@ -1,4 +1,4 @@
-.PHONY: help themes html serve serve-dev clean
+.PHONY: help themes html serve serve-dev clean teams
 .DEFAULT_GOAL := help
 
 help:
@@ -33,3 +33,7 @@ serve-dev: themes
 clean: ## Remove built files
 clean:
 	rm -rf public
+
+teams: ## Generate team pages
+teams: themes
+	python3 scripts/generate_teams.py

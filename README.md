@@ -5,7 +5,7 @@
 [![pre-commit.ci](https://results.pre-commit.ci/badge/github/pybamm-team/pybamm.org/main.svg)](https://results.pre-commit.ci/latest/github/pybamm-team/pybamm.org/main)
 
 Source code for [pybamm.org](https://www.pybamm.org), released under the
-BSD-3-Clause License. Currently under active development.
+BSD-3-Clause License.
 
 ## Steps to contribute
 
@@ -50,6 +50,16 @@ style, and common file-based issues.
 
 Rather than just the files changed due to a commit, you may run the hooks on
 all files using the `pre-commit run --all-files` command.
+
+6. To generate the teams page, run
+
+```bash
+make teams
+```
+
+It is recommended to verify the changes to the teams page before committing. The teams page is generated from the files in `static/teams/` and the script `scripts/get_teams_info.py` and the output is displayed in `content/teams.md`.
+
+**Warning**: The `make teams` command will overwrite the `static/teams/` files.
 
 ## Deployment
 
