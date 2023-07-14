@@ -17,11 +17,14 @@ jobs:
           ref: main
           submodules: recursive
 
-      - name: Setup Python 3.11 and run the teams generation script
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
       - run: python scripts/generate_teams.py
+
+      - name: Run the teams generation script
+        run: python scripts/generate_teams.py
 
       # Will exit silently if there are no changes
       - name: Create pull request
