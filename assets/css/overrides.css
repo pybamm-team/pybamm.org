@@ -60,6 +60,26 @@ to near-parity with NumPy and SciPy websites (which use older versions of the th
     .hero-title-content {
         flex-direction: column;
         align-items: center;
+        align-self: center;
+        justify-content: center;
+    }
+
+    button.cta-button {
+        align-items: center;
+        align-self: center;
+    }
+
+    .hero-cta {
+        align-self: center;
+    }
+
+    .flex-column {
+        /* align all items center */
+        align-items: center;
+    }
+
+    .footer-column {
+        padding-inline-end: 20px;
     }
 }
 
@@ -74,11 +94,17 @@ to near-parity with NumPy and SciPy websites (which use older versions of the th
 
     .hero-subtitle {
         text-align: center;
+        padding-top: 20px;
     }
 
     .hero-cta {
         align-self: center;
     }
+
+    .hero-title {
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -88,7 +114,45 @@ to near-parity with NumPy and SciPy websites (which use older versions of the th
 
     .hero-logo {
         align-self: center;
-        max-width: 80%;
-        padding-bottom: 20px
     }
+}
+
+/* Accessibility improvements */
+
+.footer-link, .footer-link:hover {
+    line-height: 2rem;
+}
+
+.copyright {
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    color: var(--colorHighlight);
+}
+
+/* Individual highlights */
+
+.cta-button:hover {
+    color: var(--colorHighlight);
+}
+
+.news-title a:hover, .news-date a:hover {
+    color: var(--colorHighlight);
+}
+
+/* Animations */
+
+a {
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    font-weight: bold;
+    transition: color 0.25s ease-in-out;
+}
+
+a:active {
+    font-weight: bold;
+    transition: color 0.25s ease-in-out;
 }
