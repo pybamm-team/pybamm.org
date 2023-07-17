@@ -26,6 +26,11 @@ jobs:
       - name: Run the teams generation script
         run: python scripts/generate_teams.py
 
+      - name: Run pre-commit hooks
+        run: |
+          pre-commit install
+          pre-commit run --all-files
+
       # Will exit silently if there are no changes
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
