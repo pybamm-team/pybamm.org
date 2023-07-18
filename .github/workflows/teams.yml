@@ -1,4 +1,5 @@
 # A workflow to run the generate_teams.py script in the CI weekly and create a pull request
+name: Generate teams for PyBaMM
 
 on:
   schedule:
