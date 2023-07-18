@@ -52,8 +52,8 @@ jobs:
           body: "This pull request was automatically created by the CI workflow `teams.yml`."
           labels: "auto-generated"
           reviewers: |
-            "agriyakhetarpal"
-            "Saransh-cpp"
-            "tinosulzer"
-            "rtimms"
+            agriyakhetarpal
+            Saransh-cpp
+            tinosulzer
+            rtimms
           draft: false
