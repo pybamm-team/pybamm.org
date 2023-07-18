@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: 3.11
 
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
       - name: Run the teams generation script
         run: python scripts/generate_teams.py
 
