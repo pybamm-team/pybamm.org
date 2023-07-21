@@ -12,6 +12,7 @@ import string
 
 PYBAMM_MAINTAINERS = [
     "brosaplanella",
+    "DrSOKane",
     "martinjrobins",
     "priyanshuone6",
     "rtimms",
@@ -27,7 +28,6 @@ PYBAMM_EMERITUS_MAINTAINERS = [
 
 PYBAMM_MAINTAINER_TRAINEES = [
     "Afgr1087",
-    "DrSOKane",
     "RuiheLi",
     "smitasahu2",
 ]
