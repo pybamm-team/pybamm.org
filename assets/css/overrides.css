@@ -148,11 +148,9 @@ a {
 }
 
 a:hover {
-    font-weight: bold;
     transition: color 0.25s ease-in-out;
 }
 
 a:active {
-    font-weight: bold;
     transition: color 0.25s ease-in-out;
 }
