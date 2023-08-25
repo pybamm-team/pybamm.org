@@ -16,17 +16,18 @@ Information about current and past Google Summer of Code projects and idea lists
 
 ## Project reports
 
-<!-- WARNING: individual project report links are permalinks and MUST NEVER be changed as such
-without the existence of a valid redirect rule in _redirects and a corresponding entry in netlify.toml. -->
+<!-- WARNING: individual project report links from 2023 onwards are permalinks and
+they MUST NEVER be changed as such without the existence of a valid redirect rule in
+the _redirects file and a corresponding entry in netlify.toml. -->
 
 ### GSoC 2021
 
-- Priyanshu Agarwal
-- Saransh Chopra
+- [Priyanshu Agarwal](https://priyanshuone6.hashnode.dev/project-report-gsoc)
+- [Saransh Chopra](https://gist.github.com/Saransh-cpp/5f61540819b8c8d552c12b1609915f5d)
 
 ### GSoC 2022
 
-- Vaibhav Chopra
+- [Vaibhav Chopra](https://gist.github.com/Vaibhav-Chopra-GT/b4725011475fb0508791222424e89f6b)
 
 ### GSoC 2023
 
