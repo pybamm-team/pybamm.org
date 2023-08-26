@@ -154,3 +154,13 @@ a:hover {
 a:active {
     transition: color 0.25s ease-in-out;
 }
+
+/* Adjustments for headings */
+
+.content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
+    margin-top: 0.75rem;
+}
+
+.title:not(.is-spaced) + .subtitle {
+    margin-top: -0.2rem;
+}
