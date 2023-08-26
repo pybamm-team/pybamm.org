@@ -1,3 +1,9 @@
 # Ignore links by template and theme files
 
 file:///home/runner/work/pybamm.org/pybamm.org/content/pybamm.org
+
+# Ignore GSoC branched pages
+
+file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2021/pybamm.org
+file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2022/pybamm.org
+file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2023/pybamm.org
