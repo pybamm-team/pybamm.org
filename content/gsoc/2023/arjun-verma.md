@@ -1,9 +1,9 @@
 ---
-title:"Arjun Verma — Google Summer of Code 2023 Final Report"
-subtitle:"Dockerizing & Simplifying PyBaMM's Installation"
-summary:"This is the final report for Arjun Verma's Google Summer of Code 2023 project with PyBaMM, NumFOCUS. I worked on Dockerizing & Simplifying PyBaMM's Installation."
-date:2023-08-22
-shortcutDepth:2
+title: "Arjun Verma — Google Summer of Code 2023 Final Report"
+subtitle: "Dockerizing & Simplifying PyBaMM's Installation"
+summary: "This is the final report for Arjun Verma's Google Summer of Code 2023 project with PyBaMM, NumFOCUS. I worked on Dockerizing & Simplifying PyBaMM's Installation."
+date: 2023-08-22
+shortcutDepth: 2
 # WARNING: THE LINK TO THIS PAGE SHOULD NEVER BE CHANGED WITHOUT THE EXISTENCE OF A HUGO PERMALINK, AN ALIAS IN THE FRONTMATTER, OR WITHOUT THE EXISTENCE OF A PERMANENT (STATUS CODE 301) REDIRECTION RULE IN THE _redirects FILE AND A CORRESPONDING ENTRY IN THE netlify.toml FILE. THIS IS TO ENSURE THAT THE LINK TO THIS PAGE IS NEVER BROKEN SINCE IT ACCOUNTS FOR ARJUN VERMA'S GSoC 2023 FINAL REPORT AND IS LINKED TO FROM THE GOOGLE SUMMER OF CODE WEBSITE AS THE WORK PRODUCT SUBMISSION.
 ---
 
