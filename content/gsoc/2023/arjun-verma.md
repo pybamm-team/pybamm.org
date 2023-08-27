@@ -81,3 +81,24 @@ This list contains issues and pull requests that are both specific to and not sp
 
 
 ### 👷 Pull requests
+
+- ([pybamm-team/PyBaMM #2973](https://github.com/pybamm-team/PyBaMM/pull/2973))                         Test scikit.odes installation nightly
+- ([pybamm-team/PyBaMM #3005](https://github.com/pybamm-team/PyBaMM/pull/3005))                         Migrate from tox 3.28 to nox
+- ([pybamm-team/PyBaMM #3044](https://github.com/pybamm-team/PyBaMM/pull/3044))                         Create Optional Dependencies
+- ([pybamm-team/PyBaMM #3082](https://github.com/pybamm-team/PyBaMM/pull/3082))                         Refactor env variables in a single function
+- ([pybamm-team/PyBaMM #3084](https://github.com/pybamm-team/PyBaMM/pull/3084))                         Add pre-commit session & add default sessions
+- ([pybamm-team/PyBaMM #3104](https://github.com/pybamm-team/PyBaMM/pull/3104))                         Document other useful nox commands
+- ([pybamm-team/PyBaMM #3105](https://github.com/pybamm-team/PyBaMM/pull/3105))                         Installing pybamm[all] in jupyter notebooks
+- ([pybamm-team/PyBaMM #3110](https://github.com/pybamm-team/PyBaMM/pull/3110))                         Add nbqa support for example notebooks
+- ([pybamm-team/PyBaMM #3144](https://github.com/pybamm-team/PyBaMM/pull/3144))                         Make pandas optional
+- ([pybamm-team/PyBaMM #3145](https://github.com/pybamm-team/PyBaMM/pull/3145))                         Fix Failing Benchmarks
+- ([pybamm-team/PyBaMM #3162](https://github.com/pybamm-team/PyBaMM/pull/3162))                         Migrate from black to ruff --fix
+- ([pybamm-team/PyBaMM #3163](https://github.com/pybamm-team/PyBaMM/pull/3163))                         Make jax & odes optional
+- ([pybamm-team/PyBaMM #3180](https://github.com/pybamm-team/PyBaMM/pull/3180))                         Add blacken-docs as pre-commit hook for code-blocks in docs
+- ([pybamm-team/PyBaMM #3192](https://github.com/pybamm-team/PyBaMM/pull/3192))                         Add more precommits
+- ([pybamm-team/PyBaMM #3223](https://github.com/pybamm-team/PyBaMM/pull/3223))                         Dockerize PyBaMM
+- ([pybamm-team/PyBaMM #3235](https://github.com/pybamm-team/PyBaMM/pull/3235))                         Clean up installation guides
+- ([pybamm-team/PyBaMM #3106](https://github.com/pybamm-team/PyBaMM/pull/3106))                         Add max_step arg in basesolver (draft)
+- ([pybamm-team/PyBaMM #3053](https://github.com/pybamm-team/PyBaMM/pull/3053))                         Add pyproject.toml to the project  (draft)
+- ([pybamm-team/BPX      #39](https://github.com/pybamm-team/BPX/pull/39))                              Migrate to Pydantic>2 (draft)
+- ([pybamm-team/BPX      #35](https://github.com/pybamm-team/BPX/pull/35))                              Temporarily pin pydantic<2 to fix PyBaMM build
