@@ -69,9 +69,8 @@ def get_contributors():
         if contributor["login"] not in PYBAMM_MAINTAINERS
         and contributor["login"] not in PYBAMM_EMERITUS_MAINTAINERS
         and contributor["login"] not in PYBAMM_MAINTAINER_TRAINEES
-        # Exclude the pre-commit-ci and allcontributors bots
-        and contributor["login"] != "pre-commit-ci[bot]"
-        and contributor["login"] != "allcontributors[bot]"
+        # Exclude all bots (pre-commit-ci, allcontributors, dependabot, et cetera)
+        and not contributor["login"].endswith("[bot]")
     ]
 
 
@@ -136,8 +135,7 @@ team_template = string.Template(
     <h3 id="${team_name}"class="name title">
         ${team_name}
     </h3>
-    <div class="members">
-        ${members}
+    <div class="members">${members}
     </div>
 </div>
 """
