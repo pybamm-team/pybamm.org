@@ -143,15 +143,7 @@ to near-parity with NumPy and SciPy websites (which use older versions of the th
 
 /* Animations */
 
-a {
-    transition: color 0.25s ease-in-out;
-}
-
-a:hover {
-    transition: color 0.25s ease-in-out;
-}
-
-a:active {
+a, a:hover, a:active {
     transition: color 0.25s ease-in-out;
 }
 
