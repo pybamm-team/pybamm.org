@@ -62,3 +62,22 @@ To ensure code quality and adherence to best practices, the project added more p
 One of the key achievements was the Dockerization of PyBaMM. By containerizing PyBaMM using Docker, the project simplified the installation process, making it easier for users to set up and deploy PyBaMM in various environments. This containerization approach eliminates potential installation hurdles and provides a consistent environment for users.
 
 Lastly, the project successfully pushed PyBaMM Docker images to Docker Hub. This step not only showcases the project's commitment to accessibility but also makes it convenient for users to access and deploy PyBaMM Docker images from a centralized repository.
+
+## 📑 A list of issues opened and pull requests submitted
+
+This list contains issues and pull requests that are both specific to and not specific to my project: they contain infrastructure improvements, documentation improvements, general bug fixes, and enhancements.
+
+### 🛠️ Issues
+
+- ([pybamm-team/PyBaMM #2813](https://github.com/pybamm-team/PyBaMM/issues/2813))                         adding nbQA support for example notebooks
+- ([pybamm-team/PyBaMM #2953](https://github.com/pybamm-team/PyBaMM/issues/2953))                         scikits odes installation
+- ([pybamm-team/PyBaMM #2962](https://github.com/pybamm-team/PyBaMM/issues/2962))                         pybamm_install_odes is not tested anywhere
+- ([pybamm-team/PyBaMM #3035](https://github.com/pybamm-team/PyBaMM/issues/3035))                         Splitting the required dependencies into optional dependencies
+- ([pybamm-team/PyBaMM #3146](https://github.com/pybamm-team/PyBaMM/issues/3146))                         Make jax, jaxlib, and scikits.odes "extra requires" in setup.py
+- ([pybamm-team/PyBaMM #3124](https://github.com/pybamm-team/PyBaMM/issues/3124))                         [Bug]: benchmarks are failing
+- ([pybamm-team/PyBaMM #3048](https://github.com/pybamm-team/PyBaMM/issues/3048))                         Improve the nox CI
+- ([pybamm-team/BPX    #38](https://github.com/pybamm-team/BPX/issues/38))                                Migrate to Pydantic>2
+- ([pybamm-team/PyBaMM #3049](https://github.com/pybamm-team/PyBaMM/issues/3049))                         Migrate or conjugate pyproject.toml with setup.py
+
+
+### 👷 Pull requests
