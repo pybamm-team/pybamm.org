@@ -1,9 +1,9 @@
 ---
-title: "Arjun Verma — Google Summer of Code 2023 Final Report"
-subtitle: "Dockerizing & Simplifying PyBaMM's Installation"
-summary: "This is the final report for Arjun Verma's Google Summer of Code 2023 project with PyBaMM, NumFOCUS. I worked on Dockerizing & Simplifying PyBaMM's Installation."
-date: 2023-08-22
-shortcutDepth: 2
+title:"Arjun Verma — Google Summer of Code 2023 Final Report"
+subtitle:"Dockerizing & Simplifying PyBaMM's Installation"
+summary:"This is the final report for Arjun Verma's Google Summer of Code 2023 project with PyBaMM, NumFOCUS. I worked on Dockerizing & Simplifying PyBaMM's Installation."
+date:2023-08-22
+shortcutDepth:2
 # WARNING: THE LINK TO THIS PAGE SHOULD NEVER BE CHANGED WITHOUT THE EXISTENCE OF A HUGO PERMALINK, AN ALIAS IN THE FRONTMATTER, OR WITHOUT THE EXISTENCE OF A PERMANENT (STATUS CODE 301) REDIRECTION RULE IN THE _redirects FILE AND A CORRESPONDING ENTRY IN THE netlify.toml FILE. THIS IS TO ENSURE THAT THE LINK TO THIS PAGE IS NEVER BROKEN SINCE IT ACCOUNTS FOR ARJUN VERMA'S GSoC 2023 FINAL REPORT AND IS LINKED TO FROM THE GOOGLE SUMMER OF CODE WEBSITE AS THE WORK PRODUCT SUBMISSION.
 ---
 
@@ -76,7 +76,7 @@ This list contains issues and pull requests that are both specific to and not sp
 - ([pybamm-team/PyBaMM #3146](https://github.com/pybamm-team/PyBaMM/issues/3146))                         Make jax, jaxlib, and scikits.odes "extra requires" in setup.py
 - ([pybamm-team/PyBaMM #3124](https://github.com/pybamm-team/PyBaMM/issues/3124))                         [Bug]: benchmarks are failing
 - ([pybamm-team/PyBaMM #3048](https://github.com/pybamm-team/PyBaMM/issues/3048))                         Improve the nox CI
-- ([pybamm-team/BPX    #38](https://github.com/pybamm-team/BPX/issues/38))                                Migrate to Pydantic>2
+- ([pybamm-team/BPX    #38](https://github.com/pybamm-team/BPX/issues/38))                                  Migrate to Pydantic>2
 - ([pybamm-team/PyBaMM #3049](https://github.com/pybamm-team/PyBaMM/issues/3049))                         Migrate or conjugate pyproject.toml with setup.py
 
 
@@ -100,5 +100,25 @@ This list contains issues and pull requests that are both specific to and not sp
 - ([pybamm-team/PyBaMM #3235](https://github.com/pybamm-team/PyBaMM/pull/3235))                         Clean up installation guides
 - ([pybamm-team/PyBaMM #3106](https://github.com/pybamm-team/PyBaMM/pull/3106))                         Add max_step arg in basesolver (draft)
 - ([pybamm-team/PyBaMM #3053](https://github.com/pybamm-team/PyBaMM/pull/3053))                         Add pyproject.toml to the project  (draft)
-- ([pybamm-team/BPX      #39](https://github.com/pybamm-team/BPX/pull/39))                              Migrate to Pydantic>2 (draft)
-- ([pybamm-team/BPX      #35](https://github.com/pybamm-team/BPX/pull/35))                              Temporarily pin pydantic<2 to fix PyBaMM build
+- ([pybamm-team/BPX      #39](https://github.com/pybamm-team/BPX/pull/39))                                Migrate to Pydantic>2 (draft)
+- ([pybamm-team/BPX      #35](https://github.com/pybamm-team/BPX/pull/35))                                Temporarily pin pydantic<2 to fix PyBaMM build
+
+## 🔮 Future work
+
+- **Automated Docker Image Builds and DockerHub Integration:** Develop an automated process for building PyBaMM Docker images and seamlessly pushing them to DockerHub using continuous integration (CI) pipelines. This enhancement will ensure that up-to-date PyBaMM images are readily available for deployment and usage by the community.
+
+- **Contribution to Nightly Release Infrastructure:** Further contribute to the implementation of nightly builds and releases on a custom PyPI index. Collaborate on versioning strategies, improve wheel-building infrastructure, and facilitate the smooth upload of nightly builds to the third-party PyPI index.
+
+- **Exploration of Migration to pyproject.toml:** Investigate the feasibility and benefits of migrating PyBaMM's packaging configuration from setup.py to the modern pyproject.toml format. This transition could involve leveraging new build-backends like meson-py or scikit-build to enhance packaging compatibility and maintainability.
+
+## Acknowledgements
+
+I extend my heartfelt gratitude to the Google Summer of Code program, NumFOCUS, and the entire PyBaMM Team for providing me with a remarkable and enriching experience during this productive summer. This journey marked my first significant contribution to the development and maintenance of open-source scientific software on such a significant scale. The learnings I acquired throughout this process have been invaluable.
+
+I am deeply honored to have had the privilege of being mentored by the esteemed PyBaMM Steering Council members, [Ferran Brosa Planella](https://www.brosaplanella.xyz/) and [Saransh Chopra](https://saransh-cpp.github.io). Their guidance and unwavering support not only in technical matters but also in fostering a positive and collaborative environment have been truly uplifting.
+
+I wish to express my sincere appreciation to [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) and [Robert Timms](https://www.robertwtimms.com/) for their invaluable reviews and guidance throughout various stages of my contributions to PyBaMM. The collective effort of the PyBaMM team, their insights, and collaborative spirit have been the driving force behind the accomplishments achieved during this project.
+
+I also had the pleasure of collaborating with [Agriya](https://github.com/agriyakhetarpal), my fellow student at GSoC. Our interactions during discussions on issues and pull requests exemplified the essence of open-source collaboration.
+
+

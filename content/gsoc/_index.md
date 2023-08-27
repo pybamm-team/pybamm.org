@@ -32,5 +32,5 @@ the _redirects file and a corresponding entry in netlify.toml. -->
 ### GSoC 2023
 
 - [Agriya Khetarpal](/gsoc/2023/agriya-khetarpal/)
-- Arjun Verma
+- [Arjun Verma](/gsoc/2023/arjun-verma/)
 - Julian Evers
