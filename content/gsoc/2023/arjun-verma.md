@@ -120,5 +120,3 @@ I am deeply honored to have had the privilege of being mentored by the esteemed 
 I wish to express my sincere appreciation to [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) and [Robert Timms](https://www.robertwtimms.com/) for their invaluable reviews and guidance throughout various stages of my contributions to PyBaMM. The collective effort of the PyBaMM team, their insights, and collaborative spirit have been the driving force behind the accomplishments achieved during this project.
 
 I also had the pleasure of collaborating with [Agriya](https://github.com/agriyakhetarpal), my fellow student at GSoC. Our interactions during discussions on issues and pull requests exemplified the essence of open-source collaboration.
-
-
