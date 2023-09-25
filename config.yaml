@@ -20,14 +20,17 @@ params:
   title: PyBaMM Team # for copyright
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
 
+  # Privacy-preserving analytics
+  plausible:
+    dataDomain: pybamm.org
+    javaScript: https://plausible.io/js/script.js
+
   images:
     - /images/pybamm_icon.png
 
   font:
     name: "Lato"
-    # sizes: [400, 900]
-
-  # plausible: analytics (TODO)
+    sizes: [400, 900]
 
   style:
     vars:
@@ -49,7 +52,6 @@ params:
 
   navbar:
     - title: Install
-      # TODO: update to /install/ when we have a dedicated page
       url: https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html
       is_external: true
 

@@ -70,4 +70,4 @@ and is hosted on [Netlify](https://pybamm-developer-preview.netlify.app/).
 
 ## Analytics
 
-TODO: Plausible.io / Google Analytics
+The website uses a privacy-friendly analytics service called [Plausible](https://plausible.io/). The analytics data is available for authorised users at <https://plausible.io/pybamm.org>.
