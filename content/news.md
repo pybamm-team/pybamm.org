@@ -14,6 +14,27 @@ date: 2021-07-06
 
 <!-- Note: follow reverse order while updating, sort in descending order of recency -->
 
+## Release notes 23.9
+###### October 06, 2023
+
+PyBaMM 23.9 is finally here! This release marks the change to a new release schedule with three releases a year, aiming to publish the new versions at the end of January, May and September (ish). We would like to thank all the contributors that made this release possible.
+
+The full list of changes can be found in the CHANGELOG file, but here we provide a deeper overview of the main features of this release.
+
+### Installation
+
+### SEI and plating models for both electrodes
+
+### Hysteresis
+
+### Solver improvements
+
+### Numpy functions
+
+### MSMR model
+
+### Thermal pouch model
+
 ## Battery Modelling Webinar Series 2021
 ###### July 06, 2021
 
