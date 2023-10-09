@@ -1,21 +1,22 @@
 ---
 title: PyBaMM Newsroom
-shortcutDepth: 2
+shortcutDepth: 1
 newsHeader: "Battery Modelling Webinar Series 2021"
 date: 2021-07-06
+toc: true
 ---
 
 <!-- Format for adding news is: -->
 <!-- ## Title -->
-<!-- ###### Date -->
-<!-- Text -->
+<!-- _Date_ -->
+<!-- Content -->
 
 <!-- Change date and heading in YAML frontmatter for homepage -->
 
 <!-- Note: follow reverse order while updating, sort in descending order of recency -->
 
 ## Release notes 23.9
-###### October 06, 2023
+_October 06, 2023_
 
 PyBaMM 23.9 is finally here! This release marks the change to a new release schedule with three releases a year, aiming to publish the new versions at the end of January, May and September (ish). We would like to thank all the contributors that made this release possible.
 
@@ -36,7 +37,7 @@ The full list of changes can be found in the CHANGELOG file, but here we provide
 ### Thermal pouch model
 
 ## Battery Modelling Webinar Series 2021
-###### July 06, 2021
+_July 06, 2021_
 
 Robert Timms (University of Oxford) presented work on "Reduced-order 3D models of lithium-ion cells" today at the weekly Battery Modeling Webinar Series. The webinar attracts an audience from across the world with interests spanning a diverse range of battery-related topics.
 
@@ -50,7 +51,7 @@ examples) or [Google Colab](https://colab.research.google.com/github/pybamm-team
 
 
 ## PyBaMM JORS paper
-###### June 09, 2021
+_June 09, 2021_
 
 Our introductory paper is now out in the Journal of Open Research Software! This paper explains the motivation and design philosophy behind PyBaMM. Find it here: https://doi.org/10.5334/jors.309
 
@@ -81,7 +82,7 @@ year = {2021}
 
 
 ## Oxford Battery Modelling Symposium 2021
-###### March 31, 2021
+_March 31, 2021_
 
 Today the PyBaMM team presented a poster at the Oxford Battery Modelling Symposium 2021. The third edition of the OBMS ran virtually with Prof. Yue Qi (Brown University), Prof. Daniel Steingart (Columbia University) and Dr. Birger Horstmann (Helmholtz Institute Ulm) as keynote speakers.
 
@@ -92,7 +93,7 @@ You may try out PyBaMM for yourself by going to [Examples](https://github.com/py
 
 
 ## PyBaMM v0.4.0 Release
-###### March 29, 2021
+_March 29, 2021_
 
 PyBaMM version 0.4.0 has now been released. This release introduces:
 
@@ -108,7 +109,7 @@ For more information, please see the full [CHANGELOG](https://github.com/pybamm-
 
 
 ## PyBaMM v0.3.0 Release
-###### December 01, 2020
+_December 01, 2020_
 
 PyBaMM version 0.3.0 has now been released. This release introduces a new aging model for particle swelling and cracking, a new reduced-order model (TSPMe), and a parameter set for A123 LFP cells. Additionally, there have been several backend optimizations to speed up model creation and solving, and other minor features and bug fixes.
 
@@ -117,7 +118,7 @@ For more information, please see the full [CHANGELOG](https://github.com/pybamm-
 
 
 ## Faraday Institution Conference 2020
-###### November 24, 2020
+_November 24, 2020_
 
 Robert Timms (University of Oxford) presented PyBaMM today in the Faraday Institution Annual Conference that took place online.
 
@@ -130,7 +131,7 @@ The recording of the talk is available on [YouTube](https://www.youtube.com/watc
 
 
 ## Battery Modelling Webinar Series
-###### September 08, 2020
+_September 08, 2020_
 
 Valentin Sulzer (University of Michigan) presented PyBaMM today at the weekly
 Battery Modeling Webinar Series, an event which attracts audience from across
