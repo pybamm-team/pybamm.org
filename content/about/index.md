@@ -49,6 +49,25 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 
 {{< figure src="/images/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
 
+### Google Summer of Code
+
+Since 2021, Google Summer of Code has provided funding for 6 students to spend a summer working on a PyBaMM project; we are pleased to say that several of these have gone on to become long-time PyBaMM contributors!
+
+### Other
+
+We are grateful to following organizations for supporting PyBaMM development either directly through employee/student time or indirectly through financial support:
+
+[to do: add logos]
+
+- University of Oxford
+- University of Michigan
+- Carnegie Mellon University
+- Imperial College London
+- University of Warwick
+- University College London
+
+To submit a request to add a new organization to this list, [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new)
+
 ## PyBaMM on Twitter
 
 <p>
