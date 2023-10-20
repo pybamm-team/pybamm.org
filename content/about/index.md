@@ -92,6 +92,8 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 
 {{< figure src="/images/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
 
+{{< figure src="/images/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+
 </div>
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
