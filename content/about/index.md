@@ -60,11 +60,12 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up
 of the following members:
 
-- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
+- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick, and Ionworks
 - [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
 - Scott Marquis - Northvolt
 - [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
-- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
+- [Valentin Sulzer](https://www.linkedin.com/in/valentinsulzer/) - Ionworks
+- [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
 
 For more details, see the [PyBaMM Governance](/governance) page. The teams of maintainers and maintainer trainees are
 listed on the [Teams](/teams) page.
