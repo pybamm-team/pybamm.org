@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {{ if isset .Params 0 }}
+        {{ $url := index .Params 0 }}
+        {{ with getJSON $url }}
+            {{ .content | base64Decode | markdownify }}
+            {{ if .content | base64Decode | markdownify | findRE "^# " }}
+                {{ $title := .content | base64Decode | markdownify | findRE "^# (.+)" | replaceRE "^# " "" }}
+                {{ page.Title $title }}
+            {{ end }}
+        {{ else }}
+        {{ errorf "Failed to fetch content from the provided URL: %s" $url }}
+        {{ end }}
+    {{ else }}
+        {{ errorf "You must provide a URL in the shortcode." }}
+    {{ end }}
+</body>
+</html>
