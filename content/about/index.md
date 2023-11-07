@@ -80,19 +80,21 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
-{{< figure src="/images/university_of_oxford.svg" alt="Logo for the University of Oxford" width="200px" >}}
+{{< figure src="/images/logos/university_of_oxford.svg" alt="Logo for the University of Oxford" width="200px" >}}
 
-{{< figure src="/images/university_of_michigan.svg" alt="Logo for the University of Michigan" width="300px" >}}
+{{< figure src="/images/logos/university_of_michigan.svg" alt="Logo for the University of Michigan" width="300px" >}}
 
-{{< figure src="/images/carnegie_mellon_university.svg" alt="Logo for Carnegie Mellon University" width="250px" >}}
+{{< figure src="/images/logos/carnegie_mellon_university.svg" alt="Logo for Carnegie Mellon University" width="250px" >}}
 
-{{< figure src="/images/imperial_college_london.png" alt="Logo for Imperial College London" width="200px" >}}
+{{< figure src="/images/logos/imperial_college_london.png" alt="Logo for Imperial College London" width="200px" >}}
 
-{{< figure src="/images/university_of_warwick.png" alt="Logo for the University of Warwick" width="200px" >}}
+{{< figure src="/images/logos/university_of_warwick.png" alt="Logo for the University of Warwick" width="200px" >}}
 
-{{< figure src="/images/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
+{{< figure src="/images/logos/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
 
-{{< figure src="/images/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+{{< figure src="/images/logos/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+
+{{< figure src="/images/logos/sila.png" alt="Logo for Sila Nanotechnologies" width="200px" >}}
 
 </div>
 
