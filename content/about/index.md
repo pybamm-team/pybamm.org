@@ -30,7 +30,7 @@ For companies who want to leverage the power, flexibility, and openness of the P
 
 &nbsp;
 
-{{< figure src="/images/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
+{{< figure src="/images/logos/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
 
 &nbsp;
 
@@ -43,7 +43,7 @@ The Faraday Institution supports many PyBaMM contributors, who contribute to the
 
 &nbsp;
 
-{{< figure src="/images/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
+{{< figure src="/images/logos/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
 
 &nbsp;
 
@@ -57,7 +57,7 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 
 &nbsp;
 
-{{< figure src="/images/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
+{{< figure src="/images/logos/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
 
 &nbsp;
 
@@ -70,13 +70,6 @@ Since 2021, the [Google Summer of Code](/gsoc/) programme has provided funding f
 We are grateful to the following organizations for supporting PyBaMM's development, either directly through employee/student time or indirectly through financial support:
 
 &nbsp;
-
-<!-- - University of Oxford
-- University of Michigan
-- Carnegie Mellon University
-- Imperial College London
-- University of Warwick
-- University College London -->
 
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
@@ -97,6 +90,8 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 {{< figure src="/images/logos/sila.png" alt="Logo for Sila Nanotechnologies" width="200px" >}}
 
 </div>
+
+&nbsp;
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
