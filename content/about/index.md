@@ -115,5 +115,8 @@ of the following members:
 - [Valentin Sulzer](https://www.linkedin.com/in/valentinsulzer/) - Ionworks
 - [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
 
-For more details, see the [PyBaMM Governance](/governance) page. The teams of maintainers and maintainer trainees are
-listed on the [Teams](/teams) page.
+For more details, see the [PyBaMM Governance](/governance) page.
+
+## Current PyBaMM Team
+
+The teams of maintainers and maintainer trainees are listed on the [Teams](/teams) page.

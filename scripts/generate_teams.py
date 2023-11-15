@@ -30,6 +30,9 @@ PYBAMM_MAINTAINER_TRAINEES = [
     "Afgr1087",
     "RuiheLi",
     "smitasahu2",
+    "agriyakhetarpal",
+    "arjxn-py",
+    "kratman"
 ]
 
 
