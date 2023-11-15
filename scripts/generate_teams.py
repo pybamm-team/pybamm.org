@@ -32,6 +32,7 @@ PYBAMM_MAINTAINER_TRAINEES = [
     "smitasahu2",
     "agriyakhetarpal",
     "arjxn-py",
+    "kratman"
 ]
 
 
