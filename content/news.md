@@ -23,7 +23,7 @@ PyBaMM 23.9 is finally here! This release marks the change to a new release sche
 The full list of changes can be found in the CHANGELOG file, but here we provide a deeper overview of the main features of this release.
 
 ### Installation of optional dependencies
-The number of required dependencies for PyBaMM has now been reduced to: [NumPy](https://numpy.org/), [SciPy](https://docs.scipy.org/doc/scipy/), [CasADi](https://web.casadi.org/docs/) and [Xarray](https://docs.xarray.dev/en/stable/). This will be the only dependencies installed when running
+The number of required dependencies for PyBaMM has now been reduced to: [NumPy](https://numpy.org/), [SciPy](https://docs.scipy.org/doc/scipy/), [CasADi](https://web.casadi.org/docs/), [Xarray](https://docs.xarray.dev/en/stable/) and [anytree](https://github.com/c0fec0de/anytree). This will be the only dependencies installed when running
 ```bash
 pip install pybamm
 ```
