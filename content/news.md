@@ -1,7 +1,7 @@
 ---
 title: PyBaMM Newsroom
 shortcutDepth: 1
-newsHeader: "Battery Modelling Webinar Series 2021"
+newsHeader: "PyBaMM v23.9 released!"
 date: 2021-07-06
 toc: true
 ---
