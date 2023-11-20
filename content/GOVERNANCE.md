@@ -25,6 +25,7 @@ handled on a case-by-case basis.
 - Scott Marquis - Northvolt
 - [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
+- [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
 
 ## Advisory Committee
 
