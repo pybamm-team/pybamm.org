@@ -156,3 +156,13 @@ a, a:hover, a:active {
 .title:not(.is-spaced) + .subtitle {
     margin-top: -0.2rem;
 }
+
+/* Navigation bar dropdown */
+
+.navbar.is-fresh .navbar-item.has-dropdown .navbar-link {
+    color: var(--colorPrimaryDark);
+}
+
+.navbar.is-fresh .navbar-item.has-dropdown .navbar-link:hover {
+    color: #4ca3c3
+}
