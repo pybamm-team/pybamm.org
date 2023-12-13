@@ -9,7 +9,7 @@ To find out more about PyBaMM, you can visit our website [pybamm.org](/) or read
 
 ## Getting started
 
-We mostly communicate via Slack, so you should start off by [joining our Slack workspace](https://www.pybamm.org/contact) and heading to the `#gsoc-main` channel.
+We mostly communicate via Slack, so you should start off by [joining our Slack workspace](/slack/) and heading to the `#gsoc-main` channel.
 
 A comprehensive set of [example notebooks](https://docs.pybamm.org/en/latest/source/examples/index.html) is available for becoming familiar with PyBaMM.
 Knowledge of battery physics or mathematical modeling is *not* required for any of the projects, but may be beneficial for some.
