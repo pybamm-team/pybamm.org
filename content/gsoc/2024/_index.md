@@ -26,7 +26,9 @@ Students must submit proposals based on the ideas suggested here. GSoC will deci
 - your project application
 - your background and experience
 
-[Template for proposals](https://docs.google.com/document/d/1gER-yFt5_exHEu9Lx-jfrTH8I7QQXci8oDKH-5wgMys/edit?usp=sharing)
+Applicants must have at least 1 non-trivial contribution in PyBaMM for their application to be considered.
+
+We provide a [template for proposals](https://docs.google.com/document/d/1gER-yFt5_exHEu9Lx-jfrTH8I7QQXci8oDKH-5wgMys/edit?usp=sharing) for applicants to use, but it is not required to follow it exactly and modifications are encouraged as needed.
 
 ## Projects
 
