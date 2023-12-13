@@ -64,10 +64,30 @@ params:
       # Should link to training and getting started pages
 
     - title: Community
-      url: /community/
+      sublinks:
+      - title: Contact
+        url: /community/
+      - title: Governance
+        url: /governance/
+      - title: Get Involved
+        url: /contribute/
+      - title: Roadmap
+        url: /roadmap/
+      - title: Google Summer of Code
+        url: /gsoc/
 
     - title: About Us
-      url: /about/
+      sublinks:
+      - title: About PyBaMM
+        url: /about/
+      - title: Ionworks
+        url: https://ion-works.com/
+        is_external: true
+      - title: PyBaMM on Twitter
+        url: https://twitter.com/pybamm_/
+        is_external: true
+      - title: PyBaMM Teams
+        url: /teams/
 
     - title: News
       url: /news/
@@ -127,12 +147,6 @@ params:
           - text: Documentation
             link: https://docs.pybamm.org/
 
-          - text: Citing PyBaMM
-            link: /publications/
-
-          - text: Ionworks
-            link: https://ion-works.com/
-
       column2:
         title: ""
         links:
@@ -140,22 +154,31 @@ params:
             link: /contact/
 
           - text: Get involved
-            link: https://github.com/pybamm-team/PyBaMM/blob/develop/CONTRIBUTING.md/
+            link: /contribute/
 
           - text: Training
             link: /training/
 
+          - text: Ionworks
+            link: https://ion-works.com/
+
           - text: News
             link: /news/
 
-          - text: Roadmap
-            link: https://github.com/pybamm-team/PyBaMM/wiki/Roadmap/
+      column3:
+        title: ""
+        links:
+          - text: About PyBaMM
+            link: /about/
+
+          - text: Citing PyBaMM
+            link: /publications/
 
           - text: Teams
             link: /teams/
 
-          # - text: Privacy
-          #   link: /privacy/
+          - text: Governance
+            link: /governance/
 
-      # column3:
-      #   links:
+          - text: Roadmap
+            link: https://github.com/pybamm-team/PyBaMM/wiki/Roadmap/
