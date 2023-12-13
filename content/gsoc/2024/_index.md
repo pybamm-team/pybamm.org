@@ -16,7 +16,7 @@ Knowledge of battery physics or mathematical modeling is *not* required for any 
 
 All coding will be done in Python, so contributors should have some proficiency in Python, or another object-oriented programming language.
 Each project will follow test-driven development, and also involve writing clear documentation (via Sphinx) and examples (mainly in the form of jupyter notebooks) alongside the code. New contributors should make themselves familiar with this workflow.
-Finally, new contributors should read the [contributing guidelines](https://github.com/pybamm-team/PyBaMM/blob/develop/CONTRIBUTING.md) and be familiar with the basics of Git and Github.
+Finally, new contributors should read the [contributing guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html) and be familiar with the basics of Git and GitHub.
 
 ## Applications
 
