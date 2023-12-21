@@ -67,8 +67,6 @@ params:
       sublinks:
       - title: Contact
         url: /community/
-      - title: Governance
-        url: /governance/
       - title: Get Involved
         url: /contribute/
       - title: Roadmap
@@ -86,6 +84,8 @@ params:
       - title: PyBaMM on Twitter
         url: https://twitter.com/pybamm_/
         is_external: true
+      - title: Governance
+        url: /governance/
       - title: PyBaMM Teams
         url: /teams/
 
