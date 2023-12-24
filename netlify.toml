@@ -26,6 +26,11 @@
   status = 301
 
 [[redirects]]
+  from = "/slack"
+  to = "https://join.slack.com/t/pybamm/shared_invite/zt-1xwnvkqrb-6ZKgB8yBU3zuzH91USdv_A"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/404/"
   status = 404

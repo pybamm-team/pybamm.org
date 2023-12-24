@@ -30,7 +30,7 @@ For companies who want to leverage the power, flexibility, and openness of the P
 
 &nbsp;
 
-{{< figure src="/images/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
+{{< figure src="/images/logos/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
 
 &nbsp;
 
@@ -43,7 +43,7 @@ The Faraday Institution supports many PyBaMM contributors, who contribute to the
 
 &nbsp;
 
-{{< figure src="/images/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
+{{< figure src="/images/logos/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
 
 &nbsp;
 
@@ -57,7 +57,7 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 
 &nbsp;
 
-{{< figure src="/images/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
+{{< figure src="/images/logos/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
 
 &nbsp;
 
@@ -71,30 +71,27 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 
 &nbsp;
 
-<!-- - University of Oxford
-- University of Michigan
-- Carnegie Mellon University
-- Imperial College London
-- University of Warwick
-- University College London -->
-
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
-{{< figure src="/images/university_of_oxford.svg" alt="Logo for the University of Oxford" width="200px" >}}
+{{< figure src="/images/logos/university_of_oxford.svg" alt="Logo for the University of Oxford" width="200px" >}}
 
-{{< figure src="/images/university_of_michigan.svg" alt="Logo for the University of Michigan" width="300px" >}}
+{{< figure src="/images/logos/university_of_michigan.svg" alt="Logo for the University of Michigan" width="300px" >}}
 
-{{< figure src="/images/carnegie_mellon_university.svg" alt="Logo for Carnegie Mellon University" width="250px" >}}
+{{< figure src="/images/logos/carnegie_mellon_university.svg" alt="Logo for Carnegie Mellon University" width="250px" >}}
 
-{{< figure src="/images/imperial_college_london.png" alt="Logo for Imperial College London" width="200px" >}}
+{{< figure src="/images/logos/imperial_college_london.png" alt="Logo for Imperial College London" width="200px" >}}
 
-{{< figure src="/images/university_of_warwick.png" alt="Logo for the University of Warwick" width="200px" >}}
+{{< figure src="/images/logos/university_of_warwick.png" alt="Logo for the University of Warwick" width="200px" >}}
 
-{{< figure src="/images/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
+{{< figure src="/images/logos/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
 
-{{< figure src="/images/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+{{< figure src="/images/logos/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+
+{{< figure src="/images/logos/sila.png" alt="Logo for Sila Nanotechnologies" width="200px" >}}
 
 </div>
+
+&nbsp;
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
@@ -111,11 +108,15 @@ To submit a request to add a new organization to this list, please [open an issu
 The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up
 of the following members:
 
-- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
+- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick, and Ionworks
 - [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
 - Scott Marquis - Northvolt
 - [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
-- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
+- [Valentin Sulzer](https://www.linkedin.com/in/valentinsulzer/) - Ionworks
+- [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
 
-For more details, see the [PyBaMM Governance](/governance) page. The teams of maintainers and maintainer trainees are
-listed on the [Teams](/teams) page.
+For more details, see the [PyBaMM Governance](/governance) page.
+
+## Current PyBaMM Team
+
+The teams of maintainers and maintainer trainees are listed on the [Teams](/teams) page.
