@@ -89,9 +89,9 @@ Some shortcodes for adding general-purpose buttons and links are available in `l
 {{< external-content "https://api.github.com/repos/example-org/example-repo/contents/path/to/file.md" >}}
 ```
 
-- To include an optional table of contents, set `toc: true` in the YAML front matter of a page. The table of contents will be generated from the headings referenced in the page.
+2. To include an optional table of contents at the top of a page, set `toc: true` in the YAML front matter of a page. The table of contents will be generated from the headings referenced in the page.
 
-- To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
+3. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
 
 For more information, please refer to the [Hugo documentation](https://gohugo.io/documentation/) and the [Scientific Python Hugo theme guides](https://theme.scientific-python.org/shortcodes/).
 
