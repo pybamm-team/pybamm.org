@@ -1,6 +1,7 @@
 import nox
 import os
 import sys
+import shutil
 
 nox.options.reuse_existing_virtualenvs = True
 
@@ -35,6 +36,24 @@ def serve(session):
 @nox.session(name="serve-dev")
 def serve_dev(session):
     session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
+
+
+@nox.session(name="clean")
+def clean_build(session):
+    base_directory = os.getcwd()
+    build_dir = os.path.join(base_directory, "public")
+
+    try:
+        # Check if the "public" folder exists
+        if os.path.exists(build_dir):
+            # Use shutil.rmtree to remove previous build directory
+            shutil.rmtree(build_dir)
+            print(f'The "public" folder has been successfully removed.')
+        else:
+            print('The "public" folder does not exist.')
+
+    except Exception as e:
+        print(f'An error occurred: {e}')
 
 
 @nox.session(name="teams")
