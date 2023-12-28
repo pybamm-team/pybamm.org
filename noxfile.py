@@ -32,6 +32,11 @@ def serve(session):
     session.run("hugo", "--printI18nWarnings", "server")
 
 
-@nox.session("serve-dev")
+@nox.session(name="serve-dev")
 def serve_dev(session):
     session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
+
+
+@nox.session(name="teams")
+def generate_teams(session):
+    session.run("python", "scripts/generate_teams.py")
