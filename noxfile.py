@@ -26,6 +26,12 @@ def build_html(session):
         session.run("apt", "install", "hugo", external=True)
     session.run("hugo")
 
+
 @nox.session(name="serve")
 def serve(session):
     session.run("hugo", "--printI18nWarnings", "server")
+
+
+@nox.session("serve-dev")
+def serve_dev(session):
+    session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
