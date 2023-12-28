@@ -25,3 +25,7 @@ def build_html(session):
     if sys.platform=="linux":
         session.run("apt", "install", "hugo", external=True)
     session.run("hugo")
+
+@nox.session(name="serve")
+def serve(session):
+    session.run("hugo", "--printI18nWarnings", "server")
