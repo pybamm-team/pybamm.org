@@ -48,7 +48,7 @@ def clean_build(session):
         if os.path.exists(build_dir):
             # Use shutil.rmtree to remove previous build directory
             shutil.rmtree(build_dir)
-            print(f'The "public" folder has been successfully removed.')
+            print('The "public" folder has been successfully removed.')
         else:
             print('The "public" folder does not exist.')
 
