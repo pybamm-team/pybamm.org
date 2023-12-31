@@ -11,7 +11,7 @@ nox.options.sessions = ["themes", "html", "serve-dev"]
 def run_themes(session):
     themes_dir = "themes"
     if not os.path.exists(themes_dir) or not os.listdir(themes_dir):
-    session.log(f"Cloning https://github.com/scientific-python/scientific-python-hugo-theme into {themes_dir}")
+        session.log(f"Cloning https://github.com/scientific-python/scientific-python-hugo-theme into {themes_dir}")
         session.run("git",
             "submodule",
             "update",
