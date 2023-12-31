@@ -14,3 +14,9 @@ resources/
 
 # Stub files
 *.stub
+
+# PyCache files
+__pycache__/
+
+# Nox Folder
+.nox/
