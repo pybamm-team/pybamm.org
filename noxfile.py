@@ -25,10 +25,10 @@ def run_themes(session):
 
 @nox.session(name="html")
 def build_html(session):
-    # Ideally hugo must be pre-installed
-    if sys.platform=="linux":
-        session.run("apt", "install", "hugo", external=True)
-    session.run("hugo")
+    try:
+        session.run("hugo")
+    except Exception as e:
+        session.error("The extended version of Hugo is not installed")
 
 
 @nox.session(name="serve")
