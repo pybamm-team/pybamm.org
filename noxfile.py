@@ -45,18 +45,12 @@ def serve_dev(session):
 def clean_build(session):
     base_directory = os.getcwd()
     build_dir = os.path.join(base_directory, "public")
-
-    try:
-        # Check if the "public" folder exists
-        if os.path.exists(build_dir):
-            # Use shutil.rmtree to remove previous build directory
-            shutil.rmtree(build_dir)
-            print('The "public" folder has been successfully removed.')
-        else:
-            print('The "public" folder does not exist.')
-
-    except Exception as e:
-        print(f'An error occurred: {e}')
+    # Check if the "public" folder exists
+    if os.path.exists(build_dir):
+        shutil.rmtree(build_dir)
+        session.log('The "public" folder has been successfully removed.')
+    else:
+        session.log('The "public" folder does not exist.')
 
 
 @nox.session(name="teams", venv_backend="virtualenv")
