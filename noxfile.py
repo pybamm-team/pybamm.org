@@ -1,6 +1,5 @@
 import nox
 import os
-import sys
 import shutil
 
 nox.options.reuse_existing_virtualenvs = True
@@ -36,13 +35,19 @@ def build_html(session):
 @nox.session(name="serve")
 def serve(session):
     """Serve the Hugo site using the 'hugo server' command."""
-    session.run("hugo", "--printI18nWarnings", "server")
+    try:
+        session.run("hugo", "--printI18nWarnings", "server")
+    except Exception:
+        session.error("The extended version of Hugo is not installed")
 
 
 @nox.session(name="serve-dev")
 def serve_dev(session):
     """Serve the Hugo site with fast render disabled."""
-    session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
+    try:
+        session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
+    except Exception:
+        session.error("The extended version of Hugo is not installed")
 
 
 @nox.session(name="clean")
