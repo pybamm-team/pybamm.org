@@ -4,11 +4,14 @@ import sys
 import shutil
 
 nox.options.reuse_existing_virtualenvs = True
+nox.options.default_venv_backend = "none"
+nox.options.sessions = ["themes", "html", "serve-dev"]
 
 @nox.session(name="themes")
 def run_themes(session):
     themes_dir = "themes"
     if not os.path.exists(themes_dir) or not os.listdir(themes_dir):
+    session.log(f"Cloning https://github.com/scientific-python/scientific-python-hugo-theme into {themes_dir}")
         session.run("git",
             "submodule",
             "update",
@@ -17,7 +20,7 @@ def run_themes(session):
             external=True,
         )
     else:
-        print("'themes/' already exists in the project's root.")
+        session.log("'themes/' already exists in the project's root.")
 
 
 @nox.session(name="html")
@@ -56,6 +59,8 @@ def clean_build(session):
         print(f'An error occurred: {e}')
 
 
-@nox.session(name="teams")
+@nox.session(name="teams", venv_backend="virtualenv")
 def generate_teams(session):
+    session.install("requests")
     session.run("python", "scripts/generate_teams.py")
+    session.notify("lint")
