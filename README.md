@@ -23,6 +23,12 @@ git submodule update --init --recursive
 4. Create pages and run the server locally with
 
 ```bash
+nox
+```
+
+or alternatively
+
+```bash
 nox -s html
 nox -s serve
 ```
