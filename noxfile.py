@@ -12,7 +12,8 @@ def run_themes(session):
     themes_dir = "themes"
     if not os.path.exists(themes_dir) or not os.listdir(themes_dir):
         session.log(f"Cloning https://github.com/scientific-python/scientific-python-hugo-theme into {themes_dir}")
-        session.run("git",
+        session.run(
+            "git",
             "submodule",
             "update",
             "--init",
@@ -71,8 +72,8 @@ def generate_teams(session):
     session.notify("lint")
 
 
-@nox.session(name="lint")
+@nox.session(name="lint", venv_backend="virtualenv")
 def lint(session):
     """Install 'pre-commit' and run linting on all files."""
     session.install("pre-commit")
-    session.run("pre-commit", "run", "--all-files")
+    session.run("pre-commit", "run", "--all-files", "--show-diff-on-failure")
