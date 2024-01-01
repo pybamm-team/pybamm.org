@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: 3.11
 
-      - name: Generate Teams
+      - name: Generate teams page(s)
         run: nox -s teams
 
       # Will exit silently if there are no changes
