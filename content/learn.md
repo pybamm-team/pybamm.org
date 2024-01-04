@@ -20,15 +20,19 @@ More detailed instructions for installing PyBaMM on different platforms and for 
 
 If you would like to get started with PyBaMM, you may go through the [Getting Started notebooks](https://github.com/pybamm-team/PyBaMM/tree/develop/examples/) which introduce its basic features. You can launch the notebooks on Google Colab to run them on the cloud without having to install PyBaMM on your computer.
 
-- [Tutorial 1: How to run a model](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%201%20-%20How%20to%20run%20a%20model.ipynb)
-- [Tutorial 2: Compare models](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%202%20-%20Compare%20models.ipynb)
-- [Tutorial 3: Basic plotting](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%203%20-%20Basic%20plotting.ipynb)
-- [Tutorial 4: Setting parameter values](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%204%20-%20Setting%20parameter%20values.ipynb)
-- [Tutorial 5: Run experiments](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%205%20-%20Run%20experiments.ipynb)
-- [Tutorial 6: Managing simulation outputs](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%206%20-%20Managing%20simulation%20outputs.ipynb)
-- [Tutorial 7: Model options](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%207%20-%20Model%20options.ipynb)
-- [Tutorial 8: Solver options](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%208%20-%20Solver%20options.ipynb)
-- [Tutorial 9: Changing the mesh](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/examples/notebooks/Getting%20Started/Tutorial%209%20-%20Changing%20the%20mesh.ipynb)
+- [Tutorial 1: How to run a model](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-1-how-to-run-a-model.ipynb)
+- [Tutorial 2: Compare models](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-2-compare-models.ipynb)
+- [Tutorial 3: Basic plotting](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-3-basic-plotting.ipynb)
+- [Tutorial 4: Setting parameter values](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-4-setting-parameter-values.ipynb)
+- [Tutorial 5: Run experiments](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-5-run-experiments.ipynb)
+- [Tutorial 6: Managing simulation outputs](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-6-managing-simulation-outputs.ipynb)
+- [Tutorial 7: Model options](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-7-model-options.ipynb)
+- [Tutorial 8: Solver options](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-8-solver-options.ipynb)
+- [Tutorial 9: Changing the mesh](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-9-changing-the-mesh.ipynb)
+- [Tutorial 10: Creating a model](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-10-creating-a-model.ipynb)
+- [Tutorial 11: Creating a submodel](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-11-creating-a-submodel.ipynb)
+
+For more resources, please refer to the [Examples section](https://docs.pybamm.org/en/stable/source/examples/index.html#) in the PyBaMM documentation.
 
 ## Video tutorials
 
