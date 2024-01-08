@@ -3,8 +3,8 @@ name: Generate teams for PyBaMM
 
 on:
   schedule:
-    # Run every Monday at 03:00 AM UTC
-    - cron: "0 3 * * 1"
+    # Run every Monday at 03:15 AM UTC
+    - cron: "15 3 * * 1"
   workflow_dispatch:
 
 jobs:
@@ -18,21 +18,13 @@ jobs:
           ref: main
           submodules: recursive
 
-      - name: Setup Python 3.11
+      - name: Setup Python 3.12
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.12
 
-      - name: Install requirements
-        run: pip install -r requirements.txt
-
-      - name: Run the teams generation script
-        run: python scripts/generate_teams.py
-
-      - name: Run pre-commit hooks
-        run: |
-          pip install pre-commit
-          pre-commit run --all-files
+      - name: Generate teams page(s)
+        run: pipx run nox -s teams
 
       # Will exit silently if there are no changes
       - name: Create pull request

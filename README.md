@@ -10,11 +10,11 @@ BSD-3-Clause License.
 ## Steps to contribute
 
 1. Fork this repository
-2. Install the extended version of Hugo from <https://gohugo.io/installation/>
-and add it to your `PATH`
+2. Install the extended version of Hugo from [https://gohugo.io/installation/](https://gohugo.io/installation/)
+   and add it to your `PATH`
 3. Clone your forked repository and add the theme repository as a submodule,
-from <https://github.com/scientific-python/scientific-python-hugo-theme>. You
-may update the submodule and pull the latest changes with
+   from [https://github.com/scientific-python/scientific-python-hugo-theme](https://github.com/scientific-python/scientific-python-hugo-theme). You
+   may update the submodule and pull the latest changes with
 
 ```bash
 git submodule update --init --recursive
@@ -29,21 +29,27 @@ git clone --recurse-submodules https://github.com/pybamm-team/pybamm.org.git
 4. Create pages and run the server locally with
 
 ```bash
-make html
-make serve
+nox
+```
+
+or alternatively
+
+```bash
+nox -s html
+nox -s serve
 ```
 
 In development mode, run the server with
 
 ```bash
-make html
-make serve-dev
+nox -s html
+nox -s serve-dev
 ```
 
-You may use `make clean` to clean up build artefacts.
+You may use `nox -s clean` to clean up build artefacts.
 
 5. Before committing your changes, install [`pre-commit`](https://pre-commit.com/),
-update the hooks, and run with
+   update the hooks, and run with
 
 ```bash
 pip install pre-commit
@@ -60,13 +66,13 @@ all files using the `pre-commit run --all-files` command.
 6. To generate the teams page, run
 
 ```bash
-make teams
+nox -s teams
 ```
 
 It is recommended to verify the changes to the teams page before committing. The teams page is generated from the files in `static/teams/` and the script `scripts/get_teams_info.py` and the output is displayed in `content/teams.md`.
 
 > [!CAUTION]
-> The `make teams` command will overwrite the files in the `static/teams/` directory.
+> The `nox -s teams` command will overwrite the files in the `static/teams/` directory.
 
 Alternatively, the teams page can be generated via a pull request by manually triggering the `teams.yml` workflow.
 
@@ -97,4 +103,4 @@ For more information, please refer to the [Hugo documentation](https://gohugo.io
 
 ## Analytics
 
-The website uses a privacy-friendly analytics service called [Plausible](https://plausible.io/). The analytics data is available for authorised users at <https://plausible.io/pybamm.org>.
+The website uses a privacy-friendly analytics service called [Plausible](https://plausible.io/). The analytics data is available for authorised users at [https://plausible.io/pybamm.org](https://plausible.io/pybamm.org).
