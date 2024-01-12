@@ -2,6 +2,9 @@
   PYTHON_VERSION = "3.8" # netlify currently only supports 2.7 and 3.8
   HUGO_VERSION = "0.121.2"
 
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+
 [context.deploy-preview]
   ignore = "false"
 
