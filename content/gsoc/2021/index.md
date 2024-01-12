@@ -5,7 +5,7 @@ title: PyBaMM GSoC 2021 Project Ideas
 Improving battery technology is critical as we transition to a green economy. Battery modeling helps to achieve this by reducing costs and increasing reliability and safety. The PyBaMM package provides an open-source framework for physics-based battery models and simulations, with a growing focus on real-world experiments and battery degradation.
 While most of our development team works day-to-day on creating new models and better ways to solve them, the proposed projects (which do not require domain-specific knowledge) will be fantastic contributions to the general framework.
 
-To find out more about PyBaMM, you can visit our website [pybamm.org](pybamm.org) or read our [preprint](https://ecsarxiv.org/67ckj/).
+To find out more about PyBaMM, you can visit our website [pybamm.org](/) or read our [preprint](https://ecsarxiv.org/67ckj/).
 
 ## Getting started
 
