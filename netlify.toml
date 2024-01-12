@@ -1,6 +1,6 @@
 [build.environment]
   PYTHON_VERSION = "3.8" # netlify currently only supports 2.7 and 3.8
-  HUGO_VERSION = "0.112.5"
+  HUGO_VERSION = "0.121.2"
 
 [context.deploy-preview]
   ignore = "false"
