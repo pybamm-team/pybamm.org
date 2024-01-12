@@ -32,7 +32,7 @@ If you would like to get started with PyBaMM, you may go through the [Getting St
 - [Tutorial 10: Creating a model](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-10-creating-a-model.ipynb)
 - [Tutorial 11: Creating a submodel](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-11-creating-a-submodel.ipynb)
 
-For more resources, please refer to the [Examples section](https://docs.pybamm.org/en/stable/source/examples/index.html#) in the PyBaMM documentation.
+For more resources, please refer to the [Examples section](https://docs.pybamm.org/en/stable/source/examples/index.html) in the PyBaMM documentation.
 
 ## Video tutorials
 
@@ -44,4 +44,4 @@ We regularly hold PyBaMM workshops. You can find a list of the workshops we have
 
 ## Get help
 
-You can get help by posting questions on the [PyBaMM Slack channels](/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ion-works.com/services).
+You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ion-works.com/services).
