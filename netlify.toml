@@ -1,6 +1,18 @@
 [build.environment]
-  PYTHON_VERSION = "3.8" # netlify currently only supports 2.7 and 3.8
-  HUGO_VERSION = "0.112.5"
+  PYTHON_VERSION = "3.8"  # netlify currently only supports 2.7 and 3.8
+  HUGO_VERSION = "0.121.2"
+
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+
+  [plugins.inputs]
+  recursive = true  # check links in subdirectories
+  checkExternal = false  # we are already using Lychee to check external links
+  # ignore pybamm.org/slack and pybamm.org/benchmarks
+  skipPatterns = [
+  "pybamm.org/slack",
+  "pybamm.org/benchmarks"
+  ]
 
 [context.deploy-preview]
   ignore = "false"
