@@ -72,7 +72,7 @@ params:
       - title: Roadmap
         url: /roadmap/
       - title: Open-Source Programs
-        url: /open_source_programs/
+        url: /open-source-programs/
 
     - title: About Us
       sublinks:

@@ -25,6 +25,7 @@ Specific things that we are currently working on are indicated by issue labellin
 Anyone can open an issue. To indicate our response to any given issue, we use the following categories for triaging:
 
 #### Priority
+
 - Critical: To be resolved immediately
 - High: To be resolved as soon as possible
 - Medium: To be resolved if time allows
@@ -33,11 +34,13 @@ Anyone can open an issue. To indicate our response to any given issue, we use th
 Priority is decided based on criticality (for bugs) and alignment with the roadmap (for features). Issues that are not within scope of the project will be closed.
 
 #### Difficulty
+
 - High: Requires several weeks of work
 - Medium: Requires a few days of work
 - Low: Requires a few hours of work
 
 #### Category
+
 - Expression tree
 - Solver
 - Model/parameter library
@@ -97,4 +100,4 @@ We are experimenting with this process and always looking for ways to improve ou
 
 ## Open-Source programs
 
-The PyBaMM team offers mentorship and funding opportunities under several open-source programs regulated by other organisations. These programs are an amazing opportunity for students and professionals to work on PyBaMM and get familiar with various open-source practices. More information on the open-source programs can be found on the dedicated [Open-Source Programs](/open_source_programs) page.
+The PyBaMM team offers mentorship and funding opportunities under several open-source programs regulated by other organisations. These programs are an amazing opportunity for students and professionals to work on PyBaMM and get familiar with various open-source practices. More information on the open-source programs can be found on the dedicated [Open-Source Programs](/open-source-programs/) page.
