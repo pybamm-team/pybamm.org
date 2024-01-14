@@ -69,6 +69,8 @@ params:
         url: /community/
       - title: Get Involved
         url: /contribute/
+      - title: Code of Conduct
+        url: /code-of-conduct/
       - title: Roadmap
         url: /roadmap/
       - title: Google Summer of Code
