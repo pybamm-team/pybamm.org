@@ -34,8 +34,7 @@ We provide a [template for proposals](https://docs.google.com/document/d/1gER-yF
 
 ### Google Summer of Code
 
-Google Summer of Code is primarily focused on bringing new contributors to the world of open-source through dedicated mentorship from the organisation members. PyBaMM participates in Google Summer of Code as a sub-organisation under NumFOCUS; hence, the applications should be submitted to NumFOCUS on Google's portal. If you would like to work with us
-on a project and would like to seek more information, you may view current or future projects at the [GSoC Home](/gsoc/).
+Google Summer of Code is primarily focused on bringing new contributors to the world of open-source through dedicated mentorship from the organisation members. PyBaMM participates in Google Summer of Code as a sub-organisation under NumFOCUS; hence, the applications should be submitted to NumFOCUS on Google's portal. If you would like to work with us on a project and would like to seek more information, you may view current or future projects at the [GSoC Home](/gsoc/).
 
 ### Google Season of Docs
 
@@ -47,4 +46,4 @@ Outreachy offers internships to open-source beginners and "people subject to sys
 
 ### NumFOCUS Small Developer Grants
 
-PyBaMM is a NumFOCUS sponsored project, allowing it to gather funds from NumFOCUS Small Developer Grants. The program is flexible and can accommodate any type of projects. There is no dedicated list of projects for this program, but the projects listed in other programs can be funded through NumFOCUS Small Developer Grants. You can also reach out to PyBaMM maintainers if you have a particular project in mind that is not listed anywhere. Each application cycle can fund exactly one project. For more information, visit the [NumFOCUS Small Developer Grants](https://numfocus.org/programs/small-development-grants) page.
+PyBaMM is a NumFOCUS sponsored project, allowing it to gather funds from NumFOCUS Small Developer Grants. The program is flexible and can accommodate any type of project. There is no dedicated list of projects for this program, but the projects listed in other programs can be funded through NumFOCUS Small Developer Grants. You can also reach out to PyBaMM maintainers if you have a particular project in mind that is not listed anywhere. Each application cycle can fund exactly one project. For more information, visit the [NumFOCUS Small Developer Grants](https://numfocus.org/programs/small-development-grants) page.

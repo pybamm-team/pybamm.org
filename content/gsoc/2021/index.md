@@ -7,7 +7,7 @@ title: PyBaMM GSoC 2021 Project Ideas
 * [`ExperimentalData` class](#experimentaldata-class)
 * [Twitter bot to run simulations](#twitter-bot-to-run-simulations)
 * [Printing formatted equations](#printing-formatted-equations)
-- * [Electrochemical Impedance Spectroscopy (EIS) modeling](#electrochemical-impedance-spectroscopy-eis-modelling)
+* [Electrochemical Impedance Spectroscopy (EIS) modeling](#electrochemical-impedance-spectroscopy-eis-modelling)
 
 ## `ExperimentalData` class
 
