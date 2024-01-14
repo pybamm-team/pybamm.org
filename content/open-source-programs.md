@@ -26,9 +26,6 @@ Applicants must submit proposals based on the ideas suggested below. The open-so
 - your project application
 - your background and experience
 
-Applicants must have at least 1 non-trivial contribution in PyBaMM for their application to be considered.
-
-
 ## Programs
 
 ### Google Summer of Code
