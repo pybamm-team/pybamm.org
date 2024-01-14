@@ -20,7 +20,7 @@ Finally, new contributors should read the [contributing guidelines](https://docs
 
 ## Applications
 
-Students must submit proposals based on the ideas suggested below. The open-source program's governing organisation will decide how many projects are funded, it’s unlikely that every project will be funded. Selection for the projects will take into consideration, in strongly decreasing order of importance:
+Applicants must submit proposals based on the ideas suggested below. The open-source program's governing organisation will decide how many projects are funded, it’s unlikely that every project will be funded. Selection for the projects will take into consideration, in strongly decreasing order of importance:
 
 - our interactions with you leading up to the project selection date
 - your project application
@@ -28,7 +28,6 @@ Students must submit proposals based on the ideas suggested below. The open-sour
 
 Applicants must have at least 1 non-trivial contribution in PyBaMM for their application to be considered.
 
-We provide a [template for proposals](https://docs.google.com/document/d/1gER-yFt5_exHEu9Lx-jfrTH8I7QQXci8oDKH-5wgMys/edit?usp=sharing) for applicants to use, but it is not required to follow it exactly and modifications are encouraged as needed.
 
 ## Programs
 
