@@ -71,8 +71,8 @@ params:
         url: /contribute/
       - title: Roadmap
         url: /roadmap/
-      - title: Google Summer of Code
-        url: /gsoc/
+      - title: Open-Source Programs
+        url: /open_source_programs/
 
     - title: About Us
       sublinks:
