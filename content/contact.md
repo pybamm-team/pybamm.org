@@ -15,7 +15,7 @@ discussions, please use the [GitHub discussions](https://github.com/pybamm-team/
 ### Slack
 
 For development discussions and to get help using PyBaMM, head over to our
-[Slack workspace](/slack/).
+[Slack workspace](https://pybamm.org/slack/).
 If the link doesn't work, you can email us at [pybamm@gmail.com](mailto:pybamm@gmail.com) for an invitation.
 
 ### General inquiries
