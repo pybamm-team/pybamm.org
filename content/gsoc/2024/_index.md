@@ -56,10 +56,9 @@ As a stretch goal, the packaging infrastructure for PyBaMM should be updated to 
 
 #### Desired skills
 
-* Experience with Python API design and testing, test-driven development, and continuous integration
-* Test coverage and code quality analysis tools
-* Some experience with `unittest`, `pytest`, and `hypothesis` is desirable, but not required
-* Git version control, managing pull requests, and code reviews, as well as the GitHub workflow for open-source projects
+* Experience with Python and unit testing (`unittest`, `pytest`, and `hypothesis`) in Python.
+* Some experience with test-driven development, continuous integration, and coverage tools is desirable, but not required.
+* Git version control and GitHub workflow for open-source projects.
 
 ### Difficulty and suitable project length
 
@@ -99,3 +98,4 @@ As a stretch goal, the student can explore the possibility of cross-compiling Py
 ### Potential mentors
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
