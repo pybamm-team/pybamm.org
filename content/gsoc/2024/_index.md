@@ -68,6 +68,7 @@ As a stretch goal, the packaging infrastructure for PyBaMM should be updated to 
 ### Potential mentors
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
 
 ### Migrate to a modern build-backend such as `scikit-build-core` or `meson-python` as a new build system for PyBaMM
 
@@ -88,8 +89,8 @@ As a stretch goal, the student can explore the possibility of cross-compiling Py
 
 * Experience with Python packaging for compiled extensions will be highly beneficial
 * Build systems such as CMake, Meson, and/or Ninja
-* Knowledge of compilers and toolchains, and how to set them up on different platforms
-* Setting up efficient CI/CD pipelines and DevOps workflows across platforms and architectures
+* Knowledge of compilers and toolchains, and how to set them up on different platforms is desirable, but not required.
+* Experience with CI/CD pipelines and DevOps workflows across platforms and architectures is desirable, but not required.
 
 ### Difficulty and suitable project length
 
