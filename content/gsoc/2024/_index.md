@@ -69,6 +69,7 @@ As a stretch goal, the packaging infrastructure for PyBaMM should be updated to 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
 * [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+* [Arjun Verma](https://github.com/arjxn-py)
 
 ### Migrate to a modern build-backend such as `scikit-build-core` or `meson-python` as a new build system for PyBaMM
 
