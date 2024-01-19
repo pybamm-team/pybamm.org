@@ -101,3 +101,4 @@ As a stretch goal, the student can explore the possibility of cross-compiling Py
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
+* [Arjun Verma](https://github.com/arjxn-py)
