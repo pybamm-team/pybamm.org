@@ -2,31 +2,6 @@
 title: PyBaMM GSoC 2023 Project Ideas
 ---
 
-Improving battery technology is critical as we transition to a green economy. Battery modeling helps to achieve this by reducing costs and increasing reliability and safety. The PyBaMM package provides an open-source framework for physics-based battery models and simulations, with a growing focus on real-world experiments and battery degradation.
-While most of our development team works day-to-day on creating new models and better ways to solve them, the proposed projects (which do not require domain-specific knowledge) will be fantastic contributions to the general framework.
-
-To find out more about PyBaMM, you can visit our website [pybamm.org](/) or read our [paper](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.309/).
-
-## Getting started
-We mostly communicate via Slack, so you should start off by [joining our Slack workspace](https://www.pybamm.org/contact) and heading to the `#gsoc-main` channel.
-
-A comprehensive set of [example notebooks](https://docs.pybamm.org/en/latest/source/examples/index.html) is available for becoming familiar with PyBaMM.
-Knowledge of battery physics or mathematical modeling is *not* required for any of the projects, but may be beneficial for some.
-
-All coding will be done in Python, so contributors should have some proficiency in Python, or another object-oriented programming language.
-Each project will follow test-driven development, and also involve writing clear documentation (via Sphinx) and examples (mainly in the form of jupyter notebooks) alongside the code. New contributors should make themselves familiar with this workflow.
-Finally, new contributors should read the [contributing guidelines](https://github.com/pybamm-team/PyBaMM/blob/develop/CONTRIBUTING.md) and be familiar with the basics of Git and Github.
-
-## Applications
-
-Students must submit proposals based on the ideas suggested here. GSoC will decide how many projects are funded, it’s unlikely that every project will be funded. Selection for the projects will take into consideration, in strongly decreasing order of importance:
-
-- our interactions with you leading up to the project selection date
-- your project application
-- your background and experience
-
-[Template for proposals](https://docs.google.com/document/d/1gER-yFt5_exHEu9Lx-jfrTH8I7QQXci8oDKH-5wgMys/edit?usp=sharing)
-
 # Projects
 
 * [Documentation](#documentation)
