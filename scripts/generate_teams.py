@@ -7,33 +7,23 @@
 import requests
 import string
 
-# A list of emeritus maintainers, current maintainers, and maintainer trainees
-# hard-coded in alphabetical order
+from pathlib import Path
 
-PYBAMM_MAINTAINERS = [
-    "brosaplanella",
-    "DrSOKane",
-    "martinjrobins",
-    "priyanshuone6",
-    "rtimms",
-    "Saransh-cpp",
-    "tinosulzer",
-    "TomTranter",
-]
+DIR = Path(__file__).parent.parent
 
-PYBAMM_EMERITUS_MAINTAINERS = [
-    "Scottmar93",
-    "tlestang",
-]
 
-PYBAMM_MAINTAINER_TRAINEES = [
-    "Afgr1087",
-    "RuiheLi",
-    "smitasahu2",
-    "agriyakhetarpal",
-    "arjxn-py",
-    "kratman"
-]
+def read_file(file_path):
+    """Read a file and return a list of strings, split by lines."""
+    with open(file_path) as file:
+        return file.read().splitlines()
+
+
+# Create a list of emeritus maintainers, current maintainers, and maintainer trainees
+
+
+PYBAMM_MAINTAINERS = read_file(DIR / "teams" / "MAINTAINERS")
+PYBAMM_EMERITUS_MAINTAINERS = read_file(DIR / "teams" / "EMERITUS-MAINTAINERS")
+PYBAMM_MAINTAINER_TRAINEES = read_file(DIR / "teams" / "MAINTAINER-TRAINEES")
 
 
 def query_contributors():
@@ -164,6 +154,7 @@ member_template = string.Template(
 
 # Generate the HTML in static/teams/maintainers.html, overwriting as necessary
 print("Generating maintainers...")
+print("Current maintainers are:", PYBAMM_MAINTAINERS)
 with open("static/teams/maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
@@ -183,6 +174,7 @@ with open("static/teams/maintainers.html", "w") as file:
 
 # Generate the HTML in static/teams/emeritus-maintainers.html, overwriting as necessary
 print("Generating emeritus maintainers...")
+print("Emeritus maintainers are:", PYBAMM_EMERITUS_MAINTAINERS)
 with open("static/teams/emeritus-maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
@@ -202,6 +194,7 @@ with open("static/teams/emeritus-maintainers.html", "w") as file:
 
 # Generate the HTML in static/teams/maintainer-trainees.html, overwriting as necessary
 print("Generating maintainer trainees...")
+print("Maintainer trainees are:", PYBAMM_MAINTAINER_TRAINEES)
 with open("static/teams/maintainer-trainees.html", "w") as file:
     file.write(
         team_template.substitute(
