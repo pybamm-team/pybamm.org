@@ -84,10 +84,14 @@ The student will receive an opportunity to perform each and every aspect of Pyth
 
 ### Desired skills
 
-* Experience with Python packaging and distribution for pure-Python packages and modern Python projects
-* Knowing how to use cookiecutter templates and the `cookiecutter` Python package, including the use of `jinja2` as a templating engine
+* Experience with Python packaging and distribution for pure-Python packages and modern Python projects will be beneficial but is not required
+* Familiarity with cookiecutter templates and the `cookiecutter` Python package (or other templating packages, such as `cookieninja`, `copier`, `cruft`), including the use of `jinja2` as a templating engine
 * Basics of CI/CD pipelines and DevOps for Python projects
 
 ### Difficulty and suitable project length
 
 * Easy. This project is suitable for a 175-hour duration.
+
+### Potential mentors
+
+ * [Saransh Chopra](https://Saransh-cpp.github.io/)
