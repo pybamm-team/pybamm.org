@@ -84,9 +84,9 @@ The student will receive an opportunity to perform each and every aspect of Pyth
 
 ### Desired skills
 
-* Experience with Python packaging and distribution for pure-Python packages
-* Knowing how to use cookiecutter templates and the `cookiecutter` Python package, including the use of Jinja2 as a templating engine
-* Basic with CI/CD pipelines and DevOps
+* Experience with Python packaging and distribution for pure-Python packages and modern Python projects
+* Knowing how to use cookiecutter templates and the `cookiecutter` Python package, including the use of `jinja2` as a templating engine
+* Basics of CI/CD pipelines and DevOps for Python projects
 
 ### Difficulty and suitable project length
 
