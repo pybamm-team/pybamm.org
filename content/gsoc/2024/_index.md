@@ -94,4 +94,9 @@ The student will receive an opportunity to perform each and every aspect of Pyth
 
 ### Potential mentors
 
+* [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
+
+### Potential mentors
+
  * [Saransh Chopra](https://Saransh-cpp.github.io/)
