@@ -102,3 +102,26 @@ As a stretch goal, the student can explore the possibility of cross-compiling Py
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
 * [Arjun Verma](https://github.com/arjxn-py)
+
+### Build and publish `pybamm-cookiecutter` as a template for new PyBaMM-based projects
+
+There is a cookiecutter template at https://github.com/pybamm-team/pybamm-cookiecutter/ that was started as a part of GSoC 2023. The goal of this project is to finish the template and release it on PyPI so that it can be used by the community to create new PyBaMM-based projects. The template has had a start as of November 2023, but it is not ready for use by researchers and scientists who are looking to add their own parameter sets and models to PyBaMM.
+
+The student will receive an opportunity to perform each and every aspect of Python software development tasks, including adding features, writing tests, documentation, usage examples, CI/CD pipelines for testing automation and deployment, and so on. The template is supposed to be an opinionated one, combining all the best ideas from the original PyBaMM repository and new practices in other data science and scientific computing projects and their distribution, in order to provide both extensibility and ease of use for new users in the battery modeling fraternity.
+
+#### Expected outcomes
+
+* Completion of a cookiecutter template that can be used to create new PyBaMM-based projects
+* Documentation and usage examples for the template in the form of a Sphinx-based website and Jupyter notebooks
+* CI/CD pipelines for testing automation and deployment for the correct functioning of the template
+* Release infrastructure that allows the template to be published on PyPI and installed via `pip`, mirroring PyBaMM's own release system and versioning
+
+#### Desired skills
+
+* Experience with Python packaging and distribution for pure-Python packages
+* Knowing how to use cookiecutter templates and the `cookiecutter` Python package, including the use of Jinja2 as a templating engine
+* Basic with CI/CD pipelines and DevOps
+
+### Difficulty and suitable project length
+
+* Easy. This project is suitable for a 175-hour duration.
