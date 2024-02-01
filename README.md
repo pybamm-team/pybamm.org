@@ -69,6 +69,21 @@ It is recommended to verify the changes to the teams page before committing. The
 
 Alternatively, the teams page can be generated in a pull request by manually triggering the `teams.yml` workflow.
 
+7. To add a news item, create a new `.md` file in `content/news/YYYY/MM/DD/` with the
+   following YAML frontmatter
+
+```markdown
+---
+title: "Title of the news item"
+date: YYYY-MM-DD
+summary: "Summary of the news item"
+---
+```
+
+You may use the `toc: true` parameter to add a table of contents to the news item. This works on all pages, not just news items. The `shortcutDepth: X` parameter can be used to limit the depth of the headings referenced in the page.
+
+The `newsHeader` parameter will automatically be set to the `title:` of the latest news item and will show up on the homepage of the website.
+
 ## Deployment
 
 The website is built using the [Hugo](https://gohugo.io) static site generator
