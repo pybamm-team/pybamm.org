@@ -18,7 +18,7 @@ PyBaMM now includes support for Python 3.12, which was released in October 2023.
 
 {{< notice warning >}}
 
-We have decided support for the `JaxSolver`, i.e., the `[jax]` optional dependency on Python 3.8 and it is supported on Python 3.9 and above for macOS, Linux, and Windows.
+We have deprecated support for the `JaxSolver`, i.e., the `[jax]` optional dependency on Python 3.8 and it is supported on Python 3.9 and above for macOS, Linux, and Windows.
 
 {{< /notice >}}
 
