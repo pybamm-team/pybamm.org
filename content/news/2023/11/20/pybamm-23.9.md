@@ -8,7 +8,7 @@ shortcutDepth: 1
 
 PyBaMM 23.9 is finally here! This release marks the change to a new release schedule with three releases a year, aiming to publish the new versions at the end of January, May and September (ish). We would like to thank all the contributors who made this release possible.
 
-The full list of changes can be found in the [CHANGELOG](https://github.com/pybamm-team/PyBaMM/blob/develop/CHANGELOG.md) file, but here we provide a deeper overview of the main features of this release.
+The full list of changes can be found in the [CHANGELOG](https://pybamm.org/changelog/) file, but here we provide a deeper overview of the main features of this release.
 
 ## Installation of optional dependencies
 
