@@ -69,6 +69,8 @@ params:
         url: /community/
       - title: Get Involved
         url: /contribute/
+      - title: Code of Conduct
+        url: /code-of-conduct/
       - title: Roadmap
         url: /roadmap/
       - title: Open-Source Programs
@@ -141,11 +143,14 @@ params:
           - text: Getting started
             link: /learn/
 
-          - text: Learn with examples
+          - text: Examples
             link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
 
           - text: Documentation
             link: https://docs.pybamm.org/
+
+          - text: Release notes
+            link: /changelog/
 
       column2:
         title: ""
