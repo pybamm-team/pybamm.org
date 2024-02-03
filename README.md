@@ -20,6 +20,12 @@ BSD-3-Clause License.
 git submodule update --init --recursive
 ```
 
+or clone directly with
+
+```bash
+git clone --recurse-submodules https://github.com/pybamm-team/pybamm.org.git
+```
+
 4. Create pages and run the server locally with
 
 ```bash
@@ -65,14 +71,35 @@ nox -s teams
 
 It is recommended to verify the changes to the teams page before committing. The teams page is generated from the files in `static/teams/` and the script `scripts/get_teams_info.py` and the output is displayed in `content/teams.md`.
 
-**Warning**: The `nox -s teams` command will overwrite the `static/teams/` files.
+> [!CAUTION]
+> The `nox -s teams` command will overwrite the files in the `static/teams/` directory.
 
-Alternatively, the teams page can be generated in a pull request by manually triggering the `teams.yml` workflow.
+Alternatively, the teams page can be generated via a pull request by manually triggering the `teams.yml` workflow.
 
 ## Deployment
 
 The website is built using the [Hugo](https://gohugo.io) static site generator
 and is hosted on [Netlify](https://pybamm-developer-preview.netlify.app/).
+
+## Style guidelines (shortcodes, content, etc.)
+
+Some shortcodes for adding general-purpose buttons and links are available in `layouts/shortcodes/` and can be used as follows:
+
+```markdown
+{{< name-of-shortcode shortcode-parameters >}}
+```
+
+1. To render external links from GitHub repositories or any API endpoint(s) that can return base64-encoded Markdown content, the `external-content` shortcode may be used, as follows:
+
+```markdown
+{{< external-content "https://api.github.com/repos/example-org/example-repo/contents/path/to/file.md" >}}
+```
+
+2. To include an optional table of contents at the top of a page, set `toc: true` in the YAML front matter of a page. The table of contents will be generated from the headings referenced in the page.
+
+3. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
+
+For more information, please refer to the [Hugo documentation](https://gohugo.io/documentation/) and the [Scientific Python Hugo theme guides](https://theme.scientific-python.org/shortcodes/).
 
 ## Analytics
 
