@@ -53,7 +53,7 @@ model = pybamm.lithium_ion.SPMe(
     }
 )
 ```
-where the tuples specify different behaviours for each electrode. The parameter values then need to be updated to provide the values for lithiation and delithiation accordingly, as shown in [this example script](https://github.com/pybamm-team/PyBaMM/blob/develop/examples/scripts/emperical_hysteresis.py).
+where the tuples specify different behaviours for each electrode. The parameter values then need to be updated to provide the values for lithiation and delithiation accordingly, as shown in [this example script](https://github.com/pybamm-team/PyBaMM/blob/develop/examples/scripts/empirical_hysteresis.py).
 
 ## NumPy functions
 
