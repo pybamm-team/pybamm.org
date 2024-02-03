@@ -6,6 +6,10 @@ shortcutDepth: 1
 <!-- Note: the names of individual pages in folders should be marked with an
 underscore, i.e., _index.md to treat them as branched pages. -->
 
+We provide a [template for proposals](https://docs.google.com/document/d/1gER-yFt5_exHEu9Lx-jfrTH8I7QQXci8oDKH-5wgMys/edit?usp=sharing) for applicants to use, but it is not required to follow it exactly and modifications are encouraged as needed.
+
+Applicants must have at least 1 non-trivial contribution in PyBaMM for their application to be considered.
+
 Information about current and past Google Summer of Code projects and idea lists can be found below.
 
 ## Ideas lists
@@ -13,6 +17,7 @@ Information about current and past Google Summer of Code projects and idea lists
 - [GSoC 2021](/gsoc/2021/)
 - [GSoC 2022](/gsoc/2022/)
 - [GSoC 2023](/gsoc/2023/)
+- [GSoC 2024](/gsoc/2024/)
 
 ## Project reports
 

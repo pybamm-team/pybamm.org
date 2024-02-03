@@ -1,61 +1,98 @@
 ---
 title: PyBaMM GSoC 2024 Project Ideas
+summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2024. These projects are intended to be suitable for students who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
 ---
 
-Improving battery technology is critical as we transition to a green economy. Battery modeling helps to achieve this by reducing costs and increasing reliability and safety. The PyBaMM package provides an open-source framework for physics-based battery models and simulations, with a growing focus on real-world experiments and battery degradation.
-While most of our development team works day-to-day on creating new models and better ways to solve them, the proposed projects (which do not require domain-specific knowledge) will be fantastic contributions to the general framework.
+## Migrate from `unittest` to `pytest`
 
-To find out more about PyBaMM, you can visit our website [pybamm.org](/) or read our [paper](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.309/).
+PyBaMM's inception predates the rise in popularity of `pytest`, and so we have used the `unittest` testing framework for our tests. However, `pytest` is now the de facto standard for testing in Python, and it is time to migrate our test cases over to it. The reason for this is that `pytest` is much more flexible and powerful than `unittest`, and will allow us to write better tests with less code. This may also involve migrating our test cases to use `hypothesis` for property-based testing, which will allow us to write even more powerful tests via the use of strategies, which are like generators for test cases.
 
-## Getting started
+PyBaMM already uses `pytest` with the `nbmake` package to run our example notebooks as tests, but still uses `unittest` for the rest of the tests. `pytest-xdist` is also used to run the tests in parallel, which should end up being faster than the current serial implementation and should be adapted to be used with the new test framework.
 
-We mostly communicate via Slack, so you should start off by [joining our Slack workspace](/slack/) and heading to the `#gsoc-main` channel.
+The student will be expected to look at other popular Python packages to see how they use `pytest` and `hypothesis` to write tests, and then migrate our tests over to use these frameworks. This will involve writing new tests, and also migrating existing tests over to the new framework, making use of and exploring the `pytest` documentation for scouting potential features to be incorporated. The student will also be expected to improve the test coverage of the codebase, and to write tests for any new code that they end up writing.
 
-A comprehensive set of [example notebooks](https://docs.pybamm.org/en/latest/source/examples/index.html) is available for becoming familiar with PyBaMM.
-Knowledge of battery physics or mathematical modeling is *not* required for any of the projects, but may be beneficial for some.
+As a stretch goal, the packaging infrastructure for PyBaMM should be updated to include a `pytest` test suite that can be run by users to check that their installation is working correctly for users who do not have access to a source installation of PyBaMM, i.e., through `pybamm.test()` or similar.
 
-All coding will be done in Python, so contributors should have some proficiency in Python, or another object-oriented programming language.
-Each project will follow test-driven development, and also involve writing clear documentation (via Sphinx) and examples (mainly in the form of jupyter notebooks) alongside the code. New contributors should make themselves familiar with this workflow.
-Finally, new contributors should read the [contributing guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html) and be familiar with the basics of Git and GitHub.
+### Expected outcomes
 
-## Applications
+* All test files and modules migrated to use `pytest` in the code base, in a way that is consistent with modern Python software engineering and testing practices – either manually or via automated migration tools
+* Improvisation of test coverage
+* Utilisation of advanced testing techniques based on advanced `pytest` features and `hypothesis` as a framework
+* Deprecate some legacy test invocation methods such as `run-tests.py` in favour of the `pytest` path finding and test case discovery mechanisms
 
-Students must submit proposals based on the ideas suggested here. GSoC will decide how many projects are funded, it’s unlikely that every project will be funded. Selection for the projects will take into consideration, in strongly decreasing order of importance:
+### Desired skills
 
-- our interactions with you leading up to the project selection date
-- your project application
-- your background and experience
-
-Applicants must have at least 1 non-trivial contribution in PyBaMM for their application to be considered.
-
-We provide a [template for proposals](https://docs.google.com/document/d/1gER-yFt5_exHEu9Lx-jfrTH8I7QQXci8oDKH-5wgMys/edit?usp=sharing) for applicants to use, but it is not required to follow it exactly and modifications are encouraged as needed.
-
-## Projects
-
-### Project title 1
-
-Project description
-
-#### Expected outcomes
-
-* Expected outcome 1
-
-#### Desired skills
-
-* Desired skill 1
-* Desired skill 2
-* Desired skill 3
+* Experience with Python and unit testing (`unittest`, `pytest`, and `hypothesis`) in Python.
+* Some experience with test-driven development, continuous integration, and coverage tools is desirable, but not required.
+* Git version control and GitHub workflow for open-source projects.
 
 ### Difficulty and suitable project length
 
-* Easy/medium/hard. This project is suitable for a 175h/350h project.
+* Medium. This project is suitable for a 175-hour duration.
 
 ### Potential mentors
 
-* [Mentor 1](link to website, GitHub profile, or LinkedIn profile)
+* [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
+* [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+* [Arjun Verma](https://github.com/arjxn-py)
 
-### Project title 2
+## Migrate to a modern build-backend such as `scikit-build-core` or `meson-python` as a new build system for PyBaMM
 
-#### Expected outcomes
+There are two new build systems that are gaining popularity in the Python ecosystem: `scikit-build-core` and `meson-python`. Both of these build systems are designed to be more flexible and powerful in order to support the needs of compiled Python packages, which are becoming more common in line with Python's use in the field of scientific computing. PyBaMM relies on a C++-based solver based on SUNDIALS and SuiteSparse, and thereby requires significant compilation prerequisites and build-time configuration.
 
-...
+The goal of this project is to migrate PyBaMM's build system over to one of these new build systems, and to deprecate the current build system that is based on `setuptools` and `wheel`. This may involve writing new build scripts, adhering to the new build system's conventions, and setting up compilers and toolchains accordingly to ensure that PyBaMM works correctly on all platforms and architectures that are currently supported.
+
+As a stretch goal, the student can explore the possibility of cross-compiling PyBaMM wheels for different platforms and architectures that are not currently supported, such as ARM-based systems for Linux and macOS.
+
+### Expected outcomes
+
+* A new build backend for PyBaMM, either `scikit-build-core` or `meson-python`
+* Revamped build scripts, configuration, and possibly a complete rewrite of the `setup.py` code
+* Retained support for all platforms and architectures that are currently supported by PyBaMM
+* Ensuring that there is a reliable mechanism for editable installations in CI and local development, with or without the use of the `-–no-build-isolation` command-line flag
+
+### Desired skills
+
+* Experience with Python packaging for compiled extensions will be highly beneficial
+* Build systems such as CMake, Meson, and/or Ninja
+* Knowledge of compilers and toolchains, and how to set them up on different platforms is desirable, but not required.
+* Experience with CI/CD pipelines and DevOps workflows across platforms and architectures is desirable, but not required.
+
+### Difficulty and suitable project length
+
+* Hard. This project is suitable for a 350-hour duration.
+
+### Potential mentors
+
+* [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
+* [Arjun Verma](https://github.com/arjxn-py)
+
+## Build and publish `pybamm-cookiecutter` as a template for new PyBaMM-based projects
+
+There is a cookiecutter template at https://github.com/pybamm-team/pybamm-cookiecutter/ that was started as a part of GSoC 2023. The goal of this project is to finish the template and release it on PyPI so that it can be used by the community to create new PyBaMM-based projects. The template has had a start as of November 2023, but it is not ready for use by researchers and scientists who are looking to add their own parameter sets and models to PyBaMM.
+
+The student will receive an opportunity to perform each and every aspect of Python software development tasks, including adding features, writing tests, documentation, usage examples, CI/CD pipelines for testing automation and deployment, and so on. The template is supposed to be an opinionated one, combining all the best ideas from the original PyBaMM repository and new practices in other data science and scientific computing projects and their distribution, in order to provide both extensibility and ease of use for new users in the battery modeling fraternity.
+
+### Expected outcomes
+
+* Completion of a cookiecutter template that can be used to create new PyBaMM-based projects
+* Documentation and usage examples for the template in the form of a Sphinx-based website and Jupyter notebooks
+* CI/CD pipelines for testing automation and deployment for the correct functioning of the template
+* Release infrastructure that allows the template to be published on PyPI and installed via `pip`, mirroring PyBaMM's own release system and versioning
+
+### Desired skills
+
+* Experience with Python packaging and distribution for pure-Python packages and modern Python projects will be beneficial but is not required
+* Familiarity with cookiecutter templates and the `cookiecutter` Python package (or other templating packages, such as `cookieninja`, `copier`, `cruft`), including the use of `jinja2` as a templating engine
+* Basics of CI/CD pipelines and DevOps for Python projects
+
+### Difficulty and suitable project length
+
+* Easy. This project is suitable for a 175-hour duration.
+
+### Potential mentors
+
+* [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
