@@ -70,4 +70,3 @@ More information can be found in [the docs](https://docs.pybamm.org/en/latest/so
 ## A `get_parameter_info` function
 
 The functionality to print which parameters does a model depend on has now been improved. The method `print_parameter_info` still prints on screen the parameters a model depends on and which type they are (i.e. `Parameter` or `FunctionParameter`) but now as table, which improves readability. The new `get_parameter_info` method outputs the information as a dictionary, which makes it easy to process the information and enables, amongst other things, to easily extract the parameters required to run a specific model from a larger parameter set. The [parameterisation notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/parameterization/parameterization.html) has now been updated to showcase this functionality.
-
