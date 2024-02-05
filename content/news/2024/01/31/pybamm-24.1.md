@@ -63,7 +63,7 @@ By default, PyBaMM takes the reference of potential to be at the negative curren
 
 ## Serialisation of models, parameters and variables
 
-PyBaMM now supports serialisation of models, parameters, and variables, allowing users to save them to and load them from disk.This is useful for saving the results of long simulations or drive cycles, or for sharing models and parameters with other users in JSON format. 
+PyBaMM now supports serialisation of models, parameters, and variables, allowing users to save them to and load them from disk.This is useful for saving the results of long simulations or drive cycles, or for sharing models and parameters with other users in JSON format.
 
 More information can be found in [the docs](https://docs.pybamm.org/en/latest/source/api/expression_tree/operations/serialise.html) and [this notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/saving_models.html).
 
