@@ -30,6 +30,11 @@ def query_contributors():
     # Get the list of contributors from the endpoint iteratively until we get
     url = "https://raw.githubusercontent.com/pybamm-team/PyBaMM/develop/.all-contributorsrc"
     contributors = requests.get(url).json()
+    for obj in contributors["contributors"]:
+        # Check if the dictionary has the key 'profile'
+        if 'profile' in obj:
+            # Replace the key 'profile' with 'website'
+            obj['html_url'] = obj.pop('profile')
     return contributors["contributors"]
 PYBAMM_CONTRIBUTORS = query_contributors()
 
