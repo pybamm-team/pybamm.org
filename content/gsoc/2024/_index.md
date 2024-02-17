@@ -96,3 +96,31 @@ The student will receive an opportunity to perform each and every aspect of Pyth
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
+
+## Training a Machine Learning Model for Chatbot Assistance on PyBaMM Documentation
+
+PyBaMM's extensive documentation serves as a valuable resource for users, but accessing information efficiently can be challenging. This project aims to develop a chatbot using machine learning techniques trained on PyBaMM documentation. The chatbot will act as a virtual assistant, providing users with prompt and accurate responses to basic queries related to PyBaMM functionalities, installation instructions, usage guidelines, and troubleshooting tips.
+
+The project will involve collecting and preprocessing a comprehensive dataset comprising PyBaMM documentation, including tutorials, API references, user guides, and FAQs. This data will then be used to train a machine learning model, selecting from various architectures such as sequence-to-sequence models or transformers. Natural language understanding techniques will be implemented to preprocess user queries and extract relevant features. The trained model will be integrated into an interactive chatbot interface, allowing users to interact in real-time. Finally, the chatbot's performance will be evaluated using metrics such as accuracy and user satisfaction, with feedback used to refine and improve its responses iteratively.
+
+### Expected outcomes
+
+* A trained machine learning model capable of understanding and responding to user queries based on PyBaMM documentation.
+* Development of a functional chatbot interface enabling users to interact with the model for assistance and support.
+* Improved user experience and efficiency in accessing information related to PyBaMM through the chatbot.
+
+### Desired skills
+
+* Experience with machine learning techniques for natural language processing, including text classification and sequence modeling.
+* Experience with deep learning frameworks such as TensorFlow or PyTorch.
+* Good programming skills in Python for implementing the chatbot interface and integration.
+* Familiarity with chatbot development platforms or libraries is advantageous.
+* Ability to analyze user feedback and iteratively improve the chatbot's performance and usability.
+
+### Difficulty and suitable project length
+
+* Medium. This project is suitable for a 175-hour duration.
+
+### Potential mentors
+
+* [Arjun Verma](https://github.com/arjxn-py)
