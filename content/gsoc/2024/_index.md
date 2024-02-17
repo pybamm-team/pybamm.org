@@ -35,7 +35,7 @@ As a stretch goal, the packaging infrastructure for PyBaMM should be updated to 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
 * [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
-* [Arjun Verma](https://github.com/arjxn-py)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
 
 ## Migrate to a modern build-backend such as `scikit-build-core` or `meson-python` as a new build system for PyBaMM
 
@@ -67,7 +67,7 @@ As a stretch goal, the student can explore the possibility of cross-compiling Py
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
-* [Arjun Verma](https://github.com/arjxn-py)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
 
 ## Build and publish `pybamm-cookiecutter` as a template for new PyBaMM-based projects
 
@@ -96,6 +96,7 @@ The student will receive an opportunity to perform each and every aspect of Pyth
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
 
 ## Training a Machine Learning Model for Chatbot Assistance on PyBaMM Documentation
 
@@ -123,4 +124,4 @@ The project will involve collecting and preprocessing a comprehensive dataset co
 
 ### Potential mentors
 
-* [Arjun Verma](https://github.com/arjxn-py)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
