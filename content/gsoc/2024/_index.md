@@ -128,3 +128,5 @@ Natural language understanding techniques will be implemented to preprocess user
 ### Potential mentors
 
 * [Arjun Verma](https://arjxnpy.vercel.app/)
+* [Ferran Brosa Planella](https://www.brosaplanella.xyz/)
+* [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
