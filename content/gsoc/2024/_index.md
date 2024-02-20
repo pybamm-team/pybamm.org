@@ -35,7 +35,7 @@ As a stretch goal, the packaging infrastructure for PyBaMM should be updated to 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
 * [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
-* [Arjun Verma](https://github.com/arjxn-py)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
 
 ## Migrate to a modern build-backend such as `scikit-build-core` or `meson-python` as a new build system for PyBaMM
 
@@ -67,7 +67,7 @@ As a stretch goal, the student can explore the possibility of cross-compiling Py
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
-* [Arjun Verma](https://github.com/arjxn-py)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
 
 ## Build and publish `pybamm-cookiecutter` as a template for new PyBaMM-based projects
 
@@ -96,3 +96,37 @@ The student will receive an opportunity to perform each and every aspect of Pyth
 
 * [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
+
+## Training a Machine Learning Model for Chatbot Assistance on PyBaMM Documentation
+
+PyBaMM's extensive documentation serves as a valuable resource for users, but accessing information efficiently can be challenging. This project aims to develop a chatbot using machine learning techniques trained on PyBaMM documentation. The chatbot will act as a virtual assistant, providing users with prompt and accurate responses to basic queries related to PyBaMM functionalities, installation instructions, usage guidelines, and troubleshooting tips.
+
+The project will involve collecting and preprocessing a comprehensive dataset comprising PyBaMM documentation, including tutorials, API references, user guides, and FAQs. This data will then be used to train a machine learning model, selecting from various architectures such as sequence-to-sequence models or transformers. Additionally, the model will incorporate Retrieval-Augmented Generation (RAG) techniques to generate responses based on version-specific documentation, ensuring compatibility with recent features and updates ([see NVIDIA's blog on Demystifying Retrieval-Augmented Generation Pipelines](https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/)).
+
+Natural language understanding techniques will be implemented to preprocess user queries and extract relevant features. The trained model will be integrated into an interactive chatbot interface, allowing users to interact in real-time. To ensure efficient hosting and storage of the model and embeddings, knowledge of suitable platforms will be required. Priority will be given to free and open-source platforms that offer scalability, accessibility, and ease of maintenance. Finally, the chatbot's performance will be evaluated using metrics such as accuracy and user satisfaction, with feedback used to refine and improve its responses iteratively.
+
+### Expected outcomes
+
+* A trained machine learning model capable of understanding and responding to user queries based on PyBaMM documentation, leveraging Retrieval-Augmented Generation (RAG) techniques for version-aware assistance.
+* Development of a functional chatbot interface enabling users to interact with the model for assistance and support.
+* Improved user experience and efficiency in accessing information related to PyBaMM through the chatbot.
+
+### Desired skills
+
+* Experience with machine learning techniques for natural language processing, including text classification, sequence modeling, and Retrieval-Augmented Generation (RAG).
+* Experience with deep learning frameworks such as TensorFlow or PyTorch.
+* Good programming skills in Python for implementing the chatbot interface and integration.
+* Familiarity with chatbot development platforms or libraries is advantageous.
+* Ability to analyze user feedback and iteratively improve the chatbot's performance and usability.
+* Knowledge of platforms for effectively hosting and managing machine learning models and embeddings, with a focus on maintainability and adaptability for future needs.
+
+### Difficulty and suitable project length
+
+* Medium. This project is suitable for a 175-hour duration.
+
+### Potential mentors
+
+* [Arjun Verma](https://arjxnpy.vercel.app/)
+* [Ferran Brosa Planella](https://www.brosaplanella.xyz/)
+* [Agriya Khetarpal](https://agriyakhetarpal.github.io/)
