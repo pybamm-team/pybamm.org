@@ -9,19 +9,19 @@ underscore, i.e., _index.md to treat them as branched pages. -->
 
 # Document PyBaMM submodels
 
-## About your organisation
+## About the organisation
 
 PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python, whose mission is to accelerate battery modelling research by providing open-source tools for multi-institutional, interdisciplinary collaboration. Broadly, PyBaMM consists of (i) a framework for writing and solving systems of differential equations, (ii) a library of battery models and parameters, and (iii) specialised tools for simulating battery-specific experiments and visualising the results. Together, these enable flexible model definitions and fast battery simulations, allowing users to explore the effect of different battery designs and modelling assumptions under a variety of operating scenarios.
 
-## About your project
+## About the project
 
-### Your project's problem
+### Problem
 
 The battery models included in PyBaMM’s library consist of an innovative submodel structure allowing users to modify the physics they wish to include into their model, including such processes like degradation or particle mechanics. Ideally if a PyBaMM user or developer has developed new, novel battery submodels we wish to encourage them to include these within PyBaMM as a PR. However, so far we have only had limited success in encouraging people outside the core development team to contribute new battery models, and the obvious reason for this is that the documentation on the existing submodel structure is limited and there is no documentation on the process of integrating a new submodel.
 
 The goals of this project is to (a) document the existing submodule structure at a higher level than currently exists (the current documentation is limited to docstrings on individual classes), at a level suitable for new PyBaMM users who just wish to use the existing submodels, and (b) document the process for creating and publishing new PyBaMM models, either as a new submodel, or as a standalone model entry point.
 
-### Your project's scope
+### Scope
 
 This project has three goals, (a) document the existing submodel structure, (b) document the process for creating a new submodel, and (c) document how to publish a standalone model entry point.
 
@@ -33,7 +33,7 @@ The new documentation will be written in reStructuredText and incorporated into 
 
 Core PyBaMM developers [Martin Robinson](https://github.com/martinjrobins) and [Ferran Brosa Planella](https://github.com/brosaplanella) will onboard and then mentor the technical writer.
 
-### Measuring your project's success
+### Measuring project's success
 
 Success measures for this project would be:
 Reducing the number of submodel questions on our GitHub discussion boards and allowing developers to simply point to existing documentation to answer these questions
