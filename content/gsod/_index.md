@@ -1,5 +1,6 @@
 ---
 title: Google Season of Docs with PyBaMM
+summary: This page describes the process, idea lists, and other logistics for participation in the Google Season of Docs program with PyBaMM.
 shortcutDepth: 1
 ---
 
@@ -60,4 +61,5 @@ New model entry points from users outside the current development team
 
 
 ### Additional information
+
 This project would be suitable for a technical writer familiar with mathematical modelling and working with Python and Sphinx. Any battery specific modelling experience is desirable, but could be picked up during the project as long as the writer has a general modelling background.
