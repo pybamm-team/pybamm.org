@@ -54,7 +54,7 @@ New model entry points from users outside the current development team
 ### Project budget
 
 
-| Budget Item      | Amount    | Notes                                                                    |
+| Budget Item      | Amount (USD)    | Notes                                                                    |
 |------------------|-----------|--------------------------------------------------------------------------|
 | Technical writer | 10,000.00 | Design, write and publish new submodel and model entry point user-guides |
 
