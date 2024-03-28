@@ -34,7 +34,7 @@ Google Summer of Code is primarily focused on bringing new contributors to the w
 
 ### Google Season of Docs
 
-Google Season of Docs allows open-source organisations to hire technical writers to work on their documentation. The program usually requires previous technical writing experience and the mentors help the writers to familiarise themselves with the organisation and open-source in general. If you would like to work with us on a project, you may view our participation status and the current or future projects at the [GSoD GitHub repository](https://github.com/google/season-of-docs).
+Google Season of Docs allows open-source organisations to hire technical writers to work on their documentation. The program usually requires previous technical writing experience and the mentors help the writers to familiarise themselves with the organisation and open-source in general. If you would like to work with us on a project, you may view our participation status and the current or future projects at the [GSoD GitHub repository](https://github.com/google/season-of-docs). We are applying to GSoD for the first time in 2024, with a [proposal to improve the documentation of submodels](/gsod/).
 
 ### Outreachy
 
