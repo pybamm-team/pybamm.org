@@ -31,7 +31,7 @@ As a stretch goal, the packaging infrastructure for PyBaMM should be updated to 
 
 ### Difficulty and suitable project length
 
-* **Medium**. This project is suitable for a 175-hour duration.
+* **Medium**. This project is suitable for a 350-hour duration.
 
 ### Potential mentors
 
