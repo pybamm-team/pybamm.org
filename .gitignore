@@ -20,3 +20,6 @@ __pycache__/
 
 # Nox Folder
 .nox/
+
+# env Folder
+env/
