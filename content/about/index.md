@@ -38,7 +38,7 @@ For companies who want to leverage the power, flexibility, and openness of the P
 
 ### The Oxford Research Software Engineering Group
 
-[OxRSE](https://www.rse.ox.ac.uk/) is the central RSE team at the University of Oxford. They have been part of the PyBaMM core development team since its inception and provide on-going software development support, 
+[OxRSE](https://www.rse.ox.ac.uk/) is the central RSE team at the University of Oxford. They have been part of the PyBaMM core development team since its inception and provide on-going software development support,
 funded by the [Faraday Institution](https://faraday.ac.uk/). If you want to know more about OxRSE can support your research, please [get in touch](https://www.rse.ox.ac.uk/contact).
 
 &nbsp;
