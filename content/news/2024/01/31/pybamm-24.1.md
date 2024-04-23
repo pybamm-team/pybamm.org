@@ -53,20 +53,20 @@ experiment = pybamm.Experiment(
 )
 ```
 
-For a full example please see [this notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/simulations_and_experiments/custom-experiments.html).
+For a full example please see [this notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/simulations_and_experiments/custom-experiments.html).
 
 
 ## Reference electrodes
 
-By default, PyBaMM takes the reference of potential to be at the negative current collector. The new reference electrode functionality allows the users to extract the potential versus a reference electrode, which is a common experiment. The method `insert_reference_electrode` allows the user to specify the position where to insert the reference electrode (the default option is the midpoint of the separator). Then, the model includes the new variables `"Reference electrode potential [V]"`, `"Negative electrode 3E potential [V]"` and `"Positive electrode 3E potential [V]"` which can be plotted and postprocessed as usual. For a full example please see [this notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/simulate-3E-cell.html).
+By default, PyBaMM takes the reference of potential to be at the negative current collector. The new reference electrode functionality allows the users to extract the potential versus a reference electrode, which is a common experiment. The method `insert_reference_electrode` allows the user to specify the position where to insert the reference electrode (the default option is the midpoint of the separator). Then, the model includes the new variables `"Reference electrode potential [V]"`, `"Negative electrode 3E potential [V]"` and `"Positive electrode 3E potential [V]"` which can be plotted and postprocessed as usual. For a full example please see [this notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/simulate-3E-cell.html).
 
 
 ## Serialisation of models, parameters and variables
 
 PyBaMM now supports serialisation of models, parameters, and variables, allowing users to save them to and load them from disk. This is useful for saving the results of long simulations or drive cycles, or for sharing models and parameters with other users in JSON format.
 
-More information can be found in [the docs](https://docs.pybamm.org/en/latest/source/api/expression_tree/operations/serialise.html) and [this notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/saving_models.html).
+More information can be found in [the docs](https://docs.pybamm.org/en/stable/source/api/expression_tree/operations/serialise.html) and [this notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/saving_models.html).
 
 ## A `get_parameter_info` function
 
-The functionality to print which parameters does a model depend on has now been improved. The method `print_parameter_info` still prints on screen the parameters a model depends on and which type they are (i.e. `Parameter` or `FunctionParameter`) but now as table, which improves readability. The new `get_parameter_info` method outputs the information as a dictionary, which makes it easy to process the information and enables, amongst other things, to easily extract the parameters required to run a specific model from a larger parameter set. The [parameterisation notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/parameterization/parameterization.html) has now been updated to showcase this functionality.
+The functionality to print which parameters does a model depend on has now been improved. The method `print_parameter_info` still prints on screen the parameters a model depends on and which type they are (i.e. `Parameter` or `FunctionParameter`) but now as table, which improves readability. The new `get_parameter_info` method outputs the information as a dictionary, which makes it easy to process the information and enables, amongst other things, to easily extract the parameters required to run a specific model from a larger parameter set. The [parameterisation notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/parameterization/parameterization.html) has now been updated to showcase this functionality.

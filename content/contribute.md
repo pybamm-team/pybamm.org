@@ -18,7 +18,7 @@ over what changes have been made in that release, as well as updates to the road
 
 ## Issue priority and assignment
 
-Specific things that we are currently working on are indicated by issue labelling and assignment
+Specific things that we are currently working on are indicated by issue labelling and assignment.
 
 ### Issue triaging
 
