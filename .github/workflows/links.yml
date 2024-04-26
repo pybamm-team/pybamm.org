@@ -24,7 +24,7 @@ jobs:
 
       - name: Link checker
         id: lychee
-        uses: lycheeverse/lychee-action@c053181aa0c3d17606addfe97a9075a32723548a
+        uses: lycheeverse/lychee-action@2b973e86fc7b1f6b36a93795fe2c9c6ae1118621
         with:
           # Same as those in the PyBaMM repository
           args: |
