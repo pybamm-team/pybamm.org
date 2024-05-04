@@ -3,7 +3,7 @@ title: Get started with PyBaMM
 ---
 
 {{< notice tip >}}
-For the official PyBaMM documentation visit https://docs.pybamm.org/en/latest/
+For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/stable/
 {{< /notice >}}
 
 ## Installation instructions
@@ -14,7 +14,7 @@ PyBaMM is available on the `pip` package manager for Windows, macOS, and Linux; 
 pip install pybamm
 ```
 
-More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html) in the documentation.
+More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html) in the documentation.
 
 ## Example notebooks
 

@@ -28,21 +28,14 @@ PYBAMM_MAINTAINER_TRAINEES = read_file(DIR / "teams" / "MAINTAINER-TRAINEES")
 
 def query_contributors():
     # Get the list of contributors from the endpoint iteratively until we get
-    # an empty response
-    contributors_list = []
-    page = 1
-    while True:
-        contributors = requests.get(
-            f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
-        ).json()
-        if contributors == []:
-            break
-        else:
-            contributors_list += contributors
-            page += 1
-    return contributors_list
-
-
+    url = "https://raw.githubusercontent.com/pybamm-team/PyBaMM/develop/.all-contributorsrc"
+    contributors = requests.get(url).json()
+    for obj in contributors["contributors"]:
+        # Check if the dictionary has the key 'profile'
+        if 'profile' in obj:
+            # Replace the key 'profile' with 'website'
+            obj['html_url'] = obj.pop('profile')
+    return contributors["contributors"]
 PYBAMM_CONTRIBUTORS = query_contributors()
 
 

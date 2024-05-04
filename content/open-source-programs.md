@@ -11,12 +11,12 @@ To find out more about PyBaMM, you can visit our website [pybamm.org](/) or read
 
 We mostly communicate via Slack, so you should start off by [joining our Slack workspace](/slack/) and heading to the appropriate (`#gsoc-main`/`#outreachy-main`/`#gsod-main`) channel.
 
-A comprehensive set of [example notebooks](https://docs.pybamm.org/en/latest/source/examples/index.html) is available for becoming familiar with PyBaMM.
+A comprehensive set of [example notebooks](https://docs.pybamm.org/en/stable/source/examples/index.html) is available for becoming familiar with PyBaMM.
 Knowledge of battery physics or mathematical modeling is *not* required for any of the projects, but may be beneficial for some.
 
 All coding will be done in Python, so contributors should have some proficiency in Python, or another object-oriented programming language.
 Each project will follow test-driven development, and also involve writing clear documentation (via Sphinx) and examples (mainly in the form of jupyter notebooks) alongside the code. New contributors should make themselves familiar with this workflow.
-Finally, new contributors should read the [contributing guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html) and be familiar with the basics of Git and GitHub.
+Finally, new contributors should read the [Contributing Guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html) and be familiar with the basics of Git and GitHub.
 
 ## Applications
 
@@ -34,7 +34,7 @@ Google Summer of Code is primarily focused on bringing new contributors to the w
 
 ### Google Season of Docs
 
-Google Season of Docs allows open-source organisations to hire technical writers to work on their documentation. The program usually requires previous technical writing experience and the mentors help the writers to familiarise themselves with the organisation and open-source in general. If you would like to work with us on a project, you may view our participation status and the current or future projects at the [GSoD GitHub repository](https://github.com/google/season-of-docs).
+Google Season of Docs allows open-source organisations to hire technical writers to work on their documentation. The program usually requires previous technical writing experience and the mentors help the writers to familiarise themselves with the organisation and open-source in general. If you would like to work with us on a project, you may view our participation status and the current or future projects at the [GSoD GitHub repository](https://github.com/google/season-of-docs). We are applying to GSoD for the first time in 2024, with a [proposal to improve the documentation of submodels](/gsod/).
 
 ### Outreachy
 
