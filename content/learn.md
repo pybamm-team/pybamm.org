@@ -2,9 +2,9 @@
 title: Get started with PyBaMM
 ---
 
-{{< notice tip >}}
+{{< admonition hint >}}
 For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/stable/
-{{< /notice >}}
+{{< /admonition >}}
 
 ## Installation instructions
 

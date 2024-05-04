@@ -30,7 +30,15 @@ For companies who want to leverage the power, flexibility, and openness of the P
 
 &nbsp;
 
-{{< figure src="/images/logos/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
+{{< figure >}}
+src = '/images/logos/ionworks-logo.png'
+alt = 'Logo for Ionworks'
+width = 500
+title = 'Logo for Ionworks'
+attribution = 'Logo for Ionworks'
+attributionlink = ''
+caption = "Logo for Ionworks"
+{{< /figure >}}
 
 &nbsp;
 
@@ -43,8 +51,15 @@ funded by the [Faraday Institution](https://faraday.ac.uk/). If you want to know
 
 &nbsp;
 
-{{< figure src="/images/logos/2024_oxrse_rectangle.svg" alt="Logo for OxRSE" width="500px" >}}
-
+{{< figure >}}
+src = '/images/logos/2024_oxrse_rectangle.svg'
+alt = 'Logo for OxRSE'
+width = 500
+title = 'Logo for OxRSE'
+attribution = 'Logo for OxRSE'
+attributionlink = ''
+caption = "Logo for OxRSE"
+{{< /figure >}}
 &nbsp;
 
 <p>
@@ -56,7 +71,15 @@ The Faraday Institution supports many PyBaMM contributors, who contribute to the
 
 &nbsp;
 
-{{< figure src="/images/logos/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
+{{< figure >}}
+src = '/images/logos/faraday-logo.png'
+alt = 'Logo for The Faraday Institution'
+width = 500
+title = 'Logo for The Faraday Institution'
+attribution = 'Logo for The Faraday Institution'
+attributionlink = ''
+caption = "Logo for The Faraday Institution"
+{{< /figure >}}
 
 &nbsp;
 
@@ -70,7 +93,15 @@ PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the 
 
 &nbsp;
 
-{{< figure src="/images/logos/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
+{{< figure >}}
+src = '/images/logos/NumFOCUS_sponsored_project_logo.svg'
+alt = 'NumFOCUS Logo'
+width = 500
+title = 'NumFOCUS Logo'
+attribution = 'NumFOCUS Logo'
+attributionlink = ''
+caption = "NumFOCUS Logo"
+{{< /figure >}}
 
 &nbsp;
 
@@ -86,22 +117,85 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
-{{< figure src="/images/logos/university_of_oxford.svg" alt="Logo for the University of Oxford" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/2024_oxford.svg'
+alt = 'Logo for the University of Oxford'
+width = 500
+title = 'Logo for the University of Oxford'
+attribution = 'Logo for the University of Oxford'
+attributionlink = ''
+caption = "Logo for the University of Oxford"
+{{< /figure >}}
 
-{{< figure src="/images/logos/university_of_michigan.svg" alt="Logo for the University of Michigan" width="300px" >}}
+{{< figure >}}
+src = '/images/logos/2024_michigan.svg'
+alt = 'Logo for the University of Michigan'
+width = 500
+title = 'Logo for the University of Michigan'
+attribution = 'Logo for the University of Michigan'
+attributionlink = ''
+caption = "Logo for the University of Michigan"
+{{< /figure >}}
 
-{{< figure src="/images/logos/carnegie_mellon_university.svg" alt="Logo for Carnegie Mellon University" width="250px" >}}
+{{< figure >}}
+src = '/images/logos/2024_carnegie_mellon.svg'
+alt = 'Logo for Carnegie Mellon University'
+width = 500
+title = 'Logo for Carnegie Mellon University'
+attribution = 'Logo for Carnegie Mellon University'
+attributionlink = ''
+caption = "Logo for Carnegie Mellon University"
+{{< /figure >}}
 
-{{< figure src="/images/logos/imperial_college_london.png" alt="Logo for Imperial College London" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/2024_imperial_college_london.png'
+alt = 'Logo for Imperial College London'
+width = 500
+title = 'Logo for Imperial College London'
+attribution = 'Logo for Imperial College London'
+attributionlink = ''
+caption = "Logo for Imperial College London"
+{{< /figure >}}
 
-{{< figure src="/images/logos/university_of_warwick.png" alt="Logo for the University of Warwick" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/2024_university_of_warwick.png'
+alt = 'Logo for the University of Warwick'
+width = 500
+title = 'Logo for the University of Warwick'
+attribution = 'Logo for the University of Warwick'
+attributionlink = ''
+caption = "Logo for the University of Warwick"
+{{< /figure >}}
 
-{{< figure src="/images/logos/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/2024_university_college_london.svg'
+alt = 'Logo for University College London'
+width = 500
+title = 'Logo for University College London'
+attribution = 'Logo for University College London'
+attributionlink = ''
+caption = "Logo for University College London"
+{{< /figure >}}
 
-{{< figure src="/images/logos/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/2024_lilium.png'
+alt = 'Logo for Lilium GmbH'
+width = 500
+title = 'Logo for Lilium GmbH'
+attribution = 'Logo for Lilium GmbH'
+attributionlink = ''
+caption = "Logo for Lilium GmbH"
+{{< /figure >}}
 
-{{< figure src="/images/logos/sila.png" alt="Logo for Sila Nanotechnologies" width="200px" >}}
-
+{{< figure >}}
+src = '/images/logos/2024_sila.png'
+alt = 'Logo for Sila Nanotechnologies'
+width = 500
+title = 'Logo for Sila Nanotechnologies'
+attribution = 'Logo for Sila Nanotechnologies'
+attributionlink = ''
+caption = "Logo for Sila Nanotechnologies"
+{{< /figure >}}
 </div>
 
 &nbsp;

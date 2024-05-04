@@ -16,17 +16,16 @@ PyBaMM now includes support for Python 3.12, which was released in October 2023.
 
 &nbsp;
 
-{{< notice warning >}}
-
+{{< admonition caution >}}
 We have deprecated support for the `JaxSolver`, i.e., the `[jax]` optional dependency on Python 3.8 and it is supported on Python 3.9 and above for macOS, Linux, and Windows.
 
-{{< /notice >}}
+{{< /admonition >}}
 
-{{< notice note >}}
+{{< admonition note >}}
 
 The `scikits.odes` solver is not supported on Python `3.12` yet. It is supported on Python versions `3.8` to `3.11`, for macOS and Linux.
 
-{{< /notice >}}
+{{< /admonition >}}
 
 ## Custom termination conditions
 

@@ -81,9 +81,9 @@ Recurring donations without a specific deliverable. Donations are acknowledged o
 
 &nbsp;
 
-{{< notice tip >}}
+{{< admonition hint >}}
 Check out our [Donate](/donate/) page for more details about sponsorship and payment options.
-{{< /notice >}}
+{{< /admonition >}}
 
 #### Community work orders
 
