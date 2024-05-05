@@ -1,6 +1,8 @@
 [build.environment]
   PYTHON_VERSION = "3.8"  # netlify currently only supports 2.7 and 3.8
-  HUGO_VERSION = "0.121.2"
+  HUGO_VERSION = "0.125.4"
+  DART_SASS_VERSION = "1.75.0"
+  DART_SASS_URL = "https://github.com/sass/dart-sass/releases/download/"
 
 [[plugins]]
   package = "netlify-plugin-checklinks"
