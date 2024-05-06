@@ -6,6 +6,10 @@
 
 Source code for [pybamm.org](https://www.pybamm.org), released under the
 BSD-3-Clause License.
+<a href="https://gitpod.io/#https://github.com/pybamm-team/pybamm.org/" target="_blank">
+  <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open RBJKS in Gitpod">
+</a>
+
 
 ## Steps to contribute
 
