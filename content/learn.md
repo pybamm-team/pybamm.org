@@ -1,5 +1,6 @@
 ---
 title: Get started with PyBaMM
+toc: true
 ---
 
 {{< admonition hint >}}
