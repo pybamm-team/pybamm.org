@@ -8,15 +8,11 @@ _June 09, 2021_
 
 Our introductory paper is now out in the Journal of Open Research Software! This paper explains the motivation and design philosophy behind PyBaMM. Find it here: https://doi.org/10.5334/jors.309
 
-&nbsp;
-
 The paper can be cited in APA format as follows:
 
 ```
 Sulzer, V., Marquis, S. G., Timms, R., Robinson, M., & Chapman, S. J. (2021). Python Battery Mathematical Modelling (PyBaMM) (Version 23.4.1) [Computer software]. https://doi.org/10.5334/jors.309
 ```
-
-&nbsp;
 
 or with BibTeX, as:
 

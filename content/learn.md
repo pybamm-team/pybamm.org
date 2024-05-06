@@ -1,10 +1,11 @@
 ---
 title: Get started with PyBaMM
+toc: true
 ---
 
-{{< notice tip >}}
+{{< admonition hint >}}
 For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/stable/
-{{< /notice >}}
+{{< /admonition >}}
 
 ## Installation instructions
 
@@ -36,12 +37,8 @@ For more resources, please refer to the [Examples section](https://docs.pybamm.o
 
 ## Video tutorials
 
-We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings below.
-
-<!-- Shortcode for rendering the Training markdown page, change it to edit this section -->
-
-{{< include-md "./training.md" >}}
+We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings on the [Training](/training/) page.
 
 ## Get help
 
-You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ion-works.com/contact).
+You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/contact).

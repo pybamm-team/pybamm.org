@@ -1,6 +1,8 @@
 [build.environment]
-  PYTHON_VERSION = "3.8"  # netlify currently only supports 2.7 and 3.8
-  HUGO_VERSION = "0.121.2"
+  PYTHON_VERSION = "3.8"  # Netlify currently only supports 2.7 and 3.8
+  HUGO_VERSION = "0.125.6"
+  DART_SASS_VERSION = "1.75.0"
+  DART_SASS_URL = "https://github.com/sass/dart-sass/releases/download/"
 
 [[plugins]]
   package = "netlify-plugin-checklinks"
@@ -46,3 +48,14 @@
   from = "/*"
   to = "/404/"
   status = 404
+[build]
+  base = "/"
+  publish = "public"
+  command = """\
+    export DART_SASS_TARBALL="dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" && \
+    curl -LJO ${DART_SASS_URL}/${DART_SASS_VERSION}/${DART_SASS_TARBALL} && \
+    tar -xf ${DART_SASS_TARBALL} && \
+    rm ${DART_SASS_TARBALL} && \
+    export PATH=/opt/build/repo/dart-sass:$PATH && \
+    hugo --gc --minify
+    """

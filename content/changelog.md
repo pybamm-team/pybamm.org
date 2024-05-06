@@ -1,5 +1,5 @@
 ---
-title: PyBaMM CHANGELOG
+title: PyBaMM Changelog and Release Notes
 summary: This page contains the PyBaMM CHANGELOG, which is automatically updated when the file in the repository is changed.
 ---
 

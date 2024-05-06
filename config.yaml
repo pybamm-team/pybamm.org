@@ -17,9 +17,10 @@ markup:
       unsafe: true
 
 params:
-  title: PyBaMM Team # for copyright
+  title: PyBaMM website
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
-
+  author:
+    name: PyBaMM Team
   # Privacy-preserving analytics
   plausible:
     dataDomain: pybamm.org
@@ -81,10 +82,7 @@ params:
       - title: About PyBaMM
         url: /about/
       - title: Ionworks
-        url: https://ion-works.com/
-        is_external: true
-      - title: PyBaMM on Twitter
-        url: https://twitter.com/pybamm_/
+        url: https://ionworks.com/
         is_external: true
       - title: Governance
         url: /governance/
@@ -93,32 +91,6 @@ params:
 
     - title: News
       url: /news/
-
-    - title: Contribute
-      url: /contribute/
-
-  # Grid of features
-  keyfeatures:
-    features:
-
-      - title: Enhanced Simulation Performance
-        text: PyBaMM enables efficient simulations of battery performance and aging, accelerating battery design and innovation.
-
-      - title: Modular Framework
-        text: The flexible nature of PyBaMM allows for quick model interchangeability, making it useful in different stages of battery R&D.
-
-      - title: Open Source
-        text: PyBaMM is open source, which means anyone can use, modify, and distribute the software. This makes it accessible to researchers worldwide,
-          enhancing global battery technology research.
-
-      - title: Comprehensive Model Library
-        text: PyBaMM's model library includes a wide range of physics-based models, making it a vital tool in diverse battery research.
-
-      - title: Detailed Visualization Tools
-        text: PyBaMM includes data visualization tools that enable researchers to better interpret their simulation results, facilitating the identification of trends and potential improvements.
-
-      - title: Python Ecosystem
-        text: PyBaMM can be combined with any of the advanced data science and machine learning tools in Python's extensive ecosystem.
 
   footer:
     logo: pybamm_logo_whitetext.svg
@@ -156,7 +128,7 @@ params:
         title: ""
         links:
           - text: Contact
-            link: /contact/
+            link: /community/
 
           - text: Get involved
             link: /contribute/
@@ -165,7 +137,7 @@ params:
             link: /training/
 
           - text: Ionworks
-            link: https://ion-works.com/
+            link: https://ionworks.com/
 
           - text: News
             link: /news/

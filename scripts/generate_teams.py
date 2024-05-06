@@ -119,9 +119,12 @@ team_template = string.Template(
 """
 <div class="team">
     <h3 id="${team_name}"class="name title">
-        ${team_name}
+    ${team_name}
     </h3>
-    <div class="members">${members}
+    <div class="sd-container-fluid sd-mb-4 false">
+        <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">
+            ${members}
+        </div>
     </div>
 </div>
 """
@@ -130,18 +133,20 @@ team_template = string.Template(
 # Displays the members of a specific team
 member_template = string.Template(
 """
-        <div class="member">
-            <a href="${url}" class="name">
-                <div class="photo">
-                    <img
-                        src="${avatarUrl}"
-                        loading="lazy"
-                        alt="Avatar of ${name}"
-                    />
-                </div>
-                ${name}
-            </a>
-        </div>
+<div class="sd-col sd-d-flex-row">
+  <div class="sd-card sd-w-100 sd-shadow-sm sd-card-hover text-center">
+    <div class="sd-card-body">
+      <img
+        src="${avatarUrl}"
+        alt="Avatar of ${name}"
+      />
+
+      ${name}
+    </div>
+    <a class="sd-stretched-link" href="${url}"></a>
+  </div>
+</div>
+
 """
 )
 

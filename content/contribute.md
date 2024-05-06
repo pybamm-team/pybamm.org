@@ -1,5 +1,6 @@
 ---
 title: Contribute to PyBaMM
+toc: true
 ---
 
 If you'd like to contribute to PyBaMM whether via reporting issues and bugs, updating the documentation, or adding new features (thanks!), please have a look at the [Contributing Guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html).
@@ -79,11 +80,9 @@ If you work for a company that uses PyBaMM and would like to sponsor the project
 
 Recurring donations without a specific deliverable. Donations are acknowledged on public project pages, and opportunities for interaction with the core development team. See our GitHub sponsor page for details.
 
-&nbsp;
-
-{{< notice tip >}}
+{{< admonition hint >}}
 Check out our [Donate](/donate/) page for more details about sponsorship and payment options.
-{{< /notice >}}
+{{< /admonition >}}
 
 #### Community work orders
 
