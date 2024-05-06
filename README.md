@@ -15,6 +15,7 @@ BSD-3-Clause License.
 3. Clone your forked repository and add the theme repository as a submodule,
    from [https://github.com/scientific-python/scientific-python-hugo-theme](https://github.com/scientific-python/scientific-python-hugo-theme). You
    may update the submodule and pull the latest changes with
+4. You will need alo to install [Dart-Sass](https://sass-lang.com/dart-sass/)
 
 ```bash
 git submodule update --init --recursive
