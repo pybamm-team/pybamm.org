@@ -1,0 +1,8 @@
+figure{
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+figure figcaption p span{
+    color: black !important;
+}
