@@ -17,9 +17,10 @@ markup:
       unsafe: true
 
 params:
-  title: PyBaMM Team # for copyright
+  title: PyBaMM website
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
-
+  author:
+    name: PyBaMM Team
   # Privacy-preserving analytics
   plausible:
     dataDomain: pybamm.org
