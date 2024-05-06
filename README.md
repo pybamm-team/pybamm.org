@@ -3,11 +3,17 @@
 [![Netlify](https://api.netlify.com/api/v1/badges/c4c60d47-1de1-4d0a-8a25-726d3cf100c8/deploy-status)](https://app.netlify.com/sites/pybamm-developer-preview/deploys)
 [![Links](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml/badge.svg)](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml)
 [![pre-commit.ci](https://results.pre-commit.ci/badge/github/pybamm-team/pybamm.org/main.svg)](https://results.pre-commit.ci/latest/github/pybamm-team/pybamm.org/main)
+[![Gitpod](https://img.shields.io/badge/open%20in-Gitpod-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pybamm-team/pybamm.org/)
 
 Source code for [pybamm.org](https://www.pybamm.org), released under the
 BSD-3-Clause License.
 
+
 ## Steps to contribute
+
+> [!TIP]
+> Gitpod can also be used to contribute to the website. To do so, click on the Gitpod button above to open the repository
+in an online text editor (Visual Studio Code). Once the workspace is ready, you can follow a subset of the steps below to contribute to the website. You can learn more about Gitpod here: [https://www.gitpod.io/docs/introduction/getting-started](https://www.gitpod.io/docs/introduction/getting-started)
 
 1. Fork this repository
 2. Install the extended version of Hugo from [https://gohugo.io/installation/](https://gohugo.io/installation/)
