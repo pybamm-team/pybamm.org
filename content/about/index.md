@@ -26,9 +26,6 @@ donations and how you can support, please see the [Donate](/donate/) page.
 Ionworks provides support and custom feature development for PyBaMM, as well as software to make modeling easier and faster.
 For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
 [Contact Ionworks](https://ion-works.com/contact) to find out more.
-<br>
-
-&nbsp;
 
 {{< figure >}}
 src = '/images/logos/ionworks-logo.png'
@@ -37,16 +34,10 @@ width = 500
 attributionlink = ''
 {{< /figure >}}
 
-&nbsp;
-
-<p>
-
 ### The Oxford Research Software Engineering Group
 
 [OxRSE](https://www.rse.ox.ac.uk/) is the central RSE team at the University of Oxford. They have been part of the PyBaMM core development team since its inception and provide on-going software development support,
 funded by the [Faraday Institution](https://faraday.ac.uk/). If you want to know more about OxRSE can support your research, please [get in touch](https://www.rse.ox.ac.uk/contact).
-
-&nbsp;
 
 {{< figure >}}
 src = '/images/logos/2024_oxrse_rectangle.svg'
@@ -54,16 +45,10 @@ alt = 'Logo for OxRSE'
 width = 500
 attributionlink = ''
 {{< /figure >}}
-&nbsp;
-
-<p>
 
 ### The Faraday Institution
 
 The Faraday Institution supports many PyBaMM contributors, who contribute to the project as part of their official duties at universities across the UK.
-<br>
-
-&nbsp;
 
 {{< figure >}}
 src = '/images/logos/faraday-logo.png'
@@ -73,17 +58,9 @@ attributionlink = ''
 caption = "Logo for The Faraday Institution"
 {{< /figure >}}
 
-&nbsp;
-
-<p>
-
 ### NumFOCUS
 
 PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the United States. The mission of NumFOCUS is to promote open practices in research, data, and scientific computing by serving as a fiscal sponsor for open source projects and organizing community-driven educational programs.
-
-<br>
-
-&nbsp;
 
 {{< figure >}}
 src = '/images/logos/NumFOCUS_sponsored_project_logo.svg'
@@ -93,8 +70,6 @@ attributionlink = ''
 caption = "NumFOCUS Logo"
 {{< /figure >}}
 
-&nbsp;
-
 ### Google Summer of Code
 
 Since 2021, the [Google Summer of Code](/gsoc/) programme has provided funding for 6 students to spend a summer working on a PyBaMM project; we are pleased to say that several of these have gone on to become long-time PyBaMM contributors!
@@ -102,8 +77,6 @@ Since 2021, the [Google Summer of Code](/gsoc/) programme has provided funding f
 ### Other partners
 
 We are grateful to the following organizations for supporting PyBaMM's development, either directly through employee/student time or indirectly through financial support:
-
-&nbsp;
 
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
@@ -162,16 +135,12 @@ alt = 'Logo for Sila Nanotechnologies'
 width = 500
 attributionlink = ''
 {{< /figure >}}
-</div>
 
+</div>
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
 ## PyBaMM on Twitter
-
-<p>
-
-&nbsp;
 
 {{< pybamm-twitter >}}
 

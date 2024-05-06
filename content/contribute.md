@@ -79,7 +79,6 @@ If you work for a company that uses PyBaMM and would like to sponsor the project
 
 Recurring donations without a specific deliverable. Donations are acknowledged on public project pages, and opportunities for interaction with the core development team. See our GitHub sponsor page for details.
 
-
 {{< admonition hint >}}
 Check out our [Donate](/donate/) page for more details about sponsorship and payment options.
 {{< /admonition >}}
