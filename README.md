@@ -11,11 +11,10 @@ BSD-3-Clause License.
 
 1. Fork this repository
 2. Install the extended version of Hugo from [https://gohugo.io/installation/](https://gohugo.io/installation/)
-   and add it to your `PATH`
+   and [`dart-sass`](https://sass-lang.com/dart-sass/) and add them to your `PATH`
 3. Clone your forked repository and add the theme repository as a submodule,
    from [https://github.com/scientific-python/scientific-python-hugo-theme](https://github.com/scientific-python/scientific-python-hugo-theme). You
    may update the submodule and pull the latest changes with
-4. You will need alo to install [Dart-Sass](https://sass-lang.com/dart-sass/)
 
 ```bash
 git submodule update --init --recursive
