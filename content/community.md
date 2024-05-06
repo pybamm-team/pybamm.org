@@ -27,10 +27,10 @@ For general inquiries, you can contact us by emailing [pybamm@gmail.com](mailto:
 
 ### Get help
 
-[Ionworks](https://ion-works.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ion-works.com/blog/our-relationship-with-pybamm).
+[Ionworks](https://ionworks.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ionworks.com/blog/our-relationship-with-pybamm).
 Ionworks provides support and custom feature development for PyBaMM, as well as software to make modeling easier and faster.
 For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
-[Contact Ionworks](https://ion-works.com/contact) to find out more.
+[Contact Ionworks](https://ionworks.com/contact) to find out more.
 
 ## Governance
 

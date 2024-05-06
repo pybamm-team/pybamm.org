@@ -82,7 +82,7 @@ params:
       - title: About PyBaMM
         url: /about/
       - title: Ionworks
-        url: https://ion-works.com/
+        url: https://ionworks.com/
         is_external: true
       - title: PyBaMM on Twitter
         url: https://twitter.com/pybamm_/
@@ -144,7 +144,7 @@ params:
             link: /training/
 
           - text: Ionworks
-            link: https://ion-works.com/
+            link: https://ionworks.com/
 
           - text: News
             link: /news/
