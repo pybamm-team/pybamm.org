@@ -135,7 +135,7 @@ params:
         title: ""
         links:
           - text: Contact
-            link: /contact/
+            link: /community/
 
           - text: Get involved
             link: /contribute/
