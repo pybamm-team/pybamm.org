@@ -164,7 +164,6 @@ attributionlink = ''
 {{< /figure >}}
 </div>
 
-&nbsp;
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
