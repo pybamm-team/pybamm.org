@@ -1,10 +1,11 @@
 ---
 title: Get started with PyBaMM
+toc: true
 ---
 
-{{< notice tip >}}
-For the official PyBaMM documentation visit https://docs.pybamm.org/en/latest/
-{{< /notice >}}
+{{< admonition hint >}}
+For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/stable/
+{{< /admonition >}}
 
 ## Installation instructions
 
@@ -14,7 +15,7 @@ PyBaMM is available on the `pip` package manager for Windows, macOS, and Linux; 
 pip install pybamm
 ```
 
-More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html) in the documentation.
+More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html) in the documentation.
 
 ## Example notebooks
 
@@ -34,12 +35,8 @@ For more resources, please refer to the [Examples section](https://docs.pybamm.o
 
 ## Video tutorials
 
-We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings below.
-
-<!-- Shortcode for rendering the Training markdown page, change it to edit this section -->
-
-{{< include-md "./training.md" >}}
+We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings on the [Training](/training/) page.
 
 ## Get help
 
-You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ion-works.com/contact).
+You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/contact).

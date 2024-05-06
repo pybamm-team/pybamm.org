@@ -22,44 +22,53 @@ donations and how you can support, please see the [Donate](/donate/) page.
 
 ### Ionworks
 
-[Ionworks](https://ion-works.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ion-works.com/blog/our-relationship-with-pybamm).
+[Ionworks](https://ionworks.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ionworks.com/blog/our-relationship-with-pybamm).
 Ionworks provides support and custom feature development for PyBaMM, as well as software to make modeling easier and faster.
 For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
-[Contact Ionworks](https://ion-works.com/contact) to find out more.
-<br>
+[Contact Ionworks](https://ionworks.com/contact) to find out more.
 
-&nbsp;
+{{< figure >}}
+src = '/images/logos/ionworks-logo.png'
+alt = 'Logo for Ionworks'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/ionworks-logo.png" alt="Logo for Ionworks" width="500px" >}}
+### The Oxford Research Software Engineering Group
 
-&nbsp;
+[OxRSE](https://www.rse.ox.ac.uk/) is the central RSE team at the University of Oxford. They have been part of the PyBaMM core development team since its inception and provide on-going software development support,
+funded by the [Faraday Institution](https://faraday.ac.uk/). If you want to know more about OxRSE can support your research, please [get in touch](https://www.rse.ox.ac.uk/contact).
 
-<p>
+{{< figure >}}
+src = '/images/logos/2024_oxrse_rectangle.svg'
+alt = 'Logo for OxRSE'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
 ### The Faraday Institution
 
 The Faraday Institution supports many PyBaMM contributors, who contribute to the project as part of their official duties at universities across the UK.
-<br>
 
-&nbsp;
-
-{{< figure src="/images/logos/faraday-logo.png" alt="Logo for The Faraday Institution" width="500px" >}}
-
-&nbsp;
-
-<p>
+{{< figure >}}
+src = '/images/logos/faraday-logo.png'
+alt = 'Logo for The Faraday Institution'
+width = 500
+attributionlink = ''
+caption = "Logo for The Faraday Institution"
+{{< /figure >}}
 
 ### NumFOCUS
 
 PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the United States. The mission of NumFOCUS is to promote open practices in research, data, and scientific computing by serving as a fiscal sponsor for open source projects and organizing community-driven educational programs.
 
-<br>
-
-&nbsp;
-
-{{< figure src="/images/logos/NumFOCUS_sponsored_project_logo.svg" alt="NumFOCUS Logo" width="500px" >}}
-
-&nbsp;
+{{< figure >}}
+src = '/images/logos/NumFOCUS_sponsored_project_logo.svg'
+alt = 'NumFOCUS Logo'
+width = 500
+attributionlink = ''
+caption = "NumFOCUS Logo"
+{{< /figure >}}
 
 ### Google Summer of Code
 
@@ -69,37 +78,69 @@ Since 2021, the [Google Summer of Code](/gsoc/) programme has provided funding f
 
 We are grateful to the following organizations for supporting PyBaMM's development, either directly through employee/student time or indirectly through financial support:
 
-&nbsp;
-
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
-{{< figure src="/images/logos/university_of_oxford.svg" alt="Logo for the University of Oxford" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/university_of_oxford.svg'
+alt = 'Logo for the University of Oxford'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/university_of_michigan.svg" alt="Logo for the University of Michigan" width="300px" >}}
+{{< figure >}}
+src = '/images/logos/university_of_michigan.svg'
+alt = 'Logo for the University of Michigan'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/carnegie_mellon_university.svg" alt="Logo for Carnegie Mellon University" width="250px" >}}
+{{< figure >}}
+src = '/images/logos/carnegie_mellon_university.svg'
+alt = 'Logo for Carnegie Mellon University'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/imperial_college_london.png" alt="Logo for Imperial College London" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/imperial_college_london.png'
+alt = 'Logo for Imperial College London'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/university_of_warwick.png" alt="Logo for the University of Warwick" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/university_of_warwick.png'
+alt = 'Logo for the University of Warwick'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/university_college_london.svg" alt="Logo for University College London" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/university_college_london.svg'
+alt = 'Logo for University College London'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/lilium.png" alt="Logo for Lilium GmbH" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/lilium.png'
+alt = 'Logo for Lilium GmbH'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
-{{< figure src="/images/logos/sila.png" alt="Logo for Sila Nanotechnologies" width="200px" >}}
+{{< figure >}}
+src = '/images/logos/sila.png'
+alt = 'Logo for Sila Nanotechnologies'
+width = 500
+attributionlink = ''
+{{< /figure >}}
 
 </div>
-
-&nbsp;
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
 ## PyBaMM on Twitter
-
-<p>
-
-&nbsp;
 
 {{< pybamm-twitter >}}
 
