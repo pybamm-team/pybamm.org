@@ -36,11 +36,7 @@ For more resources, please refer to the [Examples section](https://docs.pybamm.o
 
 ## Video tutorials
 
-We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings below.
-
-<!-- Shortcode for rendering the Training markdown page, change it to edit this section -->
-
-{{< include-md "./training.md" >}}
+We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings on the [Training](/training/) page.
 
 ## Get help
 
