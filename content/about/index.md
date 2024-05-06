@@ -35,7 +35,6 @@ src = '/images/logos/ionworks-logo.png'
 alt = 'Logo for Ionworks'
 width = 500
 attributionlink = ''
-caption = "Logo for Ionworks"
 {{< /figure >}}
 
 &nbsp;
@@ -54,7 +53,6 @@ src = '/images/logos/2024_oxrse_rectangle.svg'
 alt = 'Logo for OxRSE'
 width = 500
 attributionlink = ''
-caption = "Logo for OxRSE"
 {{< /figure >}}
 &nbsp;
 
@@ -114,7 +112,6 @@ src = '/images/logos/university_of_oxford.svg'
 alt = 'Logo for the University of Oxford'
 width = 500
 attributionlink = ''
-caption = "Logo for the University of Oxford"
 {{< /figure >}}
 
 {{< figure >}}
@@ -122,7 +119,6 @@ src = '/images/logos/university_of_michigan.svg'
 alt = 'Logo for the University of Michigan'
 width = 500
 attributionlink = ''
-caption = "Logo for the University of Michigan"
 {{< /figure >}}
 
 {{< figure >}}
@@ -130,7 +126,6 @@ src = '/images/logos/carnegie_mellon_university.svg'
 alt = 'Logo for Carnegie Mellon University'
 width = 500
 attributionlink = ''
-caption = "Logo for Carnegie Mellon University"
 {{< /figure >}}
 
 {{< figure >}}
@@ -138,7 +133,6 @@ src = '/images/logos/imperial_college_london.png'
 alt = 'Logo for Imperial College London'
 width = 500
 attributionlink = ''
-caption = "Logo for Imperial College London"
 {{< /figure >}}
 
 {{< figure >}}
@@ -146,7 +140,6 @@ src = '/images/logos/university_of_warwick.png'
 alt = 'Logo for the University of Warwick'
 width = 500
 attributionlink = ''
-caption = "Logo for the University of Warwick"
 {{< /figure >}}
 
 {{< figure >}}
@@ -154,7 +147,6 @@ src = '/images/logos/university_college_london.svg'
 alt = 'Logo for University College London'
 width = 500
 attributionlink = ''
-caption = "Logo for University College London"
 {{< /figure >}}
 
 {{< figure >}}
@@ -162,7 +154,6 @@ src = '/images/logos/lilium.png'
 alt = 'Logo for Lilium GmbH'
 width = 500
 attributionlink = ''
-caption = "Logo for Lilium GmbH"
 {{< /figure >}}
 
 {{< figure >}}
@@ -170,7 +161,6 @@ src = '/images/logos/sila.png'
 alt = 'Logo for Sila Nanotechnologies'
 width = 500
 attributionlink = ''
-caption = "Logo for Sila Nanotechnologies"
 {{< /figure >}}
 </div>
 
