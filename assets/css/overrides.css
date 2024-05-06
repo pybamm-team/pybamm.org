@@ -1,8 +1,19 @@
+/* White backgrounds behind images */
+
 figure {
     background-color: white;
     padding: 15px;
     border-radius: 15px;
 }
+
+/* Captions should be black above white background */
+
 figure figcaption p span {
     color: black !important;
+}
+
+/* Let table of contents inherit the bounds set by the
+content-container class */
+#TableOfContents {
+    position: inherit;
 }
