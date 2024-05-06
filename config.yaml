@@ -84,9 +84,6 @@ params:
       - title: Ionworks
         url: https://ionworks.com/
         is_external: true
-      - title: PyBaMM on Twitter
-        url: https://twitter.com/pybamm_/
-        is_external: true
       - title: Governance
         url: /governance/
       - title: PyBaMM Teams
@@ -94,10 +91,6 @@ params:
 
     - title: News
       url: /news/
-
-    - title: Contribute
-      url: /contribute/
-
 
   footer:
     logo: pybamm_logo_whitetext.svg
