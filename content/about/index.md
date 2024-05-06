@@ -118,7 +118,7 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
 {{< figure >}}
-src = '/images/logos/2024_oxford.svg'
+src = '/images/logos/university_of_oxford.svg'
 alt = 'Logo for the University of Oxford'
 width = 500
 title = 'Logo for the University of Oxford'
@@ -128,7 +128,7 @@ caption = "Logo for the University of Oxford"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_michigan.svg'
+src = '/images/logos/university_of_michigan.svg'
 alt = 'Logo for the University of Michigan'
 width = 500
 title = 'Logo for the University of Michigan'
@@ -138,7 +138,7 @@ caption = "Logo for the University of Michigan"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_carnegie_mellon.svg'
+src = '/images/logos/carnegie_mellon_university.svg'
 alt = 'Logo for Carnegie Mellon University'
 width = 500
 title = 'Logo for Carnegie Mellon University'
@@ -148,7 +148,7 @@ caption = "Logo for Carnegie Mellon University"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_imperial_college_london.png'
+src = '/images/logos/imperial_college_london.png'
 alt = 'Logo for Imperial College London'
 width = 500
 title = 'Logo for Imperial College London'
@@ -158,7 +158,7 @@ caption = "Logo for Imperial College London"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_university_of_warwick.png'
+src = '/images/logos/university_of_warwick.png'
 alt = 'Logo for the University of Warwick'
 width = 500
 title = 'Logo for the University of Warwick'
@@ -168,7 +168,7 @@ caption = "Logo for the University of Warwick"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_university_college_london.svg'
+src = '/images/logos/university_college_london.svg'
 alt = 'Logo for University College London'
 width = 500
 title = 'Logo for University College London'
@@ -178,7 +178,7 @@ caption = "Logo for University College London"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_lilium.png'
+src = '/images/logos/lilium.png'
 alt = 'Logo for Lilium GmbH'
 width = 500
 title = 'Logo for Lilium GmbH'
@@ -188,7 +188,7 @@ caption = "Logo for Lilium GmbH"
 {{< /figure >}}
 
 {{< figure >}}
-src = '/images/logos/2024_sila.png'
+src = '/images/logos/sila.png'
 alt = 'Logo for Sila Nanotechnologies'
 width = 500
 title = 'Logo for Sila Nanotechnologies'
