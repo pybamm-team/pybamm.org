@@ -1,7 +1,7 @@
 ---
 title: Get started with PyBaMM
 toc: true
-summary: How to get started with PyBamm
+summary: How to get started with PyBaMM
 ---
 
 {{< admonition hint >}}
