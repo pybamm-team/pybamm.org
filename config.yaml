@@ -116,7 +116,7 @@ params:
             link: /learn/
 
           - text: Examples
-            link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
+            link: https://github.com/pybamm-team/PyBaMM/tree/develop/docs/source/examples
 
           - text: Documentation
             link: https://docs.pybamm.org/
