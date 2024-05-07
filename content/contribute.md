@@ -1,7 +1,7 @@
 ---
 title: Contribute to PyBaMM
 toc: true
-summary: "How to contribute on PyBaMM"
+summary: "How to contribute to PyBaMM's development"
 ---
 
 If you'd like to contribute to PyBaMM whether via reporting issues and bugs, updating the documentation, or adding new features (thanks!), please have a look at the [Contributing Guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html).
