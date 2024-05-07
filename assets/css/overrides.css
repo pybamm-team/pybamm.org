@@ -21,6 +21,8 @@ content-container class */
 /*Making the buttons container flex*/
 .custom-flex-btns{
     display:flex;
+    align-items: center;
+    justify-content: center;
 }
 /*Customizing the buttons*/
 .custom-flex-btns p a{

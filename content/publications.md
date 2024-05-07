@@ -21,6 +21,10 @@ The following papers have contributed directly to the development of PyBaMM.
 type = 'card'
 title = 'Marquis,  S.  G., Sulzer, V.,  Timms,  R.,  Please,  C.  P.,  &  Chapman,  S.  J.  (2019).'
 body = '''
+“An  asymptotic derivation of a single particle model with electrolyte”. Journal of The Electrochemical Society, 166(15), A3693-A3706.
+
+'''
+footer = '''
 <div class="custom-flex-btns">
 {{< button dark >}}
 label: Preprint
@@ -31,14 +35,17 @@ label: DOI
 link: https://doi.org/10.1149/2.0341915jes
 {{< /button >}}
 </div>
-“An  asymptotic derivation of a single particle model with electrolyte”. Journal of The Electrochemical Society, 166(15), A3693-A3706.
-
 '''
 
 [[item]]
 type = 'card'
 title = 'Chen, C. H., Planella, F. B., O’Regan, K., Gastol, D. E., Widanage, W. D., & Kendrick, E. (2020).'
 body = '''
+
+Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models. Journal of the Electrochemical Society.
+
+'''
+footer = '''
 <div class="custom-flex-btns">
 
 {{< button light >}}
@@ -46,14 +53,18 @@ label: DOI
 link: https://doi.org/10.1149/1945-7111/ab9050
 {{< /button >}}
 </div>
-Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models. Journal of the Electrochemical Society.
-
 '''
 
 [[item]]
 type = 'card'
 title = 'Tranter, T. G., Timms, R., Heenan, T., Marquis, S., Sulzer, V., Jnawali, A., Kok, M. D., Please, C. P., Chapman, S. J., Shearing, P. R. and Brett, D. (2020).'
 body = '''
+
+
+“Probing heterogeneity in Li-ion batteries with coupled multiscale models of electrochemistry and thermal transport using tomographic domains”. Journal of the Electrochemical Society, 167(11), 110538.
+
+'''
+footer = '''
 <div class="custom-flex-btns">
 
 {{< button light >}}
@@ -61,14 +72,16 @@ label: DOI
 link: https://doi.org/10.1149/1945-7111/aba44b
 {{< /button >}}
 </div>
-“Probing heterogeneity in Li-ion batteries with coupled multiscale models of electrochemistry and thermal transport using tomographic domains”. Journal of the Electrochemical Society, 167(11), 110538.
-
 '''
 
 [[item]]
 type = 'card'
 title = 'Timms, R., Marquis, S. G., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).'
 body = '''
+“Asymptotic Reduction of a Lithium-ion Pouch Cell Model”. Submitted to SIAM Journal on Applied Mathematics
+
+'''
+footer = '''
 <div class="custom-flex-btns">
 {{< button dark >}}
 label: Preprint
@@ -79,14 +92,17 @@ label: Code
 link: https://github.com/rtimms/asymptotic-pouch-cell
 {{< /button >}}
 </div>
-“Asymptotic Reduction of a Lithium-ion Pouch Cell Model”. Submitted to SIAM Journal on Applied Mathematics
-
 '''
 
 [[item]]
 type = 'card'
 title = 'Marquis, S. G., Timms, R., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).'
 body = '''
+
+ “A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society.
+
+'''
+footer = '''
 <div class="custom-flex-btns">
 {{< button dark >}}
 label: Preprint
@@ -97,8 +113,6 @@ label: DOI
 link: https://doi.org/10.1149/1945-7111/abbce4
 {{< /button >}}
 </div>
- “A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society.
-
 '''
 {{< /grid >}}
 
