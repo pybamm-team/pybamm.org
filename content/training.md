@@ -1,5 +1,6 @@
 ---
 title: Training
+summary: "Past recordings and training material for PyBaMM for researchers and users"
 ---
 
 <!-- TODO: specify all authors for all videos -->

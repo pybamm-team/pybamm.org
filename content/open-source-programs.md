@@ -1,5 +1,6 @@
 ---
 title: Open-Source Developer Programs
+summary: A list of open-source programs that PyBaMM strives to participate in
 ---
 
 Improving battery technology is critical as we transition to a green economy. Battery modeling helps to achieve this by reducing costs and increasing reliability and safety. The PyBaMM package provides an open-source framework for physics-based battery models and simulations, with a growing focus on real-world experiments and battery degradation.

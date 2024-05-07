@@ -1,6 +1,7 @@
 ---
 title: PyBaMM Teams
 shortcutDepth: 2
+summary: The PyBaMM project with current and past teams, and a list of contributors
 ---
 
 {{< admonition note >}}

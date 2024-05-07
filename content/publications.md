@@ -1,5 +1,6 @@
 ---
 title: Publications
+summary: Citing PyBaMM and relevant PyBaMM papers
 ---
 If you use PyBaMM in your work, please cite our JORS paper:
 

@@ -1,5 +1,6 @@
 ---
 title: Homepage
+summary: "The PyBaMM Homepage"
 ---
 
 {{< grid columns="1 2 2 3" >}}

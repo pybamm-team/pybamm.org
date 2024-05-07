@@ -1,6 +1,7 @@
 ---
 title: "About PyBaMM"
 shortcutDepth: 3
+summary: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
 ---
 
 {{< buttons/github-star >}}{{< buttons/github-fork >}}

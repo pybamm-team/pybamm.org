@@ -1,6 +1,7 @@
 ---
 title: PyBaMM Community
 shortcutDepth: 1
+summary: "How to get in touch with PyBaMM users and developers"
 ---
 
 ## Contact PyBaMM
