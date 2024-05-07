@@ -17,3 +17,18 @@ content-container class */
 #TableOfContents {
     position: inherit;
 }
+
+/*Making the buttons container flex*/
+.custom-flex-btns{
+    display:flex;
+}
+/*Customizing the buttons*/
+.custom-flex-btns p a{
+    display:block !important;
+    min-width:40%!important;
+    max-width:40%;
+    text-decoration: none;
+}
+.custom-flex-btns p:first-child{
+    margin-right:10%;
+}

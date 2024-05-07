@@ -15,7 +15,26 @@ a filename to `print_citations` will print the BibTex information to the specifi
 
 The following papers have contributed directly to the development of PyBaMM.
 
-[1] Marquis,  S.  G., Sulzer, V.,  Timms,  R.,  Please,  C.  P.,  &  Chapman,  S.  J.  (2019).   “An  asymptotic derivation of a single particle model with electrolyte”. Journal of The Electrochemical Society, 166(15), A3693-A3706. [ [preprint](https://arxiv.org/abs/1905.12553) | [DOI](https://doi.org/10.1149/2.0341915jes) ]
+
+{{< grid columns="1 2 2 3" >}}
+[[item]]
+type = 'card'
+title = 'Marquis,  S.  G., Sulzer, V.,  Timms,  R.,  Please,  C.  P.,  &  Chapman,  S.  J.  (2019).'
+body = '''
+“An  asymptotic derivation of a single particle model with electrolyte”. Journal of The Electrochemical Society, 166(15), A3693-A3706.
+<div class="custom-flex-btns">
+{{< button dark >}}
+label: Preprint
+link: https://arxiv.org/abs/1905.12553
+{{< /button >}}
+{{< button dark >}}
+label: DOI
+link: https://doi.org/10.1149/2.0341915jes
+{{< /button >}}
+</div>
+'''
+{{< /grid >}}
+
 
 [2] Chen, C. H., Planella, F. B., O'Regan, K., Gastol, D. E., Widanage, W. D., & Kendrick, E. (2020). Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models. Journal of the Electrochemical Society. [DOI](https://doi.org/10.1149/1945-7111/ab9050)
 
