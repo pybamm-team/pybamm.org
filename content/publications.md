@@ -120,4 +120,4 @@ link: https://doi.org/10.1149/1945-7111/abbce4
 
 ## Citations
 
-A list of papers that use or reference PyBaMM can be found on [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=798200737450391820).
+A list of papers that use or reference PyBaMM can be found on [Google Scholar](https://scholar.google.com/scholar?scisbd=2&hl=en&as_sdt=2005&sciodt=0,5&cites=3486438601842147343&scipsc=).
