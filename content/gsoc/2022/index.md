@@ -1,6 +1,6 @@
 ---
 title: PyBaMM GSoC 2022 Project Ideas
-summary: "Google Summer of Code with PyBaMM of 2024"
+summary: "Google Summer of Code 2024 with PyBaMM"
 ---
 
 # Projects
