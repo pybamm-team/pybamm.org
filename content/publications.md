@@ -36,10 +36,11 @@ link: https://doi.org/10.1149/2.0341915jes
 
 [[item]]
 type = 'card'
-title = 'Chen, C. H., Planella, F. B., O'Regan, K., Gastol, D. E., Widanage, W. D., & Kendrick, E. (2020).'
+title = 'Chen, C. H., Planella, F. B., O’Regan, K., Gastol, D. E., Widanage, W. D., & Kendrick, E. (2020).'
 body = '''
 Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models. Journal of the Electrochemical Society.
 <div class="custom-flex-btns">
+
 {{< button light >}}
 label: DOI
 link: https://doi.org/10.1149/1945-7111/ab9050
@@ -53,6 +54,7 @@ title = 'Tranter, T. G., Timms, R., Heenan, T., Marquis, S., Sulzer, V., Jnawali
 body = '''
 “Probing heterogeneity in Li-ion batteries with coupled multiscale models of electrochemistry and thermal transport using tomographic domains”. Journal of the Electrochemical Society, 167(11), 110538.
 <div class="custom-flex-btns">
+
 {{< button light >}}
 label: DOI
 link: https://doi.org/10.1149/1945-7111/aba44b
@@ -64,7 +66,7 @@ link: https://doi.org/10.1149/1945-7111/aba44b
 type = 'card'
 title = 'Timms, R., Marquis, S. G., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).'
 body = '''
-“Asymptotic Reduction of a Lithium-ion Pouch Cell Model”. Submitted to SIAM Journal on Applied Mathematics.
+“Asymptotic Reduction of a Lithium-ion Pouch Cell Model”. Submitted to SIAM Journal on Applied Mathematics
 <div class="custom-flex-btns">
 {{< button dark >}}
 label: Preprint
@@ -81,7 +83,7 @@ link: https://github.com/rtimms/asymptotic-pouch-cell
 type = 'card'
 title = 'Marquis, S. G., Timms, R., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).'
 body = '''
-“A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society.
+ “A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society.
 <div class="custom-flex-btns">
 {{< button dark >}}
 label: Preprint
@@ -93,7 +95,6 @@ link: https://doi.org/10.1149/1945-7111/abbce4
 {{< /button >}}
 </div>
 '''
-
 {{< /grid >}}
 
 
