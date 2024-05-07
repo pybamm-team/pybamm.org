@@ -18,13 +18,16 @@ content-container class */
     position: inherit;
 }
 
-/*Making the buttons container flex*/
+/* Making the buttons container flex */
+
 .custom-flex-btns{
     display:flex;
     align-items: center;
     justify-content: space-evenly;
 }
-/*Customizing the buttons*/
+
+/* Customizing the buttons */
+
 .custom-flex-btns p a{
     display:block !important;
     min-width:40%!important;
