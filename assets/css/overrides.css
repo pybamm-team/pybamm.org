@@ -22,7 +22,7 @@ content-container class */
 .custom-flex-btns{
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 /*Customizing the buttons*/
 .custom-flex-btns p a{
@@ -31,6 +31,4 @@ content-container class */
     max-width:40%;
     text-decoration: none;
 }
-.custom-flex-btns p:first-child{
-    margin-right:10%;
-}
+
