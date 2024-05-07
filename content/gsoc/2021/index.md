@@ -1,5 +1,6 @@
 ---
 title: PyBaMM GSoC 2021 Project Ideas
+summary: "Google Summer of Code with PyBaMM of 2021"
 ---
 
 # Projects

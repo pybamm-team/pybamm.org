@@ -1,5 +1,8 @@
 ---
 title: Training
+summary: These recordings are from previous PyBaMM workshops and conferences and are
+meant to serve the purpose of training material for use by the PyBaMM
+community of researchers, developers, and users alike.
 ---
 
 <!-- TODO: specify all authors for all videos -->

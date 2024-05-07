@@ -1,5 +1,6 @@
 ---
 title: Open-Source Developer Programs
+summary: Improving battery technology is critical as we transition to a green economy.
 ---
 
 Improving battery technology is critical as we transition to a green economy. Battery modeling helps to achieve this by reducing costs and increasing reliability and safety. The PyBaMM package provides an open-source framework for physics-based battery models and simulations, with a growing focus on real-world experiments and battery degradation.

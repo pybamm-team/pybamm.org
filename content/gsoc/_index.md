@@ -1,6 +1,7 @@
 ---
 title: Google Summer of Code with PyBaMM
 shortcutDepth: 1
+summary: "Google Summer of Code with PyBaMM"
 ---
 
 <!-- Note: the names of individual pages in folders should be marked with an

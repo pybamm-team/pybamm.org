@@ -1,5 +1,6 @@
 ---
 title: Publications
+summary: List of projects that uses PyBaMM
 ---
 If you use PyBaMM in your work, please cite our JORS paper:
 

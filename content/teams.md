@@ -1,6 +1,7 @@
 ---
 title: PyBaMM Teams
 shortcutDepth: 2
+summary: This page includes all the contributors that contributed on this project
 ---
 
 {{< admonition note >}}

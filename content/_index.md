@@ -1,5 +1,6 @@
 ---
 title: Homepage
+summary: "Home Page"
 ---
 
 {{< grid columns="1 2 2 3" >}}

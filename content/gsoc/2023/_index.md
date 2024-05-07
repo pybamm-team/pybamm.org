@@ -1,5 +1,6 @@
 ---
 title: PyBaMM GSoC 2023 Project Ideas
+summary: "Google Summer of Code with PyBaMM of 2023"
 ---
 
 # Projects

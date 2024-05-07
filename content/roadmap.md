@@ -1,5 +1,6 @@
 ---
 title: PyBaMM Roadmap
+summary: This page contains a summary of the main features we are working towards and might provide ideas for funding applications.
 ---
 
 This page contains a summary of the main features we are working towards and might provide ideas for funding applications.
