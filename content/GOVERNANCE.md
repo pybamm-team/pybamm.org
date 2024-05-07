@@ -1,7 +1,6 @@
 ---
 title: PyBaMM Governance
-summary: The following contains the formal governance structure of the PyBaMM
-project.
+summary: The following contains the formal governance structure of the PyBaMM project.
 ---
 
 The following contains the formal governance structure of the PyBaMM
