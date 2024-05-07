@@ -27,22 +27,76 @@ body = '''
 label: Preprint
 link: https://arxiv.org/abs/1905.12553
 {{< /button >}}
-{{< button dark >}}
+{{< button light >}}
 label: DOI
 link: https://doi.org/10.1149/2.0341915jes
 {{< /button >}}
 </div>
 '''
+
+[[item]]
+type = 'card'
+title = 'Chen, C. H., Planella, F. B., O'Regan, K., Gastol, D. E., Widanage, W. D., & Kendrick, E. (2020).'
+body = '''
+Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models. Journal of the Electrochemical Society.
+<div class="custom-flex-btns">
+{{< button light >}}
+label: DOI
+link: https://doi.org/10.1149/1945-7111/ab9050
+{{< /button >}}
+</div>
+'''
+
+[[item]]
+type = 'card'
+title = 'Tranter, T. G., Timms, R., Heenan, T., Marquis, S., Sulzer, V., Jnawali, A., Kok, M. D., Please, C. P., Chapman, S. J., Shearing, P. R. and Brett, D. (2020).'
+body = '''
+“Probing heterogeneity in Li-ion batteries with coupled multiscale models of electrochemistry and thermal transport using tomographic domains”. Journal of the Electrochemical Society, 167(11), 110538.
+<div class="custom-flex-btns">
+{{< button light >}}
+label: DOI
+link: https://doi.org/10.1149/1945-7111/aba44b
+{{< /button >}}
+</div>
+'''
+
+[[item]]
+type = 'card'
+title = 'Timms, R., Marquis, S. G., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).'
+body = '''
+“Asymptotic Reduction of a Lithium-ion Pouch Cell Model”. Submitted to SIAM Journal on Applied Mathematics.
+<div class="custom-flex-btns">
+{{< button dark >}}
+label: Preprint
+link: https://arxiv.org/abs/2005.05127
+{{< /button >}}
+{{< button light >}}
+label: Code
+link: https://github.com/rtimms/asymptotic-pouch-cell
+{{< /button >}}
+</div>
+'''
+
+[[item]]
+type = 'card'
+title = 'Marquis, S. G., Timms, R., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).'
+body = '''
+“A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society.
+<div class="custom-flex-btns">
+{{< button dark >}}
+label: Preprint
+link: https://arxiv.org/abs/2008.03691
+{{< /button >}}
+{{< button light >}}
+label: DOI
+link: https://doi.org/10.1149/1945-7111/abbce4
+{{< /button >}}
+</div>
+'''
+
 {{< /grid >}}
 
 
-[2] Chen, C. H., Planella, F. B., O'Regan, K., Gastol, D. E., Widanage, W. D., & Kendrick, E. (2020). Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models. Journal of the Electrochemical Society. [DOI](https://doi.org/10.1149/1945-7111/ab9050)
-
-[3] Tranter, T. G., Timms, R., Heenan, T., Marquis, S., Sulzer, V., Jnawali, A., Kok, M. D., Please, C. P., Chapman, S. J., Shearing, P. R. and Brett, D. (2020).  “Probing heterogeneity in Li-ion batteries with coupled multiscale models of electrochemistry and thermal transport using tomographic domains”. Journal of the Electrochemical Society, 167(11), 110538. [DOI](https://doi.org/10.1149/1945-7111/aba44b)
-
-[4] Timms, R., Marquis, S. G., Sulzer, V., Please, C. P., & Chapman, S. J. (2020). “Asymptotic Reduction of a Lithium-ion Pouch Cell Model”. Submitted to SIAM Journal on Applied Mathematics. [ [preprint](https://arxiv.org/abs/2005.05127) | [code](https://github.com/rtimms/asymptotic-pouch-cell) ]
-
-[5] Marquis, S. G., Timms, R., Sulzer, V., Please, C. P., & Chapman, S. J. (2020).  “A Suite of Reduced-Order Models of a Single-Layer Lithium-ion Pouch Cell”. Submitted to Journal of the Electrochemical Society. [ [preprint](https://arxiv.org/abs/2008.03691) | [DOI](https://doi.org/10.1149/1945-7111/abbce4) ]
 
 ## Citations
 
