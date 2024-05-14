@@ -76,6 +76,7 @@ def get_maintainers():
         if maintainer["login"] not in PYBAMM_EMERITUS_MAINTAINERS
     ]
 
+
 def get_emeritus_maintainers():
     """
     Get the "login", "html_url", and "avatar_url" fields for each emeritus maintainer
@@ -90,6 +91,7 @@ def get_emeritus_maintainers():
         for emeritus_maintainer in PYBAMM_CONTRIBUTORS
         if emeritus_maintainer["login"] in PYBAMM_EMERITUS_MAINTAINERS
     ]
+
 
 def get_maintainer_trainees():
     """
@@ -121,11 +123,9 @@ team_template = string.Template(
     <h3 id="${team_name}"class="name title">
     ${team_name}
     </h3>
-    <div class="sd-container-fluid sd-mb-4 false">
-        <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">
-            ${members}
+        <div class="sd-container-fluid sd-mb-4 false">
+            <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
         </div>
-    </div>
 </div>
 """
 )
@@ -133,20 +133,15 @@ team_template = string.Template(
 # Displays the members of a specific team
 member_template = string.Template(
 """
-<div class="sd-col sd-d-flex-row">
-  <div class="sd-card sd-w-100 sd-shadow-sm sd-card-hover text-center">
-    <div class="sd-card-body">
-      <img
-        src="${avatarUrl}"
-        alt="Avatar of ${name}"
-      />
-
-      ${name}
-    </div>
-    <a class="sd-stretched-link" href="${url}"></a>
-  </div>
-</div>
-
+        <div class="sd-col sd-d-flex-row">
+            <div class="sd-card sd-w-100 sd-shadow-sm sd-card-hover text-center">
+                <div class="sd-card-body">
+                <img src="${avatarUrl}" alt="Avatar of ${name}"/>
+                    ${name}
+                </div>
+            <a class="sd-stretched-link" href="${url}"></a>
+            </div>
+        </div>
 """
 )
 
@@ -157,7 +152,7 @@ with open("static/teams/maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Maintainers",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=maintainer["html_url"],
@@ -177,7 +172,7 @@ with open("static/teams/emeritus-maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Emeritus Maintainers",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=emeritus_maintainer["html_url"],
@@ -197,7 +192,7 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Maintainer Trainees",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=maintainer_trainee["html_url"],
@@ -216,7 +211,7 @@ with open("static/teams/contributors.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Contributors",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=contributor["html_url"],
