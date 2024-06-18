@@ -43,6 +43,6 @@ jobs:
           reviewers: |
             agriyakhetarpal
             Saransh-cpp
-            tinosulzer
+            valentinsulzer
             rtimms
           draft: false
