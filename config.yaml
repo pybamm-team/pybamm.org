@@ -52,6 +52,10 @@ params:
     image: pybamm_icon.svg
 
   navbar:
+    - title: Conference
+      url: https://pybamm-conference.webflow.io/
+      is_external: true
+
     - title: Install
       url: https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html
       is_external: true
