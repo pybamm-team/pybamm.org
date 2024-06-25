@@ -16,13 +16,31 @@ Several new transport efficiency submodels are now available in PyBaMM to define
 
 ```python3
 model = pybamm.lithium_ion.DFN(
-        options={"transport efficiency": "tortuosity factor"}
-    )
+    options={"transport efficiency": "tortuosity factor"}
+)
 ```
 
 Note that changing the transport efficiency submodel might require additional parameters values. For a full example on transport efficiency submodels, please see [this notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/tortuosity_models.html).
 
 ## Basic models compatible with experiments
+
+PyBaMM contains some "basic" models (e.g. `BasicDFN`, `BasicSPM`) which are models that are define in a single file, as opposed of a combination of several submodels. Until now, these models had limited functionality and they could not be used with experiments. From this release, basic models can be used with experiments, for example:
+
+```python3
+model = pybamm.lithium_ion.BasicDFN()
+experiment = pybamm.Experiment(
+    [
+        "Discharge at C/3 until 3.5V",
+        "Hold at 3.5V for 1 hour",
+        "Rest for 10 min",
+    ]
+)
+sim = pybamm.Simulation(model, experiment=experiment)
+sim.solve()
+```
+
+This change, even though it does not make a big functionality change, is part of our effort into simplifying how users can define their own models in PyBaMM, which is one of the areas of our [technical roadmap](https://github.com/pybamm-team/PyBaMM/issues/3908).
+
 ## Plot thermal components
 ## Plating with composite electrodes
 ## Custom experiment steps
