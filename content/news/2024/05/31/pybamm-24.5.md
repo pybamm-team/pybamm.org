@@ -56,7 +56,7 @@ pybamm.plot_thermal_components(sol)
 
 ## Custom experiment steps
 
-Building upon the custom experiment termination conditions introduced in the last release, this release incoporates custom experiment steps. Custom steps can be defined using either explicit or implicit control. In explicit control, the user specifies the current explicitly as a function of other variables in the model using the `pybamm.step.CustomStepExplicit`, which takes a function that defines the imposed current in terms of the model variables. For example, if we were to impose constant power we could write:
+Building upon the custom experiment termination conditions introduced in the last release, this release incorporates custom experiment steps. Custom steps can be defined using either explicit or implicit control. In explicit control, the user specifies the current explicitly as a function of other variables in the model using the `pybamm.step.CustomStepExplicit`, which takes a function that defines the imposed current in terms of the model variables. For example, if we were to impose constant power we could write:
 
 ```python3
 def custom_step_power(variables):
@@ -118,7 +118,7 @@ model.print_parameter_info(by_submodel=True)
 
 ## macOS arm64 M-series support
 
-From version 24.5, PyBaMM suppports macOS arm64 (M-series) platforms.
+From version 24.5, PyBaMM supports macOS arm64 (M-series) platforms.
 
 ## BPX v0.4.0 support
 
