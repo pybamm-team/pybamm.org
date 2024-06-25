@@ -42,9 +42,84 @@ sim.solve()
 This change, even though it does not make a big functionality change, is part of our effort into simplifying how users can define their own models in PyBaMM, which is one of the areas of our [technical roadmap](https://github.com/pybamm-team/PyBaMM/issues/3908).
 
 ## Plot thermal components
-## Plating with composite electrodes
+
+Similar to the voltage components, now the `pybamm.plot_thermal_components` can be used to plot heat generation (both instantaneous and cumulative) split into the various thermal components: lumped total cooling, Ohmic heating, irreversible electrochemical heating and reversible heating:
+
+```python3
+model = pybamm.lithium_ion.SPM({"thermal": "lumped"})
+sim = pybamm.Simulation(
+    model, parameter_values=pybamm.ParameterValues("ORegan2022")
+)
+sol = sim.solve([0, 3600])
+pybamm.plot_thermal_components(sol)
+```
+
 ## Custom experiment steps
+
+Building upon the custom experiment termination conditions introduced in the last release, this release incoporates custom experiment steps. Custom steps can be defined using either explicit or implicit control. In explicit control, the user specifies the current explicitly as a function of other variables in the model using the `pybamm.step.CustomStepExplicit`, which takes a function that defines the imposed current in terms of the model variables. For example, if we were to impose constant power we could write:
+
+```python3
+def custom_step_power(variables):
+    target_power = 4
+    voltage = variables["Voltage [V]"]
+    return target_power / voltage
+
+step = pybamm.step.CustomStepExplicit(custom_step_power, duration=600)
+```
+
+We can also specify a custom step using implicit control. This comes with "algebraic" or "differential" control. In algebraic control (the default), the user specifies the equation that must be satisfied at all times, and the model adjusts the current to satisfy this equation. For example, we could define a constant voltage experiment as
+
+```python3
+def constant_voltage(variables):
+    return variables["Voltage [V]"] - 3.8
+
+
+step = pybamm.step.CustomStepImplicit(constant_voltage, duration=600)
+```
+
+Alternatively, we can use differential control to impose the derivative of the current
+
+```python3
+def custom_voltage(variables):
+    return 100 * (variables["Voltage [V]"] - 3.8)
+
+
+step = pybamm.step.CustomStepImplicit(
+    custom_voltage, duration=600, period=10, control="differential"
+)
+```
+
+
+More details on the implementation of the custom steps are provided in the [custom experiments notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/simulations_and_experiments/custom-experiments.html).
+
 ## Hysteresis submodel
-## Print parameter info
+
+The hysteresis submodel from [Wycisk et al (2022)](https://doi.org/10.1016/j.est.2022.105016) is now available. The submodel can be used through the model options as:
+
+```python3
+model = pybamm.lithium_ion.DFN(
+    {
+        "open-circuit potential": "Wycisk",
+    }
+)
+```
+
+Note that additional parameter values might be required for the model to run. For more details, please see the [corresponding notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/differential-capacity-hysteresis-state.html).
+
+## Print parameter information
+
+The `print_parameter_info` method in PyBaMM models now takes the keyword argument `by_submodel` (`False` by default). If set to `True`, the information is split by submodel:
+
+```python3
+model = pybamm.lithium_ion.DFN()
+model.print_parameter_info(by_submodel=True)
+```
+
+
 ## macOS arm64 M-series support
-## BPX support
+
+From version 24.5, PyBaMM suppports macOS arm64 (M-series) platforms.
+
+## BPX v0.4.0 support
+
+PyBaMM now supports [BPX v0.4.0](https://github.com/FaradayInstitution/BPX/releases/tag/v0.4.0). This version allows for blended electrodes and user-defined parameters in BPX.
