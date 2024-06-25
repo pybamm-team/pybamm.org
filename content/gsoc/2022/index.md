@@ -1,5 +1,6 @@
 ---
 title: PyBaMM GSoC 2022 Project Ideas
+summary: "Google Summer of Code 2022 with PyBaMM"
 ---
 
 # Projects
@@ -34,7 +35,7 @@ In particular, the proposed `ExperimentalData` class should import real data and
 ### Potential mentors
 * [Ferran Brosa Planella](https://github.com/brosaplanella)
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 
 ## Electrochemical Impedance Spectroscopy (EIS) modelling
 
@@ -59,7 +60,7 @@ b) Integrate with existing EIS modeling packages, such as [`impedance.py`](https
 ### Potential mentors
 * [Ferran Brosa Planella](https://github.com/brosaplanella)
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 
 ## Enhanced Visualization
 
@@ -115,7 +116,7 @@ Note that the focus of this project is not on writing documentation but on impro
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Saransh Chopra](https://github.com/Saransh-cpp)
 * [Priyanshu Agarwal](https://github.com/priyanshuone6)
 
@@ -137,7 +138,7 @@ The aim of this project is to reorganize the parameter set structure in PyBaMM a
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Saransh Chopra](https://github.com/Saransh-cpp)
 
 ## Benchmarks
@@ -157,7 +158,7 @@ PyBaMM currently has a very basic [benchmark framework](https://pybamm-team.gith
 
 ### Potential mentors
 * [Ferran Brosa Planella](https://github.com/brosaplanella)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Saransh Chopra](https://github.com/Saransh-cpp)
 * [Priyanshu Agarwal](https://github.com/priyanshuone6)
 
@@ -176,4 +177,4 @@ Currently, the spatial domains are defined to have arbitrary endpoints, and for 
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)

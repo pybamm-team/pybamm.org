@@ -1,5 +1,6 @@
 ---
 title: PyBaMM GSoC 2021 Project Ideas
+summary: "Google Summer of Code 2021 with PyBaMM"
 ---
 
 # Projects
@@ -23,7 +24,7 @@ In particular, the proposed `ExperimentalData` class should import real data and
 ### Potential mentors
 * [Ferran Brosa Planella](https://github.com/brosaplanella)
 * [Robert Timms](https://github.com/rtimms)
-* [Tino Sulzer](https://github.com/tinosulzer)
+* [Tino Sulzer](https://github.com/valentinsulzer)
 
 ## Twitter bot to run simulations
 
@@ -43,7 +44,7 @@ As a stretch goal, the bot will be able to take requests from Twitter users: the
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Tino Sulzer](https://github.com/tinosulzer)
+* [Tino Sulzer](https://github.com/valentinsulzer)
 
 ## Printing formatted equations
 
@@ -59,7 +60,7 @@ An existing issue with some ideas for this project can be found [here](https://g
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Tino Sulzer](https://github.com/tinosulzer)
+* [Tino Sulzer](https://github.com/valentinsulzer)
 
 ## Electrochemical Impedance Spectroscopy (EIS) modelling
 
@@ -83,4 +84,4 @@ b) Integrate with existing EIS modeling packages, such as [`impedance.py`](https
 
 ### Potential mentors
 * [Ferran Brosa Planella](https://github.com/brosaplanella)
-* [Tino Sulzer](https://github.com/tinosulzer)
+* [Tino Sulzer](https://github.com/valentinsulzer)

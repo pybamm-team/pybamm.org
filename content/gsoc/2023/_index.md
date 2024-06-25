@@ -1,5 +1,6 @@
 ---
 title: PyBaMM GSoC 2023 Project Ideas
+summary: "Google Summer of Code 2023 with PyBaMM"
 ---
 
 # Projects
@@ -46,7 +47,7 @@ Note that the focus of this project is not on writing documentation but on impro
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Saransh Chopra](https://github.com/Saransh-cpp)
 * [Priyanshu Agarwal](https://github.com/priyanshuone6)
 
@@ -68,7 +69,7 @@ While PyBaMM goes deep into advanced models of batteries, much can be done with 
 
 ### Potential mentors
 * [Robert Timms](https://github.com/rtimms)
-* [Valentin Sulzer](https://github.com/tinosulzer)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Jacqueline Edge](https://www.linkedin.com/in/jacqueline-edge-1754111/?originalSubdomain=uk)
 
 ## Dockerizing and simplifying PyBaMM's installation

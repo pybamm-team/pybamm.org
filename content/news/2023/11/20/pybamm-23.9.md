@@ -21,7 +21,7 @@ In addition, PyBaMM has a number of optional dependencies for different function
 ```bash
 pip install pybamm"[dev,plot]"
 ```
-where `[dev,plot]` specify the optional sets of dependencies to install (see [the docs](https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html#optional-dependencies) for more information about all the options).
+where `[dev,plot]` specify the optional sets of dependencies to install (see [the docs](https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html#optional-dependencies) for more information about all the options).
 
 To install all optional dependencies the command is
 ```bash
@@ -35,7 +35,7 @@ From this version onwards, SEI (including SEI on cracks) and lithium plating mod
 model = pybamm.lithium_ion.DFN({"SEI": ("reaction limited", "reaction limited")})
 ```
 
-To maintain the previous functionality, if a tuple is not given and `"working electrode"` is set to `"both"` (i.e. a full cell) then the setting will be applied only to the negative electrode. This change allows to use degradation models in half-cells, as shown in [this example notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/half-cell.html).
+To maintain the previous functionality, if a tuple is not given and `"working electrode"` is set to `"both"` (i.e. a full cell) then the setting will be applied only to the negative electrode. This change allows to use degradation models in half-cells, as shown in [this example notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/half-cell.html).
 
 Note that this functionality introduced a breaking change as now all the variables corresponding to SEI, SEI on cracks and lithium plating have domains, e.g. `SEI thickness [m]` is no longer valid and `Negative SEI thickness [m]` or `Positive SEI thickness [m]` need to be used instead.
 
@@ -65,10 +65,10 @@ The Multi-Species Multi-Reaction (MSMR) model, from [Baker & Verbrugge (2018)](h
 ```python3
 model = pybamm.lithium_ion.MSMR({"number of MSMR reactions": ("6", "4")})
 ```
-and the number of reactions in each electrode needs to be specified (in this case we use 6 reactions in the negative electrode and 4 reactions in the positive one). An example of this model, with detailed explanation, can be found [in this notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/MSMR.html).
+and the number of reactions in each electrode needs to be specified (in this case we use 6 reactions in the negative electrode and 4 reactions in the positive one). An example of this model, with detailed explanation, can be found [in this notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/MSMR.html).
 
 ## Thermal pouch model
 
 The notation around thermal models for pouch cells has now been improved. The main breaking change is that now the `"lumped"` thermal option always uses the parameters `"Cell cooling surface area [m2]"`, `"Cell volume [m3]"` and `"Total heat transfer coefficient [W.m-2.K-1]"` to compute the cell cooling regardless of the chosen `"cell geometry"` option. When accounting for a pouch cell, the correct values for these parameters must be provided by the user.
 
-The example notebooks for [thermal models](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/thermal-models.html) and [pouch cell models](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/pouch-cell-model.html) have now been updated to reflect these changes.
+The example notebooks for [thermal models](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/thermal-models.html) and [pouch cell models](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/pouch-cell-model.html) have now been updated to reflect these changes.

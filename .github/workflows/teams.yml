@@ -13,13 +13,13 @@ jobs:
     steps:
 
       - name: Checkout main branch of repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: main
           submodules: recursive
 
       - name: Setup Python 3.12
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.12
 
@@ -28,7 +28,7 @@ jobs:
 
       # Will exit silently if there are no changes
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           # Commit details
           commit-message: "[create-pull-request] update teams HTML files"
@@ -43,6 +43,6 @@ jobs:
           reviewers: |
             agriyakhetarpal
             Saransh-cpp
-            tinosulzer
+            valentinsulzer
             rtimms
           draft: false

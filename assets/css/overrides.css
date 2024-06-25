@@ -1,168 +1,36 @@
-/* Overrides for the PyBaMM hero on the homepage */
+/* White backgrounds behind images */
 
-/* We use these styles to provide precedence over submodule theme changes to come close
-to near-parity with NumPy and SciPy websites (which use older versions of the theme) */
-
-
-/* Make PyBaMM logo smaller */
-.hero-logo {
-    max-height: 75px;
-    padding: 0px 0 0 15px;
+figure {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-/* Hero button should be left aligned */
-.hero-cta {
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: normal;
+/* Captions should be black above white background */
+
+figure figcaption p span {
+    color: black !important;
 }
 
-/* Add space between navbar and hero, reduce distance between title and subtitle */
-.hero-title-content {
-    margin: 6vh auto;
-    max-width: 1200px;
+/* Let table of contents inherit the bounds set by the
+content-container class */
+#TableOfContents {
+    position: inherit;
 }
 
-/* Move PyBaMM logo in hero to text superscript */
-.hero-title {
-    align-content: auto;
-    align-items: normal;
-    display: flex;
-    flex-direction: row;
-    font-family: var(--fontFamily), sans-serif;
-    font-weight: 900;
-    font-size: 6em;
-    color: var(--colorPrimaryDark);
+/* Making the buttons container flex */
+
+.custom-flex-btns{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-/* Removes padding between hero title and subtitle */
-.hero-title {
-    padding: 0 0 0 0;
-}
+/* Customizing the buttons */
 
-/* General improvements */
-
-/* Do not induce padding on code blocks */
-.highlight {
-    padding: 10px 0px;
-}
-
-/* Media settings for narrower screens */
-
-@media only screen and (max-width: 1090px) {
-    .hero-content {
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-    }
-
-    .hero-title-content {
-        flex-direction: column;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-    }
-
-    button.cta-button {
-        align-items: center;
-        align-self: center;
-    }
-
-    .hero-cta {
-        align-self: center;
-    }
-
-    .flex-column {
-        /* align all items center */
-        align-items: center;
-    }
-
-    .footer-column {
-        padding-inline-end: 20px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .flex-column {
-        margin: 0 30px;
-    }
-
-    .hero-title {
-        font-size: 4em;
-    }
-
-    .hero-subtitle {
-        text-align: center;
-        padding-top: 20px;
-    }
-
-    .hero-cta {
-        align-self: center;
-    }
-
-    .hero-title {
-        flex-direction: column;
-    }
-
-}
-
-@media only screen and (max-width: 400px) {
-    .hero-title {
-        flex-direction: column;
-    }
-
-    .hero-logo {
-        align-self: center;
-    }
-}
-
-/* Accessibility improvements */
-
-.footer-link, .footer-link:hover {
-    line-height: 2rem;
-}
-
-.copyright {
-    font-size: 16px;
-}
-
-.footer-link:hover {
-    color: var(--colorHighlight);
-}
-
-/* Individual highlights */
-
-.cta-button:hover {
-    color: var(--colorHighlight);
-}
-
-.news-title a:hover, .news-date a:hover {
-    color: var(--colorHighlight);
-}
-
-/* Animations */
-
-a, a:hover, a:active {
-    transition: color 0.25s ease-in-out;
-}
-
-/* Adjustments for headings */
-
-.content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
-    margin-top: 0.75rem;
-}
-
-.title:not(.is-spaced) + .subtitle {
-    margin-top: -0.2rem;
-}
-
-/* Navigation bar dropdown */
-
-.navbar.is-fresh .navbar-item.has-dropdown .navbar-link {
-    color: var(--colorPrimaryDark);
-}
-
-.navbar.is-fresh .navbar-item.has-dropdown .navbar-link:hover {
-    color: #4DABCF
+.custom-flex-btns p a{
+    display:block !important;
+    min-width:40%!important;
+    max-width:40%;
+    text-decoration: none;
 }

@@ -28,21 +28,14 @@ PYBAMM_MAINTAINER_TRAINEES = read_file(DIR / "teams" / "MAINTAINER-TRAINEES")
 
 def query_contributors():
     # Get the list of contributors from the endpoint iteratively until we get
-    # an empty response
-    contributors_list = []
-    page = 1
-    while True:
-        contributors = requests.get(
-            f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
-        ).json()
-        if contributors == []:
-            break
-        else:
-            contributors_list += contributors
-            page += 1
-    return contributors_list
-
-
+    url = "https://raw.githubusercontent.com/pybamm-team/PyBaMM/develop/.all-contributorsrc"
+    contributors = requests.get(url).json()
+    for obj in contributors["contributors"]:
+        # Check if the dictionary has the key 'profile'
+        if 'profile' in obj:
+            # Replace the key 'profile' with 'website'
+            obj['html_url'] = obj.pop('profile')
+    return contributors["contributors"]
 PYBAMM_CONTRIBUTORS = query_contributors()
 
 
@@ -83,6 +76,7 @@ def get_maintainers():
         if maintainer["login"] not in PYBAMM_EMERITUS_MAINTAINERS
     ]
 
+
 def get_emeritus_maintainers():
     """
     Get the "login", "html_url", and "avatar_url" fields for each emeritus maintainer
@@ -97,6 +91,7 @@ def get_emeritus_maintainers():
         for emeritus_maintainer in PYBAMM_CONTRIBUTORS
         if emeritus_maintainer["login"] in PYBAMM_EMERITUS_MAINTAINERS
     ]
+
 
 def get_maintainer_trainees():
     """
@@ -126,10 +121,11 @@ team_template = string.Template(
 """
 <div class="team">
     <h3 id="${team_name}"class="name title">
-        ${team_name}
+    ${team_name}
     </h3>
-    <div class="members">${members}
-    </div>
+        <div class="sd-container-fluid sd-mb-4 false">
+            <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
+        </div>
 </div>
 """
 )
@@ -137,17 +133,14 @@ team_template = string.Template(
 # Displays the members of a specific team
 member_template = string.Template(
 """
-        <div class="member">
-            <a href="${url}" class="name">
-                <div class="photo">
-                    <img
-                        src="${avatarUrl}"
-                        loading="lazy"
-                        alt="Avatar of ${name}"
-                    />
+        <div class="sd-col sd-d-flex-row">
+            <div class="sd-card sd-w-100 sd-shadow-sm sd-card-hover text-center">
+                <div class="sd-card-body">
+                <img src="${avatarUrl}" alt="Avatar of ${name}"/>
+                    ${name}
                 </div>
-                ${name}
-            </a>
+            <a class="sd-stretched-link" href="${url}"></a>
+            </div>
         </div>
 """
 )
@@ -159,7 +152,7 @@ with open("static/teams/maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Maintainers",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=maintainer["html_url"],
@@ -179,7 +172,7 @@ with open("static/teams/emeritus-maintainers.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Emeritus Maintainers",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=emeritus_maintainer["html_url"],
@@ -199,7 +192,7 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Maintainer Trainees",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=maintainer_trainee["html_url"],
@@ -218,7 +211,7 @@ with open("static/teams/contributors.html", "w") as file:
     file.write(
         team_template.substitute(
             team_name="Contributors",
-            members="\n".join(
+            members="".join(
                 [
                     member_template.substitute(
                         url=contributor["html_url"],
