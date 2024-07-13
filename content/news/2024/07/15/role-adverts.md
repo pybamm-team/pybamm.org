@@ -70,7 +70,7 @@ As the Fundraising Lead for PyBaMM, you will be responsible for developing and e
 4. Strong interpersonal skills to build and maintain relationships with sponsors, donors, and team members.
 5. Ability to work both independently and collaboratively within a team environment.
 6. Experience with open-source software projects (desirable).
-7. Experience in battery modeling (desirable).
+7. Experience in battery modelling (desirable).
 8. Being an active contributor or maintainer of PyBaMM or related projects (desirable).
 
 
