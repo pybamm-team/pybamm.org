@@ -91,7 +91,7 @@ While the roadmap is mainly decided by the core team (maintainers and steering c
 
 ### Feedback
 
-We are experimenting with this process and always looking for ways to improve our workflow. If you have any feedback on this process or ideas for how we can improve, please get in touch either by opening a discussion on GitHub or emailing us at [pybamm@gmail.com](mailto:pybamm@gmail.com).
+We are experimenting with this process and always looking for ways to improve our workflow. If you have any feedback on this process or ideas for how we can improve, please get in touch either by opening a discussion on GitHub or emailing us at [pybamm@pybamm.org](mailto:pybamm@pybamm.org).
 
 ### Meeting links
 
