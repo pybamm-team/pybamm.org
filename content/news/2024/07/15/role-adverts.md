@@ -56,6 +56,7 @@ As the Community Manager for PyBaMM, you will serve as the primary liaison betwe
 ## Fundraising lead
 
 ### Role Overview
+
 As the Fundraising Lead for PyBaMM, you will be responsible for developing and executing a comprehensive fundraising strategy to support the project's initiatives. You will coordinate grant writing, build and maintain relationships with sponsors, and analyse donation data to inform the Steering Council. Additionally, you will work closely with the conference lead to secure funding for PyBaMM's annual conference. Your role is crucial in ensuring the financial health and growth of our open-source project.
 
 ### Duties and Responsibilities
