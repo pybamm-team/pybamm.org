@@ -9,6 +9,7 @@ We are advertising three positions for support roles within the PyBaMM team: com
 ## Communications lead
 
 ### Role Overview
+
 As the Communications Lead for PyBaMM, you will be responsible for managing and growing the project's online presence, developing and executing our communication strategy, and creating engaging content that resonates with our audience. You will play a key role in defining PyBaMM's communication policy, supporting the development of educational materials, and promoting our annual conference. Your efforts will help to increase awareness, engagement, and support for PyBaMM within the scientific and engineering communities.
 
 ### Duties and Responsibilities
