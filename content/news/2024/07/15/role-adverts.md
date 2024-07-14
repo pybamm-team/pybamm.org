@@ -1,5 +1,5 @@
 ---
-title: Support role poisitons in the PyBaMM team
+title: Support role positions in the PyBaMM team
 date: 2024-07-15
 summary: "We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager and fundraising lead."
 ---
