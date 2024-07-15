@@ -42,7 +42,7 @@ As the Community Manager for PyBaMM, you will serve as the primary liaison betwe
 
 * Liaise and coordinate with the various teams within the PyBaMM community to facilitate smooth communication and collaboration.
 * Report to the Steering Council (SC) quarterly about the state of the community, covering aspects from user engagement to maintainer activities.
-* Act as the project’s contact point for [internship programs](../../../../open-source-programs.md), such as Google Summer of Code or Outreachy, ensuring successful participation and mentorship.
+* Act as the project’s contact point for [internship programs](/open-source-programs/), such as Google Summer of Code or Outreachy, ensuring successful participation and mentorship.
 * Lead the triage of the project’s GitHub discussion posts, ensuring timely and effective responses to community queries.
 * Monitor PyBaMM’s email accounts, addressing inquiries and redirecting messages as needed.
 
