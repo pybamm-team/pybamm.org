@@ -97,7 +97,7 @@ step = pybamm.step.CustomStepImplicit(
 More details on the implementation of the custom steps are provided in the [custom experiments notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/simulations_and_experiments/custom-experiments.html).
 
 ## Hysteresis submodel
-_Implemented by [Tanner Leo](https://github.com/tanner-leo) and [mleot](https://github.com/mleot)_
+_Implemented by [Tanner Leo (Sila Nano)](https://github.com/tanner-leo)_
 
 The hysteresis submodel from [Wycisk et al (2022)](https://doi.org/10.1016/j.est.2022.105016) is now available. The submodel can be used through the model options as:
 
