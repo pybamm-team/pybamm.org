@@ -31,7 +31,7 @@ For companies who want to leverage the power, flexibility, and openness of the P
 {{< figure >}}
 src = '/images/logos/ionworks-logo.png'
 alt = 'Logo for Ionworks'
-width = 500
+width = 100
 attributionlink = ''
 {{< /figure >}}
 
@@ -43,7 +43,7 @@ funded by the [Faraday Institution](https://faraday.ac.uk/). If you want to know
 {{< figure >}}
 src = '/images/logos/2024_oxrse_rectangle.svg'
 alt = 'Logo for OxRSE'
-width = 500
+width = 100
 attributionlink = ''
 {{< /figure >}}
 
@@ -74,72 +74,6 @@ caption = "NumFOCUS Logo"
 ### Google Summer of Code
 
 Since 2021, the [Google Summer of Code](/gsoc/) programme has provided funding for 6 students to spend a summer working on a PyBaMM project; we are pleased to say that several of these have gone on to become long-time PyBaMM contributors!
-
-### Other partners
-
-We are grateful to the following organizations for supporting PyBaMM's development, either directly through employee/student time or indirectly through financial support:
-
-<div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
-
-{{< figure >}}
-src = '/images/logos/university_of_oxford.svg'
-alt = 'Logo for the University of Oxford'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/university_of_michigan.svg'
-alt = 'Logo for the University of Michigan'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/carnegie_mellon_university.svg'
-alt = 'Logo for Carnegie Mellon University'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/imperial_college_london.png'
-alt = 'Logo for Imperial College London'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/university_of_warwick.png'
-alt = 'Logo for the University of Warwick'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/university_college_london.svg'
-alt = 'Logo for University College London'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/lilium.png'
-alt = 'Logo for Lilium GmbH'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-{{< figure >}}
-src = '/images/logos/sila.png'
-alt = 'Logo for Sila Nanotechnologies'
-width = 500
-attributionlink = ''
-{{< /figure >}}
-
-</div>
-
-To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
 ## PyBaMM on Twitter
 
