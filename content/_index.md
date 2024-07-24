@@ -90,7 +90,7 @@ attributionlink = ''
 
 </div>
 
-<div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
+<div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; background:white; border-radius:0 0 0.5em 0.5em">
 
 {{< figure >}}
 src = '/images/logos/university_of_warwick.png'
