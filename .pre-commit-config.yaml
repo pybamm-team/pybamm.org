@@ -31,4 +31,4 @@ repos:
     hooks:
     -   id: codespell
         args:
-          - "-Lrecuse"
+          - "-Lrecuse,Meda"
