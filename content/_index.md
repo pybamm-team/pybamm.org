@@ -2,6 +2,7 @@
 title: Homepage
 summary: "The PyBaMM Homepage"
 ---
+{{< buttons/github-star >}}{{< buttons/github-fork >}}
 
 {{< grid columns="1 2 2 3" >}}
 [[item]]
