@@ -22,7 +22,7 @@ handled on a case-by-case basis.
 ## Current Steering Council
 
 - [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
-- [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
+- [Saransh Chopra](https://saransh-cpp.github.io) - IRIS-HEP and CERN
 - [Scott Marquis](https://se.linkedin.com/in/scottmar93) - Northvolt
 - [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
