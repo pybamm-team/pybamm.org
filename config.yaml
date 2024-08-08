@@ -63,7 +63,9 @@ params:
     - title: Documentation
       url: https://docs.pybamm.org/
       is_external: true
-
+    - title: GitHub
+      url: https://github.com/pybamm-team/PyBaMM
+      is_external: true
     - title: Learn
       url: /learn/
       # Should link to training and getting started pages
