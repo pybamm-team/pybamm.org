@@ -2,7 +2,7 @@
 title: Homepage
 summary: "The PyBaMM Homepage"
 ---
-{{< center >}}
+{{< center bottom="20px" >}}
 {{< buttons/github-star >}}{{< buttons/github-fork >}}
 {{< /center >}}
 
