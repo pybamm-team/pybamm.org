@@ -63,7 +63,7 @@ As packagers and libraries in the Scientific Python ecosystem transition to mode
 
 The first significant milestone was the successful migration of PyBaMM’s build system from `setuptools` and `wheel` to `scikit-build-core`. This involved a thorough overhaul of the `pyproject.toml` configuration in alignment with the new build system’s conventions for compilation and linkage. After this, extensive testing was conducted locally and on continuous integration (CI) platforms, including updating GitHub CI workflows, dependencies, and build commands.
 
-Next, attention was turned to improving the installation process for the `SUNDIALS` and `SuiteSparse` libraries. The fixed installation location was transitioned from `~/.local` to a more organized structure within the project directory under `sundials_KLU_libs`. Users were given the option to install the libraries in a custom directory by exporting the `INSTALL_DIR` environment variable to the location of the custom directory. This required updating the build configuration to ensure CMake could correctly locate and recognize the libraries in their new location.
+Next, attention was turned to improving the installation process for the `SUNDIALS` and `SuiteSparse` libraries. The fixed installation location was transitioned from `~/.local` to a more organized structure within the project directory under `sundials_KLU_libs`. Users can now install the libraries in a custom directory by setting the `INSTALL_DIR` environment variable to the location of the custom directory. This required updating the build configuration to ensure CMake could correctly locate and recognize the libraries in their new location.
 
 Subsequently, adjustments were made to the `nox` session commands to accommodate the new build system. The introduction of `tomlkit`, a TOML table parser, was a critical enhancement that facilitated the installation of build-time dependencies during editable-rebuilds, ensuring a smooth development workflow with no build isolation.
 
@@ -93,7 +93,7 @@ This list includes both issues and pull requests related to my project, such as 
 
 - **Enhanced CI Workflows with `ccache` for Faster Builds:** To improve the efficiency of the continuous integration (CI) pipelines, implementing `ccache` within the CI workflows will be essential. `ccache` caches previous compilations, which significantly reduces build times by avoiding redundant compilations of unchanged code.
 
-- **Custom vcpkg Registry for SuiteSparse Using OpenBLAS:** Currently, SuiteSparse relies on LAPACK, but transitioning to a custom `vcpkg` registry that uses OpenBLAS instead could lead to performance improvements, especially on systems where OpenBLAS is better optimized. Future work will involve creating and maintaining this custom registry, ensuring that it seamlessly integrates with the existing build system.
+- **Implement Custom vcpkg Registry for SuiteSparse Using OpenBLAS:** Currently, SuiteSparse relies on LAPACK, but transitioning to a custom `vcpkg` registry that uses OpenBLAS instead could lead to performance improvements, especially on systems where OpenBLAS is better optimized. Future work will involve creating and maintaining this custom registry, ensuring that it seamlessly integrates with the existing build system.
 
 ## Acknowledgements
 
@@ -104,6 +104,8 @@ Contributing to the development of open-source scientific software has been incr
 I am immensely grateful to my mentors, [Agriya Khetarpal](https://github.com/agriyakhetarpal), [Arjun Verma](https://github.com/arjxn-py), and [Saransh Chopra](https://github.com/Saransh-cpp), for their unwavering support, patience, and guidance throughout the project. Their expertise and feedback were instrumental in overcoming challenges and achieving our objectives.
 I thoroughly enjoyed discussing my project with fellow GSoC student [Santhosh](https://github.com/santacodes). His support and insights were greatly appreciated, and our conversations were both enriching and encouraging.
 I also thank [Eric G. Kratz](https://github.com/kratman) for his review of my work and for offering valuable insights.
+
+Reflecting on this experience, I am amazed at how much I have grown professionally and personally. The opportunity to work on meaningful projects, collaborate with talented individuals, and contribute to open-source software has been immensely fulfilling. I look forward to applying the skills and knowledge I've gained in future endeavours and continuing to contribute to the open-source community.
 
 Thank you all for your encouragement and dedication throughout this project.
 
