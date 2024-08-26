@@ -31,7 +31,7 @@ This page serves as a permalink to the final report that provides details of San
 A brief of the tasks I completed throughout the GSoC 2024 program are listed below.
 
 - A CLI package for generating PyBaMM-based projects using copier templating engine published at [PyPI](https://pypi.org/project/pybamm-cookie/).
-- Improved `entry points API` to accomodate third-party `models` as well as `parameter sets`.
+- Improved `entry points API` to accommodate third-party `models` as well as `parameter sets`.
 - Automated testing workflows and testing infrastructure for the CLI and end users using `pytest`.
 - Implemented support for various build-backends such as `setuptools` and `hatch`, versionings like `hatch-vcs` and `setuptools-scm`, packaging, and for repository hosting services like GitHub and Gitlab.
 - Support for documentation using `sphinx` for the generated project for end users.
@@ -88,7 +88,7 @@ Using `github-actions` and `nox` I automated the tests and separated out the ses
 - (https://github.com/pybamm-team/pybamm-cookie/pull/37) Support for more build-backends such as `hatch` and `setuptools`.
 - (https://github.com/pybamm-team/pybamm-cookie/pull/38) Fixed `git` initialisation bugs.
 - (https://github.com/pybamm-team/pybamm-cookie/pull/38) Fixed documentation inside the template.
-- (https://github.com/pybamm-team/PyBaMM/pull/4323) Fixed `JAX` solver compatability tests.
+- (https://github.com/pybamm-team/PyBaMM/pull/4323) Fixed `JAX` solver compatibility tests.
 - (https://github.com/pybamm-team/pybamm-cookie/pull/44) Added versioning support for `gitarchives`.
 - (https://github.com/pybamm-team/pybamm-cookie/pull/45) Added attributes and credits for this project.
 - (https://github.com/pybamm-team/pybamm-cookie/pull/46) Renamed everything to `pybamm-cookie` from `pybamm-cookiecutter`.
