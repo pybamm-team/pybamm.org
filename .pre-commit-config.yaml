@@ -30,5 +30,6 @@ repos:
     rev: v2.3.0
     hooks:
     -   id: codespell
+        exclude: content/gsoc/2024/ankit-meda.md
         args:
           - "-Lrecuse,Meda"
