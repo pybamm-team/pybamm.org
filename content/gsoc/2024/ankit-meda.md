@@ -1,7 +1,7 @@
 ---
 Title: Ankit Meda — Google Summer of Code 2024 Final Report
 Subtitle: Migrate to `scikit-build-core`
-Summary: This is the final report for Ankit Meda's Google Summer of Code 2023 project with PyBaMM, NumFOCUS. I worked on migrating PyBaMM's build backend to `scikit-build-core`.
+Summary: This is the final report for Ankit Meda's Google Summer of Code 2024 project with PyBaMM, NumFOCUS. I worked on migrating PyBaMM's build backend to `scikit-build-core`.
 Date: 2024-08-26
 ShortcutDepth: 2
 ---
