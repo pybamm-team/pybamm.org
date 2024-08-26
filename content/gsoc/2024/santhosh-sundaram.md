@@ -120,7 +120,7 @@ I would also like to sincerely thank [Valentin Sulzer](https://sites.google.com/
 ## 🎬 Footnotes
 I am grateful to have completed the Google Summer of Code 2024 program and I hope to contribute to PyBaMM and its thriving codebase and community further in the future and help ameliorate the development and success of the PyBaMM ecosystem.
 
-I am eager to incorporate the technical skills I've gained into my academic, personal, and professional projects in the future. 
+I am eager to incorporate the technical skills I've gained into my academic, personal, and professional projects in the future.
 
 ## 🔭 References
 - The GitHub repository for `pybamm-cookie`: https://github.com/pybamm-team/pybamm-cookie
