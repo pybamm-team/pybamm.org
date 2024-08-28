@@ -28,7 +28,7 @@ Ionworks is always interested in connecting with talented individuals in the fie
 If you're excited about the prospect of contributing to cutting-edge battery simulation projects and shaping the future of energy storage technology, we encourage you to reach out. Your expression of interest will be kept on file for future opportunities that may arise.
 
 <div style="border: 2px solid #000; text-align: center; padding: 10px; margin: 20px auto; max-width: 300px; background-color: #3776AB;">
-    <a href="mailto:hr@ionworks.com" class="button" style="color: white;">Express Interest</a>
+    <a href="mailto:hr@ionworks.com?subject=Ionworks%20open%20position%20(from%20PyBaMM%20jobs%20board)" class="button" style="color: white;">Express Interest</a>
 </div>
 
 ---
