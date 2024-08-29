@@ -39,7 +39,7 @@ Don't see a position that fits your skills? Join our [Slack community](https://p
 
 Do you have an open position in battery modeling or simulation? By posting in the PyBaMM Jobs Board, you can:
 - Reach a targeted audience of battery modeling experts and enthusiasts
-- Access to a pool of candidates with specialized skills in PyBaMM and battery simulation
+- Gain access to a pool of candidates with specialized skills in PyBaMM and battery simulation
 - Increase visibility within the PyBaMM community and broader battery modeling ecosystem
 - Support the open-source PyBaMM project and its community
 
