@@ -28,7 +28,7 @@ jobs:
 
       # Will exit silently if there are no changes
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           # Commit details
           commit-message: "[create-pull-request] update teams HTML files"
