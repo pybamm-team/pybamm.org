@@ -98,6 +98,9 @@ params:
     - title: News
       url: /news/
 
+    - title: Jobs
+      url: /jobs/
+
   footer:
     logo: pybamm_logo_whitetext.svg
     socialmediatitle: ""
