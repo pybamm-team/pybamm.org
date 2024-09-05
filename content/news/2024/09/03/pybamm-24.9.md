@@ -20,5 +20,3 @@ _Implemented by [Mehrdad Babazadeh (WMG, University of Warwick)](https://github.
 
 ## Lumped surface thermal model
 _Implemented by [Valentin Sulzer (Ionworks)](https://github.com/valentinsulzer)_
-
-
