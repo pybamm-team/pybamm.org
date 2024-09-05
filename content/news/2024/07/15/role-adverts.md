@@ -4,8 +4,7 @@ date: 2024-07-15
 summary: "We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager and fundraising lead."
 ---
 
-> [!IMPORTANT]
-> Application deadline has been extended until the 27th of September 2024 (Anywhere on Earth).
+> **IMPORTANT:** Application deadline has been extended until the 27th of September 2024 (Anywhere on Earth).
 
 We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager and fundraising lead. These roles are fundamental for the growth of our project and community, and we are looking for enthusiastic and dedicated individuals to join our team. The positions are open to all members of the PyBaMM community (from users to maintainers), and we encourage applications from a diverse range of backgrounds and experiences. The deadline for applications is the ~~6th of September 2024~~ 27th of September 2024 (Anywhere on Earth). Please see below for more details on each role and how to apply.
 
