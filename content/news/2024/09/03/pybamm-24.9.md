@@ -41,6 +41,29 @@ This will return the solution at the times specified in `t_interp`.
 ## Thevenin ECM model with diffusion
 _Implemented by [Mehrdad Babazadeh (WMG, University of Warwick)](https://github.com/MehrdadBabazadeh)_
 
+A diffusion component can now be included in the Thevenin equivalent circuit model, based on the work of [Fan et al (2022)](https://doi.org/10.1016/j.apenergy.2022.119336). The model can be called using
+
+```python3
+pybamm.equivalent_circuit.Thevenin(options={"diffusion element": "true"})
+```
+
+Note than an additional parameter, the `"Diffusion time constant [s]"`, must be provided for the model to run. A full example is available at [examples/scripts/run_ecmd.py](https://github.com/pybamm-team/PyBaMM/blob/develop/examples/scripts/run_ecmd.py).
 
 ## Lumped surface thermal model
 _Implemented by [Valentin Sulzer (Ionworks)](https://github.com/valentinsulzer)_
+
+A new lumped thermal model has been included to account for different core and surface temperatures, based on the work of [Lin et al (2014)](https://doi.org/10.1016/j.jpowsour.2014.01.097). The new model option `"surface temperature"` can be set to either `"ambient"` or `"lumped"`. e.g.
+
+```python3
+pybamm.lithium_ion.SPMe(
+    {"thermal": "lumped", "surface temperature": "ambient"},
+    name="ambient surface temperature",
+)
+
+pybamm.lithium_ion.SPMe(
+    {"thermal": "lumped", "surface temperature": "lumped"},
+    name="lumped surface temperature",
+)
+```
+
+Additional parameters `"Casing heat capacity [J.K-1]"` and `"Environment thermal resistance [K.W-1]"` are needed for the model to run. For a full example please see [examples/scripts/compare_surface_temperature.py](https://github.com/pybamm-team/PyBaMM/blob/develop/examples/scripts/compare_surface_temperature.py).
