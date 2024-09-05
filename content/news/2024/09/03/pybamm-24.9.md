@@ -13,6 +13,30 @@ The full list of changes can be found in the [CHANGELOG](https://pybamm.org/chan
 ## IDAKLU solver improvements
 _Implemented by [Marc Berliner (Ionworks)](https://github.com/MarcBerliner)_
 
+The `IDAKLUSolver` is now significantly faster thanks to changes in its time-stepping behavior. `solve` now returns the solution results at time points determined by its adaptive time-stepping algorithm. As a low-memory option, the adaptive time results can be disabled by specifying a `t_interp` argument or an experiment `period`. Additionally, the `t_eval` argument has been updated to explicitly stop the integration due to discontinuities in the input function, such as with a drive cycle. For example, the fastest way to use the new `IDAKLUSolver` is:
+
+```python3
+solver = pybamm.IDAKLUSolver()
+model = pybamm.lithium_ion.DFN()
+sim = pybamm.Simulation(model, solver=solver)
+t_eval = [0, 3600]
+sol = sim.solve(t_eval)
+```
+
+This will return the solution at the time steps taken by the solver.
+
+Alternativly, to save specific points in time with the new `t_interp` argument, use:
+
+```python3
+solver = pybamm.IDAKLUSolver()
+model = pybamm.lithium_ion.DFN()
+sim = pybamm.Simulation(model, solver=solver)
+t_eval = [0, 3600]
+t_interp = np.linspace(0, 3600, 100)
+sol = sim.solve(t_eval, t_interp=t_interp)
+```
+
+This will return the solution at the times specified in `t_interp`.
 
 ## Thevenin ECM model with diffusion
 _Implemented by [Mehrdad Babazadeh (WMG, University of Warwick)](https://github.com/MehrdadBabazadeh)_
