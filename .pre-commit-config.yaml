@@ -19,7 +19,7 @@ repos:
 
 # Python files
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.6
+    rev: v0.6.3
     hooks:
     -   id: ruff
         args: ["--fix", "--show-fixes"]
@@ -30,5 +30,6 @@ repos:
     rev: v2.3.0
     hooks:
     -   id: codespell
+        exclude: content/gsoc/2024/ankit-meda.md
         args:
           - "-Lrecuse,Meda"
