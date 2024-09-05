@@ -25,7 +25,7 @@ sol = sim.solve(t_eval)
 
 This will return the solution at the time steps taken by the solver.
 
-Alternativly, to save specific points in time with the new `t_interp` argument, use:
+Alternatively, to save specific points in time with the new `t_interp` argument, use:
 
 ```python3
 solver = pybamm.IDAKLUSolver()
