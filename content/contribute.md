@@ -101,3 +101,7 @@ We are experimenting with this process and always looking for ways to improve ou
 ## Open-Source programs
 
 The PyBaMM team offers mentorship and funding opportunities under several open-source programs regulated by other organisations. These programs are an amazing opportunity for students and professionals to work on PyBaMM and get familiar with various open-source practices. More information on the open-source programs can be found on the dedicated [Open-Source Programs](/open-source-programs/) page.
+
+## Jobs
+
+We are always looking for talented individuals in the PyBaMM ecosystem. To check out the available listings, please check out our [Jobs Board](/jobs/).
