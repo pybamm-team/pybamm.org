@@ -1,6 +1,7 @@
 # Ignore links by template and theme files
 
 file:///home/runner/work/pybamm.org/pybamm.org/content/pybamm.org
+file:///home/runner/work/pybamm.org/pybamm.org/static/teams/contributors.html
 
 # Ignore GSoC branched pages
 
