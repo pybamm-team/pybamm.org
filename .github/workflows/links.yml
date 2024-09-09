@@ -39,7 +39,6 @@ jobs:
             --exclude https://twitter.com/*
             --exclude "https://doi\.org|www.sciencedirect\.com/*"
             --exclude https://plausible.io/pybamm.org
-            --exclude file://${{ github.workspace }}/static/teams/contributors.html
             --accept 200,429,999
           format: markdown
           jobSummary: true
