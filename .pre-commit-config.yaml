@@ -52,9 +52,9 @@ repos:
           - --accept
           - 200,429,999
 
-  # Python files
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.3
+# Python files
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.4
     hooks:
       - id: ruff
         args: ["--fix", "--show-fixes"]
