@@ -53,7 +53,7 @@ params:
 
   navbar:
     - title: Conference
-      url: https://pybamm-conference.webflow.io/
+      url: https://www.pybmc.com/
       is_external: true
 
     - title: Install
