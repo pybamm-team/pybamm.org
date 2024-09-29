@@ -1,5 +1,5 @@
 ---
-title: PyBaMM Job Board Terms and Conditions
+title: PyBaMM Jobs Board Terms and Conditions
 shortcutDepth: 1
 summary: "Terms and conditions for posting jobs on the PyBaMM Jobs Board"
 ---
