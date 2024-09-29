@@ -61,6 +61,6 @@ Do you have an open position in battery modeling or simulation? By posting in th
 
 Jobs can be posted by companies, research institutions, or individuals looking to hire for positions related to battery modeling and simulation. All fees collected for job postings will be used to support the development and maintenance of PyBaMM.
 
-For details, please review our [Terms & Conditions](/job-board-t&c/).
+For details, please review our [Terms & Conditions](/jobstos/).
 
 [Contact us](mailto:pybamm@pybamm.org) today to showcase your job opportunities to our engaged community of battery modeling professionals!
