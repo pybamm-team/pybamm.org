@@ -15,10 +15,12 @@ Welcome to the PyBaMM Jobs Board! Here you can find current job openings related
 Ionworks is always interested in connecting with talented individuals in the field of battery modeling and simulation. While we may not have specific positions open at the moment, we welcome expressions of interest from potential candidates who are passionate about advancing battery technology.
 
 **Areas of Interest:**
+
 - Battery modeling and simulation
 - Software development for scientific applications
 
 **Ideal Background:**
+
 - Advanced degree (Masters or higher) in a relevant field (e.g., Chemical Engineering, Applied Mathematics, Physics)
 - Experience with battery modeling software, preferably including PyBaMM
 - Proficiency in Python programming
@@ -54,6 +56,7 @@ Don't see a position that fits your skills? Join our [Slack community](https://p
 ### Posting Jobs on the PyBaMM Jobs Board
 
 Do you have an open position in battery modeling or simulation? By posting in the PyBaMM Jobs Board, you can:
+
 - Reach a targeted audience of battery modeling experts and enthusiasts
 - Gain access to a pool of candidates with specialized skills in PyBaMM and battery simulation
 - Increase visibility within the PyBaMM community and broader battery modeling ecosystem
