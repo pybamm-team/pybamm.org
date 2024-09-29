@@ -2,7 +2,6 @@
 title: PyBaMM 24.9 has been released!
 summary: PyBaMM version 24.9 has now been released with several new features and improvements.
 date: 2024-09-03
-toc: true
 shortcutDepth: 1
 ---
 
