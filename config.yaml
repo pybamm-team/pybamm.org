@@ -72,28 +72,28 @@ params:
 
     - title: Community
       sublinks:
-      - title: Contact
-        url: /community/
-      - title: Get Involved
-        url: /contribute/
-      - title: Code of Conduct
-        url: /code-of-conduct/
-      - title: Roadmap
-        url: /roadmap/
-      - title: Open-Source Programs
-        url: /open-source-programs/
+        - title: Contact
+          url: /community/
+        - title: Get Involved
+          url: /contribute/
+        - title: Code of Conduct
+          url: /code-of-conduct/
+        - title: Roadmap
+          url: /roadmap/
+        - title: Open-Source Programs
+          url: /open-source-programs/
 
     - title: About Us
       sublinks:
-      - title: About PyBaMM
-        url: /about/
-      - title: Ionworks
-        url: https://ionworks.com/
-        is_external: true
-      - title: Governance
-        url: /governance/
-      - title: PyBaMM Teams
-        url: /teams/
+        - title: About PyBaMM
+          url: /about/
+        - title: Ionworks
+          url: https://ionworks.com/
+          is_external: true
+        - title: Governance
+          url: /governance/
+        - title: PyBaMM Teams
+          url: /teams/
 
     - title: News
       url: /news/
