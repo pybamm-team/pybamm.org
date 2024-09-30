@@ -1,6 +1,6 @@
 ---
 title: PyBaMM Jobs Board
-shortcutDepth: 1
+shortcutDepth: 0
 summary: "Current job openings related to PyBaMM and battery modeling"
 ---
 
