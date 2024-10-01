@@ -45,3 +45,4 @@ the _redirects file and a corresponding entry in netlify.toml. -->
 
 - [Ankit Meda](/gsoc/2024/ankit-meda/)
 - [Santhosh Sundaram](/gsoc/2024/santhosh-sundaram)
+- [Pradyot Ranjan](https://prady0t.github.io/My-Blog/posts/gsoc-final/)
