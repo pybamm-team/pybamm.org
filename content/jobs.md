@@ -35,20 +35,6 @@ If you're excited about the prospect of contributing to cutting-edge battery sim
 
 ---
 
-### Support role positions in the PyBaMM team
-
-**Location:** Remote
-</br>
-**Type:** Part-time (volunteer position)
-
-We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager, and fundraising lead. These roles are fundamental for the growth of our project and community, and we are looking for enthusiastic and dedicated individuals to join our team. Note that these are volunteering (i.e. unpaid) positions. The positions are open to all members of the PyBaMM community (from users to maintainers), and we encourage applications from a diverse range of backgrounds and experiences. The deadline for applications is the ~~6th of September 2024~~ 27th of September 2024 (Anywhere on Earth). Please see [the advert](/news/2024/07/15/role-adverts/) for more details on each role and how to apply.
-
-<div style="border: 2px solid #000; text-align: center; padding: 10px; margin: 20px auto; max-width: 300px; background-color: #3776AB;">
-    <a href="mailto:pybamm@pybamm.org" class="button" style="color: white;">Express Interest</a>
-</div>
-
----
-
 Don't see a position that fits your skills? Join our [Slack community](https://pybamm.org/slack/) to network and stay updated on new opportunities in the battery modeling field.
 
 ---
@@ -63,6 +49,12 @@ Do you have an open position in battery modeling or simulation? By posting in th
 - Support the open-source PyBaMM project and its community
 
 Jobs can be posted by companies, research institutions, or individuals looking to hire for positions related to battery modeling and simulation. All fees collected for job postings will be used to support the development and maintenance of PyBaMM.
+
+### How to Post a Job
+
+1. [Email us](mailto:pybamm@pybamm.org) the job description (preferably as an editable document) or open a pull request adding your post.
+2. Make the payment through [this link](https://app.hubspot.com/payments/purchase/hscs_lIGxEAJy1ZF1nSDuOswBBtgYJ2lqdM7yi40DttGAC8TMh9c8BUIptnqJAYMmllfq).
+3. Optionally, add a **suggested donation** to further support PyBaMM’s mission.
 
 {{< admonition important >}}
 For details, please review our [Terms & Conditions](/jobs-t-and-c/).
