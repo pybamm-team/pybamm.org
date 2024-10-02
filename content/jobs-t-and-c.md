@@ -14,7 +14,7 @@ These Terms and Conditions govern the job posting services offered by PyBaMM, a 
 
 A fee of **$250** will be charged for each job posting. Academic positions (e.g., postdoctoral research assistants) will be charged a discounted rate of **$125**, and PhD positions a further discounted rate of **$62.5**.
 
-Payments will be processed via the [PyBaMM website](https://www.pybamm.org). Upon payment, the job will be posted for a duration of up to **90 days** (or until the closing date, whichever is earlier).
+Payments will be processed via the [PyBaMM website](https://app.hubspot.com/payments/purchase/hscs_lIGxEAJy1ZF1nSDuOswBBtgYJ2lqdM7yi40DttGAC8TMh9c8BUIptnqJAYMmllfq). Upon payment, the job will be posted for a duration of up to **90 days** (or until the closing date, whichever is earlier).
 
 Optionally, companies may make an additional **suggested donation** to support PyBaMM’s ongoing work.
 
@@ -62,8 +62,8 @@ These Terms and Conditions are governed by the laws of the **State of Texas**. A
 
 ## 9. How to Post a Job
 
-1. Visit the [PyBaMM job board page](https://www.pybamm.org/jobs) on their website.
-2. Submit the required job information and pay the job posting fee.
+1. [Email us](mailto:pybamm@pybamm.org) the job description (preferably as an editable document) or open a pull request adding your post.
+2. Make the payment through [this link](https://app.hubspot.com/payments/purchase/hscs_lIGxEAJy1ZF1nSDuOswBBtgYJ2lqdM7yi40DttGAC8TMh9c8BUIptnqJAYMmllfq).
 3. Optionally, add a **suggested donation** to further support PyBaMM’s mission.
 
 For further assistance, please [contact us](mailto:pybamm@pybamm.org).

@@ -50,6 +50,12 @@ Do you have an open position in battery modeling or simulation? By posting in th
 
 Jobs can be posted by companies, research institutions, or individuals looking to hire for positions related to battery modeling and simulation. All fees collected for job postings will be used to support the development and maintenance of PyBaMM.
 
+### How to Post a Job
+
+1. [Email us](mailto:pybamm@pybamm.org) the job description (preferably as an editable document) or open a pull request adding your post.
+2. Make the payment through [this link](https://app.hubspot.com/payments/purchase/hscs_lIGxEAJy1ZF1nSDuOswBBtgYJ2lqdM7yi40DttGAC8TMh9c8BUIptnqJAYMmllfq).
+3. Optionally, add a **suggested donation** to further support PyBaMM’s mission.
+
 {{< admonition important >}}
 For details, please review our [Terms & Conditions](/jobs-t-and-c/).
 {{< /admonition >}}
