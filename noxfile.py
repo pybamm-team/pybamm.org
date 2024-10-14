@@ -4,7 +4,7 @@ import shutil
 
 nox.options.reuse_existing_virtualenvs = True
 nox.options.default_venv_backend = "none"
-nox.options.sessions = ["themes", "search", "html", "serve-dev"]
+nox.options.sessions = ["themes", "html", "search", "serve-dev"]
 
 ERR_MSG = """there was an error running this command. Please ensure that the npx and the extended version of Hugo are installed and that the site configuration is valid."""
 
