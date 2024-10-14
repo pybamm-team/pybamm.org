@@ -30,7 +30,7 @@ def run_themes(session):
 def build_html(session):
     """Build the Hugo site using the 'hugo' command."""
     try:
-        session.run("hugo")
+        session.run("hugo", "--gc", "--minify")
     except Exception:
         session.error(ERR_MSG)
 

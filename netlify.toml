@@ -1,6 +1,7 @@
 [build.environment]
-  PYTHON_VERSION = "3.8"  # Netlify currently only supports 2.7 and 3.8
+  PYTHON_VERSION = "3.12"
   HUGO_VERSION = "0.135.0"
+  NODE_VERSION = "20"
   DART_SASS_VERSION = "1.79.4"
   DART_SASS_URL = "https://github.com/sass/dart-sass/releases/download/"
 
@@ -57,5 +58,8 @@
     tar -xf ${DART_SASS_TARBALL} && \
     rm ${DART_SASS_TARBALL} && \
     export PATH=/opt/build/repo/dart-sass:$PATH && \
-    hugo --gc --minify
+    python3 -m pip install nox && \
+    nox -s themes && \
+    nox -s search && \
+    nox -s html
     """
