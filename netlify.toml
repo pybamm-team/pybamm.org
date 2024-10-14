@@ -60,6 +60,6 @@
     export PATH=/opt/build/repo/dart-sass:$PATH && \
     python3 -m pip install nox && \
     nox -s themes && \
-    nox -s search && \
-    nox -s html
+    nox -s html && \
+    nox -s search
     """
