@@ -15,5 +15,5 @@ With this release, we have introduced a new **opt-in** telemetry collection syst
 
 - **What is collected**: Basic usage information like PyBaMM version, Python version, and which functions are run.
 - **Why**: To understand how PyBaMM is used and prioritize development efforts.
-- **Opt-out**: To disable telemetry, set the environment variable `PYBAMM_DISABLE_TELEMETRY=true` (or any value other than `false`) or use `pybamm.telemetry.disable()` in your code.
+- **Permanent opt-out**: To disable telemetry permanently, set the environment variable `PYBAMM_DISABLE_TELEMETRY=true` (or any value other than `false`) or use `pybamm.telemetry.disable()` in your code. You can also select "no" when PyBaMM asks if you would like to enable telemetry.
 - **Privacy**: No personal information (name, email, etc) or sensitive information (parameter values, simulation results, etc) is ever collected. The data is used only by the PyBaMM team and is not shared with any third parties. The data is stored securely and is only accessible to the PyBaMM team. Please read PostHog's policy on [GDPR compliance](https://posthog.com/docs/privacy/gdpr-compliance) for more.
