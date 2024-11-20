@@ -93,6 +93,8 @@ params:
           is_external: true
         - title: Governance
           url: /governance/
+        - title: Telemetry
+          url: /telemetry/
         - title: PyBaMM Teams
           url: /teams/
 
