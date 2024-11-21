@@ -84,38 +84,38 @@ _Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)
 The `Simulation` class now supports sensitivity calculation, including when running experiments. This means that the sensitivity of the output variables with respect to the parameters can be calculated when running experiments that switch operating modes (e.g. CCCV). For example, to calculate the sensitivity of the voltage with respect to the initial concentration of lithium in the negative electrode, we can run:
 
 ```python3
-    model = pybamm.lithium_ion.SPM()
+model = pybamm.lithium_ion.SPM()
 
-    parameter_values = model.default_parameter_values
+parameter_values = model.default_parameter_values
 
-    input_param_name = "Negative electrode active material volume fraction"
-    input_param_value = param[input_param_name]
-    parameter_values.update({input_param_name: "[input]"})
+input_param_name = "Negative electrode active material volume fraction"
+input_param_value = param[input_param_name]
+parameter_values.update({input_param_name: "[input]"})
 
-    solver = pybamm.IDAKLUSolver()
+solver = pybamm.IDAKLUSolver()
 
-    experiment = pybamm.Experiment(
-        [
-            (
-                "Charge at 1C until 4.2 V",
-                "Hold at 4.2 V until C/50",
-                "Rest for 1 hour",
-            )
-        ]
-    )
+experiment = pybamm.Experiment(
+    [
+        (
+            "Charge at 1C until 4.2 V",
+            "Hold at 4.2 V until C/50",
+            "Rest for 1 hour",
+        )
+    ]
+)
 
-    sim = pybamm.Simulation(
-        model,
-        experiment=experiment,
-        solver=solver,
-        parameter_values=parameter_values,
-    )
-    solution = sim.solve(
-        inputs={input_param_name: input_param_value},
-        calculate_sensitivities=calculate_sensitivities,
-    )
+sim = pybamm.Simulation(
+    model,
+    experiment=experiment,
+    solver=solver,
+    parameter_values=parameter_values,
+)
+solution = sim.solve(
+    inputs={input_param_name: input_param_value},
+    calculate_sensitivities=calculate_sensitivities,
+)
 
-    sensitivity = solution["Voltage [V]].sensitivities[input_param_name]
+sensitivity = solution["Voltage [V]].sensitivities[input_param_name]
 ```
 
 ## Breaking change in parameter functions dependency
