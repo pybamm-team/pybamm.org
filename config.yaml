@@ -21,6 +21,7 @@ params:
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
   author:
     name: PyBaMM Team
+  search: true
   # Privacy-preserving analytics
   plausible:
     dataDomain: pybamm.org
@@ -92,6 +93,8 @@ params:
           is_external: true
         - title: Governance
           url: /governance/
+        - title: Telemetry
+          url: /telemetry/
         - title: PyBaMM Teams
           url: /teams/
 
