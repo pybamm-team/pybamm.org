@@ -4,9 +4,9 @@ import shutil
 
 nox.options.reuse_existing_virtualenvs = True
 nox.options.default_venv_backend = "none"
-nox.options.sessions = ["themes", "html", "serve-dev"]
+nox.options.sessions = ["themes", "html", "search", "serve-dev"]
 
-HUGO_ERR_MSG = """there was an error running this command. Please ensure that the extended version of Hugo is installed and that the site configuration is valid"""
+ERR_MSG = """there was an error running this command. Please ensure that npm/npx and the extended version of Hugo are installed and that the site configuration is valid."""
 
 @nox.session(name="themes")
 def run_themes(session):
@@ -30,9 +30,19 @@ def run_themes(session):
 def build_html(session):
     """Build the Hugo site using the 'hugo' command."""
     try:
-        session.run("hugo")
+        session.run("hugo", "--gc", "--minify")
     except Exception:
-        session.error(HUGO_ERR_MSG)
+        session.error(ERR_MSG)
+
+
+@nox.session(name="search")
+def add_search(session):
+    """Enable pagefind search. Requires pagefind to be installed via npm or npx."""
+    session.log("Installing pagefind")
+    try:
+        session.run("npx", "--yes", "pagefind", "--site", "public")
+    except Exception:
+        session.error(ERR_MSG)
 
 
 @nox.session(name="serve")
@@ -41,7 +51,7 @@ def serve(session):
     try:
         session.run("hugo", "--printI18nWarnings", "server")
     except Exception:
-        session.error(HUGO_ERR_MSG)
+        session.error(ERR_MSG)
 
 
 @nox.session(name="serve-dev")
@@ -50,7 +60,8 @@ def serve_dev(session):
     try:
         session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
     except Exception:
-        session.error(HUGO_ERR_MSG)
+        session.error(ERR_MSG)
+
 
 @nox.session(name="clean")
 def clean_build(session):
