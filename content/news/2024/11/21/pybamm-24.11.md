@@ -22,7 +22,7 @@ With this release, we have introduced a new **opt-in** telemetry collection syst
 ## Experiment simulations now support output variables
 _Implemented by [Pip Liggins (Oxford RSE)](https://github.com/pipliggins)_
 
-Simulations using experiments now support the use of output variables from the `IDAKLUSolver`. This means that the model can be solved only storing the specified output variables (instead of the whole state vector), which provides benefits both in terms of computational speed and memory usage. For example, if we want to run a long simulation of the SPM model and only store time, current and voltage we can run:
+Simulations using experiments now support the use of output variables from the `IDAKLUSolver`. This means that the model can be solved only storing the specified output variables (instead of the whole state vector), which provides benefits both in terms of computational speed and memory usage. For example, if we want to run a long simulation of the SPM model and only store time, current, and voltage; we can run:
 
 ```python3
     model = pybamm.lithium_ion.SPM()
