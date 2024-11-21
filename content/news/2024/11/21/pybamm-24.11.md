@@ -71,7 +71,7 @@ Finally, the IDAKLU solver can now run multiple simulations in parallel using Op
 ### JAX Solver
 _Implemented by [Brady Planden (University of Oxford)](https://github.com/BradyPlanden)_
 
-The JAX Solver has been refactored for improve performance. The default method is now `"BDF"` which has better performance than the previous default `"RK45"`. Bugs related to calculating sensitivities have now been fixed too. For more details please see this [example script](https://github.com/pybamm-team/PyBaMM/blob/develop/examples/scripts/multiprocess_jax_solver.py).
+The JAX Solver has been refactored to improve its performance. The default method is now `"BDF"` which has better performance than the previous default `"RK45"`. Bugs related to calculating sensitivities have now been fixed too. For more details please see this [example script](https://github.com/pybamm-team/PyBaMM/blob/v24.11.0/examples/scripts/multiprocess_jax_solver.py).
 
 ## DFN model for sodium-ion batteries
 _Implemented by [Ferran Brosa Planella (University of Warwick & Ionworks)](https://github.com/brosaplanella)_
