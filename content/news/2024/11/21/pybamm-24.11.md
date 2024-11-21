@@ -48,7 +48,7 @@ Simulations using experiments now support the use of output variables from the `
 
 ## Solver and processed variables speed improvements
 
-This new release comes with several performance associated to the solvers.
+This new release comes with several performance improvements associated with the solvers.
 
 ### IDAKLU Solver
 _Implemented by [Marc Berliner (Ionworks)](https://github.com/MarcBerliner) and [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
