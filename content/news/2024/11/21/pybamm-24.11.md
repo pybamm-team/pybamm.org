@@ -22,7 +22,7 @@ With this release, we have introduced a new **opt-in** telemetry collection syst
 ## Experiment simulations now support output variables
 _Implemented by [Pip Liggins (Oxford RSE)](https://github.com/pipliggins)_
 
-Simulations using experiments now support the use of output variables from the `IDAKLUSolver`. This means that the model can be solved only storing the specified output variables (instead of the whole state vector), which provides benefits both in terms of computational speed and memory usage. For example, if we want to run a long simulation of the SPM model and only store time, current and voltage we can run:
+Simulations using experiments now support the use of output variables from the `IDAKLUSolver`. This means that the model can be solved only storing the specified output variables (instead of the whole state vector), which provides benefits both in terms of computational speed and memory usage. For example, if we want to run a long simulation of the SPM model and only store time, current, and voltage; we can run:
 
 ```python3
     model = pybamm.lithium_ion.SPM()
@@ -48,7 +48,7 @@ Simulations using experiments now support the use of output variables from the `
 
 ## Solver and processed variables speed improvements
 
-This new release comes with several performance associated to the solvers.
+This new release comes with several performance improvements associated with the solvers.
 
 ### IDAKLU Solver
 _Implemented by [Marc Berliner (Ionworks)](https://github.com/MarcBerliner) and [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
@@ -71,7 +71,7 @@ Finally, the IDAKLU solver can now run multiple simulations in parallel using Op
 ### JAX Solver
 _Implemented by [Brady Planden (University of Oxford)](https://github.com/BradyPlanden)_
 
-The JAX Solver has been refactored for improve performance. The default method is now `"BDF"` which has better performance than the previous default `"RK45"`. Bugs related to calculating sensitivities have now been fixed too. For more details please see this [example script](https://github.com/pybamm-team/PyBaMM/blob/develop/examples/scripts/multiprocess_jax_solver.py).
+The JAX Solver has been refactored to improve its performance. The default method is now `"BDF"` which has better performance than the previous default `"RK45"`. Bugs related to calculating sensitivities have now been fixed too. For more details please see this [example script](https://github.com/pybamm-team/PyBaMM/blob/v24.11.0/examples/scripts/multiprocess_jax_solver.py).
 
 ## DFN model for sodium-ion batteries
 _Implemented by [Ferran Brosa Planella (University of Warwick & Ionworks)](https://github.com/brosaplanella)_
@@ -84,38 +84,38 @@ _Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)
 The `Simulation` class now supports sensitivity calculation, including when running experiments. This means that the sensitivity of the output variables with respect to the parameters can be calculated when running experiments that switch operating modes (e.g. CCCV). For example, to calculate the sensitivity of the voltage with respect to the initial concentration of lithium in the negative electrode, we can run:
 
 ```python3
-    model = pybamm.lithium_ion.SPM()
+model = pybamm.lithium_ion.SPM()
 
-    parameter_values = model.default_parameter_values
+parameter_values = model.default_parameter_values
 
-    input_param_name = "Negative electrode active material volume fraction"
-    input_param_value = param[input_param_name]
-    parameter_values.update({input_param_name: "[input]"})
+input_param_name = "Negative electrode active material volume fraction"
+input_param_value = param[input_param_name]
+parameter_values.update({input_param_name: "[input]"})
 
-    solver = pybamm.IDAKLUSolver()
+solver = pybamm.IDAKLUSolver()
 
-    experiment = pybamm.Experiment(
-        [
-            (
-                "Charge at 1C until 4.2 V",
-                "Hold at 4.2 V until C/50",
-                "Rest for 1 hour",
-            )
-        ]
-    )
+experiment = pybamm.Experiment(
+    [
+        (
+            "Charge at 1C until 4.2 V",
+            "Hold at 4.2 V until C/50",
+            "Rest for 1 hour",
+        )
+    ]
+)
 
-    sim = pybamm.Simulation(
-        model,
-        experiment=experiment,
-        solver=solver,
-        parameter_values=parameter_values,
-    )
-    solution = sim.solve(
-        inputs={input_param_name: input_param_value},
-        calculate_sensitivities=calculate_sensitivities,
-    )
+sim = pybamm.Simulation(
+    model,
+    experiment=experiment,
+    solver=solver,
+    parameter_values=parameter_values,
+)
+solution = sim.solve(
+    inputs={input_param_name: input_param_value},
+    calculate_sensitivities=calculate_sensitivities,
+)
 
-    sensitivity = solution["Voltage [V]].sensitivities[input_param_name]
+sensitivity = solution["Voltage [V]].sensitivities[input_param_name]
 ```
 
 ## Breaking change in parameter functions dependency
