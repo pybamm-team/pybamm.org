@@ -22,5 +22,5 @@ Contributions of any kind are welcome!
 
 {{< include-html "static/teams/contributors.html" >}}
 
-<!-- Use "make teams" or alternatively run scripts/get_teams_info.py  -->
+<!-- Use "nox -s teams" or alternatively run scripts/get_teams_info.py  -->
 <!-- to regenerate the teams. -->
