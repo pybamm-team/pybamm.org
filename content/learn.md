@@ -9,11 +9,22 @@ For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/s
 
 ## Installation instructions
 
-PyBaMM is available on the `pip` package manager for Windows, macOS, and Linux; and can be installed with
+PyBaMM is available on the `pip` and `conda` package managers for Windows, macOS, and Linux; and the
+the library (with its required dependencies) can be installed with
 
 ```bash
 pip install pybamm
 ```
+
+or
+
+```bash
+conda install -c conda-forge pybamm-base
+```
+
+{{< admonition note >}}
+At the moment, PyBaMM's conda-forge distribution does not include [`IDAKLUSolver`](https://docs.pybamm.org/en/stable/source/api/solvers/idaklu_solver.html#idaklu-solver).
+{{< /admonition >}}
 
 More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html) in the documentation.
 
