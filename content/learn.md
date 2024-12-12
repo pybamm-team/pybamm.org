@@ -22,7 +22,7 @@ or
 conda install -c conda-forge pybamm-base
 ```
 
-{{< admonition note >}}
+{{< admonition caution >}}
 At the moment, PyBaMM's conda-forge distribution does not include [`IDAKLUSolver`](https://docs.pybamm.org/en/stable/source/api/solvers/idaklu_solver.html#idaklu-solver).
 {{< /admonition >}}
 
