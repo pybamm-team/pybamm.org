@@ -31,7 +31,9 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           # Commit details
-          commit-message: "[create-pull-request] update teams HTML files"
+          commit-message: "Automated update for the Teams page"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           # Pull request details
           branch: "create-pull-request/generate-teams"
           branch-suffix: timestamp
