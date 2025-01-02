@@ -1,6 +1,5 @@
 ---
 title: Contribute to PyBaMM
-toc: true
 summary: "How to contribute to PyBaMM's development"
 ---
 

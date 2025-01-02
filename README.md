@@ -92,8 +92,6 @@ summary: "Summary of the news item"
 ---
 ```
 
-You may use the `toc: true` parameter to add a table of contents to the news item. This works on all pages, not just news items. The `shortcutDepth: X` parameter can be used to limit the depth of the headings referenced in the page.
-
 The `newsHeader` parameter will automatically be set to the `title:` of the latest news item and will show up on the homepage of the website.
 
 ## Deployment
@@ -115,9 +113,7 @@ Some shortcodes for adding general-purpose buttons and links are available in `l
 {{< external-content "https://api.github.com/repos/example-org/example-repo/contents/path/to/file.md" >}}
 ```
 
-2. To include an optional table of contents at the top of a page, set `toc: true` in the YAML front matter of a page. The table of contents will be generated from the headings referenced in the page.
-
-3. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
+2. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
 
 For more information, please refer to the [Hugo documentation](https://gohugo.io/documentation/) and the [Scientific Python Hugo theme guides](https://theme.scientific-python.org/shortcodes/).
 
