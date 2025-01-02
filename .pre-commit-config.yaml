@@ -21,7 +21,6 @@ repos:
     rev: v0.15.1
     hooks:
       - id: lychee
-        entry: lychee
         pass_filenames: false
         args:
           - .
