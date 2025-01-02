@@ -50,4 +50,4 @@ We regularly hold PyBaMM workshops. You can find a list of the workshops we have
 
 ## Get help
 
-You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/contact-us).
+You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/).
