@@ -14,7 +14,7 @@ community of researchers, developers, and users alike.
     title="Getting Started"
     venue="PybaMM Training Workshop 2021"
     author="Robert Timms" levelOffset=4 >}}
-{{< /youtube >}}
+
 This video explains what PyBaMM is and takes you through the basics of setting
 up and running simulations.
 
@@ -23,7 +23,7 @@ up and running simulations.
     title="Plug & Play Physics"
     venue="PybaMM Training Workshop 2021"
     author="Robert Timms, Ferran Brosa Planella" levelOffset=4 >}}
-{{< /youtube >}}
+
 This video shows how submodels enable "plug and play" physics PyBaMM, and
 showcases submodels for lithium plating and multi-particle models (particle
 size distributions).
@@ -33,7 +33,7 @@ size distributions).
     title="Parameterisation"
     venue="PybaMM Training Workshop 2021"
     author="Robert Timms" levelOffset=4 >}}
-{{< /youtube >}}
+
 This video shows different features related to parameterisation, including how
 to add new parameter sets, optimise the parameter values and calculate the
 sensitivity of the solutions with respect to certain parameters.
@@ -43,7 +43,7 @@ sensitivity of the solutions with respect to certain parameters.
     title="Experiments"
     venue="PybaMM Training Workshop 2021"
     author="Valentin Sulzer" levelOffset=4 >}}
-{{< /youtube >}}
+
 This video shows how to simulate experiments in PyBaMM and interact with
 their solutions.
 
@@ -52,7 +52,7 @@ their solutions.
     title="Advanced Examples"
     venue="PybaMM Training Workshop 2021"
     author="Tom Tranter, Priyanshu Agarwal, Saransh Chopra" levelOffset=4 >}}
-{{< /youtube >}}
+
 This video showcases some advanced examples using PyBaMM.
 
 {{< youtube id="FA7s-Zx6O2I"
@@ -60,6 +60,6 @@ This video showcases some advanced examples using PyBaMM.
     title="Open-source battery modelling"
     venue="Early Career Researcher Day, Faraday Institution Conference, 2020"
     author="Robert Timms" levelOffset=4 >}}
-{{< /youtube >}}
+
 This video gives an overview of PyBaMM, and showcases some of the research it
 has enabled.
