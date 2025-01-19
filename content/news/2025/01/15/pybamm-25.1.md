@@ -54,3 +54,8 @@ The C/C++ solvers included in PyBaMM (e.g. `IDAKLUSolver`) have been moved to a 
 _Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
 
 The state variables of a PyBaMM model are now automatically included as output variables, if they are not already present. This makes the process of building custom models more robust avoiding, for example, errors with the `set_initial_conditions_from` method when output variables were not correctly defined.
+
+## Support for BPX 0.5.0
+_Implemented by [Eric Kratz (Ionworks)](https://github.com/kratman)_
+
+PyBaMM now supports [BPX](https://github.com/FaradayInstitution/BPX) 0.5.0, which was released in December 2024. This version of BPX uses Pydantic v2.
