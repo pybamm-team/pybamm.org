@@ -45,11 +45,14 @@ PyBaMM now includes `SymbolicUniform1DSubMesh`, which allows for the definition 
 
 This mesh does not work straight out of the box with default models, but it can be used in custom-built models.
 
-## Standalone package for C/C++ solvers
+## Improved distribution and packaging for PyPI and conda-forge
 _Implemented by [Eric Kratz (Ionworks)](https://github.com/kratman)_
 
 The C/C++ solvers included in PyBaMM (e.g. `IDAKLUSolver`) have been moved to a standalone package called [`pybammsolvers`](https://pypi.org/project/pybammsolvers/). This change makes PyBaMM a pure Python package, simplifying significantly the installation process from source (including Windows), which benefits PyBaMM developers and contributors.
 
+_Implemented by [Saransh Chopra (ARC, University College London RSE)](https://github.com/Saransh-cpp)_
+
+The conda-forge distribution has been migrated to a `noarch` recipe, making it platform independent. Additionally, a new conda-forge package, `pybamm-base`, has been developed to enable installing PyBaMM only with required dependencies. The `pybamm` package on conda-forge has been updated to include all the available optional dependencies (equivalent to `pybamm[all,jax]` on PyPI). Similar to the PyPI change, these changes simplify the installation process for both users and developers.
 ## State variables are always included as output variables
 _Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
 
