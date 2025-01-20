@@ -28,7 +28,7 @@ All SEI models in PyBaMM are now defined for a single layer SEI, and the double 
 ## Two new SEI models
 _Implemented by [Kawa Manmi (University of Warwick)](https://github.com/kawaMANMI)_
 
-Two new SEI models have been added to PyBaMM: the `"tunnelling limited"` model (from [Tang et al (2012)](https://iopscience.iop.org/article/10.1149/2.025211jes)) and the `"VonKolzenberg2020"` model (from [Von Kolzenberg et al (2020)](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/cssc.202000867)). These models can be enabled by passing the relevant `"SEI"` in the model options dictionary. Note that additional parameters are required for this model, and the parameter set dictionary needs to be updated manually.
+Two new SEI models have been added to PyBaMM: the `"tunnelling limited"` model (from [Tang et al (2012)](https://iopscience.iop.org/article/10.1149/2.025211jes)) and the `"VonKolzenberg2020"` model (from [Von Kolzenberg et al (2020)](https://doi.org/10.1002/cssc.202000867)). These models can be enabled by passing the relevant `"SEI"` in the model options dictionary. Note that additional parameters are required for this model, and the parameter set dictionary needs to be updated manually.
 
 ## Improved `search` method in PyBaMM dictionaries
 _Implemented by [Medha Bhardwaj (IIIT Lucknow)](https://github.com/medha-14)_
