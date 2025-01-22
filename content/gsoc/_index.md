@@ -15,10 +15,11 @@ Information about current and past Google Summer of Code projects and idea lists
 
 ## Ideas lists
 
-- [GSoC 2021](/gsoc/2021/)
-- [GSoC 2022](/gsoc/2022/)
-- [GSoC 2023](/gsoc/2023/)
+- [GSoC 2025](/gsoc/2025/)
 - [GSoC 2024](/gsoc/2024/)
+- [GSoC 2023](/gsoc/2023/)
+- [GSoC 2022](/gsoc/2022/)
+- [GSoC 2021](/gsoc/2021/)
 
 ## Project reports
 
