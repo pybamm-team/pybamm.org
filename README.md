@@ -114,6 +114,8 @@ Some shortcodes for adding general-purpose buttons and links are available in `l
 {{< external-content "https://api.github.com/repos/example-org/example-repo/contents/path/to/file.md" >}}
 ```
 
+You may append `?ref=<ref>` to the URL to fetch the content from a specific branch or a tag.
+
 2. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
 
 For more information, please refer to the [Hugo documentation](https://gohugo.io/documentation/) and the [Scientific Python Hugo theme guides](https://theme.scientific-python.org/shortcodes/).
