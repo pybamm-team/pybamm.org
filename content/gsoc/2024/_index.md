@@ -3,8 +3,6 @@ title: PyBaMM GSoC 2024 Project Ideas
 summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2024. These projects are intended to be suitable for students who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
 ---
 
-[↩ Go back to GSoC Home](/gsoc/)
-
 ## Migrate from `unittest` to `pytest` and improve PyBaMM's testing infrastructure
 
 PyBaMM's inception predates the rise in popularity of `pytest`, and so we have used the `unittest` testing framework for our tests. However, `pytest` is now the de facto standard for testing in Python, and it is time to migrate our test cases over to it. The reason for this is that `pytest` is much more flexible and powerful than `unittest`, and will allow us to write better tests with less code. This may also involve migrating our test cases to use `hypothesis` for property-based testing, which will allow us to write even more powerful tests via the use of strategies, which are like generators for test cases.
@@ -102,7 +100,7 @@ The student will receive an opportunity to perform each and every aspect of soft
 * [Arjun Verma](https://arjxnpy.vercel.app/)
 * [Ferran Brosa Planella](https://www.brosaplanella.xyz/)
 
-## Training an RAG-based machine learning model for chatbot assistance on the PyBaMM documentation
+## Training a RAG-based machine learning model for chatbot assistance on the PyBaMM documentation
 
 PyBaMM's extensive documentation serves as a valuable resource for users, but accessing information efficiently can be challenging. This project aims to develop a chatbot using machine learning techniques trained on PyBaMM documentation. The chatbot will act as a virtual assistant, providing users with prompt and accurate responses to basic queries related to PyBaMM functionalities, installation instructions, usage guidelines, and troubleshooting tips.
 
