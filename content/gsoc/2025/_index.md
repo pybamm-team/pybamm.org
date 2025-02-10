@@ -52,11 +52,11 @@ The type system design will require particular attention to several key areas. T
 
 ### Potential mentors
 
-TBA
+
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
+* [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
 
 <!-- * [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Robert Timms](https://github.com/rtimms)
 * [Arjun Verma](https://arjxnpy.vercel.app/)
-* [Ferran Brosa Planella](https://www.brosaplanella.xyz/)
-* [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
-* [Saransh Chopra](https://Saransh-cpp.github.io/) -->
+* [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
