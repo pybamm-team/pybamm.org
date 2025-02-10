@@ -39,7 +39,7 @@ The type system design will require particular attention to several key areas. T
 
 ### Desired skills
 
-- Some experience with type theory and static typing in Python is beneficial, but not required.
+- Some experience with static typing in Python is beneficial, but not required.
 - Python programming experience, Git version control, and GitHub workflow for open-source projects
 - An affinity for reading lots of code and documentation
 - An interest in scientific computing and battery modeling (prior experience not required)
