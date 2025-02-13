@@ -60,3 +60,45 @@ The type system design will require particular attention to several key areas. T
 * [Robert Timms](https://github.com/rtimms)
 * [Arjun Verma](https://arjxnpy.vercel.app/)
 * [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
+
+## Mutation testing PyBaMM with mutmut
+
+Mutation testing checks your tests' effectiveness by making minor modifications to the codebase and running the test suite. The tests are not specific or good enough if they pass with the changes made by the mutation testing framework. [mutmut](https://mutmut.readthedocs.io) is a mutation testing library for Python that has recently been adopted in testing suite of large projects.
+
+PyBaMM (Python Battery Mathematical Modelling) has a considerably huge testing suite, which often ends up having weak or flaky tests that bump up the coverage but do not test the code thoroughly. Mutation testing would be an effective way to check whether the tests work. Moreover, this is an exploratory project, and the mentee will actively make design decisions that will pave the way for either adoption or rejection of occasional mutation testing of PyBaMM. Finally, the mentee will be guided by the mentors to fix the problems identified by mutmut, thus making the test suite better with each run.
+
+### Technical details
+
+mutmut is an intelligent testing framework with a browser/terminal TUI making it easy to identify "mutants" and apply them using simple commands. The library also remembers the tests that have been checked so that you can fix them incrementally. The mentee will need to use the browser/terminal TUI interactively, find bad tests, report them, and possibly fix them.
+
+mutmut can also execute tests smartly and parallelly, making the execution fast. Once the mentee is familiar with the entire workflow, they can utilize the parallel execution capabilities to speed up the workflow and report failures quickly.
+
+### Expected outcomes
+
+- Testing report: An iterative report showcasing which tests are good and which tests are bad
+
+- Fixed tests: The problems pointed out by mutmut are fixed iteratively
+
+- Validation: CI passes on each pull request and the coverage does not go down; tests look more maintainable for the longer run (that is, they are easier to extend or debug)
+
+### Desired skills
+
+- Some experience with unit testing in Python
+- Python programming experience, Git version control, and GitHub workflow for open-source projects
+- An affinity for experimenting with new testing and infrastructure tools
+- Some understanding of continuous integration providers (GitHub Actions, etc.) and mutation testing is beneficial, but not required
+
+### Difficulty
+
+**Moderate**. This project is suitable for a 175-hour duration.
+
+### Potential mentors
+
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
+
+<!-- * [Pradyot Ranjan](https://github.com/prady0t/)
+* [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
+* [Robert Timms](https://github.com/rtimms)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
+* [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
