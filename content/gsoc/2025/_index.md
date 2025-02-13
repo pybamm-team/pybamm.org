@@ -1,11 +1,13 @@
 ---
 title: PyBaMM GSoC 2025 Project Ideas
-summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2025. These projects are intended to be suitable for students who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
+summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2025. These projects are intended to be suitable for students or professionals who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
 ---
 
 {{< admonition note >}}
 
 We are planning on taking part in Google Summer of Code 2025. We will keep updating our project ideas and add potential ones here as soon as they are available. Stay tuned and keep following this page for updates!
+
+The projects below are arranged according to their priority (that is, the first project has a higher priority than the second one, and so on).
 
 {{< /admonition >}}
 
@@ -21,11 +23,11 @@ The scope could be expanded to include more sophisticated items towards a stretc
 
 ### Technical details
 
-The implementation of the typing system will require careful evaluation of different approaches by the student, and they can explore either inline type hints in existing code, or separate `.pyi` stub files for backward compatibility, or the creation of a standalone `pybamm-stubs` package, or potentially a hybrid approach combining multiple methods. Each approach has its own trade-offs in terms of maintenance burden, backward compatibility, and ease of implementation – the student is expected to survey the existing strategy adopted by Scientific Python libraries and choose the most suitable approach for PyBaMM.
+The implementation of the typing system will require careful evaluation of different approaches by the mentee, and they can explore either inline type hints in existing code, or separate `.pyi` stub files for backward compatibility, or the creation of a standalone `pybamm-stubs` package, or potentially a hybrid approach combining multiple methods. Each approach has its own trade-offs in terms of maintenance burden, backward compatibility, and ease of implementation – the mentee is expected to survey the existing strategy adopted by Scientific Python libraries and choose the most suitable approach for PyBaMM.
 
-Previously, type hints were added to the expression tree via [pybamm-team/pybamm#3578](https://github.com/pybamm-team/PyBaMM/issues/3578), which can serve as a reference for the student.
+Previously, type hints were added to the expression tree via [pybamm-team/pybamm#3578](https://github.com/pybamm-team/PyBaMM/issues/3578), which can serve as a reference for the mentee. There are a few other related tasks, such as using NumPy's typing module appropriately ([pybamm-team/pybamm#4512](https://github.com/pybamm-team/PyBaMM/issues/4512)) and adding a type checker ([mypy](https://mypy.readthedocs.io)) in the CI, that can be used by applicants to familiarise themselves with PyBaMM's current typing infrastructure.
 
-The type system design will require particular attention to several key areas. The student may need to create custom types for battery-specific parameters, ensuring they accurately represent the domain concepts. The system must handle NumPy array types and dimensional analysis effectively, define clear type hierarchies for different battery models, and manage type compatibility with scientific computing libraries. The implementation of generic types for flexible model arguments will also prove to be essential for maintaining the PyBaMM framework's versatility.
+The type system design will require particular attention to several key areas. The mentee may need to create custom types for battery-specific parameters, ensuring they accurately represent the domain concepts. The system must handle NumPy array types and dimensional analysis effectively, define clear type hierarchies for different battery models, and manage type compatibility with scientific computing libraries. The implementation of generic types for flexible model arguments will also prove to be essential for maintaining the PyBaMM framework's versatility.
 
 ### Expected outcomes
 
@@ -52,11 +54,54 @@ The type system design will require particular attention to several key areas. T
 
 ### Potential mentors
 
-
 * [Saransh Chopra](https://Saransh-cpp.github.io/)
 * [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
 
 <!-- * [Valentin Sulzer](https://github.com/valentinsulzer)
+* [Robert Timms](https://github.com/rtimms)
+* [Arjun Verma](https://arjxnpy.vercel.app/)
+* [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
+
+## pytest-ifying the testing suite
+
+PyBaMM (Python Battery Mathematical Modelling) used `unittest` as its testing framework until last year. However, thanks to the efforts from [@prady0t](https://github.com/prady0t), it now uses `pytest.` `pytest` is a modern and community-maintained testing framework for Python that is more flexible and feature-rich than the built-in `uni test` module. Migrating such a huge codebase from `unittest` to `pytest` was an exceptional feat; however, because of limited time and resources, we could not leverage several amazing things that `pytest` offers. There have been efforts to introduce `pytest` specific features, but these efforts have been distributed, and now the codebase is at an awkward stage where some tests utilize `pytest`'s capabilities and some do not. 
+
+PyBaMM currently uses different tools/functionalities to do the same thing at different places in the testing suite. This project aims to standardize the tesing suite to use one tool for one job, most likely, a `pytest` compatible tool. Moreover, the project will also require choosing the right tools (by researching multiple testing tools available on the internet) and writing instructions for these then standardized tools in documentation. Besides `pytest`, there are several other things that can be improved, such as [brainstorming ideas for a better CI](https://github.com/pybamm-team/PyBaMM/issues/3662) or [modernizing NumPy array assertion tests](https://github.com/pybamm-team/PyBaMM/issues/4488) and the mentee should be able to pitch in ideas and freely pick up a direction for their work.
+
+### Technical details
+
+`pytest` includes several beneficial features, such as parameterization of tests and using fixtures. There are multiple ongoing efforts to utilize `pytest`'s features better within PyBaMM ([parameterization and fixtures](https://github.com/pybamm-team/PyBaMM/issues/4502), [removing shared.py](https://github.com/pybamm-team/PyBaMM/pull/4401), [more fixtures](https://github.com/pybamm-team/PyBaMM/issues/4837)), but we still have a long way to go. The project will start by picking up existing issues and cherry-picking PRs that are working towards a better testing suite, then slowly take over to create custom `pytest` fixtures or even plugins if required. The mentee will also be tasked to update the deprecated/outdated libraries and syntax used in the testing suite, such as `numpy.assert_almost_equal` statements. Therefore, the project requires auditing the entire testing suite, pointing out outdated, redundant, or deprecated tools and libraries being used, and replacing them with more modern (or `pytest`) solutions.
+
+### Expected outcomes
+
+- Efficient tests: Tests that act exactly how they act right now, but are better organised and use the right tool for the right job (instead of using an arbitrary tool that does the job)
+
+- Implementation: Refactored tests using `pytest` plugins and features; audit of the testing suite; no outdated syntax remaining
+
+- Validation: CI passes on each pull request and the coverage does not go down; tests look more maintainable for the longer run (that is, they are easier to extend or debug)
+
+- Documentation: Updated contributing guide to reflect the new testing conventions for future developers 
+
+### Desired skills
+
+- Some experience with unit testing using `pytest` in Python
+- Python programming experience, Git version control, and GitHub workflow for open-source projects
+- An affinity for reading lots of code
+- As a plus, knowledge on how to use scientific computing libraries (NumPy, SciPy)
+- Some experience with using `pytest` plugins is beneficial, but not required
+- Some understanding of continuous integration providers (GitHub Actions, etc.) and coverage tools (Codecov, `pytest-cov`, etc.) is beneficial, but not required
+
+### Difficulty
+
+**Easy**. This project is suitable for a 175-hour duration.
+
+### Potential mentors
+
+* [Saransh Chopra](https://Saransh-cpp.github.io/)
+
+<!-- * [Pradyot Ranjan](https://github.com/prady0t/)
+* [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
+* [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Robert Timms](https://github.com/rtimms)
 * [Arjun Verma](https://arjxnpy.vercel.app/)
 * [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
