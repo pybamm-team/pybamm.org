@@ -64,7 +64,7 @@ The type system design will require particular attention to several key areas. T
 
 ## pytest-ifying the testing suite
 
-PyBaMM (Python Battery Mathematical Modelling) used `unittest` as its testing framework until last year. However, thanks to the efforts from [@prady0t](https://github.com/prady0t), it now uses `pytest.` `pytest` is a modern and community-maintained testing framework for Python that is more flexible and feature-rich than the built-in `uni test` module. Migrating such a huge codebase from `unittest` to `pytest` was an exceptional feat; however, because of limited time and resources, we could not leverage several amazing things that `pytest` offers. There have been efforts to introduce `pytest` specific features, but these efforts have been distributed, and now the codebase is at an awkward stage where some tests utilize `pytest`'s capabilities and some do not. 
+PyBaMM (Python Battery Mathematical Modelling) used `unittest` as its testing framework until last year. However, thanks to the efforts from [@prady0t](https://github.com/prady0t), it now uses `pytest.` `pytest` is a modern and community-maintained testing framework for Python that is more flexible and feature-rich than the built-in `uni test` module. Migrating such a huge codebase from `unittest` to `pytest` was an exceptional feat; however, because of limited time and resources, we could not leverage several amazing things that `pytest` offers. There have been efforts to introduce `pytest` specific features, but these efforts have been distributed, and now the codebase is at an awkward stage where some tests utilize `pytest`'s capabilities and some do not.
 
 PyBaMM currently uses different tools/functionalities to do the same thing at different places in the testing suite. This project aims to standardize the tesing suite to use one tool for one job, most likely, a `pytest` compatible tool. Moreover, the project will also require choosing the right tools (by researching multiple testing tools available on the internet) and writing instructions for these then standardized tools in documentation. Besides `pytest`, there are several other things that can be improved, such as [brainstorming ideas for a better CI](https://github.com/pybamm-team/PyBaMM/issues/3662) or [modernizing NumPy array assertion tests](https://github.com/pybamm-team/PyBaMM/issues/4488) and the mentee should be able to pitch in ideas and freely pick up a direction for their work.
 
@@ -80,7 +80,7 @@ PyBaMM currently uses different tools/functionalities to do the same thing at di
 
 - Validation: CI passes on each pull request and the coverage does not go down; tests look more maintainable for the longer run (that is, they are easier to extend or debug)
 
-- Documentation: Updated contributing guide to reflect the new testing conventions for future developers 
+- Documentation: Updated contributing guide to reflect the new testing conventions for future developers
 
 ### Desired skills
 
