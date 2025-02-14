@@ -7,8 +7,7 @@ summary: This page contains project ideas for PyBaMM's participation in the Goog
 
 We are planning on taking part in Google Summer of Code 2025. We will keep updating our project ideas and add potential ones here as soon as they are available. Stay tuned and keep following this page for updates!
 
-The projects below are arranged according to their priority (that is, the first project has a higher priority than the second one, and so on).
-
+The projects below are arranged in descending order of priority.
 {{< /admonition >}}
 
 ## Adding type hints to PyBaMM models
