@@ -71,7 +71,7 @@ PyBaMM (Python Battery Mathematical Modelling) has a considerably huge testing s
 
 mutmut is an intelligent testing framework with a browser/terminal TUI making it easy to identify "mutants" and apply them using simple commands. The library also remembers the tests that have been checked so that you can fix them incrementally. The mentee will need to use the browser/terminal TUI interactively, find bad tests, report them, and possibly fix them.
 
-mutmut can also execute tests smartly and parallelly, making the execution fast. Once the mentee is familiar with the entire workflow, they can utilize the parallel execution capabilities to speed up the workflow and report failures quickly.
+mutmut can also execute tests smartly and in parallel, making the execution fast. Once the mentee is familiar with the entire workflow, they can utilize the parallel execution capabilities to speed up the workflow and report failures quickly.
 
 ### Expected outcomes
 
@@ -90,7 +90,7 @@ mutmut can also execute tests smartly and parallelly, making the execution fast.
 
 ### Difficulty
 
-**Moderate**. This project is suitable for a 175-hour duration.
+**Medium**. This project is suitable for a 175-hour duration.
 
 ### Potential mentors
 
