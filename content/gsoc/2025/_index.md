@@ -65,7 +65,7 @@ The type system design will require particular attention to several key areas. T
 
 With the increasing demand for high-performance batteries, accurate thermal modeling of battery behavior is essential. A key challenge is the interaction between electrochemical and thermal dynamics in complicated battery geometries, which affects performance, safety, and lifespan. This project aims to develop a framework for the addition of coupled electrochemical-thermal simulations in PyBaMM in higher-dimensional geometries (e.g. cylindrical)
 
-This project aims to couple the electrochemical models already available in PyBaMM, such as the SPM or DFN, with a higher-dimensional thermal model.  As a proof of concept, the model will be used to simulate temperature distributions throughout the cell under different operating conditions. 
+This project aims to couple the electrochemical models already available in PyBaMM, such as the SPM or DFN, with a higher-dimensional thermal model.  As a proof of concept, the model will be used to simulate temperature distributions throughout the cell under different operating conditions.
 
 As a first step, a 3D thermal model will be implemented in PyBaMM with a constant heat source term. This will require adding new 3D meshes and spatial methods to PyBaMM (ideally by adding an existing 3D Finite Volume package as a dependency, such as Gmsh, Meshlib, Salome, etc). Next, this thermal model will be coupled with an electrochemical model, which will provide the heat source term. Finally, the coupling will be made two-way so that the lumped temperature from the 3D model feeds back into the electrochemical model.
 
@@ -74,12 +74,12 @@ As a stretch goal, the project will explore the integration of 3D temperature pr
 
 ### Expected outcomes
 
-The expected outcome of this study is a proof-of-concept 3D thermal model implemented in PyBaMM, along with the necessary meshing and discretization capabilities. It includes a computational framework for electrochemical-thermal decoupling on new cell geometries, and the implementation of a spirally wound geometry for thermal simulations in PyBaMM. 
+The expected outcome of this study is a proof-of-concept 3D thermal model implemented in PyBaMM, along with the necessary meshing and discretization capabilities. It includes a computational framework for electrochemical-thermal decoupling on new cell geometries, and the implementation of a spirally wound geometry for thermal simulations in PyBaMM.
 
 ### Desired skills
 
 - Python programming experience, Git version control, and GitHub workflow for open-source projects
-- An interest in scientific computing and battery modeling 
+- An interest in scientific computing and battery modeling
 - Experience with numerical methods for solving differential equations
 - Experience with meshing libraries (e.g. Finite Volumes or Finite Elements) is desirable but not required
 - As a plus, knowledge of how to use scientific computing libraries (NumPy, SciPy, SUNDIALS)
