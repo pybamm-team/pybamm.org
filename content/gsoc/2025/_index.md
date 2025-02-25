@@ -74,7 +74,7 @@ As a stretch goal, the project will explore the integration of 3D temperature pr
 
 ### Expected outcomes
 
-The expected outcome of this study is a proof-of-concept 3D thermal model implemented in PyBaMM, along with the necessary meshing and discretization capabilities. It includes a computational framework for electrochemical-thermal decoupling on new cell geometries, and the implementation of a spirally wound geometry for thermal simulations in PyBaMM.
+The expected outcome of this study is a proof-of-concept 3D thermal model implemented in PyBaMM, along with the necessary meshing and discretization capabilities. It includes a computational framework for electrochemical-thermal coupling on new cell geometries, and the implementation of a spirally wound geometry for thermal simulations in PyBaMM.
 
 ### Desired skills
 
