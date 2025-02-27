@@ -91,4 +91,4 @@ The expected outcome of this study is a proof-of-concept 3D thermal model implem
 ### Potential mentors
 
 - [Robert Timms](https://github.com/rtimms)
-- Nachiketh Grandhi
+- [Nachiketh Grandhi](https://www.linkedin.com/in/nachiketh-grandhi-76393222a/)
