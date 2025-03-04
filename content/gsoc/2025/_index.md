@@ -93,7 +93,7 @@ The expected outcome of this study is a proof-of-concept 3D thermal model implem
 
 We are also open to the inclusion of open project ideas for PyBaMM and candidates are encouraged to propose their own projects, if they feel at any time that our idea list does not currently cater to their interests and passions. If you have a project idea that you think would be beneficial to PyBaMM and its community, please feel free to reach out to us on our [Slack workspace](https://pybamm.org/slack/) in the `#gsoc-main` channel.
 
-The project should be validated with by getting in touch with potential mentors early, publicly, to ensure that its goals are realistic and within the scope of PyBaMM's roadmap, i.e., the project should also be beneficial to the PyBaMM community and should be able to be completed within the GSoC timeline.
+The project should be validated by getting in touch with potential mentors early, publicly, to ensure that its goals are realistic and within the scope of PyBaMM's roadmap, i.e., the project should also be beneficial to the PyBaMM community and should be able to be completed within the GSoC timeline.
 
 The requirements for the inclusion of said project must include:
 
