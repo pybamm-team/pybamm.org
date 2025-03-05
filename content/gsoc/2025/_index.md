@@ -9,7 +9,7 @@ We are planning on taking part in Google Summer of Code 2025. We will keep updat
 
 {{< /admonition >}}
 
-## Adding type hints to PyBaMM models
+<!--  ## Adding type hints to PyBaMM models
 
 PyBaMM (Python Battery Mathematical Modelling) has evolved significantly since 2019 as a framework for battery modeling applications. While the focus on performance optimization has led to impressive speed improvements across PyBaMM and the time taken from conducting an experiment to its industrial impact, it has introduced complexity that can make code validation and maintenance challenging. This project aims to systematically introduce static typing to PyBaMM's codebase, particularly focusing on the `pybamm.models` component and surrounding areas, to enhance code safety and improve the developer experience.
 
@@ -52,13 +52,12 @@ The type system design will require particular attention to several key areas. T
 
 ### Potential mentors
 
-
-* [Saransh Chopra](https://Saransh-cpp.github.io/)
+!!Needs a primary mentor!!
 * [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
-
-<!-- * [Valentin Sulzer](https://github.com/valentinsulzer)
-* [Robert Timms](https://github.com/rtimms)
 * [Arjun Verma](https://arjxnpy.vercel.app/)
+
+* [Valentin Sulzer](https://github.com/valentinsulzer)
+* [Robert Timms](https://github.com/rtimms)
 * [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
 
 ## Adding a spirally wound geometry for thermal simulations in PyBaMM
