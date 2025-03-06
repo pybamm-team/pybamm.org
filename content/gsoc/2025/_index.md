@@ -122,6 +122,8 @@ The student will have an opportunity to learn software engineering with Python, 
 - [Santhosh Sundaram](https://github.com/santacodes)
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
 - [Agriya Khetarpal](https://github.com/agriyakhetarpal)
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+- [Agriya Khetarpal](https://github.com/agriyakhetarpal)
 
 <hr>
 
