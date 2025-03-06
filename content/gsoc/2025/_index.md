@@ -89,26 +89,29 @@ The expected outcome of this study is a proof-of-concept 3D thermal model implem
 
 <hr>
 
-## Model API Dispatching
+## Adding a dispatching mechanism for third-party models
 
-With a constantly expanding user base and community of PyBaMM, including and working with third-party battery models becomes a hassle for PyBaMM users if they have less technical knowledge about managing and configuring Python development environments. This project aims to develop a standardized framework for the integration, distribution, and dynamic utilization of third-party battery models implemented with PyBaMM, addressing current limitations in accessibility for users with varying technical backgrounds.
+With a constantly expanding user base and community, including and working with third-party battery models has become a hassle for PyBaMM users. This project aims to develop a standardized framework for the integration, distribution, and dynamic utilization of third-party battery models implemented with PyBaMM, addressing current limitations in accessibility for users with varying technical backgrounds.
 
-This project is an extension of the [cookiecutter project (GSoC 2024)](https://github.com/pybamm-team/cookiecutter) that aimed to reduce the entry barrier among scientists and researchers who want to use PyBaMM and distribute their work to other community members. Extending that work, this year through this project we aim to establish a standardized framework for model distribution and dispatching, ensuring seamless integration with PyBaMM. It will define guidelines for structuring models and documentation to facilitate easy distribution and dynamic loading via model [entry points](https://packaging.python.org/en/latest/specifications/entry-points/) through the dispatching API.
-Enhancements to the [existing copier template](https://github.com/pybamm-team/pybamm-cookie) to enforce standardized plugin structures for third-party models will also be a parallel primary goal of this project. The packaging and distribution system will be refactored in the copier template in compliance with model entry points/dispatch API within PyBaMM. To streamline model retrieval, a simple PyBaMM CLI interface/script will enable users to pull models effortlessly from the indexing repository incorporating a serverless indexing mechanism for pulling third-party models, complete with versioning support to maintain compatibility with specific PyBaMM versions. Additionally, the project will also implement caching and lazy loading mechanisms to optimize performance as a stretch goal.
+This project serves as an extension of the [cookiecutter project (GSoC 2024)](https://github.com/pybamm-team/pybamm-cookie), which aimed to reduce the entry barrier for building and distributing PyBaMM projects with the community. This project will build on top of the 2024 project, aiming to establish a standardized model distribution and dispatching framework with seamless PyBaMM integration. The project will define guidelines for structuring models and documentation to facilitate easy distribution and dynamic loading of models. The models will be distributed via model [entry points](https://packaging.python.org/en/latest/specifications/entry-points/) through a new dispatching API.
 
-The student will receive an opportunity to not only perform and learn an aspect of software engineering tasks with Python, including adding features, writing tests, writing user-facing documentation, usage examples, CI/CD pipelines for testing automation and deployment, and so on, but will also a significant opensource contribution in scientific computing and battery modelling research.
+The mentee will enhance the [existing copier template](https://github.com/pybamm-team/pybamm-cookie) to enforce standardized plugin structures for third-party models, which will also be a parallel primary goal of this project. The packaging and distribution system of the template will be refactored to comply with the new model entry points/dispatch API of PyBaMM. To streamline model retrieval, a simple PyBaMM CLI interface/script will enable users to pull models effortlessly from the indexing repository, incorporating a serverless indexing mechanism for pulling third-party models. The project will also implement caching and lazy loading mechanisms to optimize performance as a stretch goal.
+
+The student will have an opportunity to learn software engineering with Python, including adding features, writing tests, writing user-facing documentation, designing examples, and building CI/CD pipelines. Additionally, their work will be a significant open-source contribution to scientific computing and battery modeling research.
 
 ### Expected Outcomes
 
-- A dispatch API and a framework that can be used to integrate, package, and distribute among the PyBaMM users. An effective user experience for using third-party PyBaMM models.
+- A dispatch API and a framework for integrating, packaging, and distributing battery models amongst PyBaMM users.
+- An effective user experience for using third-party PyBaMM models.
 - An effective guide and documentation on how to use the template to make your model and distribute it.
 - A PyBaMM-based CLI to install third-party models and parameter sets on demand.
 
 ### Desired Skills
 
-- Experience with Python packaging and distribution for pure-Python packages and modern Python projects will be beneficial but is not required
+- Python programming experience, Git version control, and GitHub workflow for open-source projects
+- Experience with building and distributing pure-Python packages is beneficial but not required
 - Familiarity with `cookiecutter/copier` templates and their templating engines
-- Basics of Git version control, CI/CD pipelines, and DevOps for Python projects
+- An interest in scientific computing and battery modeling
 
 ### Difficulty
 
@@ -117,6 +120,8 @@ The student will receive an opportunity to not only perform and learn an aspect 
 ### Potential mentors
 
 - [Santhosh Sundaram](https://github.com/santacodes)
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+- [Agriya Khetarpal](https://github.com/agriyakhetarpal)
 
 <hr>
 
