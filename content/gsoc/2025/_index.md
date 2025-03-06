@@ -103,7 +103,7 @@ The student will have an opportunity to learn software engineering with Python, 
 
 - A dispatch API and a framework for integrating, packaging, and distributing battery models amongst PyBaMM users.
 - An effective user experience for using third-party PyBaMM models.
-- An effective guide and documentation on how to use the template to make your model and distribute it.
+- A guide and documentation on building and distributing custom PyBaMM models.
 - A PyBaMM-based CLI to install third-party models and parameter sets on demand.
 
 ### Desired Skills
