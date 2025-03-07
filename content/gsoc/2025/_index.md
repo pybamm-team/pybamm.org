@@ -95,21 +95,22 @@ With a constantly expanding user base and community, including and working with 
 
 This project serves as an extension of the [cookiecutter project (GSoC 2024)](https://github.com/pybamm-team/pybamm-cookie), which aimed to reduce the entry barrier for building and distributing PyBaMM projects with the community. This project will build on top of the 2024 project, aiming to establish a standardized model distribution and dispatching framework with seamless PyBaMM integration. The project will define guidelines for structuring models and documentation to facilitate easy distribution and dynamic loading of models. The models will be distributed via model [entry points](https://packaging.python.org/en/latest/specifications/entry-points/) through a new dispatching API.
 
-The mentee will enhance the [existing copier template](https://github.com/pybamm-team/pybamm-cookie) to enforce standardized plugin structures for third-party models, which will also be a parallel primary goal of this project. The packaging and distribution system of the template will be refactored to comply with the new model entry points/dispatch API of PyBaMM. To streamline model retrieval, a simple PyBaMM CLI interface/script will enable users to pull models effortlessly from the indexing repository, incorporating a serverless indexing mechanism for pulling third-party models. The project will also implement caching and lazy loading mechanisms to optimize performance as a stretch goal.
+The mentee will enhance the [existing copier template](https://github.com/pybamm-team/pybamm-cookie) to enforce standardized plugin structures for third-party models, which will also be a parallel primary goal of this project. The packaging and distribution system of the template will be refactored to comply with the new model entry points/dispatch API of PyBaMM. To streamline model retrieval, the mentee will have to design a system incorporating a serverless indexing mechanism for pulling third-party models using the PyBaMM third-party model registries, the registries would contain compatibility and constraint scope. The project will also implement caching and lazy loading mechanisms to optimize performance as a stretch goal. Read [fsspec](https://filesystem-spec.readthedocs.io/en/latest/features.html) for reference.
 
-The student will have an opportunity to learn software engineering with Python, including adding features, writing tests, writing user-facing documentation, designing examples, and building CI/CD pipelines. Additionally, their work will be a significant open-source contribution to scientific computing and battery modeling research.
+The student will have an opportunity to learn software engineering with Python, including adding features, writing tests, writing user-facing documentation, designing examples, and building CI/CD pipelines. Additionally, their work will be a significant open-source contribution to scientific computing and and expanding battery modeling research as it will create an easy to use PyBaMM development ecosystem that any researcher could adopt, modify and distribute.
 
 ### Expected Outcomes
 
-- A dispatch API and a framework for integrating, packaging, and distributing battery models amongst PyBaMM users.
+- A dispatch API that could pass parameters/arguments from PyBaMM to third-party models for seamless integration. The dispatch API would also serve as a mechanism for setting constraints and compatibility checks to verify the parameters before passing them to the loaded model. The constraints could therefore be set in the model registries itself to centralise them in a single place.
+- Refactored entry points API to accommodate the dispatch API. The entry point would also serve as a loader for these third-party models that are not contained within PyBaMM, collectively, the entry points API and the dispatch API will form a framework for integrating, packaging, and distributing battery models amongst PyBaMM users.
 - An effective user experience for using third-party PyBaMM models.
-- A guide and documentation on building and distributing custom PyBaMM models.
-- A PyBaMM-based CLI to install third-party models and parameter sets on demand.
+- A detailed and easy to read guide and documentation on building and distributing custom PyBaMM models.
+- A caching and lazy loading mechanism for the entry points for efficiency.
 
 ### Desired Skills
 
 - Python programming experience, Git version control, and GitHub workflow for open-source projects
-- Experience with building and distributing pure-Python packages is beneficial but not required
+- Experience with implementing entry points, building and distributing pure-Python packages is beneficial but not required
 - Familiarity with `cookiecutter/copier` templates and their templating engines
 - An interest in scientific computing and battery modeling
 
@@ -122,8 +123,11 @@ The student will have an opportunity to learn software engineering with Python, 
 - [Santhosh Sundaram](https://github.com/santacodes)
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
 - [Agriya Khetarpal](https://github.com/agriyakhetarpal)
-- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
-- [Agriya Khetarpal](https://github.com/agriyakhetarpal)
+
+### References for custom models and entry points API in PyBaMM
+- https://docs.pybamm.org/en/v22.8/tutorials/add-model.html
+- https://train.rse.ox.ac.uk/material/HPCu/libraries/pybamm
+- [WIP] https://github.com/pybamm-team/PyBaMM/pull/4490
 
 <hr>
 
