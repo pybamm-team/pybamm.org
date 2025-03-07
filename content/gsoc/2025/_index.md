@@ -101,8 +101,10 @@ The student will have an opportunity to learn software engineering with Python, 
 
 ### Expected Outcomes
 
-- A dispatch API that could pass parameters/arguments from PyBaMM to third-party models for seamless integration. The dispatch API would also serve as a mechanism for setting constraints and compatibility checks to verify the parameters before passing them to the loaded model. The constraints could therefore be set in the model registries itself to centralise them in a single place.
+- A dispatch API that could pass parameters/arguments from PyBaMM to third-party models for seamless integration. The dispatch API would also serve as a mechanism for setting constraints and compatibility checks to verify the parameters before passing them to the loaded model.
+- A registry for the models in which the constraints for a model could therefore be set in the model registries itself to centralise them in a single place. A registry could be a JSON or a configuration file defining information about a model which could be pre-loaded for checks before loading the model itself.
 - Refactored entry points API to accommodate the dispatch API. The entry point would also serve as a loader for these third-party models that are not contained within PyBaMM, collectively, the entry points API and the dispatch API will form a framework for integrating, packaging, and distributing battery models amongst PyBaMM users.
+- Feature extended copier template for incorporating features of dispatch API and simplifying the current setup processes for writing custom models and basic PyBaMM based project generation.
 - An effective user experience for using third-party PyBaMM models.
 - A detailed and easy to read guide and documentation on building and distributing custom PyBaMM models.
 - A caching and lazy loading mechanism for the entry points for efficiency.
@@ -116,7 +118,7 @@ The student will have an opportunity to learn software engineering with Python, 
 
 ### Difficulty
 
-**Medium**. This project is suitable for a 175-hour duration.
+**Medium**. This project is suitable for a 350-hour duration.
 
 ### Potential mentors
 
