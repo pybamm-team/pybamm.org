@@ -46,18 +46,17 @@ def get_contributors():
     """
     return [
         {
-        "username": contributor["login"],
         "login": contributor["name"],
         "html_url": contributor["html_url"],
         "avatar_url": contributor["avatar_url"]
         }
         for contributor in PYBAMM_CONTRIBUTORS
         # Exclude maintainers and maintainer trainees
-        if contributor["username"] not in PYBAMM_MAINTAINERS
-        and contributor["username"] not in PYBAMM_EMERITUS_MAINTAINERS
-        and contributor["username"] not in PYBAMM_MAINTAINER_TRAINEES
+        if contributor["login"] not in PYBAMM_MAINTAINERS
+        and contributor["login"] not in PYBAMM_EMERITUS_MAINTAINERS
+        and contributor["login"] not in PYBAMM_MAINTAINER_TRAINEES
         # Exclude all bots (pre-commit-ci, allcontributors, dependabot, et cetera)
-        and not contributor["username"].endswith("[bot]")
+        and not contributor["login"].endswith("[bot]")
     ]
 
 
@@ -68,7 +67,7 @@ def get_maintainers():
     """
     return [
         {
-        "login": maintainer["login"],
+        "login": maintainer["name"],
         "html_url": maintainer["html_url"],
         "avatar_url": maintainer["avatar_url"],
         }
@@ -85,7 +84,7 @@ def get_emeritus_maintainers():
     """
     return [
         {
-        "login": emeritus_maintainer["login"],
+        "login": emeritus_maintainer["name"],
         "html_url": emeritus_maintainer["html_url"],
         "avatar_url": emeritus_maintainer["avatar_url"],
         }
@@ -109,7 +108,7 @@ def get_maintainer_trainees():
 
     return [
         {
-        "login": maintainer_trainee["login"],
+        "login": maintainer_trainee["name"],
         "html_url": maintainer_trainee["html_url"],
         "avatar_url": maintainer_trainee["avatar_url"],
         }
