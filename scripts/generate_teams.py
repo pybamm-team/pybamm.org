@@ -46,7 +46,7 @@ def get_contributors():
     """
     return [
         {
-        "login": contributor["login"],
+        "login": contributor["name"],
         "html_url": contributor["html_url"],
         "avatar_url": contributor["avatar_url"]
         }
