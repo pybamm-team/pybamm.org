@@ -46,17 +46,18 @@ def get_contributors():
     """
     return [
         {
+        "username": contributor["login"],
         "login": contributor["name"],
         "html_url": contributor["html_url"],
         "avatar_url": contributor["avatar_url"]
         }
         for contributor in PYBAMM_CONTRIBUTORS
         # Exclude maintainers and maintainer trainees
-        if contributor["login"] not in PYBAMM_MAINTAINERS
-        and contributor["login"] not in PYBAMM_EMERITUS_MAINTAINERS
-        and contributor["login"] not in PYBAMM_MAINTAINER_TRAINEES
+        if contributor["username"] not in PYBAMM_MAINTAINERS
+        and contributor["username"] not in PYBAMM_EMERITUS_MAINTAINERS
+        and contributor["username"] not in PYBAMM_MAINTAINER_TRAINEES
         # Exclude all bots (pre-commit-ci, allcontributors, dependabot, et cetera)
-        and not contributor["login"].endswith("[bot]")
+        and not contributor["username"].endswith("[bot]")
     ]
 
 
