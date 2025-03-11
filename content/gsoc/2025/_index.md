@@ -89,6 +89,57 @@ The expected outcome of this study is a proof-of-concept 3D thermal model implem
 
 <hr>
 
+## Adding a dispatching mechanism for third-party models
+
+With a constantly expanding user base and community, including and working with third-party battery models has become a hassle for PyBaMM users. This project aims to develop a standardized framework for the integration, distribution, and dynamic utilization of third-party battery models implemented with PyBaMM, addressing current limitations in accessibility for users with varying technical backgrounds.
+
+This project serves as an extension of the [cookiecutter project (GSoC 2024)](https://github.com/pybamm-team/pybamm-cookie), which aimed to reduce the entry barrier for building and distributing PyBaMM projects with the community. This project will build on top of the 2024 project, aiming to establish a standardized model distribution and dispatching framework with seamless PyBaMM integration. The project will define guidelines for structuring models and documentation to facilitate easy distribution and dynamic loading of models. The models will be distributed via model [entry points](https://packaging.python.org/en/latest/specifications/entry-points/) through a new dispatching API for PyBaMM.
+
+Additionally, the mentee may need to enhance the [existing `copier` template](https://github.com/pybamm-team/pybamm-cookie) to enforce standardized plugin structures for third-party models, as a parallel primary goal of this project. The packaging and distribution system of the template will be refactored to comply with the new model entry points/dispatch API of PyBaMM. To streamline model retrieval, the mentee will have to design a system incorporating a serverless indexing mechanism for pulling third-party models using the PyBaMM third-party model registries, the registries would contain compatibility and constraint scope. The project will also implement caching and lazy loading mechanisms to optimize performance as a stretch goal. Read [fsspec](https://filesystem-spec.readthedocs.io/en/latest/features.html) for reference.
+
+The student will have an opportunity to learn software engineering with Python, including adding features, writing tests, writing user-facing documentation, designing examples, and building CI/CD pipelines. Additionally, their work will be a significant open-source contribution to scientific computing and and expanding battery modeling research as it will create an easy to use PyBaMM development ecosystem that any researcher could adopt, modify and distribute.
+
+### Expected Outcomes
+
+- A dispatch API that could pass parameters/arguments from PyBaMM to third-party models for seamless integration. The dispatch API would also serve as a mechanism for setting constraints and compatibility checks to verify the parameters before passing them to the loaded model.
+- A centralized model registry where constraints for different models can be set up. The constraints in the registry can be defined as JSON or through a configuration file defining information about the model. These constraints should be pre-loaded for checks before loading the model itself.
+- Refactored entry points API to accommodate the dispatch API. The entry point would also serve as a loader for these third-party models that are not contained within PyBaMM, collectively, the entry points API and the dispatch API will form a framework for integrating, packaging, and distributing battery models amongst PyBaMM users.
+- Updates to the copier template, making it compatible with the new dispatch API, simplifying the setup processes for writing custom models, and better project generation support.
+- An effective user experience for using third-party PyBaMM models.
+- A detailed and easy to read guide and documentation on building and distributing custom PyBaMM models.
+- A caching and lazy loading mechanism for the entry points for efficiency.
+
+### Desired Skills
+
+- Python programming experience, Git version control, and GitHub workflow for open-source projects
+- Experience with implementing entry points, building and distributing pure-Python packages is beneficial but not required
+- Familiarity with `cookiecutter`/`copier` templates and their templating engines
+- An interest in scientific computing and battery modeling
+
+### Difficulty
+
+**Medium**. This project is suitable for a 350-hour duration.
+
+### Potential mentors
+
+- [Santhosh Sundaram](https://github.com/santacodes)
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
+- [Agriya Khetarpal](https://github.com/agriyakhetarpal)
+
+### References for custom models and entry points API in PyBaMM
+- https://docs.pybamm.org/en/v22.8/tutorials/add-model.html
+- https://train.rse.ox.ac.uk/material/HPCu/libraries/pybamm
+- [WIP] https://github.com/pybamm-team/PyBaMM/pull/4490
+
+### References from other sources and attributions
+This project is inspired by the ongoing dispatching efforts in projects like NetworkX and scikit-image. NetworkX focuses on dispatching graph algorithms across different backends, while scikit-image aims to dispatch public API functions that perform specific image processing tasks. In contrast, our approach involves dispatching an entire model class—along with its public and private attributes—to another, making our implementation distinct. The student working on this project is encouraged to bring their ideas to the table and not restrict themselves to this description.
+
+- https://scientific-python.org/specs/spec-0002/
+- https://networkx.org/documentation/latest/reference/backends.html
+- https://github.com/scikit-learn/scikit-learn/pull/25535
+
+<hr>
+
 ## Open project idea(s)
 
 We are also open to the inclusion of open project ideas for PyBaMM and candidates are encouraged to propose their own projects, if they feel at any time that our idea list does not currently cater to their interests and passions. If you have a project idea that you think would be beneficial to PyBaMM and its community, please feel free to reach out to us on our [Slack workspace](https://pybamm.org/slack/) in the `#gsoc-main` channel.
