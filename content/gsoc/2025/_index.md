@@ -131,6 +131,13 @@ The student will have an opportunity to learn software engineering with Python, 
 - https://train.rse.ox.ac.uk/material/HPCu/libraries/pybamm
 - [WIP] https://github.com/pybamm-team/PyBaMM/pull/4490
 
+### References from other sources and attributions
+This project is inspired by the ongoing dispatching efforts in projects like NetworkX and scikit-image. NetworkX focuses on dispatching graph algorithms across different backends, while scikit-image aims to dispatch public API functions that perform specific image processing tasks. In contrast, our approach involves dispatching an entire model class—along with its public and private attributes—to another, making our implementation distinct. The student working on this project is encouraged to bring their ideas to the table and not restrict themselves to this description.
+
+- https://scientific-python.org/specs/spec-0002/
+- https://networkx.org/documentation/latest/reference/backends.html
+- https://github.com/scikit-learn/scikit-learn/pull/25535
+
 <hr>
 
 ## Open project idea(s)
