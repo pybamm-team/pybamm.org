@@ -113,7 +113,7 @@ The student will have an opportunity to learn software engineering with Python, 
 
 - Python programming experience, Git version control, and GitHub workflow for open-source projects
 - Experience with implementing entry points, building and distributing pure-Python packages is beneficial but not required
-- Familiarity with `cookiecutter/copier` templates and their templating engines
+- Familiarity with `cookiecutter`/`copier` templates and their templating engines
 - An interest in scientific computing and battery modeling
 
 ### Difficulty
