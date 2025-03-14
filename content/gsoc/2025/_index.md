@@ -3,7 +3,7 @@ title: PyBaMM GSoC 2025 Project Ideas
 summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2025. These projects are intended to be suitable for students who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
 ---
 
-<!--  ## Adding type hints to PyBaMM models
+## Adding type hints to PyBaMM models
 
 PyBaMM (Python Battery Mathematical Modelling) has evolved significantly since 2019 as a framework for battery modeling applications. While the focus on performance optimization has led to impressive speed improvements across PyBaMM and the time taken from conducting an experiment to its industrial impact, it has introduced complexity that can make code validation and maintenance challenging. This project aims to systematically introduce static typing to PyBaMM's codebase, particularly focusing on the `pybamm.models` component and surrounding areas, to enhance code safety and improve the developer experience.
 
@@ -46,11 +46,10 @@ The type system design will require particular attention to several key areas. T
 
 ### Potential mentors
 
-!!Needs a primary mentor!!
+* [Arjun Verma](https://github.com/arjxn-py/)
 * [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
-* [Arjun Verma](https://arjxnpy.vercel.app/)
 
-* [Valentin Sulzer](https://github.com/valentinsulzer)
+<!-- * [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Robert Timms](https://github.com/rtimms)
 * [Ferran Brosa Planella](https://www.brosaplanella.xyz/) -->
 
