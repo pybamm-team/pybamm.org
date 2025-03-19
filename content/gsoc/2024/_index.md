@@ -1,6 +1,7 @@
 ---
 title: PyBaMM GSoC 2024 Project Ideas
 summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2024. These projects are intended to be suitable for students who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
+shortcutDepth: 1
 ---
 
 ## Migrate from `unittest` to `pytest` and improve PyBaMM's testing infrastructure
