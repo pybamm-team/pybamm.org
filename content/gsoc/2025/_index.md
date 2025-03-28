@@ -49,6 +49,7 @@ The type system design will require particular attention to several key areas. T
 
 * [Arjun Verma](https://github.com/arjxn-py/)
 * [Agriya Khetarpal](https://github.com/agriyakhetarpal/)
+* [Pradyot Ranjan](https://github.com/prady0t/)
 
 <!-- * [Valentin Sulzer](https://github.com/valentinsulzer)
 * [Robert Timms](https://github.com/rtimms)
