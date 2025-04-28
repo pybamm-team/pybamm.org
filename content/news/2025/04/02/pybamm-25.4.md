@@ -9,6 +9,11 @@ PyBaMM 25.4 has now been released! We would like to thank all the [contributors]
 
 The full list of changes can be found in the [CHANGELOG](https://pybamm.org/changelog/) file, but here we provide a deeper overview of the main features of this release.
 
+## IDAKLU solver as default
+_Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
+
+From 25.4.1 the default solver for differential equations is the [`IDAKLUSolver`](https://docs.pybamm.org/en/latest/source/api/solvers/idaklu_solver.html) rather than the [`CasadiSolver`](https://docs.pybamm.org/en/latest/source/api/solvers/casadi_solver.html). For the large majority of situations the IDAKLU solver is faster and more robust than the Casadi solver, so existing code should see better performance. There might be some very niche cases in which the Casadi solver works better. In those cases, the user can still use the Casadi solver by passing `solver=pybamm.CasadiSolver()` to the simulation.
+
 ## Mechanical models compatible with particle size distributions
 _Implemented by [Alec Bills (Ionworks)](https://github.com/aabills)_
 
