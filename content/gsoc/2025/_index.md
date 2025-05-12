@@ -126,6 +126,7 @@ The student will have an opportunity to learn software engineering with Python, 
 - [Santhosh Sundaram](https://github.com/santacodes)
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer)
 - [Agriya Khetarpal](https://github.com/agriyakhetarpal)
+- [Saransh Chopra](https://github.com/Saransh-cpp)
 
 ### References for custom models and entry points API in PyBaMM
 - https://docs.pybamm.org/en/v22.8/tutorials/add-model.html
