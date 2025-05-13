@@ -117,6 +117,9 @@ params:
       - link: https://twitter.com/pybamm_/
         icon: twitter
 
+      - link: https://bsky.app/profile/pybamm.org/
+        icon: bluesky
+
       - link: https://www.youtube.com/@pybamm_/
         icon: youtube
 
