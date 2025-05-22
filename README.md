@@ -116,6 +116,8 @@ Some shortcodes for adding general-purpose buttons and links are available in `l
 
 You may append `?ref=<ref>` to the URL to fetch the content from a specific branch or a tag.
 
+2. There is also a special `external-pybamm-changelog-content` shortcode to avoid truncated data from the GitHub API v.s. what is served by the raw GitHub CDN URLs. It's currently used only for the CHANGELOG page at this time.
+
 2. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
 
 For more information, please refer to the [Hugo documentation](https://gohugo.io/documentation/) and the [Scientific Python Hugo theme guides](https://theme.scientific-python.org/shortcodes/).
