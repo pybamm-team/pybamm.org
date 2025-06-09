@@ -22,7 +22,7 @@ The parameters used in the MSMR model have been renamed to have more meaningful 
 - "a_p_d_5" -> "Positive electrode host site charge transfer coefficient (delithiation) (5)"
 - "j0_ref_n_0" -> "Negative electrode host site reference exchange-current density (0) [A.m-2]"
 
-This is not a breaking change, as the old names are still supported (with a deprecated warning), but it is recommended to use the new names in new code. The old names will be removed in a future release.
+This is not a breaking change, as the old names are still supported (with a deprecation warning on usage), but it is recommended to use the new names in new code. The old names will be removed in a future release.
 
 ## Various solver improvements
 _Implemented by [Marc Berliner (Ionworks)](https://github.com/MarcBerliner) and [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
