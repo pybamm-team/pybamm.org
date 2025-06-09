@@ -59,6 +59,7 @@
     rm ${DART_SASS_TARBALL} && \
     export PATH=/opt/build/repo/dart-sass:$PATH && \
     python3 -m pip install nox && \
+    nox -s clean && \
     nox -s themes && \
     nox -s html && \
     nox -s search
