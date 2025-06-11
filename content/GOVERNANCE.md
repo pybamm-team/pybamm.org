@@ -27,7 +27,7 @@ handled on a case-by-case basis.
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 - [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
 
-## Previous Members
+## Retired Members
 
 - [Saransh Chopra](https://saransh-cpp.github.io) (2022-2025) - University College London
 
