@@ -27,9 +27,9 @@ handled on a case-by-case basis.
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 - [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
 
-## Previous Members
+## Retired Members
 
-- [Saransh Chopra](https://saransh-cpp.github.io)
+- [Saransh Chopra](https://saransh-cpp.github.io) (2022-2025) - University College London
 
 ## Advisory Committee
 
@@ -96,19 +96,24 @@ We want to encourage a diverse array of backgrounds, viewpoints and
 talents in our team, which is why we explicitly do not define code as
 the sole metric on which Council membership will be evaluated.
 
-If a Council Member becomes inactive in the project for a period of
-one year, they will be considered for removal from the Council. Before
-removal, the inactive Member will be approached by another Council
-member to ask if they plan on returning to active participation. If
-not they will be removed immediately upon a Council vote. If they plan
-on returning to active participation soon, they will be given a grace
-period of one year. If they do not return to active participation
-within that time period they will be removed by vote of the Council
-without further grace period. All former Council members can be
-considered for membership again at any time in the future, like any
-other Project Contributor. Retired Council members will be listed on
-the project website, acknowledging the period during which they were
-active in the Council.
+A Council Member will serve a term of three years, after which their
+membership can be renewed if the rest of the Council votes (simple
+majority of the remaining members, including those being voted on at
+that time) for an extension of another three years (and this process
+can go on indefinitely). A Council Member can also willingly step down
+after their three year tenure. If a Council Member becomes inactive in
+the project for a period of one year, they will be considered for
+removal from the Council. Before removal, the inactive Member will be
+approached by another Council Member to ask if they plan on returning
+to active participation. If not they will be removed immediately upon
+a Council vote. If they plan on returning to active participation soon,
+they will be given a grace period of one year. If they do not return to
+active participation within that time period they will be removed by
+vote of the Council without further grace period. All former Council
+Members can be considered for membership again at any time in the
+future, like any other Project Contributor. Retired Council Members will
+be listed on the project website, acknowledging the period during which
+they were active in the Council.
 
 The Council reserves the right to eject current Members if they are
 deemed to be actively harmful to the Project's well-being, and
