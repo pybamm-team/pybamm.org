@@ -29,7 +29,7 @@ handled on a case-by-case basis.
 
 ## Previous Members
 
-- [Saransh Chopra](https://saransh-cpp.github.io)
+- [Saransh Chopra](https://saransh-cpp.github.io) (2022-2025) - University College London
 
 ## Advisory Committee
 
