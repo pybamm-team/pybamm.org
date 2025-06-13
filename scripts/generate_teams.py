@@ -35,14 +35,21 @@ PYBAMM_MAINTAINER_TRAINEES = read_file(DIR / "teams" / "MAINTAINER-TRAINEES")
 
 def query_contributors():
     # Get the list of contributors from the endpoint iteratively until we get
-    url = "https://raw.githubusercontent.com/pybamm-team/PyBaMM/develop/.all-contributorsrc"
-    contributors = requests.get(url).json()
-    for obj in contributors["contributors"]:
-        # Check if the dictionary has the key 'profile'
-        if 'profile' in obj:
-            # Replace the key 'profile' with 'website'
-            obj['html_url'] = obj.pop('profile')
-    return contributors["contributors"]
+    # an empty response
+    contributors_list = []
+    page = 1
+    while True:
+        contributors = requests.get(
+            f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
+        ).json()
+        if contributors == []:
+            break
+        else:
+            contributors_list += contributors
+            page += 1
+    return contributors_list
+
+
 PYBAMM_CONTRIBUTORS = query_contributors()
 
 
@@ -53,7 +60,7 @@ def get_contributors():
     """
     return [
         {
-        "login": contributor["name"],
+        "login": contributor["login"],
         "html_url": contributor["html_url"],
         "avatar_url": contributor["avatar_url"]
         }
@@ -74,7 +81,7 @@ def get_maintainers():
     """
     return [
         {
-        "login": maintainer["name"],
+        "login": maintainer["login"],
         "html_url": maintainer["html_url"],
         "avatar_url": maintainer["avatar_url"],
         }
@@ -91,7 +98,7 @@ def get_emeritus_maintainers():
     """
     return [
         {
-        "login": emeritus_maintainer["name"],
+        "login": emeritus_maintainer["login"],
         "html_url": emeritus_maintainer["html_url"],
         "avatar_url": emeritus_maintainer["avatar_url"],
         }
@@ -115,7 +122,7 @@ def get_maintainer_trainees():
 
     return [
         {
-        "login": maintainer_trainee["name"],
+        "login": maintainer_trainee["login"],
         "html_url": maintainer_trainee["html_url"],
         "avatar_url": maintainer_trainee["avatar_url"],
         }
