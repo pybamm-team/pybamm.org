@@ -166,15 +166,18 @@ def get_past_gsoc_students():
 
 # The team name can be either of the following:
 # emeritus maintainers, maintainers, maintainer trainees, current GSoC students, past GSoC students, and contributors
+
+
+def create_team_id(team_name: str) -> str:
+    """Create a URL-friendly ID from team name (lowercase, replace spaces with hyphens)"""
+    return team_name.lower().replace(" ", "-")
+
+
 team_template = string.Template(
 """
-<div class="team">
-    <h2 id="${team_name}"class="name title">
-    ${team_name}
-    </h3>
-        <div class="sd-container-fluid sd-mb-4 false">
-            <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
-        </div>
+<h3 id="${team_id}">${team_name}<a class="headerlink" href="#${team_id}" title="Link to this heading">#</a></h3>
+<div class="sd-container-fluid sd-mb-4 false">
+    <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
 </div>
 """
 )
@@ -198,9 +201,11 @@ member_template = string.Template(
 print("Generating maintainers...")
 print("Current maintainers are:", PYBAMM_MAINTAINERS)
 with open("static/teams/maintainers.html", "w") as file:
+    team_name = "Maintainers"
     file.write(
         team_template.substitute(
-            team_name="Maintainers",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -218,9 +223,11 @@ with open("static/teams/maintainers.html", "w") as file:
 print("Generating emeritus maintainers...")
 print("Emeritus maintainers are:", PYBAMM_EMERITUS_MAINTAINERS)
 with open("static/teams/emeritus-maintainers.html", "w") as file:
+    team_name = "Emeritus Maintainers"
     file.write(
         team_template.substitute(
-            team_name="Emeritus Maintainers",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -238,9 +245,11 @@ with open("static/teams/emeritus-maintainers.html", "w") as file:
 print("Generating maintainer trainees...")
 print("Maintainer trainees are:", PYBAMM_MAINTAINER_TRAINEES)
 with open("static/teams/maintainer-trainees.html", "w") as file:
+    team_name = "Maintainer Trainees"
     file.write(
         team_template.substitute(
-            team_name="Maintainer Trainees",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -258,9 +267,11 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
 print("Generating GSoC students...")
 print("Current GSoC students are:", PYBAMM_GSOC_STUDENTS)
 with open("static/teams/gsoc-students.html", "w") as file:
+    team_name = "Current Google Summer of Code students"
     file.write(
         team_template.substitute(
-            team_name="Current Google Summer of Code students",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -278,9 +289,11 @@ with open("static/teams/gsoc-students.html", "w") as file:
 print("Generating past GSoC students...")
 print("Past GSoC students are:", PYBAMM_PAST_GSOC_STUDENTS)
 with open("static/teams/past-gsoc-students.html", "w") as file:
+    team_name = "Past Google Summer of Code students"
     file.write(
         team_template.substitute(
-            team_name="Past Google Summer of Code students",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -297,9 +310,11 @@ with open("static/teams/past-gsoc-students.html", "w") as file:
 # Generate the HTML in static/teams/contributors.html, overwriting as necessary
 print("Generating contributors...")
 with open("static/teams/contributors.html", "w") as file:
+    team_name = "Contributors"
     file.write(
         team_template.substitute(
-            team_name="Contributors",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
