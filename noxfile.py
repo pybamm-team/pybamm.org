@@ -77,15 +77,15 @@ def clean_build(session):
         session.log('The "public" folder does not exist.')
 
 
-@nox.session(name="teams", venv_backend="virtualenv")
+@nox.session(name="teams", venv_backend="uv")
 def generate_teams(session):
     """Run 'generate_teams.py'."""
     session.install_and_run_script("scripts/generate_teams.py")
     session.notify("lint")
 
 
-@nox.session(name="lint", venv_backend="virtualenv")
+@nox.session(name="lint", venv_backend="uv")
 def lint(session):
     """Install 'pre-commit' and run linting on all files."""
-    session.install("pre-commit")
+    session.install("pre-commit-uv")
     session.run("pre-commit", "run", "--all-files", "--show-diff-on-failure")
