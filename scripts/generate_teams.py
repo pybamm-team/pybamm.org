@@ -169,7 +169,7 @@ def get_past_gsoc_students():
 team_template = string.Template(
 """
 <div class="team">
-    <h3 id="${team_name}"class="name title">
+    <h2 id="${team_name}"class="name title">
     ${team_name}
     </h3>
         <div class="sd-container-fluid sd-mb-4 false">
