@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "requests",
+# ]
+# ///
+
 # Description: This script generates the HTML for PyBaMM's maintainers and contributors
 # using the GitHub API.
 
