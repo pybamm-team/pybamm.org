@@ -20,6 +20,10 @@ Contributions of any kind are welcome!
 
 {{< include-html "static/teams/maintainer-trainees.html" >}}
 
+{{< include-html "static/teams/gsoc-students.html" >}}
+
+{{< include-html "static/teams/past-gsoc-students.html" >}}
+
 {{< include-html "static/teams/contributors.html" >}}
 
 <!-- Use "nox -s teams" or alternatively run scripts/get_teams_info.py  -->
