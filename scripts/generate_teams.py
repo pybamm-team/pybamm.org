@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "requests",
+# ]
+# ///
+
 # Description: This script generates the HTML for PyBaMM's maintainers and contributors
 # using the GitHub API.
 
@@ -24,18 +31,27 @@ def read_file(file_path):
 PYBAMM_MAINTAINERS = read_file(DIR / "teams" / "MAINTAINERS")
 PYBAMM_EMERITUS_MAINTAINERS = read_file(DIR / "teams" / "EMERITUS-MAINTAINERS")
 PYBAMM_MAINTAINER_TRAINEES = read_file(DIR / "teams" / "MAINTAINER-TRAINEES")
+PYBAMM_GSOC_STUDENTS = read_file(DIR / "teams" / "GSOC-STUDENTS")
+PYBAMM_PAST_GSOC_STUDENTS = read_file(DIR / "teams" / "PAST-GSOC-STUDENTS")
 
 
 def query_contributors():
     # Get the list of contributors from the endpoint iteratively until we get
-    url = "https://raw.githubusercontent.com/pybamm-team/PyBaMM/develop/.all-contributorsrc"
-    contributors = requests.get(url).json()
-    for obj in contributors["contributors"]:
-        # Check if the dictionary has the key 'profile'
-        if 'profile' in obj:
-            # Replace the key 'profile' with 'website'
-            obj['html_url'] = obj.pop('profile')
-    return contributors["contributors"]
+    # an empty response
+    contributors_list = []
+    page = 1
+    while True:
+        contributors = requests.get(
+            f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
+        ).json()
+        if contributors == []:
+            break
+        else:
+            contributors_list += contributors
+            page += 1
+    return contributors_list
+
+
 PYBAMM_CONTRIBUTORS = query_contributors()
 
 
@@ -46,15 +62,17 @@ def get_contributors():
     """
     return [
         {
-        "login": contributor["name"],
+        "login": contributor["login"],
         "html_url": contributor["html_url"],
         "avatar_url": contributor["avatar_url"]
         }
         for contributor in PYBAMM_CONTRIBUTORS
-        # Exclude maintainers and maintainer trainees
+        # Exclude other teams
         if contributor["login"] not in PYBAMM_MAINTAINERS
         and contributor["login"] not in PYBAMM_EMERITUS_MAINTAINERS
         and contributor["login"] not in PYBAMM_MAINTAINER_TRAINEES
+        and contributor["login"] not in PYBAMM_GSOC_STUDENTS
+        and contributor["login"] not in PYBAMM_PAST_GSOC_STUDENTS
         # Exclude all bots (pre-commit-ci, allcontributors, dependabot, et cetera)
         and not contributor["login"].endswith("[bot]")
     ]
@@ -67,7 +85,7 @@ def get_maintainers():
     """
     return [
         {
-        "login": maintainer["name"],
+        "login": maintainer["login"],
         "html_url": maintainer["html_url"],
         "avatar_url": maintainer["avatar_url"],
         }
@@ -84,7 +102,7 @@ def get_emeritus_maintainers():
     """
     return [
         {
-        "login": emeritus_maintainer["name"],
+        "login": emeritus_maintainer["login"],
         "html_url": emeritus_maintainer["html_url"],
         "avatar_url": emeritus_maintainer["avatar_url"],
         }
@@ -108,24 +126,58 @@ def get_maintainer_trainees():
 
     return [
         {
-        "login": maintainer_trainee["name"],
+        "login": maintainer_trainee["login"],
         "html_url": maintainer_trainee["html_url"],
         "avatar_url": maintainer_trainee["avatar_url"],
         }
         for maintainer_trainee in maintainer_trainees
     ]
 
+
+def get_gsoc_students():
+    """
+    Get "login", "html_url", and "avatar_url" fields for each GSoC student.
+    """
+    return [
+        {
+        "login": contributor["login"],
+        "html_url": contributor["html_url"],
+        "avatar_url": contributor["avatar_url"],
+        }
+        for contributor in PYBAMM_CONTRIBUTORS
+        if contributor["login"] in PYBAMM_GSOC_STUDENTS
+    ]
+
+
+def get_past_gsoc_students():
+    """
+    Get "login", "html_url", and "avatar_url" fields for each past GSoC student.
+    """
+    return [
+        {
+        "login": contributor["login"],
+        "html_url": contributor["html_url"],
+        "avatar_url": contributor["avatar_url"],
+        }
+        for contributor in PYBAMM_CONTRIBUTORS
+        if contributor["login"] in PYBAMM_PAST_GSOC_STUDENTS
+    ]
+
+
 # The team name can be either of the following:
-# emeritus maintainers, maintainers, maintainer trainees, or contributors
+# emeritus maintainers, maintainers, maintainer trainees, current GSoC students, past GSoC students, and contributors
+
+
+def create_team_id(team_name: str) -> str:
+    """Create a URL-friendly ID from team name (lowercase, replace spaces with hyphens)"""
+    return team_name.lower().replace(" ", "-")
+
+
 team_template = string.Template(
 """
-<div class="team">
-    <h3 id="${team_name}"class="name title">
-    ${team_name}
-    </h3>
-        <div class="sd-container-fluid sd-mb-4 false">
-            <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
-        </div>
+<h3 id="${team_id}">${team_name}<a class="headerlink" href="#${team_id}" title="Link to this heading">#</a></h3>
+<div class="sd-container-fluid sd-mb-4 false">
+    <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
 </div>
 """
 )
@@ -149,9 +201,11 @@ member_template = string.Template(
 print("Generating maintainers...")
 print("Current maintainers are:", PYBAMM_MAINTAINERS)
 with open("static/teams/maintainers.html", "w") as file:
+    team_name = "Maintainers"
     file.write(
         team_template.substitute(
-            team_name="Maintainers",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -169,9 +223,11 @@ with open("static/teams/maintainers.html", "w") as file:
 print("Generating emeritus maintainers...")
 print("Emeritus maintainers are:", PYBAMM_EMERITUS_MAINTAINERS)
 with open("static/teams/emeritus-maintainers.html", "w") as file:
+    team_name = "Emeritus Maintainers"
     file.write(
         team_template.substitute(
-            team_name="Emeritus Maintainers",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -189,9 +245,11 @@ with open("static/teams/emeritus-maintainers.html", "w") as file:
 print("Generating maintainer trainees...")
 print("Maintainer trainees are:", PYBAMM_MAINTAINER_TRAINEES)
 with open("static/teams/maintainer-trainees.html", "w") as file:
+    team_name = "Maintainer Trainees"
     file.write(
         team_template.substitute(
-            team_name="Maintainer Trainees",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(
@@ -205,12 +263,58 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
         )
     )
 
+# Generate the HTML in static/teams/gsoc-students.html, overwriting as necessary
+print("Generating GSoC students...")
+print("Current GSoC students are:", PYBAMM_GSOC_STUDENTS)
+with open("static/teams/gsoc-students.html", "w") as file:
+    team_name = "Current Google Summer of Code students"
+    file.write(
+        team_template.substitute(
+            team_name=team_name,
+            team_id=create_team_id(team_name),
+            members="".join(
+                [
+                    member_template.substitute(
+                        url=contributor["html_url"],
+                        avatarUrl=contributor["avatar_url"],
+                        name=contributor["login"],
+                    )
+                    for contributor in get_gsoc_students()
+                ]
+            ),
+        )
+    )
+
+# Generate the HTML in static/teams/past-gsoc-students.html, overwriting as necessary
+print("Generating past GSoC students...")
+print("Past GSoC students are:", PYBAMM_PAST_GSOC_STUDENTS)
+with open("static/teams/past-gsoc-students.html", "w") as file:
+    team_name = "Past Google Summer of Code students"
+    file.write(
+        team_template.substitute(
+            team_name=team_name,
+            team_id=create_team_id(team_name),
+            members="".join(
+                [
+                    member_template.substitute(
+                        url=contributor["html_url"],
+                        avatarUrl=contributor["avatar_url"],
+                        name=contributor["login"],
+                    )
+                    for contributor in get_past_gsoc_students()
+                ]
+            ),
+        )
+    )
+
 # Generate the HTML in static/teams/contributors.html, overwriting as necessary
 print("Generating contributors...")
 with open("static/teams/contributors.html", "w") as file:
+    team_name = "Contributors"
     file.write(
         team_template.substitute(
-            team_name="Contributors",
+            team_name=team_name,
+            team_id=create_team_id(team_name),
             members="".join(
                 [
                     member_template.substitute(

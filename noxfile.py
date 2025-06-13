@@ -5,6 +5,7 @@ import shutil
 nox.options.reuse_existing_virtualenvs = True
 nox.options.default_venv_backend = "none"
 nox.options.sessions = ["themes", "html", "search", "serve-dev"]
+nox.needs_version = ">=2025.02.09"
 
 ERR_MSG = """there was an error running this command. Please ensure that npm/npx and the extended version of Hugo are installed and that the site configuration is valid."""
 
@@ -76,16 +77,15 @@ def clean_build(session):
         session.log('The "public" folder does not exist.')
 
 
-@nox.session(name="teams", venv_backend="virtualenv")
+@nox.session(name="teams", venv_backend="uv")
 def generate_teams(session):
-    """Install 'requests' and run 'generate_teams.py'."""
-    session.install("requests")
-    session.run("python", "scripts/generate_teams.py")
+    """Run 'generate_teams.py'."""
+    session.install_and_run_script("scripts/generate_teams.py")
     session.notify("lint")
 
 
-@nox.session(name="lint", venv_backend="virtualenv")
+@nox.session(name="lint", venv_backend="uv")
 def lint(session):
     """Install 'pre-commit' and run linting on all files."""
-    session.install("pre-commit")
-    session.run("pre-commit", "run", "--all-files", "--show-diff-on-failure")
+    session.install("pre-commit-uv")
+    session.run("pre-commit", "run", "--all-files")
