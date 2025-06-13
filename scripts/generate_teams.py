@@ -31,6 +31,8 @@ def read_file(file_path):
 PYBAMM_MAINTAINERS = read_file(DIR / "teams" / "MAINTAINERS")
 PYBAMM_EMERITUS_MAINTAINERS = read_file(DIR / "teams" / "EMERITUS-MAINTAINERS")
 PYBAMM_MAINTAINER_TRAINEES = read_file(DIR / "teams" / "MAINTAINER-TRAINEES")
+PYBAMM_GSOC_STUDENTS = read_file(DIR / "teams" / "GSOC-STUDENTS")
+PYBAMM_PAST_GSOC_STUDENTS = read_file(DIR / "teams" / "PAST-GSOC-STUDENTS")
 
 
 def query_contributors():
@@ -65,10 +67,12 @@ def get_contributors():
         "avatar_url": contributor["avatar_url"]
         }
         for contributor in PYBAMM_CONTRIBUTORS
-        # Exclude maintainers and maintainer trainees
+        # Exclude other teams
         if contributor["login"] not in PYBAMM_MAINTAINERS
         and contributor["login"] not in PYBAMM_EMERITUS_MAINTAINERS
         and contributor["login"] not in PYBAMM_MAINTAINER_TRAINEES
+        and contributor["login"] not in PYBAMM_GSOC_STUDENTS
+        and contributor["login"] not in PYBAMM_PAST_GSOC_STUDENTS
         # Exclude all bots (pre-commit-ci, allcontributors, dependabot, et cetera)
         and not contributor["login"].endswith("[bot]")
     ]
@@ -129,8 +133,39 @@ def get_maintainer_trainees():
         for maintainer_trainee in maintainer_trainees
     ]
 
+
+def get_gsoc_students():
+    """
+    Get "login", "html_url", and "avatar_url" fields for each GSoC student.
+    """
+    return [
+        {
+        "login": contributor["login"],
+        "html_url": contributor["html_url"],
+        "avatar_url": contributor["avatar_url"],
+        }
+        for contributor in PYBAMM_CONTRIBUTORS
+        if contributor["login"] in PYBAMM_GSOC_STUDENTS
+    ]
+
+
+def get_past_gsoc_students():
+    """
+    Get "login", "html_url", and "avatar_url" fields for each past GSoC student.
+    """
+    return [
+        {
+        "login": contributor["login"],
+        "html_url": contributor["html_url"],
+        "avatar_url": contributor["avatar_url"],
+        }
+        for contributor in PYBAMM_CONTRIBUTORS
+        if contributor["login"] in PYBAMM_PAST_GSOC_STUDENTS
+    ]
+
+
 # The team name can be either of the following:
-# emeritus maintainers, maintainers, maintainer trainees, or contributors
+# emeritus maintainers, maintainers, maintainer trainees, current GSoC students, past GSoC students, and contributors
 team_template = string.Template(
 """
 <div class="team">
@@ -214,6 +249,46 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
                         name=maintainer_trainee["login"],
                     )
                     for maintainer_trainee in get_maintainer_trainees()
+                ]
+            ),
+        )
+    )
+
+# Generate the HTML in static/teams/gsoc-students.html, overwriting as necessary
+print("Generating GSoC students...")
+print("Current GSoC students are:", PYBAMM_GSOC_STUDENTS)
+with open("static/teams/gsoc-students.html", "w") as file:
+    file.write(
+        team_template.substitute(
+            team_name="Current Google Summer of Code students",
+            members="".join(
+                [
+                    member_template.substitute(
+                        url=contributor["html_url"],
+                        avatarUrl=contributor["avatar_url"],
+                        name=contributor["login"],
+                    )
+                    for contributor in get_gsoc_students()
+                ]
+            ),
+        )
+    )
+
+# Generate the HTML in static/teams/past-gsoc-students.html, overwriting as necessary
+print("Generating past GSoC students...")
+print("Past GSoC students are:", PYBAMM_PAST_GSOC_STUDENTS)
+with open("static/teams/past-gsoc-students.html", "w") as file:
+    file.write(
+        team_template.substitute(
+            team_name="Past Google Summer of Code students",
+            members="".join(
+                [
+                    member_template.substitute(
+                        url=contributor["html_url"],
+                        avatarUrl=contributor["avatar_url"],
+                        name=contributor["login"],
+                    )
+                    for contributor in get_past_gsoc_students()
                 ]
             ),
         )
