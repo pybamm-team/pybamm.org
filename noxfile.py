@@ -88,4 +88,4 @@ def generate_teams(session):
 def lint(session):
     """Install 'pre-commit' and run linting on all files."""
     session.install("pre-commit-uv")
-    session.run("pre-commit", "run", "--all-files", "--show-diff-on-failure")
+    session.run("pre-commit", "run", "--all-files")
