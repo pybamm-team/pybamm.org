@@ -112,15 +112,48 @@ def query_contributors():
     # same way across nodes.
     contributors_list = []
     page = 1
+
+    headers = {}
+    token = os.getenv("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+        headers["Accept"] = "application/vnd.github+json"
+        headers["X-GitHub-Api-Version"] = "2022-11-28"
+
     while True:
-        contributors = requests.get(
-            f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
-        ).json()
-        if contributors == []:
-            break
-        else:
-            contributors_list += contributors
+        url = f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
+        try:
+            print(f"Fetching contributors page {page}...")
+            response = requests.get(url, headers=headers, timeout=30)
+            if response.status_code != 200:
+                print(f"HTTP Error {response.status_code}: {response.text}")
+                break
+            if not response.text.strip():
+                print("Empty response, no more pages")
+                break
+
+            try:
+                contributors = response.json()
+            except requests.exceptions.JSONDecodeError as e:
+                print(f"JSON decode error: {e}")
+                print(f"Response text: {response.text}...")
+                break
+
+            if not contributors or contributors == []:
+                print(f"Reached end of contributors at page {page}")
+                break
+
+            contributors_list.extend(contributors)
+            print(
+                f"Found {len(contributors)} contributors on page {page} (total: {len(contributors_list)})"
+            )
             page += 1
+
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            break
+
+    print(f"Total contributors found: {len(contributors_list)}")
     return contributors_list
 
 
