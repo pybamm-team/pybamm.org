@@ -25,7 +25,7 @@ jobs:
       - name: Generate teams page(s)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pipx run nox -s teams
+        run: uvx nox -s teams
 
       # Will exit silently if there are no changes
       - name: Create pull request
