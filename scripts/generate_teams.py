@@ -6,13 +6,14 @@
 # ///
 
 # Description: This script generates the HTML for PyBaMM's maintainers and contributors
-# using the GitHub API.
+# using the GitHub GraphQL and REST APIs.
 
 # The HTML is then used in the website's "Teams" page at https://pybamm.org/teams.
 # Mostly adapted from the scientific-python-hugo-theme teams generation code.
 
 import requests
 import string
+import os
 
 from pathlib import Path
 
@@ -35,9 +36,80 @@ PYBAMM_GSOC_STUDENTS = read_file(DIR / "teams" / "GSOC-STUDENTS")
 PYBAMM_PAST_GSOC_STUDENTS = read_file(DIR / "teams" / "PAST-GSOC-STUDENTS")
 
 
+def get_graphql_headers():
+    """Get headers for GraphQL API requests"""
+    token = os.getenv("GITHUB_TOKEN")
+
+    if token:
+        return {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    else:
+        raise RuntimeError(
+            "No GITHUB_TOKEN found. This script requires it to access the GitHub API. "
+            "Please set the GITHUB_TOKEN environment variable with a valid token."
+        )
+
+
+def get_user_batch_graphql(usernames):
+    """Get user details for a batch of usernames"""
+    if not usernames:
+        return []
+
+    headers = get_graphql_headers()
+    users = []
+
+    for i in range(0, len(usernames), 10):
+        batch = usernames[i : i + 10]
+
+        user_queries = []
+        for j, username in enumerate(batch):
+            user_queries.append(f"""
+            user{j}: user(login: "{username}") {{
+              login
+              name
+              url
+              avatarUrl
+            }}
+            """)
+
+        query = f"""
+        query {{
+            {" ".join(user_queries)}
+        }}
+        """
+
+        response = requests.post(
+            "https://api.github.com/graphql", headers=headers, json={"query": query}
+        )
+
+        if response.status_code != 200:
+            print(f"GraphQL query failed: {response.status_code}")
+            print(response.text)
+            continue
+
+        data = response.json()
+
+        if "errors" in data:
+            print(f"GraphQL errors: {data['errors']}")
+            continue
+
+        for _, user_data in data["data"].items():
+            users.append(
+                {
+                    "login": user_data["login"],
+                    "name": user_data["name"] or user_data["login"],
+                    "html_url": user_data["url"],
+                    "avatar_url": user_data["avatarUrl"],
+                }
+            )
+
+    return users
+
+
 def query_contributors():
     # Get the list of contributors from the endpoint iteratively until we get
-    # an empty response
+    # an empty response. This still uses the GitHub REST API and paginates
+    # the results, because the GraphQL API does not list committers in the
+    # same way across nodes.
     contributors_list = []
     page = 1
     while True:
@@ -60,12 +132,8 @@ def get_contributors():
     Get the "login", "html_url", and "avatar_url" fields for each contributor, which
     excludes maintainers, maintainer trainees, and bots.
     """
-    return [
-        {
-        "login": contributor["login"],
-        "html_url": contributor["html_url"],
-        "avatar_url": contributor["avatar_url"]
-        }
+    contributors = [
+        contributor["login"]
         for contributor in PYBAMM_CONTRIBUTORS
         # Exclude other teams
         if contributor["login"] not in PYBAMM_MAINTAINERS
@@ -77,22 +145,22 @@ def get_contributors():
         and not contributor["login"].endswith("[bot]")
     ]
 
+    return get_user_batch_graphql(contributors)
+
 
 def get_maintainers():
     """
     Get the "login", "html_url", and "avatar_url" fields for each maintainer from the
     list of maintainers.
     """
-    return [
-        {
-        "login": maintainer["login"],
-        "html_url": maintainer["html_url"],
-        "avatar_url": maintainer["avatar_url"],
-        }
+    maintainers = [
+        maintainer["login"]
         for maintainer in PYBAMM_CONTRIBUTORS
         if maintainer["login"] in PYBAMM_MAINTAINERS
         if maintainer["login"] not in PYBAMM_EMERITUS_MAINTAINERS
     ]
+
+    return get_user_batch_graphql(maintainers)
 
 
 def get_emeritus_maintainers():
@@ -100,15 +168,13 @@ def get_emeritus_maintainers():
     Get the "login", "html_url", and "avatar_url" fields for each emeritus maintainer
     from the list of emeritus maintainers.
     """
-    return [
-        {
-        "login": emeritus_maintainer["login"],
-        "html_url": emeritus_maintainer["html_url"],
-        "avatar_url": emeritus_maintainer["avatar_url"],
-        }
+    emeritus_maintainers = [
+        emeritus_maintainer["login"]
         for emeritus_maintainer in PYBAMM_CONTRIBUTORS
         if emeritus_maintainer["login"] in PYBAMM_EMERITUS_MAINTAINERS
     ]
+
+    return get_user_batch_graphql(emeritus_maintainers)
 
 
 def get_maintainer_trainees():
@@ -118,50 +184,33 @@ def get_maintainer_trainees():
 
     # Get the GitHub user info for each maintainer trainee instead because some
     # of them are not in the contributors list yet
-    maintainer_trainees = []
-    for maintainer_trainee in PYBAMM_MAINTAINER_TRAINEES:
-        maintainer_trainees.append(
-            requests.get(f"https://api.github.com/users/{maintainer_trainee}").json()
-        )
-
-    return [
-        {
-        "login": maintainer_trainee["login"],
-        "html_url": maintainer_trainee["html_url"],
-        "avatar_url": maintainer_trainee["avatar_url"],
-        }
-        for maintainer_trainee in maintainer_trainees
-    ]
+    return get_user_batch_graphql(PYBAMM_MAINTAINER_TRAINEES)
 
 
 def get_gsoc_students():
     """
     Get "login", "html_url", and "avatar_url" fields for each GSoC student.
     """
-    return [
-        {
-        "login": contributor["login"],
-        "html_url": contributor["html_url"],
-        "avatar_url": contributor["avatar_url"],
-        }
+    gsoc_students = [
+        contributor["login"]
         for contributor in PYBAMM_CONTRIBUTORS
         if contributor["login"] in PYBAMM_GSOC_STUDENTS
     ]
+
+    return get_user_batch_graphql(gsoc_students)
 
 
 def get_past_gsoc_students():
     """
     Get "login", "html_url", and "avatar_url" fields for each past GSoC student.
     """
-    return [
-        {
-        "login": contributor["login"],
-        "html_url": contributor["html_url"],
-        "avatar_url": contributor["avatar_url"],
-        }
+    past_gsoc_students = [
+        contributor["login"]
         for contributor in PYBAMM_CONTRIBUTORS
         if contributor["login"] in PYBAMM_PAST_GSOC_STUDENTS
     ]
+
+    return get_user_batch_graphql(past_gsoc_students)
 
 
 # The team name can be either of the following:
@@ -211,7 +260,7 @@ with open("static/teams/maintainers.html", "w") as file:
                     member_template.substitute(
                         url=maintainer["html_url"],
                         avatarUrl=maintainer["avatar_url"],
-                        name=maintainer["login"],
+                        name=maintainer["name"],
                     )
                     for maintainer in get_maintainers()
                 ]
@@ -233,7 +282,7 @@ with open("static/teams/emeritus-maintainers.html", "w") as file:
                     member_template.substitute(
                         url=emeritus_maintainer["html_url"],
                         avatarUrl=emeritus_maintainer["avatar_url"],
-                        name=emeritus_maintainer["login"],
+                        name=emeritus_maintainer["name"],
                     )
                     for emeritus_maintainer in get_emeritus_maintainers()
                 ]
@@ -255,7 +304,7 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
                     member_template.substitute(
                         url=maintainer_trainee["html_url"],
                         avatarUrl=maintainer_trainee["avatar_url"],
-                        name=maintainer_trainee["login"],
+                        name=maintainer_trainee["name"],
                     )
                     for maintainer_trainee in get_maintainer_trainees()
                 ]
@@ -277,7 +326,7 @@ with open("static/teams/gsoc-students.html", "w") as file:
                     member_template.substitute(
                         url=contributor["html_url"],
                         avatarUrl=contributor["avatar_url"],
-                        name=contributor["login"],
+                        name=contributor["name"],
                     )
                     for contributor in get_gsoc_students()
                 ]
@@ -299,7 +348,7 @@ with open("static/teams/past-gsoc-students.html", "w") as file:
                     member_template.substitute(
                         url=contributor["html_url"],
                         avatarUrl=contributor["avatar_url"],
-                        name=contributor["login"],
+                        name=contributor["name"],
                     )
                     for contributor in get_past_gsoc_students()
                 ]
@@ -320,12 +369,14 @@ with open("static/teams/contributors.html", "w") as file:
                     member_template.substitute(
                         url=contributor["html_url"],
                         avatarUrl=contributor["avatar_url"],
-                        name=contributor["login"],
+                        name=contributor["name"],
                     )
                     for contributor in get_contributors()
                 ]
             ),
         )
     )
+
+print(f"Generated {len(PYBAMM_CONTRIBUTORS)} contributors.")
 
 print("HTML files generated successfully in static/teams/. Please commit the changes.")
