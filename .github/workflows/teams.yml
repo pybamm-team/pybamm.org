@@ -24,6 +24,8 @@ jobs:
           python-version: 3.12
 
       - name: Generate teams page(s)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pipx run nox -s teams
 
       # Will exit silently if there are no changes
