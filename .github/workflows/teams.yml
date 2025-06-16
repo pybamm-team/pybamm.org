@@ -12,19 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout main branch of repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
           submodules: recursive
 
       - name: Setup Python 3.12
-        uses: actions/setup-python@v5
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: 3.12
 
       - name: Generate teams page(s)
-        run: pipx run nox -s teams
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uvx nox -s teams
 
       # Will exit silently if there are no changes
       - name: Create pull request
