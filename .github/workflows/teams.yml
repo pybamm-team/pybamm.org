@@ -12,10 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout main branch of repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
           submodules: recursive
 
       - name: Setup Python 3.12
