@@ -119,41 +119,39 @@ def query_contributors():
         headers["Authorization"] = f"Bearer {token}"
         headers["Accept"] = "application/vnd.github+json"
         headers["X-GitHub-Api-Version"] = "2022-11-28"
-        print("Using authenticated request with GitHub token")
-    else:
-        print("Warning: No GitHub token found, using unauthenticated request")
 
     while True:
         url = f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
-
-        print(f"Fetching contributors page {page}...")
-        response = requests.get(url, headers=headers)
-
-        print(f"Response status code: {response.status_code}")
-        print(f"Response headers: {dict(response.headers)}")
-        print(f"Response text (first 200 chars): {response.text[:200]}")
-
-        if response.status_code != 200:
-            print(f"HTTP Error {response.status_code}")
-            print(f"Full response text: {response.text}")
-            break
-
-        # Try to parse JSON with error handling
         try:
-            contributors = response.json()
-        except Exception as e:
-            print(f"JSON parse error: {e}")
-            print(f"Full response text: {response.text}")
-            break
+            print(f"Fetching contributors page {page}...")
+            response = requests.get(url, headers=headers, timeout=30)
+            if response.status_code != 200:
+                print(f"HTTP Error {response.status_code}: {response.text}")
+                break
+            if not response.text.strip():
+                print("Empty response, no more pages")
+                break
 
-        if contributors == []:
-            break
-        else:
-            contributors_list += contributors
-            page += 1
+            try:
+                contributors = response.json()
+            except requests.exceptions.JSONDecodeError as e:
+                print(f"JSON decode error: {e}")
+                print(f"Response text: {response.text}...")
+                break
+
+            if not contributors or contributors == []:
+                print(f"Reached end of contributors at page {page}")
+                break
+
+            contributors_list.extend(contributors)
             print(
-                f"Successfully got {len(contributors)} contributors from page {page - 1}"
+                f"Found {len(contributors)} contributors on page {page} (total: {len(contributors_list)})"
             )
+            page += 1
+
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            break
 
     print(f"Total contributors found: {len(contributors_list)}")
     return contributors_list
