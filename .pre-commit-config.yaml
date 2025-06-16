@@ -30,6 +30,6 @@ repos:
     rev: v2.4.1
     hooks:
     -   id: codespell
-        exclude: content/gsoc/2024/ankit-meda.md
         args:
           - "-Lrecuse,Meda"
+          - "--skip=static/teams/*.html,content/gsoc/2024/ankit-meda.md"
