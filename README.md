@@ -93,8 +93,6 @@ summary: "Summary of the news item"
 ---
 ```
 
-You may use the `toc: true` parameter to add a table of contents to the news item. This works on all pages, not just news items. The `shortcutDepth: X` parameter can be used to limit the depth of the headings referenced in the page.
-
 The `newsHeader` parameter will automatically be set to the `title:` of the latest news item and will show up on the homepage of the website.
 
 ## Deployment
@@ -110,13 +108,7 @@ Some shortcodes for adding general-purpose buttons and links are available in `l
 {{< name-of-shortcode shortcode-parameters >}}
 ```
 
-1. To render external links from GitHub repositories or any API endpoint(s) that can return base64-encoded Markdown content, the `external-content` shortcode may be used, as follows:
-
-```markdown
-{{< external-content "https://api.github.com/repos/example-org/example-repo/contents/path/to/file.md" >}}
-```
-
-2. To include an optional table of contents at the top of a page, set `toc: true` in the YAML front matter of a page. The table of contents will be generated from the headings referenced in the page.
+2. There are also special shortcodes: `external-pybamm-changelog-content` and `external-content-simple` to avoid truncated data from the GitHub API v.s. what is served by the raw GitHub CDN URLs. They are used only for the Code of Conduct and the CHANGELOG pages, respectively. We use [the GitHack CDN](https://raw.githack.com/) to serve the contents for these pages. The content is stored in the main PyBaMM repository on GitHub and is automatically updated when the file in the repository is changed. The title MUST be present in the frontmatter, since Hugo has to use it at build time, not runtime.
 
 3. To change how things look, edit `assets/css/overrides.css` or add any additional CSS file to the `assets/css/` directory. These files are loaded after the theme-specific CSS files, so they can be used to override any styles set by the theme.
 

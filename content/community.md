@@ -17,7 +17,7 @@ We will always appreciate these contributions and feedback!
 
 ### Technical questions
 
-To get support with technical questions, please use the [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). When opening a post, check first if your question has been asked and answered before. It will be much easier for other members of our community to help you if you can provide details about the operating system and PyBaMM version you are using, and include a minimal working example. That is a short snippet of code, as simple as possible, that demonstrates the issue you are facing. Please do not contact individual maintainers directly for support.
+To get support with technical questions, please use our [Discourse group](https://pybamm.discourse.group). When opening a post, check first if your question has been asked and answered before. It will be much easier for other members of our community to help you if you can provide details about the operating system and PyBaMM version you are using, and include a minimal working example. That is a short snippet of code, as simple as possible, that demonstrates the issue you are facing. Please do not contact individual maintainers directly for support.
 
 ### Slack
 
@@ -34,7 +34,7 @@ For general inquiries, other than topics listed above, you can contact us by ema
 [Ionworks](https://ionworks.com/) is a company founded by members of the PyBaMM core development team to ensure [PyBaMM's long-term success](https://ionworks.com/blog/our-relationship-with-pybamm).
 Ionworks provides support and custom feature development for PyBaMM, as well as software to make modeling easier and faster.
 For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
-[Contact Ionworks](https://ionworks.com/contact) to find out more.
+[Contact Ionworks](https://ionworks.com/) to find out more.
 
 ## Governance
 

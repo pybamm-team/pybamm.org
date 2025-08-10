@@ -15,10 +15,11 @@ Information about current and past Google Summer of Code projects and idea lists
 
 ## Ideas lists
 
-- [GSoC 2021](/gsoc/2021/)
-- [GSoC 2022](/gsoc/2022/)
-- [GSoC 2023](/gsoc/2023/)
+- [GSoC 2025](/gsoc/2025/)
 - [GSoC 2024](/gsoc/2024/)
+- [GSoC 2023](/gsoc/2023/)
+- [GSoC 2022](/gsoc/2022/)
+- [GSoC 2021](/gsoc/2021/)
 
 ## Project reports
 
@@ -26,14 +27,11 @@ Information about current and past Google Summer of Code projects and idea lists
 they MUST NEVER be changed as such without the existence of a valid redirect rule in
 the _redirects file and a corresponding entry in netlify.toml. -->
 
-### GSoC 2021
+### GSoC 2024
 
-- [Priyanshu Agarwal](https://priyanshuone6.hashnode.dev/project-report-gsoc)
-- [Saransh Chopra](https://gist.github.com/Saransh-cpp/5f61540819b8c8d552c12b1609915f5d)
-
-### GSoC 2022
-
-- [Vaibhav Chopra](https://gist.github.com/Vaibhav-Chopra-GT/b4725011475fb0508791222424e89f6b)
+- [Ankit Meda](/gsoc/2024/ankit-meda/)
+- [Santhosh Sundaram](/gsoc/2024/santhosh-sundaram)
+- [Pradyot Ranjan](https://prady0t.github.io/My-Blog/posts/gsoc-final/)
 
 ### GSoC 2023
 
@@ -41,7 +39,11 @@ the _redirects file and a corresponding entry in netlify.toml. -->
 - [Arjun Verma](/gsoc/2023/arjun-verma/)
 - [Julian Evers](/gsoc/2023/julian-evers/)
 
-### GSoC 2024
+### GSoC 2022
 
-- [Ankit Meda](/gsoc/2024/ankit-meda/)
-- [Santhosh Sundaram](/gsoc/2024/santhosh-sundaram)
+- [Vaibhav Chopra](https://gist.github.com/Vaibhav-Chopra-GT/b4725011475fb0508791222424e89f6b)
+
+### GSoC 2021
+
+- [Priyanshu Agarwal](https://priyanshuone6.hashnode.dev/project-report-gsoc)
+- [Saransh Chopra](https://gist.github.com/Saransh-cpp/5f61540819b8c8d552c12b1609915f5d)

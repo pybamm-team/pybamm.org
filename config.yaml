@@ -21,6 +21,7 @@ params:
   description: "PyBaMM (Python Battery Mathematical Modelling) is an open-source battery simulation package written in Python."
   author:
     name: PyBaMM Team
+  search: true
   # Privacy-preserving analytics
   plausible:
     dataDomain: pybamm.org
@@ -38,6 +39,12 @@ params:
       highlightColor: "#004811"
       menuHighlightColor: "#5CA038"
 
+  # https://gohugo.io/shortcodes/youtube/#privacy
+  privacy:
+    youTube:
+      disable: false
+      privacyEnhanced: true
+
   navbarlogo:
     image: pybamm_icon.svg
     altText: The PyBaMM logo, with a battery of cells with the electrodes stacked in the standard Python blue and yellow colours
@@ -53,7 +60,7 @@ params:
 
   navbar:
     - title: Conference
-      url: https://pybamm-conference.webflow.io/
+      url: https://www.pybmc.com/
       is_external: true
 
     - title: Install
@@ -72,28 +79,30 @@ params:
 
     - title: Community
       sublinks:
-      - title: Contact
-        url: /community/
-      - title: Get Involved
-        url: /contribute/
-      - title: Code of Conduct
-        url: /code-of-conduct/
-      - title: Roadmap
-        url: /roadmap/
-      - title: Open-Source Programs
-        url: /open-source-programs/
+        - title: Contact
+          url: /community/
+        - title: Get Involved
+          url: /contribute/
+        - title: Code of Conduct
+          url: /code-of-conduct/
+        - title: Roadmap
+          url: /roadmap/
+        - title: Open-Source Programs
+          url: /open-source-programs/
 
     - title: About Us
       sublinks:
-      - title: About PyBaMM
-        url: /about/
-      - title: Ionworks
-        url: https://ionworks.com/
-        is_external: true
-      - title: Governance
-        url: /governance/
-      - title: PyBaMM Teams
-        url: /teams/
+        - title: About PyBaMM
+          url: /about/
+        - title: Ionworks
+          url: https://ionworks.com/
+          is_external: true
+        - title: Governance
+          url: /governance/
+        - title: Telemetry
+          url: /telemetry/
+        - title: PyBaMM Teams
+          url: /teams/
 
     - title: News
       url: /news/
@@ -107,6 +116,9 @@ params:
     socialmedia:
       - link: https://twitter.com/pybamm_/
         icon: twitter
+
+      - link: https://bsky.app/profile/pybamm.org/
+        icon: bluesky
 
       - link: https://www.youtube.com/@pybamm_/
         icon: youtube

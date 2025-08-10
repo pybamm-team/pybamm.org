@@ -12,26 +12,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout main branch of repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
           submodules: recursive
 
       - name: Setup Python 3.12
-        uses: actions/setup-python@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: 3.12
 
       - name: Generate teams page(s)
-        run: pipx run nox -s teams
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uvx nox -s teams
 
       # Will exit silently if there are no changes
       - name: Create pull request
         uses: peter-evans/create-pull-request@v7
         with:
           # Commit details
-          commit-message: "[create-pull-request] update teams HTML files"
+          commit-message: "Automated update for the Teams page"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           # Pull request details
           branch: "create-pull-request/generate-teams"
           branch-suffix: timestamp

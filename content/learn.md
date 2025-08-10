@@ -1,6 +1,5 @@
 ---
 title: Get started with PyBaMM
-toc: true
 summary: How to get started with PyBaMM
 ---
 
@@ -10,11 +9,22 @@ For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/s
 
 ## Installation instructions
 
-PyBaMM is available on the `pip` package manager for Windows, macOS, and Linux; and can be installed with
+PyBaMM is available on the `pip` and `conda` package managers for Windows, macOS, and Linux; and the
+the library (with its required dependencies) can be installed with
 
 ```bash
 pip install pybamm
 ```
+
+or
+
+```bash
+conda install -c conda-forge pybamm-base
+```
+
+{{< admonition caution >}}
+At the moment, PyBaMM's conda-forge distribution does not include [`IDAKLUSolver`](https://docs.pybamm.org/en/stable/source/api/solvers/idaklu_solver.html#idaklu-solver).
+{{< /admonition >}}
 
 More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html) in the documentation.
 
@@ -40,4 +50,4 @@ We regularly hold PyBaMM workshops. You can find a list of the workshops we have
 
 ## Get help
 
-You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/contact).
+You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/).

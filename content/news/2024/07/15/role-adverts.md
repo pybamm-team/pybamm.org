@@ -4,7 +4,9 @@ date: 2024-07-15
 summary: "We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager and fundraising lead."
 ---
 
-We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager and fundraising lead. These roles are fundamental for the growth of our project and community, and we are looking for enthusiastic and dedicated individuals to join our team. The positions are open to all members of the PyBaMM community (from users to maintainers), and we encourage applications from a diverse range of backgrounds and experiences. The deadline for applications is the 6th of September 2024 (Anywhere on Earth). Please see below for more details on each role and how to apply.
+> **IMPORTANT:** Application deadline has been extended until the 27th of September 2024 (Anywhere on Earth).
+
+We are advertising three positions for support roles within the PyBaMM team: communications lead, community manager and fundraising lead. These roles are fundamental for the growth of our project and community, and we are looking for enthusiastic and dedicated individuals to join our team. The positions are open to all members of the PyBaMM community (from users to maintainers), and we encourage applications from a diverse range of backgrounds and experiences. The deadline for applications is the ~~6th of September 2024~~ 27th of September 2024 (Anywhere on Earth). Please see below for more details on each role and how to apply.
 
 ## Communications lead
 
@@ -92,6 +94,6 @@ To apply to any of the positions, send an email to [pybamm@pybamm.org](mailto:py
 
 If applying to multiple roles, please send separate emails (with the corresponding subject line). The CV can be the same for all applications, but candidates are encouraged to tailor their cover letter to the specific role they are applying for.
 
-The deadline to submit the applications is the 6th of September 2024 (Anywhere on Earth). Shortlisted candidates will be invited to a virtual interview in the weeks following.
+The deadline to submit the applications is the ~~6th of September 2024~~ 27th of September 2024 (Anywhere on Earth). Shortlisted candidates will be invited to a virtual interview in the weeks following.
 
 Time commitment for each position will vary, but we expect it to average around half a day (4 hours) a week. PyBaMM is an open source project and all positions are on a voluntary basis. PyBaMM is committed to diversity and inclusion and encourages applications from all qualified candidates, regardless of race, ethnicity, gender, disability, age, or other status. If you have any questions about the roles or the application process, please contact us at [pybamm@pybamm.org](mailto:pybamm@pybamm.org).
