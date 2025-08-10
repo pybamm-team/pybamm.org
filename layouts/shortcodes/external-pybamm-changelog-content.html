@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {{ if isset .Params 0 }}
+        {{ $url := index .Params 0 }}
+        {{ with try (resources.GetRemote $url) }}
+            {{ with .Err }}
+                {{ errorf "%s" . }}
+            {{ else with .Value }}
+                {{ $content := .Content | string }}
+                <!-- We sort out the headings by moving them one level down -->
+                {{ $content = $content | replaceRE "(?m)^# (.+)$" "## $1" }}
+                {{ $content = $content | replaceRE "(?m)^## (Features|Bug fixes|Bug Fixes|Optimizations|Breaking changes)$" "### $1" }}
+                {{ $content | markdownify }}
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ errorf "You must provide a URL in the shortcode." }}
+    {{ end }}
+</body>
+</html>

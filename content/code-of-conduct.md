@@ -7,4 +7,4 @@ summary: This page describes the PyBaMM Code of Conduct for all project particip
 on GitHub. The content of this page is automatically updated when the file in the repository is changed.
 The title MUST be present in the frontmatter, since Hugo has to use it at build time, not runtime. -->
 
-{{< external-content "https://api.github.com/repos/pybamm-team/PyBaMM/contents/CODE-OF-CONDUCT.md?ref=develop" >}}
+{{< external-content-simple "https://rawcdn.githack.com/pybamm-team/PyBaMM/refs/heads/develop/CODE-OF-CONDUCT.md" >}}

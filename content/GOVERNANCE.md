@@ -22,11 +22,14 @@ handled on a case-by-case basis.
 ## Current Steering Council
 
 - [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
-- [Saransh Chopra](https://saransh-cpp.github.io) - University College London
 - [Scott Marquis](https://se.linkedin.com/in/scottmar93) - Northvolt
 - [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 - [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
+
+## Previous Members
+
+- [Saransh Chopra](https://saransh-cpp.github.io)
 
 ## Advisory Committee
 
