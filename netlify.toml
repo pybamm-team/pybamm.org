@@ -13,7 +13,8 @@
   # ignore pybamm.org/slack and pybamm.org/benchmarks
   skipPatterns = [
   "pybamm.org/slack",
-  "pybamm.org/benchmarks"
+  "pybamm.org/benchmarks",
+  "https://plausible.io/js/script.js"
   ]
 
 [context.deploy-preview]
