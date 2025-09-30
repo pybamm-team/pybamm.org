@@ -44,10 +44,6 @@ If you would like to get started with PyBaMM, you may go through the [Getting St
 
 For more resources, please refer to the [Examples section](https://docs.pybamm.org/en/stable/source/examples/index.html) in the PyBaMM documentation.
 
-## Video tutorials
-
-We regularly hold PyBaMM workshops. You can find a list of the workshops we have held with links to the corresponding recordings on the [Training](/training/) page.
-
 ## Get help
 
-You can get help by posting questions on the [PyBaMM Slack channels](https://pybamm.org/slack/) or preferably in [GitHub discussions](https://github.com/pybamm-team/PyBaMM/discussions). You can also get paid support from [Ionworks](https://ionworks.com/).
+You can get help from the community by posting questions on the [PyBaMM Discourse](https://pybamm.org/discourse/).
