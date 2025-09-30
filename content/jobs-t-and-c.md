@@ -63,7 +63,7 @@ These Terms and Conditions are governed by the laws of the **State of Texas**. A
 ## 9. How to Post a Job
 
 1. [Email us](mailto:pybamm@pybamm.org) the job description (preferably as an editable document) or open a pull request adding your post.
-2. Make the payment through [this link](https://app.hubspot.com/payments/purchase/hscs_lIGxEAJy1ZF1nSDuOswBBtgYJ2lqdM7yi40DttGAC8TMh9c8BUIptnqJAYMmllfq).
+2. Make the payment through [this link](https://app.hubspot.com/payments/k9XZMrqHpb6wdW).
 3. Optionally, add a **suggested donation** to further support PyBaMM’s mission.
 
 For further assistance, please [contact us](mailto:pybamm@pybamm.org).
