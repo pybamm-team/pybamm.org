@@ -154,9 +154,6 @@ params:
           - text: Get involved
             link: /contribute/
 
-          - text: Training
-            link: /training/
-
           - text: Ionworks
             link: https://ionworks.com/
 
