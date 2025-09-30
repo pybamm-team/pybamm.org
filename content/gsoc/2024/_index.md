@@ -1,9 +1,8 @@
 ---
 title: PyBaMM GSoC 2024 Project Ideas
 summary: This page contains project ideas for PyBaMM's participation in the Google Summer of Code program in 2024. These projects are intended to be suitable for students who are new to PyBaMM or to open-source software development in general, and wish to work on a project that will be beneficial to PyBaMM and its community.
+shortcutDepth: 1
 ---
-
-[↩ Go back to GSoC Home](/gsoc/)
 
 ## Migrate from `unittest` to `pytest` and improve PyBaMM's testing infrastructure
 
@@ -102,7 +101,7 @@ The student will receive an opportunity to perform each and every aspect of soft
 * [Arjun Verma](https://arjxnpy.vercel.app/)
 * [Ferran Brosa Planella](https://www.brosaplanella.xyz/)
 
-## Training an RAG-based machine learning model for chatbot assistance on the PyBaMM documentation
+## Training a RAG-based machine learning model for chatbot assistance on the PyBaMM documentation
 
 PyBaMM's extensive documentation serves as a valuable resource for users, but accessing information efficiently can be challenging. This project aims to develop a chatbot using machine learning techniques trained on PyBaMM documentation. The chatbot will act as a virtual assistant, providing users with prompt and accurate responses to basic queries related to PyBaMM functionalities, installation instructions, usage guidelines, and troubleshooting tips.
 

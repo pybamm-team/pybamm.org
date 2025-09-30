@@ -34,3 +34,9 @@ content-container class */
     max-width:40%;
     text-decoration: none;
 }
+
+/* Remove breadcrumbs background from navbar */
+
+nav[aria-label="Breadcrumb"] {
+    background-color: unset;
+}

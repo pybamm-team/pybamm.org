@@ -39,6 +39,12 @@ params:
       highlightColor: "#004811"
       menuHighlightColor: "#5CA038"
 
+  # https://gohugo.io/shortcodes/youtube/#privacy
+  privacy:
+    youTube:
+      disable: false
+      privacyEnhanced: true
+
   navbarlogo:
     image: pybamm_icon.svg
     altText: The PyBaMM logo, with a battery of cells with the electrodes stacked in the standard Python blue and yellow colours
@@ -110,6 +116,9 @@ params:
     socialmedia:
       - link: https://twitter.com/pybamm_/
         icon: twitter
+
+      - link: https://bsky.app/profile/pybamm.org/
+        icon: bluesky
 
       - link: https://www.youtube.com/@pybamm_/
         icon: youtube

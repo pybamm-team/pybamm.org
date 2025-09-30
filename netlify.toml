@@ -1,7 +1,6 @@
 [build.environment]
-  PYTHON_VERSION = "3.8"  # Netlify currently only supports 2.7 and 3.8
-  HUGO_VERSION = "0.135.0"
-  NODE_VERSION = "20"
+  PYTHON_VERSION = "3.13"
+  HUGO_VERSION = "0.148.2"
   DART_SASS_VERSION = "1.79.4"
   DART_SASS_URL = "https://github.com/sass/dart-sass/releases/download/"
 
@@ -14,26 +13,12 @@
   # ignore pybamm.org/slack and pybamm.org/benchmarks
   skipPatterns = [
   "pybamm.org/slack",
-  "pybamm.org/benchmarks"
+  "pybamm.org/benchmarks",
+  "https://plausible.io/js/script.js"
   ]
 
 [context.deploy-preview]
   ignore = "false"
-
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
-
-  # optional, fails build when a category is below a threshold
-  # [plugins.inputs.thresholds]
-  #   performance = 0.85
-  #   accessibility = 0.95
-  #   best-practices = 0.95
-  #   seo = 0.95
-  #   pwa = 0.2
-
-  # optional, deploy the lighthouse report to a path under your site
-  # [plugins.inputs]
-  #   output_path = "reports/lighthouse.html"
 
 [[redirects]]
   from = "/benchmarks"
@@ -59,7 +44,8 @@
     rm ${DART_SASS_TARBALL} && \
     export PATH=/opt/build/repo/dart-sass:$PATH && \
     python3 -m pip install nox && \
-    nox -s themes && \
-    nox -s html && \
-    nox -s search
+    python -m nox -s clean && \
+    python -m nox -s themes && \
+    python -m nox -s html && \
+    python -m nox -s search
     """
