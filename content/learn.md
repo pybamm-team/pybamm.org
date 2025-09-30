@@ -46,4 +46,4 @@ For more resources, please refer to the [Examples section](https://docs.pybamm.o
 
 ## Get help
 
-You can get help from the community by posting questions on the [PyBaMM Discourse](https://pybamm.org/discourse/).
+You can get help from the community by posting questions on the [PyBaMM Discourse](https://pybamm.discourse.group/).
