@@ -18,7 +18,7 @@ repos:
 
   # Lychee: check links
 -   repo: https://github.com/lycheeverse/lychee.git
-    rev: lychee-v0.17.0
+    rev: lychee-v0.20.1
     hooks:
       - id: lychee
         pass_filenames: false
