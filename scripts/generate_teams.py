@@ -14,6 +14,8 @@
 import requests
 import string
 import os
+import subprocess
+import sys
 
 from pathlib import Path
 
@@ -36,17 +38,57 @@ PYBAMM_GSOC_STUDENTS = read_file(DIR / "teams" / "GSOC-STUDENTS")
 PYBAMM_PAST_GSOC_STUDENTS = read_file(DIR / "teams" / "PAST-GSOC-STUDENTS")
 
 
+def check_gh_cli():
+    try:
+        result = subprocess.run(
+            ["gh", "--version"], capture_output=True, text=True, check=True
+        )
+        print(f"Found gh CLI: {result.stdout.strip()}")
+        return True
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        print(
+            "ERROR: either the GitHub CLI is not found or not working.", file=sys.stderr
+        )
+        print(
+            "Please install the GitHub CLI from https://cli.github.com/",
+            file=sys.stderr,
+        )
+        print("After installation, authenticate with: gh auth login", file=sys.stderr)
+        sys.exit(1)
+
+
+def get_gh_token():
+    """Get GitHub token from gh CLI or environment variable"""
+    token = os.getenv("GITHUB_TOKEN")
+    if token:
+        print("Using GITHUB_TOKEN from environment variable")
+        return token
+
+    check_gh_cli()
+
+    try:
+        result = subprocess.run(
+            ["gh", "auth", "token"], capture_output=True, text=True, check=True
+        )
+        token = result.stdout.strip()
+        if token:
+            print("Successfully retrieved a token from the GitHub CLI")
+            return token
+        else:
+            print("ERROR: gh auth token returned empty result", file=sys.stderr)
+            print("Please authenticate with: gh auth login", file=sys.stderr)
+            sys.exit(1)
+    except subprocess.CalledProcessError as e:
+        print("ERROR: Failed to get token from gh CLI", file=sys.stderr)
+        print(f"Error: {e.stderr}", file=sys.stderr)
+        print("Please authenticate with: gh auth login", file=sys.stderr)
+        sys.exit(1)
+
+
 def get_graphql_headers():
     """Get headers for GraphQL API requests"""
-    token = os.getenv("GITHUB_TOKEN")
-
-    if token:
-        return {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-    else:
-        raise RuntimeError(
-            "No GITHUB_TOKEN found. This script requires it to access the GitHub API. "
-            "Please set the GITHUB_TOKEN environment variable with a valid token."
-        )
+    token = get_gh_token()
+    return {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 
 
 def get_user_batch_graphql(usernames):
@@ -113,12 +155,12 @@ def query_contributors():
     contributors_list = []
     page = 1
 
-    headers = {}
-    token = os.getenv("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-        headers["Accept"] = "application/vnd.github+json"
-        headers["X-GitHub-Api-Version"] = "2022-11-28"
+    token = get_gh_token()
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
 
     while True:
         url = f"https://api.github.com/repos/pybamm-team/pybamm/contributors?per_page=100&page={page}"
@@ -256,7 +298,7 @@ def create_team_id(team_name: str) -> str:
 
 
 team_template = string.Template(
-"""
+    """
 <h3 id="${team_id}">${team_name}<a class="headerlink" href="#${team_id}" title="Link to this heading">#</a></h3>
 <div class="sd-container-fluid sd-mb-4 false">
     <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-4 sd-row-cols-lg-5 sd-g-2 sd-g-xs-2 sd-g-sm-3 sd-g-md-4 sd-g-lg-5">${members}</div>
@@ -266,7 +308,7 @@ team_template = string.Template(
 
 # Displays the members of a specific team
 member_template = string.Template(
-"""
+    """
         <div class="sd-col sd-d-flex-row">
             <div class="sd-card sd-w-100 sd-shadow-sm sd-card-hover text-center">
                 <div class="sd-card-body">
