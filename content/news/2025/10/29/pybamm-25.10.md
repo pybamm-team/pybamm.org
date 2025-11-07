@@ -12,7 +12,7 @@ The full list of changes can be found in the [CHANGELOG](https://pybamm.org/chan
 ## Fundamental variable for SEI models changed to concentration
 _Implemented by [Simon O'Kane](https://github.com/DrSOKane)_
 
-SEI models have been updated to use concentration as the fundamental variable (i.e. the variable PyBaMM solves for) instead of thickness. This change improves the physical accuracy of the models, and allows for better consistency with other submodels.  and allows for better representation of SEI growth dynamics.
+SEI models have been updated to use concentration as the fundamental variable (i.e. the variable PyBaMM solves for) instead of thickness. This change improves the physical accuracy of the models and enables better consistency with other sub-models. It also allows for a more accurate representation of the SEI growth dynamics.
 
 ## Updates in hysteresis parameters
 _Implemented by [Rob Timms (Ionworks)](https://github.com/rtimms)_
