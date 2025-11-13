@@ -23,3 +23,6 @@ __pycache__/
 
 # env Folder
 env/
+
+# Lychee pre-commit hook
+.lycheecache
