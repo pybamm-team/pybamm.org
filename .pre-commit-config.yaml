@@ -10,18 +10,53 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: check-yaml
-    -   id: check-added-large-files
-    -   id: mixed-line-ending
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: mixed-line-ending
 
+  # Lychee: check links
+-   repo: https://github.com/lycheeverse/lychee.git
+    rev: lychee-v0.20.1
+    hooks:
+      - id: lychee
+        pass_filenames: false
+        args:
+          - .
+          - --verbose
+          - --no-progress
+          - --timeout
+          - "10"
+          - --max-retries
+          - "5"
+          - --skip-missing
+          - --exclude-loopback
+          - --exclude
+          - https://twitter.com/*
+          - --exclude
+          - https://doi\.org|www.sciencedirect\.com/*
+          - --exclude
+          - https://plausible.io/pybamm.org
+          # Exclude the theme submodule and the built files. The latter are
+          # generated from the build and we don't bother with them because
+          # their links are either not relevant or are already checked.
+          - --exclude-path
+          - themes/
+          - --exclude-path
+          - static/
+          - --exclude-path
+          - public/
+          - --exclude-path
+          - resources/
+          - --accept
+          - 200,429,999
 
 # Python files
 -   repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.14.5
     hooks:
-    -   id: ruff
+      - id: ruff
         args: ["--fix", "--show-fixes"]
 
 
