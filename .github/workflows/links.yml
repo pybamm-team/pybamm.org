@@ -20,11 +20,11 @@ jobs:
           key: cache-lychee-${{ github.sha }}
           restore-keys: cache-lychee-
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Link checker
         id: lychee
-        uses: lycheeverse/lychee-action@885c65f3dc543b57c898c8099f4e08c8afd178a2
+        uses: lycheeverse/lychee-action@a8c4c7cb88f0c7386610c35eb25108e448569cb0
         with:
           # Same as those in the PyBaMM repository
           args: |
