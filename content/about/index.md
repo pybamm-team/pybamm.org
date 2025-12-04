@@ -28,48 +28,48 @@ Ionworks provides support and custom feature development for PyBaMM, as well as 
 For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
 [Contact Ionworks](https://ionworks.com/) to find out more.
 
-{{< figure >}}
-src = '/images/logos/ionworks-logo.png'
-alt = 'Logo for Ionworks'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/ionworks-logo.png"
+  alt="Logo for Ionworks"
+  width=500
+  attributionlink=""
+>}}
 
 ### The Oxford Research Software Engineering Group
 
 [OxRSE](https://www.rse.ox.ac.uk/) is the central RSE team at the University of Oxford. They have been part of the PyBaMM core development team since its inception and provide on-going software development support,
 funded by the [Faraday Institution](https://faraday.ac.uk/). If you want to know more about OxRSE can support your research, please [get in touch](https://www.rse.ox.ac.uk/contact).
 
-{{< figure >}}
-src = '/images/logos/2024_oxrse_rectangle.svg'
-alt = 'Logo for OxRSE'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/2024_oxrse_rectangle.svg"
+  alt="Logo for OxRSE"
+  width=500
+  attributionlink=""
+>}}
 
 ### The Faraday Institution
 
 The Faraday Institution supports many PyBaMM contributors, who contribute to the project as part of their official duties at universities across the UK.
 
-{{< figure >}}
-src = '/images/logos/faraday-logo.png'
-alt = 'Logo for The Faraday Institution'
-width = 500
-attributionlink = ''
-caption = "Logo for The Faraday Institution"
-{{< /figure >}}
+{{< figure
+  src="/images/logos/faraday-logo.png"
+  alt="Logo for The Faraday Institution"
+  width=500
+  attributionlink=""
+  caption="Logo for The Faraday Institution"
+>}}
 
 ### NumFOCUS
 
 PyBaMM is a Sponsored Project of NumFOCUS, a 501(c)(3) nonprofit charity in the United States. The mission of NumFOCUS is to promote open practices in research, data, and scientific computing by serving as a fiscal sponsor for open source projects and organizing community-driven educational programs.
 
-{{< figure >}}
-src = '/images/logos/NumFOCUS_sponsored_project_logo.svg'
-alt = 'NumFOCUS Logo'
-width = 500
-attributionlink = ''
-caption = "NumFOCUS Logo"
-{{< /figure >}}
+{{< figure
+  src="/images/logos/NumFOCUS_sponsored_project_logo.svg"
+  alt="NumFOCUS Logo"
+  width=500
+  attributionlink=""
+  caption="NumFOCUS Logo"
+>}}
 
 ### Google Summer of Code
 
@@ -81,61 +81,61 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 
 <div style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap">
 
-{{< figure >}}
-src = '/images/logos/university_of_oxford.svg'
-alt = 'Logo for the University of Oxford'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/university_of_oxford.svg"
+  alt="Logo for the University of Oxford"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/university_of_michigan.svg'
-alt = 'Logo for the University of Michigan'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/university_of_michigan.svg"
+  alt="Logo for the University of Michigan"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/carnegie_mellon_university.svg'
-alt = 'Logo for Carnegie Mellon University'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/carnegie_mellon_university.svg"
+  alt="Logo for Carnegie Mellon University"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/imperial_college_london.png'
-alt = 'Logo for Imperial College London'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/imperial_college_london.png"
+  alt="Logo for Imperial College London"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/university_of_warwick.png'
-alt = 'Logo for the University of Warwick'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/university_of_warwick.png"
+  alt="Logo for the University of Warwick"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/university_college_london.svg'
-alt = 'Logo for University College London'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/university_college_london.svg"
+  alt="Logo for University College London"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/lilium.png'
-alt = 'Logo for Lilium GmbH'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/lilium.png"
+  alt="Logo for Lilium GmbH"
+  width=500
+  attributionlink=""
+>}}
 
-{{< figure >}}
-src = '/images/logos/sila.png'
-alt = 'Logo for Sila Nanotechnologies'
-width = 500
-attributionlink = ''
-{{< /figure >}}
+{{< figure
+  src="/images/logos/sila.png"
+  alt="Logo for Sila Nanotechnologies"
+  width=500
+  attributionlink=""
+>}}
 
 </div>
 

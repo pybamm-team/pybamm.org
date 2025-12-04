@@ -59,10 +59,6 @@ params:
     image: pybamm_icon.svg
 
   navbar:
-    - title: Conference
-      url: https://www.pybmc.com/
-      is_external: true
-
     - title: Install
       url: https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html
       is_external: true
@@ -134,15 +130,18 @@ params:
         title: ""
         links:
           - text: Install PyBaMM
+            is_external: true
             link: https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html
 
           - text: Getting started
             link: /learn/
 
           - text: Examples
+            is_external: true
             link: https://github.com/pybamm-team/PyBaMM/tree/develop/examples/
 
           - text: Documentation
+            is_external: true
             link: https://docs.pybamm.org/
 
           - text: Release notes
@@ -157,10 +156,8 @@ params:
           - text: Get involved
             link: /contribute/
 
-          - text: Training
-            link: /training/
-
           - text: Ionworks
+            is_external: true
             link: https://ionworks.com/
 
           - text: News
@@ -182,4 +179,4 @@ params:
             link: /governance/
 
           - text: Roadmap
-            link: https://github.com/pybamm-team/PyBaMM/wiki/Roadmap/
+            link: /roadmap/

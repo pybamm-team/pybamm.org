@@ -18,6 +18,7 @@ The following papers have contributed directly to the development of PyBaMM.
 
 
 {{< grid columns="1 2 2 3" >}}
+
 [[item]]
 type = 'card'
 title = 'Marquis,  S.  G., Sulzer, V.,  Timms,  R.,  Please,  C.  P.,  &  Chapman,  S.  J.  (2019).'
@@ -27,14 +28,16 @@ body = '''
 '''
 footer = '''
 <div class="custom-flex-btns">
-{{< button dark >}}
-label: Preprint
-link: https://arxiv.org/abs/1905.12553
-{{< /button >}}
-{{< button light >}}
-label: DOI
-link: https://doi.org/10.1149/2.0341915jes
-{{< /button >}}
+{{< button
+    style="dark"
+    label="Preprint"
+    link="https://arxiv.org/abs/1905.12553"
+>}}
+{{< button
+    style="light"
+    label="DOI"
+    link="https://doi.org/10.1149/2.0341915jes"
+>}}
 </div>
 '''
 
@@ -49,10 +52,11 @@ Development of Experimental Techniques for Parameterization of Multi-scale Lithi
 footer = '''
 <div class="custom-flex-btns">
 
-{{< button light >}}
-label: DOI
-link: https://doi.org/10.1149/1945-7111/ab9050
-{{< /button >}}
+{{< button
+    style="light"
+    label="DOI"
+    link="https://doi.org/10.1149/1945-7111/ab9050"
+>}}
 </div>
 '''
 
@@ -68,10 +72,11 @@ body = '''
 footer = '''
 <div class="custom-flex-btns">
 
-{{< button light >}}
-label: DOI
-link: https://doi.org/10.1149/1945-7111/aba44b
-{{< /button >}}
+{{< button
+    style="light"
+    label="DOI"
+    link="https://doi.org/10.1149/1945-7111/aba44b"
+>}}
 </div>
 '''
 
@@ -84,14 +89,18 @@ body = '''
 '''
 footer = '''
 <div class="custom-flex-btns">
-{{< button dark >}}
-label: Preprint
-link: https://arxiv.org/abs/2005.05127
-{{< /button >}}
-{{< button light >}}
-label: Code
-link: https://github.com/rtimms/asymptotic-pouch-cell
-{{< /button >}}
+{{< button
+    style="dark"
+    label="Preprint"
+    link="https://arxiv.org/abs/2005.05127"
+>}}
+
+{{< button
+    style="light"
+    label="Code"
+    link="https://github.com/rtimms/asymptotic-pouch-cell"
+>}}
+
 </div>
 '''
 
@@ -105,18 +114,21 @@ body = '''
 '''
 footer = '''
 <div class="custom-flex-btns">
-{{< button dark >}}
-label: Preprint
-link: https://arxiv.org/abs/2008.03691
-{{< /button >}}
-{{< button light >}}
-label: DOI
-link: https://doi.org/10.1149/1945-7111/abbce4
-{{< /button >}}
+{{< button
+    style="dark"
+    label="Preprint"
+    link="https://arxiv.org/abs/2008.03691"
+>}}
+
+{{< button
+    style="light"
+    label="DOI"
+    link="https://doi.org/10.1149/1945-7111/abbce4"
+>}}
 </div>
 '''
-{{< /grid >}}
 
+{{< /grid >}}
 
 
 ## Citations
