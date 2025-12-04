@@ -141,9 +141,9 @@ We are grateful to the following organizations for supporting PyBaMM's developme
 
 To submit a request to add a new organization to this list, please [open an issue](https://github.com/pybamm-team/pybamm.org/issues/new).
 
-## PyBaMM on Twitter
+## PyBaMM on LinkedIn
 
-{{< pybamm-twitter >}}
+Follow us on our [LinkedIn page](https://www.linkedin.com/company/pybamm/) for the latest news and updates. Connect with our community of battery modeling researchers, developers, and industry professionals. Stay informed about new releases, research collaborations, and exciting developments in the world of battery simulation.
 
 ## Current PyBaMM Steering Council
 
