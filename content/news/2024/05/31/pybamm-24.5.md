@@ -108,7 +108,7 @@ model = pybamm.lithium_ion.DFN(
 )
 ```
 
-Note that additional parameter values might be required for the model to run. For more details, please see the [corresponding notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/differential-capacity-hysteresis-state.html).
+Note that additional parameter values might be required for the model to run. For more details, please see the [corresponding notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/hysteresis-state-models.html).
 
 ## Lithium plating for composite electrodes
 _Implemented by [Simon O'Kane](https://github.com/DrSOKane)_

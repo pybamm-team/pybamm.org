@@ -39,7 +39,7 @@ pybamm.lithium_ion.DFN(
 )
 ```
 
-For more information on this and the other hysteresis models available in PyBaMM, see [the hysteresis notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/differential-capacity-hysteresis-state.html).
+For more information on this and the other hysteresis models available in PyBaMM, see [the hysteresis notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/hysteresis-state-models.html).
 
 ## Experiments compatible with input parameters
 _Implemented by [Rishab Kumar Jha](https://github.com/Rishab87)_
