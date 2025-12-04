@@ -35,8 +35,13 @@ content-container class */
     text-decoration: none;
 }
 
-/* Remove breadcrumbs background from navbar */
-
-nav[aria-label="Breadcrumb"] {
-    background-color: unset;
+/* More gaps for footer columns because of external link indicators */
+.footer-column {
+    margin-right: 2em;
 }
+
+/* Don't set widths for 100% of the viewport for these, just the screen. */
+.news-container, .hero-container {
+    width: 100%;
+}
+
