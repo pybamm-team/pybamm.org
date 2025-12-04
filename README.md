@@ -54,12 +54,12 @@ nox -s serve-dev
 
 You may use `nox -s clean` to clean up build artefacts.
 
-5. Before committing your changes, install [`pre-commit`](https://pre-commit.com/),
+5. Before committing your changes, install [`prek`](https://github.com/j178/prek),
    update the hooks, and run with
 
 ```bash
-pip install pre-commit
-pre-commit install
+pip install prek
+prek install
 ```
 
 to ensure that there are no style errors before committing your changes. The
@@ -67,7 +67,10 @@ current hooks provide support for checking spelling errors and typos, Markdown
 style, and common file-based issues.
 
 Rather than just the files changed due to a commit, you may run the hooks on
-all files using the `pre-commit run --all-files` command.
+all files using the `prek -a`/`prek --all-files` command.
+
+You may use a shorthand `nox -s lint` to do the same, though you'll need to
+install `prek` manually separately.
 
 6. To generate the teams page, run
 
