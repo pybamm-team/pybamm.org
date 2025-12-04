@@ -86,6 +86,6 @@ def generate_teams(session):
 
 @nox.session(name="lint", venv_backend="uv")
 def lint(session):
-    """Install 'pre-commit' and run linting on all files."""
-    session.install("pre-commit-uv")
-    session.run("pre-commit", "run", "--all-files")
+    """Install 'prek' and run linting on all files."""
+    session.install("prek")
+    session.run("prek", "--all-files")
