@@ -29,7 +29,7 @@ jobs:
 
       # Will exit silently if there are no changes
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           # Commit details
           commit-message: "Automated update for the Teams page"
