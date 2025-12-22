@@ -5,10 +5,7 @@
 
 <div class="job-card {{ if not $open }}job-card--archived{{ end }}">
   <div class="job-card__header">
-    <div>
-      <h3 class="job-card__title">{{ $job.title }}</h3>
-      <div class="job-card__debug" style="font-size:0.85rem; opacity:0.75;">Source: {{ $job.key }}</div>
-    </div>
+    <h3 class="job-card__title">{{ $job.title }}</h3>
     <div class="job-card__entity">{{ $job.entity }}</div>
   </div>
   <div class="job-card__meta">
