@@ -6,8 +6,10 @@ Sorts open by deadline asc; archived by expires desc.
 {{- $jobs := slice -}}
 {{- with .Site.Data.jobs -}}
   {{- range $k, $v := . -}}
-    {{- $job := dict "key" $k | merge $v -}}
-    {{- $jobs = $jobs | append $job -}}
+    {{- if ne $k "_TEMPLATE" -}}
+      {{- $job := dict "key" $k | merge $v -}}
+      {{- $jobs = $jobs | append $job -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
