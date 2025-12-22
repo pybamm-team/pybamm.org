@@ -1,0 +1,49 @@
+{{/*
+Lists jobs from data/jobs. Splits into open and archived by expires date.
+Sorts open by deadline asc; archived by expires desc.
+*/}}
+{{- $now := now -}}
+{{- $jobs := slice -}}
+{{- with .Site.Data.jobs -}}
+  {{- range $k, $v := . -}}
+    {{- $job := dict "key" $k | merge $v -}}
+    {{- $jobs = $jobs | append $job -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* partition */}}
+{{- $open := slice -}}
+{{- $archived := slice -}}
+{{- range $jobs -}}
+  {{- $exp := .expires -}}
+  {{- if or (not $exp) (ge (time $exp) $now) -}}
+    {{- $open = $open | append . -}}
+  {{- else -}}
+    {{- $archived = $archived | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $sortedOpen := sort $open "deadline" "asc" -}}
+
+<h2 id="open-roles">Open roles</h2>
+{{- if gt (len $sortedOpen) 0 -}}
+  {{- range $sortedOpen -}}
+    {{ partial "jobs/card.html" (dict "job" . "now" $now) }}
+  {{- end -}}
+{{- else -}}
+  <p>No open roles at the moment.</p>
+{{- end -}}
+
+<hr/>
+
+<details>
+  <summary><h2 id="archived-roles" style="display:inline">Archived roles</h2></summary>
+  {{- $sortedArchived := sort $archived "expires" "desc" -}}
+  {{- if gt (len $sortedArchived) 0 -}}
+    {{- range $sortedArchived -}}
+      {{ partial "jobs/card.html" (dict "job" . "now" $now) }}
+    {{- end -}}
+  {{- else -}}
+    <p>No archived roles yet.</p>
+  {{- end -}}
+</details>

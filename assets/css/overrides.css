@@ -44,3 +44,51 @@ content-container class */
 .news-container, .hero-container {
     width: 100%;
 }
+
+/* Admonitions
+
+Rely on the theme's admonition styling. Only apply minimal readability fixes
+so content remains accessible in dark mode across themes.
+*/
+.adm { opacity: 1; }
+.adm a { text-decoration: underline; }
+
+@media (prefers-color-scheme: dark) {
+  /* Ensure admonitions stay readable even if the theme uses light backgrounds */
+  .article .adm, .article .adm *,
+  .content .adm, .content .adm *,
+  .markdown .adm, .markdown .adm * {
+    color: var(--text, #f1f5f9) !important;
+  }
+  .adm a { color: var(--primary, #9ae6b4) !important; }
+  /* Provide a gentle dark surface without hardcoding brand colors */
+  .adm { background: var(--surface-2, rgba(255,255,255,0.06)) !important; }
+}
+
+/* Jobs board styles
+
+Use theme variables where available and avoid hardcoded colors.
+*/
+.job-card {
+  border: 1px solid var(--border, rgba(0,0,0,0.15));
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  background: var(--surface, transparent);
+}
+.job-card__header { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.job-card__title { margin: 0; font-size: 1.15rem; }
+.job-card__entity { color: var(--text-muted, inherit); font-weight: 600; }
+.job-card__meta, .job-card__dates { display: flex; flex-wrap: wrap; gap: .5rem .5rem; margin: .5rem 0; }
+.job-badge {
+  background: var(--surface-2, rgba(0,0,0,0.04));
+  border: 1px solid var(--border, rgba(0,0,0,0.15));
+  padding: .15rem .4rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  color: var(--text, inherit);
+}
+.job-card__description { margin: .5rem 0; color: inherit; line-height: 1.55; }
+.job-card__description ul, .job-card__description ol { margin: .5rem 0 .5rem 1.25rem; }
+.job-card__apply .button { display: inline-block; }
+.job-card--archived { opacity: .85; }
