@@ -12,7 +12,7 @@ Avoid reading data/jobs/schema.json (used only for validation).
 {{- range (readDir "data/jobs") -}}
   {{- if and (not .IsDir) (hasSuffix .Name ".yaml") (ne .Name "_TEMPLATE.yaml") -}}
     {{- $path := printf "data/jobs/%s" .Name -}}
-    {{- $data := getJSON $path -}}
+    {{- $data := (readFile $path | transform.Unmarshal) -}}
     {{- $key := replaceRE "\\.yaml$" "" .Name -}}
     {{- $job := dict "key" $key | merge $data -}}
     {{- $jobs = $jobs | append $job -}}

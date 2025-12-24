@@ -33,7 +33,6 @@ repos:
         args:
           - "--schemafile"
           - "data/jobs/schema.json"
-          - "data/jobs/*.yaml"
         files: "^data/jobs/.*\\.ya?ml$"
         exclude: "^data/jobs/_TEMPLATE\\.ya?ml$"
 
