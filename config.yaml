@@ -4,9 +4,13 @@ title: "PyBaMM" # site title
 theme: scientific-python-hugo-theme
 relativeURLs: true
 DefaultContentLanguage: en
-disableKinds: ["term", "taxonomy"]
+disableKinds: ["term", "taxonomy", "404"]
 enableEmoji: true
 enableInlineShortcodes: true
+
+# Suppress legacy GetJSON errors originating from theme code
+ignoreLogs:
+  - error-remote-getjson
 
 markup:
   highlight:

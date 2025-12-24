@@ -1,0 +1,29 @@
+{{/* Renders a single job card. Expects dict with keys: job, now */}}
+{{- $job := .job -}}
+{{- $now := .now -}}
+{{- $open := or (not $job.expires) (ge (time $job.expires) $now) -}}
+
+<div class="job-card {{ if not $open }}job-card--archived{{ end }}">
+  <div class="job-card__header">
+    <h3 class="job-card__title">{{ $job.title }}</h3>
+    <div class="job-card__entity">{{ $job.entity }}</div>
+  </div>
+  <div class="job-card__meta">
+    {{ with $job.location }}<span class="job-badge job-badge--location">{{ . }}</span>{{ end }}
+    {{ with $job.percentTime }}<span class="job-badge">{{ . }}% time</span>{{ end }}
+    {{ with $job.percentOSS }}<span class="job-badge">{{ . }}% OSS</span>{{ end }}
+    {{ with $job.tags }}
+      {{ range . }}<span class="job-badge job-badge--tag">{{ . }}</span>{{ end }}
+    {{ end }}
+  </div>
+  <div class="job-card__dates">
+    {{ with $job.deadline }}<span>Deadline: {{ . }}</span>{{ end }}
+    {{ with $job.expires }}<span>Visible until: {{ . }}</span>{{ end }}
+  </div>
+  <div class="job-card__description">
+    {{ with $job.description }}{{ . | markdownify }}{{ end }}
+  </div>
+  {{ with $job.url }}
+    <p class="job-card__apply"><a class="button" href="{{ . }}" rel="nofollow noopener" target="_blank">Apply / Learn more</a></p>
+  {{ end }}
+</div>

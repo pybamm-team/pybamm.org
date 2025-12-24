@@ -1,0 +1,20 @@
+entity: Example Company
+title: Battery Modeling Engineer (PyBaMM)
+url: https://example.com/careers/battery-modeling-engineer-pybamm
+percentTime: 100
+percentOSS: 50
+deadline: 2026-01-31
+expires: 2026-02-28
+location: Remote
+tags: [full-time, modeling, PyBaMM, Python]
+description: |
+  We are hiring a Battery Modeling Engineer to build physics-based models using PyBaMM.
+
+  Responsibilities:
+  - Develop and validate battery models using PyBaMM
+  - Support model parameterisation, simulation, and analysis
+  - Contribute improvements back to PyBaMM where appropriate
+
+  Requirements:
+  - Strong Python experience
+  - Familiarity with battery modelling and numerical methods
