@@ -145,6 +145,17 @@ To submit a request to add a new organization to this list, please [open an issu
 
 Follow us on our [LinkedIn page](https://www.linkedin.com/company/pybamm/) for the latest news and updates. Connect with our community of battery modeling researchers, developers, and industry professionals. Stay informed about new releases, research collaborations, and exciting developments in the world of battery simulation.
 
+<iframe
+  src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7401969814061236224"
+  height="500"
+  width="100%"
+  loading="lazy"
+  style="border: none;"
+  frameborder="0"
+  allowfullscreen=""
+  title="PyBaMM Examples #1: Thermal models">
+</iframe>
+
 ## Current PyBaMM Steering Council
 
 The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up
