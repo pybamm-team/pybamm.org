@@ -8,9 +8,6 @@ disableKinds: ["term", "taxonomy", "404"]
 enableEmoji: true
 enableInlineShortcodes: true
 
-# Suppress legacy GetJSON errors originating from theme code
-ignoreLogs:
-  - error-remote-getjson
 
 markup:
   highlight:

@@ -4,7 +4,7 @@ shortcutDepth: 0
 summary: "Current job openings related to PyBaMM and battery modeling"
 ---
 
-Welcome to the PyBaMM Jobs Board! This page is generated from simple YAML files under data/jobs/.
+Welcome to the PyBaMM Jobs Board! Here you can find current job openings related to PyBaMM and battery modeling.
 
 {{< admonition tip >}}
 To post a job, open a PR adding a file under data/jobs/ using the template at data/jobs/_TEMPLATE.yaml. See instructions below.
@@ -31,10 +31,7 @@ Jobs can be posted by companies, research institutions, or individuals looking t
 
 ### How to Post a Job
 
-1. Open a pull request adding a YAML file at data/jobs/ following data/jobs/_TEMPLATE.yaml.
-2. Ensure dates are in YYYY-MM-DD and include a working https:// or http:// URL.
-3. Optionally, also [email us](mailto:pybamm@pybamm.org) for visibility.
-4. If applicable, make a payment or donation as per our policy.
+To propose a listing, open a pull request adding a YAML file under data/jobs/ using data/jobs/_TEMPLATE.yaml. Submissions are validated automatically.
 
 {{< admonition important >}}
 For details, please review our [Terms & Conditions](/jobs-t-and-c/).
