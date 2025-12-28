@@ -1,0 +1,28 @@
+# Job posting template for the PyBaMM jobs board.
+# Copy this file to a new name (e.g. acme-battery-modeler-20250315.yaml) and fill it in.
+# Required keys: entity, title, url, percentTime, percentOSS, deadline, expires, location, description
+# Notes: dates = YYYY-MM-DD; url starts with http(s); percentTime 1–100; percentOSS 0–100.
+
+entity: Your Organisation
+title: Battery Modeling Engineer (PyBaMM)
+url: https://www.example.com/careers/battery-modeling-engineer
+percentTime: 100
+percentOSS: 50
+deadline: 2026-01-31
+expires: 2026-02-28
+location: Remote (UTC±2 preferred)
+tags: [full-time, PyBaMM, Python]
+# author_date: 2025-12-01
+
+description: |
+  One or two short paragraphs describing the role and team.
+
+  Responsibilities:
+  - Build, validate, and maintain physics-based battery models with PyBaMM
+  - Parameterise models, run studies, and analyse results
+  - Collaborate with the open-source community where appropriate
+
+  Requirements:
+  - Strong Python and numerical methods
+  - Experience with physics-based battery modeling or electrochemistry
+  - Clear communication and collaboration
