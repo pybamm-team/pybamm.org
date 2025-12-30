@@ -24,6 +24,16 @@ repos:
     -   id: ruff
         args: ["--fix", "--show-fixes"]
 
+-   repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.36.0
+    hooks:
+    -   id: check-jsonschema
+        name: Validate jobs YAML (schema)
+        args:
+          - "--schemafile"
+          - "data/jobs/schema.json"
+        files: "^data/jobs/.*\\.ya?ml$"
+        exclude: "^data/jobs/_TEMPLATE\\.ya?ml$"
 
 # Spelling errors and typos
 -   repo: https://github.com/codespell-project/codespell
