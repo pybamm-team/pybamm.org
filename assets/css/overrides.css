@@ -44,3 +44,8 @@ content-container class */
 .news-container, .hero-container {
     width: 100%;
 }
+
+/* Unset a pagefind color setting to make results more legible in dark mode */
+.pagefind-ui__result-title > .pagefind-ui__result-link {
+  color: unset !important;
+}
