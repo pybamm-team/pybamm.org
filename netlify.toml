@@ -31,9 +31,15 @@
   status = 301
 
 [[redirects]]
+  from = "/conference"
+  to = "https://eeg.engin.umich.edu/pybamm_conf/"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/404/"
   status = 404
+
 [build]
   base = "/"
   publish = "public"
