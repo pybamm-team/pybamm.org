@@ -21,19 +21,22 @@ handled on a case-by-case basis.
 
 ## Current Steering Council
 
+- [Mayur Bonkile](https://sites.google.com/view/mayurbonkile/bio) - IIT Kharagpur
 - [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick and Ionworks
+- [Monica Marinescu](https://profiles.imperial.ac.uk/monica.marinescu) - Imperial College London
 - [Scott Marquis](https://se.linkedin.com/in/scottmar93) - Northvolt
-- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
-- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 - [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
+- [Rob Timms](https://www.linkedin.com/in/robertwtimms/) - Ionworks
 
-## Retired Members
+## Former Members
 
 - [Saransh Chopra](https://saransh-cpp.github.io) (2022-2025) - University College London
+- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
+- [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 
-## Advisory Committee
+<!-- ## Scientific Advisory Board
 
-TBA
+TBA -->
 
 ## Governing Rules and Duties
 

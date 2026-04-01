@@ -158,17 +158,7 @@ Follow us on our [LinkedIn page](https://www.linkedin.com/company/pybamm/) for t
 
 ## Current PyBaMM Steering Council
 
-The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up
-of the following members:
-
-- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick, and Ionworks
-- [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
-- Scott Marquis - Northvolt
-- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
-- [Valentin Sulzer](https://www.linkedin.com/in/valentinsulzer/) - Ionworks
-- [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
-
-For more details, see the [PyBaMM Governance](/governance) page.
+The PyBaMM Steering Council is responsible for the overall direction of the project. For more details, see the [PyBaMM Governance](/governance) page.
 
 ## Current PyBaMM Team
 
