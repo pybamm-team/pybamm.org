@@ -30,7 +30,7 @@ handled on a case-by-case basis.
 
 ## Former Members
 
-- [Saransh Chopra](https://saransh-cpp.github.io) (2022-2025) - University College London
+- [Saransh Chopra](https://saransh-cpp.github.io) - École Polytechnique Fédérale de Lausanne
 - [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
 - [Valentin Sulzer](https://sites.google.com/view/valentinsulzer) - Ionworks
 
