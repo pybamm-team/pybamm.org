@@ -11,3 +11,5 @@ This year's themes include:
 - Data driven models and parameter estimation.
 - System level models and techno-economic analysis.
 - Agentic workflows and integration with other tools.
+
+For more details and registration information, please visit the conference website: [https://eeg.engin.umich.edu/pybamm_conf/](https://eeg.engin.umich.edu/pybamm_conf/).
