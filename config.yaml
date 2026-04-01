@@ -60,7 +60,7 @@ params:
 
   navbar:
     - title: Conference
-      url: https://eeg.engin.umich.edu/pybamm_conf/
+      url: https://pybamm.org/conference/
       is_external: true
 
     - title: Install
