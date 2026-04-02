@@ -39,7 +39,7 @@ jobs:
           echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
 
       - name: Build site
-        run: pipx run nox -s themes && pipx run nox -s html
+        run: pipx run nox -s themes && pipx run nox -s html && pipx run nox -s search
 
       - name: Link checker
         id: lychee
