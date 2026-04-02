@@ -27,7 +27,7 @@ jobs:
           extended: true
 
       - name: Build site
-        run: pipx run nox -s html
+        run: pipx run nox -s themes && pipx run nox -s html
 
       - name: Link checker
         id: lychee
