@@ -20,6 +20,10 @@ jobs:
           restore-keys: cache-lychee-
 
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+
+      - name: Build site
+        run: pipx run nox -s html
 
       - name: Link checker
         id: lychee
@@ -31,6 +35,7 @@ jobs:
             --max-cache-age 3d .
             --verbose
             --no-progress
+            --root-dir $GITHUB_WORKSPACE/public "public/**/*.html"
             --timeout 10
             --max-retries 5
             --skip-missing
@@ -48,5 +53,6 @@ jobs:
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
 
       # TBD: automatically open an issue if any links fail
