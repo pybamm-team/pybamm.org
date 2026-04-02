@@ -20,6 +20,26 @@ jobs:
           restore-keys: cache-lychee-
 
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+      - uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
+        with:
+          hugo-version: "0.158.0"
+          extended: true
+
+      - name: Install Dart Sass
+        run: |
+          DART_SASS_VERSION="1.79.4"
+          DART_SASS_URL="https://github.com/sass/dart-sass/releases/download"
+          DART_SASS_TARBALL="dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          curl -LJO ${DART_SASS_URL}/${DART_SASS_VERSION}/${DART_SASS_TARBALL}
+          tar -xf ${DART_SASS_TARBALL}
+          rm ${DART_SASS_TARBALL}
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+
+      - name: Build site
+        run: pipx run nox -s themes && pipx run nox -s html && pipx run nox -s search
 
       - name: Link checker
         id: lychee
@@ -31,6 +51,7 @@ jobs:
             --max-cache-age 3d .
             --verbose
             --no-progress
+            --root-dir $GITHUB_WORKSPACE/public "public/**/*.html"
             --timeout 10
             --max-retries 5
             --skip-missing
@@ -40,13 +61,23 @@ jobs:
             --exclude https://plausible.io/pybamm.org
             --exclude https://ecsarxiv.org/67ckj/
             --exclude https://scholar.google.com/
+            --exclude "https://www\.robertwtimms\.com"
+            --exclude "https://openresearchsoftware\.metajnl\.com"
+            --exclude "https://.*\.hashnode\.dev"
+            --exclude "https://medium\.com"
+            --exclude "https://hub\.docker\.com"
+            --exclude "file://.*/(slack|benchmarks)"
+            --exclude-path ./themes
             --exclude-path ./static/teams/contributors.html
             --exclude-path ./content/gsoc/
+            --exclude-path public/gsoc
+            --exclude-path public/changelog
             --accept 200,429,999
           format: markdown
           jobSummary: true
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
 
       # TBD: automatically open an issue if any links fail

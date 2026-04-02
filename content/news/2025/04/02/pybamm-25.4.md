@@ -7,7 +7,7 @@ shortcutDepth: 1
 
 PyBaMM 25.4 has now been released! We would like to thank all the [contributors](https://pybamm.org/teams/) who made this release possible.
 
-The full list of changes can be found in the [CHANGELOG](https://pybamm.org/changelog/) file, but here we provide a deeper overview of the main features of this release.
+The full list of changes can be found in the [CHANGELOG](/changelog/) file, but here we provide a deeper overview of the main features of this release.
 
 ## IDAKLU solver as default
 _Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_
