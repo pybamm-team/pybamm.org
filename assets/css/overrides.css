@@ -89,3 +89,8 @@ content-container class */
 .jobs-board .job-card__description ul, .jobs-board .job-card__description ol { margin: .5rem 0 .5rem 1.25rem; }
 .jobs-board .job-card__apply .button { display: inline-block; }
 .jobs-board .job-card--archived { opacity: .85; }
+
+/* Unset a pagefind color setting to make results more legible in dark mode */
+.pagefind-ui__result-title > .pagefind-ui__result-link {
+  color: unset !important;
+}

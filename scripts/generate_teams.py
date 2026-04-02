@@ -389,25 +389,27 @@ with open("static/teams/maintainer-trainees.html", "w") as file:
 
 # Generate the HTML in static/teams/gsoc-students.html, overwriting as necessary
 print("Generating GSoC students...")
-print("Current GSoC students are:", PYBAMM_GSOC_STUDENTS)
+print("Current GSoC students are:", PYBAMM_GSOC_STUDENTS) if PYBAMM_GSOC_STUDENTS else print("There are no current GSoC students")
 with open("static/teams/gsoc-students.html", "w") as file:
-    team_name = "Current Google Summer of Code students"
-    file.write(
-        team_template.substitute(
-            team_name=team_name,
-            team_id=create_team_id(team_name),
-            members="".join(
-                [
-                    member_template.substitute(
-                        url=contributor["html_url"],
-                        avatarUrl=contributor["avatar_url"],
-                        name=contributor["name"],
-                    )
-                    for contributor in get_gsoc_students()
-                ]
-            ),
+    gsoc_students = get_gsoc_students()
+    if gsoc_students:
+        team_name = "Current Google Summer of Code students"
+        file.write(
+            team_template.substitute(
+                team_name=team_name,
+                team_id=create_team_id(team_name),
+                members="".join(
+                    [
+                        member_template.substitute(
+                            url=contributor["html_url"],
+                            avatarUrl=contributor["avatar_url"],
+                            name=contributor["name"],
+                        )
+                        for contributor in gsoc_students
+                    ]
+                ),
+            )
         )
-    )
 
 # Generate the HTML in static/teams/past-gsoc-students.html, overwriting as necessary
 print("Generating past GSoC students...")

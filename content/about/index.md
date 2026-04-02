@@ -145,19 +145,20 @@ To submit a request to add a new organization to this list, please [open an issu
 
 Follow us on our [LinkedIn page](https://www.linkedin.com/company/pybamm/) for the latest news and updates. Connect with our community of battery modeling researchers, developers, and industry professionals. Stay informed about new releases, research collaborations, and exciting developments in the world of battery simulation.
 
+<iframe
+  src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7401969814061236224"
+  height="500"
+  width="100%"
+  loading="lazy"
+  style="border: none;"
+  frameborder="0"
+  allowfullscreen=""
+  title="PyBaMM Examples #1: Thermal models">
+</iframe>
+
 ## Current PyBaMM Steering Council
 
-The PyBaMM Steering Council is responsible for the overall direction of the project. The Steering Council is made up
-of the following members:
-
-- [Ferran Brosa Planella](https://www.brosaplanella.xyz) - University of Warwick, and Ionworks
-- [Saransh Chopra](https://saransh-cpp.github.io) - Cluster Innovation Centre, University of Delhi
-- Scott Marquis - Northvolt
-- [Gregory Offer](https://www.imperial.ac.uk/people/gregory.offer) - Imperial College London
-- [Valentin Sulzer](https://www.linkedin.com/in/valentinsulzer/) - Ionworks
-- [Martin Robinson](https://www.sabsr3.ox.ac.uk/people/dr-martin-robinson) - University of Oxford
-
-For more details, see the [PyBaMM Governance](/governance) page.
+The PyBaMM Steering Council is responsible for the overall direction of the project. For more details, see the [PyBaMM Governance](/governance) page.
 
 ## Current PyBaMM Team
 

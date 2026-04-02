@@ -7,3 +7,6 @@ file:///home/runner/work/pybamm.org/pybamm.org/content/pybamm.org
 file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2021/pybamm.org
 file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2022/pybamm.org
 file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2023/pybamm.org
+
+# Ignore Netlify redirect pages that don't exist as static files in public/
+file:///.*/(slack|benchmarks)

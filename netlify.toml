@@ -1,21 +1,21 @@
 [build.environment]
   PYTHON_VERSION = "3.13"
-  HUGO_VERSION = "0.148.2"
+  HUGO_VERSION = "0.158.0"
   DART_SASS_VERSION = "1.79.4"
   DART_SASS_URL = "https://github.com/sass/dart-sass/releases/download/"
 
-[[plugins]]
-  package = "netlify-plugin-checklinks"
+# [[plugins]]
+#   package = "netlify-plugin-checklinks"
 
-  [plugins.inputs]
-  recursive = true  # check links in subdirectories
-  checkExternal = false  # we are already using Lychee to check external links
-  # ignore pybamm.org/slack and pybamm.org/benchmarks
-  skipPatterns = [
-  "pybamm.org/slack",
-  "pybamm.org/benchmarks",
-  "https://plausible.io/js/script.js"
-  ]
+#   [plugins.inputs]
+#   recursive = true  # check links in subdirectories
+#   checkExternal = false  # we are already using Lychee to check external links
+#   # ignore pybamm.org/slack and pybamm.org/benchmarks
+#   skipPatterns = [
+#   "pybamm.org/slack",
+#   "pybamm.org/benchmarks",
+#   "https://plausible.io/js/script.js"
+#   ]
 
 [context.deploy-preview]
   ignore = "false"
@@ -31,9 +31,15 @@
   status = 301
 
 [[redirects]]
+  from = "/conference"
+  to = "https://eeg.engin.umich.edu/pybamm_conf/"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/404/"
   status = 404
+
 [build]
   base = "/"
   publish = "public"

@@ -7,7 +7,7 @@ shortcutDepth: 1
 
 PyBaMM 25.6 has now been released! We would like to thank all the [contributors](https://pybamm.org/teams/) who made this release possible.
 
-The full list of changes can be found in the [CHANGELOG](https://pybamm.org/changelog/) file, but here we provide a deeper overview of the main features of this release.
+The full list of changes can be found in the [CHANGELOG](/changelog/) file, but here we provide a deeper overview of the main features of this release.
 
 ## MSMR parameters renamed
 _Implemented by [Marc Berliner (Ionworks)](https://github.com/MarcBerliner)_
