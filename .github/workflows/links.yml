@@ -61,8 +61,17 @@ jobs:
             --exclude https://plausible.io/pybamm.org
             --exclude https://ecsarxiv.org/67ckj/
             --exclude https://scholar.google.com/
+            --exclude "https://www\.robertwtimms\.com"
+            --exclude "https://openresearchsoftware\.metajnl\.com"
+            --exclude "https://.*\.hashnode\.dev"
+            --exclude "https://medium\.com"
+            --exclude "https://hub\.docker\.com"
+            --exclude "file://.*/(slack|benchmarks)"
+            --exclude-path ./themes
             --exclude-path ./static/teams/contributors.html
             --exclude-path ./content/gsoc/
+            --exclude-path public/gsoc
+            --exclude-path public/changelog
             --accept 200,429,999
           format: markdown
           jobSummary: true
