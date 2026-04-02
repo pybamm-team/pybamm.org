@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
       - uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
         with:
-          hugo-version: "0.148.2"
+          hugo-version: "0.158.0"
 
       - name: Build site
         run: pipx run nox -s html
