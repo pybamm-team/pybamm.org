@@ -12,4 +12,4 @@ This year's themes include:
 - System level models and techno-economic analysis.
 - Agentic workflows and integration with other tools.
 
-For more details and registration information, please visit the conference website: [https://pybamm.org/conference](https://pybamm.org/conference).
+For more details and registration information, please visit the conference website: [https://pybamm.org/conference/](https://pybamm.org/conference/).
