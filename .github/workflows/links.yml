@@ -26,6 +26,16 @@ jobs:
           hugo-version: "0.158.0"
           extended: true
 
+      - name: Install Dart Sass
+        run: |
+          DART_SASS_VERSION="1.79.4"
+          DART_SASS_URL="https://github.com/sass/dart-sass/releases/download"
+          DART_SASS_TARBALL="dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          curl -LJO ${DART_SASS_URL}/${DART_SASS_VERSION}/${DART_SASS_TARBALL}
+          tar -xf ${DART_SASS_TARBALL}
+          rm ${DART_SASS_TARBALL}
+          echo "$GITHUB_WORKSPACE/dart-sass" >> $GITHUB_PATH
+
       - name: Build site
         run: pipx run nox -s themes && pipx run nox -s html
 
