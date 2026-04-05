@@ -5,38 +5,34 @@ summary: This page is a working document of the main features PyBaMM aims to pro
 
 This page contains a summary of the main features we are working towards and might provide ideas for funding applications.
 
-The fact that an item is listed in this roadmap does not mean that it will necessarily happen. On the other hand, an item not being listed in the roadmap does not mean it cannot be included in the future. Note that the ideas here correspond to big features, smaller features will still be tracked in the [issue tracker](https://github.com/pybamm-team/PyBaMM/issues).
+The fact that an item is listed in this roadmap does not mean that it will necessarily happen. On the other hand, an item not being listed in the roadmap for a year does not indicate it cannot be included in future iterations. Note that the ideas here correspond to big features. Smaller features are tracked in the [issue tracker](https://github.com/pybamm-team/PyBaMM/issues). For more details on the current technical roadmap, see the [2024 roadmap discussion](https://github.com/pybamm-team/PyBaMM/issues/3839) and [2025 roadmap discussion](https://github.com/pybamm-team/PyBaMM/issues/5064).
 
-## Additional battery models
+## Battery models
 
-We strive to keep PyBaMM up with the state-of-the-art in battery models, which advances in two different directions:
+We strive to keep PyBaMM up with the state-of-the-art in battery models, which advances in two directions:
 
-1. Include additional effects and physics (e.g. thermal, degradation...) for existing battery chemistries (e.g. lithium-ion, lead-acid..).
-2. Implement models for new chemistries (e.g. sodium-ion, lithium-air...).
+1. Including additional effects and physics (e.g. thermal, degradation) for existing chemistries (e.g. lithium-ion, lead-acid).
+2. Implementing models for new chemistries (e.g. sodium-ion, lithium-air).
 
-## Integration with other platforms & packages
+We are also working to rationalise the submodel interface and options, making it easier to define models and understand what is being solved. See [pybamm-team/PyBaMM#5103](https://github.com/pybamm-team/PyBaMM/issues/5103) for details.
 
-Currently, PyBaMM runs on Python, though it can generate CasADI code (which runs on C). We would like to extend our capabilities so we can generate code for our models on other platforms, and also make PyBaMM compatible with other packages. Some of the platforms & packages we would like to interface PyBaMM with are
+## Solver improvements
 
-- Julia
-- Cantera
+We are continuously aiming to improve PyBaMM's solver capabilities, with a particular focus on sensitivity calculations to enable efficient parameter inference with tools such as [PyBOP](https://github.com/pybop-team/PyBOP). See [pybamm-team/PyBaMM#5101](https://github.com/pybamm-team/PyBaMM/issues/5101) for details.
 
-## Improve documentation
+## Higher-dimensional modelling
 
-We would like to improve the content, structure and presentation of the documentation. Some specific goals include:
+We are expanding PyBaMM's spatial methods to support 2D and 3D simulations, enabling more detailed multi-physics models. See [pybamm-team/PyBaMM#5102](https://github.com/pybamm-team/PyBaMM/issues/5102) for details.
 
-- Self-hosting (similar to scipy)
-- Better design
-- Dependency trees
-- Link to examples where various functionality is used (similar to scikit-learn)
-- Show output and runtime of examples (notebooks and scripts) (similar to scikit-learn)
+## Interfaces
 
-## Performance
+PyBaMM can generate [CasADi](https://web.casadi.org/) code, which underpins many of its solver integrations. Ongoing efforts include integrating with [Diffsol](https://github.com/martinjrobins/diffsol) and exporting PyBaMM models to Rust.
 
-We aim to continuously improve PyBaMM's performance. Performance is monitored via [airspeed velocity](https://asv.readthedocs.io/en/stable/). The work on this area has two main fronts:
+## Performance and infrastructure
 
-1. Improving the benchmark suite (available at https://pybamm.org/benchmarks) to monitor the code better.
-2. Reformat the backend of the code to make it more efficient.
+Performance is monitored via [airspeed velocity](https://asv.readthedocs.io/en/stable/) (benchmarks available at [pybamm.org/benchmarks](https://pybamm.org/benchmarks)).
+
+<!-- We also work to keep PyBaMM up to date with newer Python releases, dependencies, and hardware architectures including ARM devices, WebAssembly, and free-threading -->
 
 ## Suggestions
 
