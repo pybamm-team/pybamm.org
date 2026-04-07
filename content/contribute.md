@@ -94,8 +94,41 @@ We are experimenting with this process and always looking for ways to improve ou
 
 ### Meeting links
 
-- Monthly community meeting: TBA
-- Monthly developer meeting: [Google Calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGtxNnExZWc4ZzFiOGVuOXB0c2ZtdnZ2aTlfMjAyMzA2MTJUMTUwMDAwWiBjXzE1Nzc5MGZhNTQ0Y2JmN2UzZjViNjQ5YzcwMGJhNDA0MDRhZDA0NjM0ZjkzNDBlMjU1ZTZkZWY5OWE4OWVkZGFAZw&tmsrc=c_157790fa544cbf7e3f5b649c700ba40404ad04634f9340e255e6def99a89edda%40group.calendar.google.com&scp=ALL) | [Zoom](https://numfocus-org.zoom.us/j/89866852955?pwd=dWVzQnpHbXpaTEZCQS9hMU54ZUxodz09)
+The developers meet once a month to discuss the project and triage issues. The meetings are open to everyone, and we encourage anyone interested in contributing to attend. The meeting links are as follows: [Google Calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGtxNnExZWc4ZzFiOGVuOXB0c2ZtdnZ2aTlfMjAyMzA2MTJUMTUwMDAwWiBjXzE1Nzc5MGZhNTQ0Y2JmN2UzZjViNjQ5YzcwMGJhNDA0MDRhZDA0NjM0ZjkzNDBlMjU1ZTZkZWY5OWE4OWVkZGFAZw&tmsrc=c_157790fa544cbf7e3f5b649c700ba40404ad04634f9340e255e6def99a89edda%40group.calendar.google.com&scp=ALL) | [Zoom](https://numfocus-org.zoom.us/j/89866852955?pwd=dWVzQnpHbXpaTEZCQS9hMU54ZUxodz09)
+
+## Becoming a maintainer
+
+### Duties & responsibilities of maintainers
+
+Maintainers are responsible for ensuring that PyBaMM continues to function reliably and evolve over time. The role is flexible and covers a broad range of activities, including (but not limited to):
+
+* Implementing new features.
+* Fixing bugs.
+* Writing and maintaining documentation.
+* Reviewing pull requests.
+* Supporting the community through GitHub issues and Discourse posts.
+* Mentoring new contributors and maintainers.
+
+### Training process
+
+The aim of the training process is to give prospective maintainers the experience they need to develop the skills required for the role. Each maintainer in training will have an assigned mentor for guidance and support. To become maintainers, trainees are expected to demonstrate strong performance across several areas. While we do not set strict metrics, some indicative criteria include:
+
+* Making significant contributions to the codebase in at least two major areas. A non-exhaustive list of areas includes: models and submodels, solvers, spatial methods,  infrastructure, and documentation/examples.
+* Reviewing a reasonable number of pull requests and engaging meaningfully with the review process.
+* Answering community questions on Discourse.
+* Engaging in GitHub issue discussions and supporting new contributors.
+* Attending developer meetings.
+
+The mentor will help trainees identify suitable areas to focus on and develop during the training period.
+
+### Completion of the training
+
+Once a trainee has gained sufficient experience, they may be promoted to maintainer. This assessment of “sufficient experience” must be supported by two existing maintainers. The promotion will then be formally ratified by the Steering Council at their next meeting (retrospectively if necessary).
+
+To retain maintainer status, individuals are expected to contribute to the project on a regular basis. As before, we set no strict metrics, to allow for differing circumstances and varying availability. If a maintainer is inactive for an extended period, their status will be changed to emeritus maintainer. When they have the capacity to re-engage, they may return to full maintainer status without any additional processes.
+
+To become a maintainer trainee, please email [pybamm@pybamm.org](mailto:pybamm@pybamm.org). Availability will depend on the capacity of the current maintainers to mentor.
+
 
 ## Open-Source programs
 
