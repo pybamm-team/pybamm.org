@@ -113,7 +113,7 @@ Maintainers are responsible for ensuring that PyBaMM continues to function relia
 
 The aim of the training process is to give prospective maintainers the experience they need to develop the skills required for the role. Each maintainer in training will have an assigned mentor for guidance and support. To become maintainers, trainees are expected to demonstrate strong performance across several areas. While we do not set strict metrics, some indicative criteria include:
 
-* Making significant contributions to the codebase in at least two major areas. A non-exhaustive list of areas includes: models and submodels, solvers, spatial methods,  infrastructure, and documentation/examples.
+* Making significant contributions to the codebase in at least two major areas. A non-exhaustive list of areas includes: models and submodels, solvers, spatial methods, packaging, and documentation/examples.
 * Reviewing a reasonable number of pull requests and engaging meaningfully with the review process.
 * Answering community questions on Discourse.
 * Engaging in GitHub issue discussions and supporting new contributors.
