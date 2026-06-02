@@ -1,0 +1,54 @@
+{{/* Renders a single job using theme shortcodes (card, badge, button). Expects dict with keys: job, now */}}
+{{- $job := .job -}}
+{{- $now := .now -}}
+{{- $open := or (not $job.expires) (ge (time $job.expires) $now) -}}
+
+{{- $scratch := newScratch -}}
+
+{{/* Build badges using theme badge shortcode */}}
+{{- with $job.location -}}
+  {{- $scratch.Add "badges" (printf "{{< badge secondary >}}%s{{< /badge >}} " .) -}}
+{{- end -}}
+{{- with $job.percentTime -}}
+  {{- $scratch.Add "badges" (printf "{{< badge primary >}}%d%% time{{< /badge >}} " .) -}}
+{{- end -}}
+{{- with $job.percentOSS -}}
+  {{- $scratch.Add "badges" (printf "{{< badge success >}}%d%% OSS{{< /badge >}} " .) -}}
+{{- end -}}
+{{- with $job.tags -}}
+  {{- range . -}}
+    {{- $scratch.Add "badges" (printf "{{< badge muted >}}%s{{< /badge >}} " .) -}}
+  {{- end -}}
+{{- end -}}
+{{- $badges := $scratch.Get "badges" | default "" -}}
+
+{{/* Dates summary */}}
+{{- $dates := "" -}}
+{{- with $job.deadline -}}
+  {{- $dates = printf "%s\n- Deadline: %s" $dates . -}}
+{{- end -}}
+{{- with $job.expires -}}
+  {{- $dates = printf "%s\n- Visible until: %s" $dates . -}}
+{{- end -}}
+
+{{/* Optional apply button */}}
+{{- $apply := "" -}}
+{{- with $job.url -}}
+  {{- $apply = printf "\n\n{{< button style=\"primary\" label=\"Apply / Learn more\" link=\"%s\" >}}" . -}}
+{{- end -}}
+
+{{/* Card class for archived */}}
+{{- $classcard := "" -}}
+{{- if not $open -}}
+  {{- $classcard = "sd-opacity-75" -}}
+{{- end -}}
+
+{{- $body := printf "%s\n\n%s\n\n%s%s" ($job.entity | default "") $badges ($job.description | default "") $apply -}}
+{{- $card := printf "{{< card >}}\n%s\n%s\n%s\n%s\n{{< /card >}}"
+  (printf "title = '%s'" ($job.title | default ""))
+  (cond (ne $classcard "") (printf "classcard = '%s'" $classcard) "")
+  (printf "body = '''\n%s\n%s\n'''" ($body | replaceRE "'" "\\'"))
+  (cond (and $job.url (ne $job.url "")) (printf "link = '%s'" $job.url) "")
+-}}
+
+{{ .Page.RenderString $card }}
