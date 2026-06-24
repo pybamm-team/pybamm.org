@@ -87,6 +87,8 @@ params:
           url: /code-of-conduct/
         - title: Roadmap
           url: /roadmap/
+        - title: Release Policy
+          url: /release-policy/
         - title: Open-Source Programs
           url: /open-source-programs/
 
