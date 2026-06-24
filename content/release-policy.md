@@ -1,6 +1,6 @@
 ---
 title: Release Policy
-summary: This page describes the PyBaMM Code of Conduct for all project participants and contributors.
+summary: This page describes PyBaMM's release policy.
 ---
 
 <!-- This page is a placeholder for the Release Policy, which is stored in the main PyBaMM repository
