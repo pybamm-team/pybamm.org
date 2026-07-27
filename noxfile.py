@@ -1,6 +1,7 @@
-import nox
 import os
 import shutil
+
+import nox
 
 nox.options.reuse_existing_virtualenvs = True
 nox.options.default_venv_backend = "none"

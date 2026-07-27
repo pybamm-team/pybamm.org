@@ -11,13 +11,13 @@
 # The HTML is then used in the website's "Teams" page at https://pybamm.org/teams.
 # Mostly adapted from the scientific-python-hugo-theme teams generation code.
 
-import requests
-import string
 import os
+import string
 import subprocess
 import sys
-
 from pathlib import Path
+
+import requests
 
 DIR = Path(__file__).parent.parent
 
