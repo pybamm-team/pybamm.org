@@ -34,7 +34,7 @@ def build_html(session):
     try:
         session.run("hugo", "--gc", "--minify")
     except Exception:
-        session.error(ERR_MSG)
+        session.error(ERR_MSG)  # noqa: BLE001
 
 
 @nox.session(name="search")
@@ -44,7 +44,7 @@ def add_search(session):
     try:
         session.run("npx", "--yes", "pagefind", "--site", "public")
     except Exception:
-        session.error(ERR_MSG)
+        session.error(ERR_MSG)  # noqa: BLE001
 
 
 @nox.session(name="serve")
@@ -53,7 +53,7 @@ def serve(session):
     try:
         session.run("hugo", "--printI18nWarnings", "server")
     except Exception:
-        session.error(ERR_MSG)
+        session.error(ERR_MSG)  # noqa: BLE001
 
 
 @nox.session(name="serve-dev")
@@ -62,7 +62,7 @@ def serve_dev(session):
     try:
         session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
     except Exception:
-        session.error(ERR_MSG)
+        session.error(ERR_MSG)  # noqa: BLE001
 
 
 @nox.session(name="clean")
