@@ -1,6 +1,7 @@
-import nox
 import os
 import shutil
+
+import nox
 
 nox.options.reuse_existing_virtualenvs = True
 nox.options.default_venv_backend = "none"
@@ -32,7 +33,7 @@ def build_html(session):
     """Build the Hugo site using the 'hugo' command."""
     try:
         session.run("hugo", "--gc", "--minify")
-    except Exception:
+    except Exception:  # noqa: BLE001
         session.error(ERR_MSG)
 
 
@@ -42,7 +43,7 @@ def add_search(session):
     session.log("Installing pagefind")
     try:
         session.run("npx", "--yes", "pagefind", "--site", "public")
-    except Exception:
+    except Exception:  # noqa: BLE001
         session.error(ERR_MSG)
 
 
@@ -51,7 +52,7 @@ def serve(session):
     """Serve the Hugo site using the 'hugo server' command."""
     try:
         session.run("hugo", "--printI18nWarnings", "server")
-    except Exception:
+    except Exception:  # noqa: BLE001
         session.error(ERR_MSG)
 
 
@@ -60,7 +61,7 @@ def serve_dev(session):
     """Serve the Hugo site with fast render disabled."""
     try:
         session.run("hugo", "--printI18nWarnings", "server", "--disableFastRender")
-    except Exception:
+    except Exception:  # noqa: BLE001
         session.error(ERR_MSG)
 
 

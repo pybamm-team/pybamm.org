@@ -11,13 +11,13 @@
 # The HTML is then used in the website's "Teams" page at https://pybamm.org/teams.
 # Mostly adapted from the scientific-python-hugo-theme teams generation code.
 
-import requests
-import string
 import os
+import string
 import subprocess
 import sys
-
 from pathlib import Path
+
+import requests
 
 DIR = Path(__file__).parent.parent
 
@@ -134,7 +134,7 @@ def get_user_batch_graphql(usernames):
             print(f"GraphQL errors: {data['errors']}")
             continue
 
-        for _, user_data in data["data"].items():
+        for user_data in data["data"].values():
             users.append(
                 {
                     "login": user_data["login"],
@@ -191,7 +191,7 @@ def query_contributors():
             )
             page += 1
 
-        except Exception as e:
+        except Exception as e:  # noqa: BLE001
             print(f"Unexpected error: {e}")
             break
 
