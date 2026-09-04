@@ -76,7 +76,7 @@ The JAX Solver has been refactored to improve its performance. The default metho
 ## DFN model for sodium-ion batteries
 _Implemented by [Ferran Brosa Planella (University of Warwick & Ionworks)](https://github.com/brosaplanella)_
 
-PyBaMM now includes a DFN model for sodium-ion batteries. The model is defined identically to that for lithium-ion batteries, but it is a separate class to prevent clashes with unavailable options. The model can be called as `pybamm.sodium_ion.BasicDFN()`. It comes with the parameter set presented in the article by [Chayambuka et al (2022)](https://www.sciencedirect.com/science/article/pii/S0013468621020478). For more details please see the [example notebook](https://docs.pybamm.org/en/stable/source/examples/notebooks/models/sodium-ion.html).
+PyBaMM now includes a DFN model for sodium-ion batteries. The model is defined identically to that for lithium-ion batteries, but it is a separate class to prevent clashes with unavailable options. The model can be called as `pybamm.sodium_ion.BasicDFN()`. It comes with the parameter set presented in the article by [Chayambuka et al (2022)](https://www.sciencedirect.com/science/article/pii/S0013468621020478). For more details please see the [example notebook](https://docs.pybamm.org/en/latest/source/examples/notebooks/models/sodium-ion.html).
 
 ## Sensitivity analysis is available for experiments
 _Implemented by [Martin Robinson (Oxford RSE)](https://github.com/martinjrobins)_

@@ -22,7 +22,7 @@ The hysteresis decay rate has been updated to be a "true" decay  rate and the mo
 ## Improvements to the IDAKLU solver
 _Implemented by [Marc Berliner (Ionworks)](https://github.com/MarcBerliner)_
 
-The IDAKLU solver now has an optional method to fail the simulation if the solver is not making progress. This is useful when the parameters are ill-conditioned and the solver is making very slow progress, such as in optimisation. These can be enabled by the kwargs `"num_steps_no_progress"` and `"t_no_progress"`. For more information, please see the [IDAKLU solver documentation](https://docs.pybamm.org/en/stable/source/api/solvers/idaklu_solver.html).
+The IDAKLU solver now has an optional method to fail the simulation if the solver is not making progress. This is useful when the parameters are ill-conditioned and the solver is making very slow progress, such as in optimisation. These can be enabled by the kwargs `"num_steps_no_progress"` and `"t_no_progress"`. For more information, please see the [IDAKLU solver documentation](https://docs.pybamm.org/en/latest/source/api/solvers/idaklu_solver.html).
 
 ## Improvements to the composite electrode models
 _Implemented by [Alec Bills](https://github.com/aabills) and [Rob Timms (Ionworks)](https://github.com/rtimms)_

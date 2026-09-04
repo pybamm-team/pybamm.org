@@ -67,6 +67,7 @@ jobs:
             --exclude "https://medium\.com"
             --exclude "https://hub\.docker\.com"
             --exclude "file://.*/(slack|benchmarks)"
+            --exclude "https://pybamm\.org/(slack|benchmarks)"
             --exclude-path ./themes
             --exclude-path ./static/teams/contributors.html
             --exclude-path ./content/gsoc/
