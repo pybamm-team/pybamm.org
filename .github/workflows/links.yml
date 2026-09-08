@@ -65,6 +65,7 @@ jobs:
             --exclude "https://openresearchsoftware\.metajnl\.com"
             --exclude "https://.*\.hashnode\.dev"
             --exclude "https://medium\.com"
+            --exclude "https://opencollective\.com"
             --exclude "https://hub\.docker\.com"
             --exclude "file://.*/(slack|benchmarks)"
             --exclude "https://pybamm\.org/(slack|benchmarks)"

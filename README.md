@@ -4,7 +4,7 @@
 [![Links](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml/badge.svg)](https://github.com/pybamm-team/pybamm.org/actions/workflows/links.yml)
 [![pre-commit.ci](https://results.pre-commit.ci/badge/github/pybamm-team/pybamm.org/main.svg)](https://results.pre-commit.ci/latest/github/pybamm-team/pybamm.org/main)
 
-Source code for [pybamm.org](https://www.pybamm.org), released under the
+Source code for [pybamm.org](https://pybamm.org), released under the
 BSD-3-Clause License.
 
 
