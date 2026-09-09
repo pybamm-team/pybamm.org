@@ -12,7 +12,7 @@ To find out more about PyBaMM, you can visit our website [pybamm.org](/) or read
 
 We mostly communicate via Slack, so you should start off by [joining our Slack workspace](/slack/) and heading to the appropriate (`#gsoc-main`/`#outreachy-main`/`#gsod-main`) channel.
 
-A comprehensive set of [example notebooks](https://docs.pybamm.org/en/stable/source/examples/index.html) is available for becoming familiar with PyBaMM.
+A comprehensive set of [example notebooks](https://docs.pybamm.org/en/latest/source/examples/index.html) is available for becoming familiar with PyBaMM.
 Knowledge of battery physics or mathematical modeling is *not* required for any of the projects, but may be beneficial for some.
 
 All coding will be done in Python, so contributors should have some proficiency in Python, or another object-oriented programming language.

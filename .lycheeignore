@@ -10,3 +10,7 @@ file:///home/runner/work/pybamm.org/pybamm.org/content/gsoc/2023/pybamm.org
 
 # Ignore Netlify redirect pages that don't exist as static files in public/
 file:///.*/(slack|benchmarks)
+https://pybamm\.org/(slack|benchmarks)
+
+# Cloudflare blocks CI runner IPs with 403
+https://opencollective\.com

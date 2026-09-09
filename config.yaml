@@ -64,7 +64,7 @@ params:
       is_external: true
 
     - title: Install
-      url: https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html
+      url: https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html
       is_external: true
 
     - title: Documentation
@@ -137,7 +137,7 @@ params:
         links:
           - text: Install PyBaMM
             is_external: true
-            link: https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html
+            link: https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html
 
           - text: Getting started
             link: /learn/

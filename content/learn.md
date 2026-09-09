@@ -4,7 +4,7 @@ summary: How to get started with PyBaMM
 ---
 
 {{< admonition hint >}}
-For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/stable/
+For the official PyBaMM documentation, please visit https://docs.pybamm.org/en/latest/
 {{< /admonition >}}
 
 ## Installation instructions
@@ -23,10 +23,10 @@ conda install -c conda-forge pybamm-base
 ```
 
 {{< admonition caution >}}
-At the moment, PyBaMM's conda-forge distribution does not include [`IDAKLUSolver`](https://docs.pybamm.org/en/stable/source/api/solvers/idaklu_solver.html#idaklu-solver).
+At the moment, PyBaMM's conda-forge distribution does not include [`IDAKLUSolver`](https://docs.pybamm.org/en/latest/source/api/solvers/idaklu_solver.html#idaklu-solver).
 {{< /admonition >}}
 
-More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/stable/source/user_guide/installation/index.html) in the documentation.
+More detailed instructions for installing PyBaMM on different platforms and for installing from source can be found in the [installation instructions](https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html) in the documentation.
 
 ## Example notebooks
 
@@ -42,7 +42,7 @@ If you would like to get started with PyBaMM, you may go through the [Getting St
 - [Tutorial 8: Solver options](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-8-solver-options.ipynb)
 - [Tutorial 9: Changing the mesh](https://colab.research.google.com/github/pybamm-team/PyBaMM/blob/main/docs/source/examples/notebooks/getting_started/tutorial-9-changing-the-mesh.ipynb)
 
-For more resources, please refer to the [Examples section](https://docs.pybamm.org/en/stable/source/examples/index.html) in the PyBaMM documentation.
+For more resources, please refer to the [Examples section](https://docs.pybamm.org/en/latest/source/examples/index.html) in the PyBaMM documentation.
 
 ## Get help
 
