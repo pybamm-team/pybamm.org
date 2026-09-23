@@ -4,9 +4,10 @@ title: "PyBaMM" # site title
 theme: scientific-python-hugo-theme
 relativeURLs: true
 DefaultContentLanguage: en
-disableKinds: ["term", "taxonomy"]
+disableKinds: ["term", "taxonomy", "404"]
 enableEmoji: true
 enableInlineShortcodes: true
+
 
 markup:
   highlight:
