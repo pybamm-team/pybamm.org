@@ -89,6 +89,8 @@ params:
           url: /roadmap/
         - title: Release Policy
           url: /release-policy/
+        - title: Model Zoo Policy
+          url: /model-zoo-policy/
         - title: Open-Source Programs
           url: /open-source-programs/
 
