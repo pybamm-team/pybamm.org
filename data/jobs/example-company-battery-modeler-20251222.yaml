@@ -1,0 +1,22 @@
+entity: Ionworks
+title: Battery Modeling Engineer (PyBaMM)
+url: https://www.ionworks.com/
+percentTime: 100
+percentOSS: 50
+deadline: 2026-01-31
+expires: 2026-02-28
+location: Remote (UK/EU time zones preferred)
+tags: [full-time, modeling, PyBaMM, Python]
+description: |
+  Ionworks is looking for a Battery Modeling Engineer to build and deploy
+  physics-based battery models using PyBaMM for clients across industry and academia.
+
+  Responsibilities:
+  - Develop, validate, and maintain battery models using PyBaMM
+  - Parameterise models, run simulations, and analyse results for production use
+  - Collaborate with open-source maintainers and contribute improvements back to PyBaMM where appropriate
+
+  Requirements:
+  - Strong Python experience and familiarity with numerical methods
+  - Experience with physics-based battery modelling and scientific computing
+  - Excellent communication and collaboration skills
