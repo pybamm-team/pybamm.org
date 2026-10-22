@@ -85,6 +85,8 @@ params:
           url: /contribute/
         - title: Code of Conduct
           url: /code-of-conduct/
+        - title: AI Policy
+          url: /ai-policy/
         - title: Roadmap
           url: /roadmap/
         - title: Release Policy

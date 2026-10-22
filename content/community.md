@@ -36,6 +36,10 @@ Ionworks provides support and custom feature development for PyBaMM, as well as 
 For companies who want to leverage the power, flexibility, and openness of the Python ecosystem for their battery simulation needs, Ionworks is the go-to partner.
 [Contact Ionworks](https://ionworks.com/) to find out more.
 
+## AI Policy
+
+You may view our policy on the use of generative AI tools in contributions on the [AI Policy](/ai-policy/) page.
+
 ## Governance
 
 You may view the PyBaMM governance document on the [Governance](/governance/) page.
