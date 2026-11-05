@@ -5,6 +5,8 @@ summary: "How to contribute to PyBaMM's development"
 
 If you'd like to contribute to PyBaMM whether via reporting issues and bugs, updating the documentation, or adding new features (thanks!), please have a look at the [Contributing Guidelines](https://docs.pybamm.org/en/latest/source/user_guide/contributing.html).
 
+If you use generative AI tools in your work, please also read our [AI Policy](/ai-policy/) before opening a pull request.
+
 We communicate what we are working on in two different ways:
 
 - A roadmap, a static document of our intended short, medium, and long-term goals, which gets updated and reviewed after every release
